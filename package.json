@@ -1,10 +1,10 @@
 {
     "name": "root",
     "private": true,
-    "author": "Alexander Krisko",
+    "author": "xyunsh",
     "license": "GPL-3.0",
     "homepage": "https://airgram.io",
-    "repository": "https://github.com/airgram/airgram",
+    "repository": "https://github.com/xyunsh/airgram",
     "scripts": {
         "build": "lerna run build --concurrency=1",
         "commit": "commit",
