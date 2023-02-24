@@ -3,8 +3,9 @@ import { AuthenticationCodeInfo, TermsOfService } from './index';
 /** Represents the current authorization state of the TDLib client */
 export type AuthorizationStateUnion =
     | AuthorizationStateWaitTdlibParameters
-    | AuthorizationStateWaitEncryptionKey
     | AuthorizationStateWaitPhoneNumber
+    | AuthorizationStateWaitEmailAddress
+    | AuthorizationStateWaitEmailCode
     | AuthorizationStateWaitCode
     | AuthorizationStateWaitOtherDeviceConfirmation
     | AuthorizationStateWaitRegistration
@@ -19,11 +20,33 @@ export interface AuthorizationStateWaitTdlibParameters {
     _: 'authorizationStateWaitTdlibParameters';
 }
 
-/** TDLib needs an encryption key to decrypt the local database */
-export interface AuthorizationStateWaitEncryptionKey {
-    _: 'authorizationStateWaitEncryptionKey';
-    /** True, if the database is currently encrypted */
-    isEncrypted: boolean;
+/** TDLib needs the user's email address to authorize. Call `setAuthenticationEmailAddress`
+ * to provide the email address, or directly call `checkAuthenticationEmailCode` with
+ * Apple ID/Google ID token if allowed
+ */
+export interface AuthorizationStateWaitEmailAddress {
+    _: 'authorizationStateWaitEmailAddress';
+    /** True, if authorization through Apple ID is allowed  */
+    allowAppleId: boolean;
+    /** True, if authorization through Google ID is allowed */
+    allowGoogleId: boolean;
+}
+
+/** TDLib needs the user's authentication code sent to an email address to authorize.
+ * Call `checkAuthenticationEmailCode` to provide the code
+ */
+export interface AuthorizationStateWaitEmailCode {
+    _: 'authorizationStateWaitEmailCode';
+    /** True, if authorization through Apple ID is allowed */
+    allowAppleId: boolean;
+    /** True, if authorization through Google ID is allowed */
+    allowGoogleId: boolean;
+    /** Information about the sent authentication code */
+    codeInfo: EmailAddressAuthenticationCodeInfo;
+    /** Point in time (Unix timestamp) when the user will be able to authorize with a
+     * code sent to the user's phone number; 0 if unknown
+     */
+    nextPhoneNumberAuthorizationDate: number;
 }
 
 /**

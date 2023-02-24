@@ -2,9 +2,7 @@ import { ApiRequestOptions, ApiResponse } from '../airgram';
 import { TdlibParametersInput } from '../inputs';
 import { OkUnion } from '../outputs';
 
-export interface SetTdlibParametersParams {
-    parameters?: TdlibParametersInput; // Parameters for TDLib initialization
-}
+declare type SetTdlibParametersParams = TdlibParametersInput;
 
 /**
  * Sets the parameters for TDLib initialization. Works only when the current authorization

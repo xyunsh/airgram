@@ -184,22 +184,7 @@ export class AirgramCore<ProviderT extends TdProvider> implements Instance<Provi
                     const update = ctx.update as unknown as UpdateAuthorizationState;
                     switch (update.authorizationState._) {
                         case 'authorizationStateWaitTdlibParameters': {
-                            this.api
-                                .setTdlibParameters({
-                                    parameters: {
-                                        _: 'tdlibParameters',
-                                        ...pick(this.config, tdlibOptions),
-                                    },
-                                })
-                                .catch(this.handleError);
-                            break;
-                        }
-                        case 'authorizationStateWaitEncryptionKey': {
-                            this.api
-                                .checkDatabaseEncryptionKey({
-                                    encryptionKey: this.config.databaseEncryptionKey,
-                                })
-                                .catch(this.handleError);
+                            this.api.setTdlibParameters(pick(this.config, tdlibOptions)).catch(this.handleError);
                             break;
                         }
                         default: {
@@ -213,7 +198,7 @@ export class AirgramCore<ProviderT extends TdProvider> implements Instance<Provi
                     }
                 }
                 return next();
-            } else if (['setTdlibParameters', 'checkDatabaseEncryptionKey'].includes(ctx._)) {
+            } else if (['setTdlibParameters'].includes(ctx._)) {
                 return next();
             }
             return deferred.promise.then(next);
