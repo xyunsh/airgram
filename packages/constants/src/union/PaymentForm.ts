@@ -1,3 +1,3 @@
 export enum PAYMENT_FORM {
-  paymentForm = 'paymentForm'
+    paymentForm = 'paymentForm',
 }

@@ -3,5 +3,5 @@
  * party
  */
 export class CallDiscardReasonDeclinedBaseModel {
-  public _: 'callDiscardReasonDeclined'
+    public _: 'callDiscardReasonDeclined';
 }

@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface LeaveGroupCallParams {
-  groupCallId?: number // Group call identifier
+    groupCallId?: number; // Group call identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface LeaveGroupCallParams {
  * @returns {Promise<ApiResponse<LeaveGroupCallParams, OkUnion>>}
  */
 export type leaveGroupCall = (
-  params?: LeaveGroupCallParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<LeaveGroupCallParams, OkUnion>>
+    params?: LeaveGroupCallParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<LeaveGroupCallParams, OkUnion>>;

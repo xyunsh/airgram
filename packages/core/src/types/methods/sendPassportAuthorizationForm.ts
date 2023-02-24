@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PassportElementTypeInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PassportElementTypeInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SendPassportAuthorizationFormParams {
-  autorizationFormId?: number // Authorization form identifier
-  types?: PassportElementTypeInputUnion[] // Types of Telegram Passport elements chosen by user to complete the authorization form
+    autorizationFormId?: number; // Authorization form identifier
+    types?: PassportElementTypeInputUnion[]; // Types of Telegram Passport elements chosen by user to complete the authorization form
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SendPassportAuthorizationFormParams {
  * @returns {Promise<ApiResponse<SendPassportAuthorizationFormParams, OkUnion>>}
  */
 export type sendPassportAuthorizationForm = (
-  params?: SendPassportAuthorizationFormParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendPassportAuthorizationFormParams, OkUnion>>
+    params?: SendPassportAuthorizationFormParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendPassportAuthorizationFormParams, OkUnion>>;

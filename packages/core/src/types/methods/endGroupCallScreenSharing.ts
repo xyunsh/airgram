@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface EndGroupCallScreenSharingParams {
-  groupCallId?: number // Group call identifier
+    groupCallId?: number; // Group call identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface EndGroupCallScreenSharingParams {
  * @returns {Promise<ApiResponse<EndGroupCallScreenSharingParams, OkUnion>>}
  */
 export type endGroupCallScreenSharing = (
-  params?: EndGroupCallScreenSharingParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EndGroupCallScreenSharingParams, OkUnion>>
+    params?: EndGroupCallScreenSharingParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EndGroupCallScreenSharingParams, OkUnion>>;

@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FoundFileDownloadsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FoundFileDownloadsUnion } from '../outputs';
 
 export interface SearchFileDownloadsParams {
-  query?: string // Query to search for; may be empty to return all downloaded files
-  onlyActive?: boolean // Pass true to search only for active downloads, including paused
-  onlyCompleted?: boolean // Pass true to search only for completed downloads
-  offset?: string // Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
-  limit?: number // The maximum number of files to be returned
+    query?: string; // Query to search for; may be empty to return all downloaded files
+    onlyActive?: boolean; // Pass true to search only for active downloads, including paused
+    onlyCompleted?: boolean; // Pass true to search only for completed downloads
+    offset?: string; // Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+    limit?: number; // The maximum number of files to be returned
 }
 
 /**
@@ -26,6 +26,6 @@ export interface SearchFileDownloadsParams {
  * @returns {Promise<ApiResponse<SearchFileDownloadsParams, FoundFileDownloadsUnion>>}
  */
 export type searchFileDownloads = (
-  params?: SearchFileDownloadsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchFileDownloadsParams, FoundFileDownloadsUnion>>
+    params?: SearchFileDownloadsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchFileDownloadsParams, FoundFileDownloadsUnion>>;

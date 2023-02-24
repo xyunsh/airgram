@@ -1,30 +1,30 @@
-import { File, Minithumbnail } from '@airgram/core'
+import { File, Minithumbnail } from '@airgram/core';
 
 /** Describes a user profile photo */
 export class ProfilePhotoBaseModel {
-  public _: 'profilePhoto'
+    public _: 'profilePhoto';
 
-  /**
-   * Photo identifier; 0 for an empty photo. Can be used to find a photo in a list of
-   * user profile photos
-   */
-  public id: string
+    /**
+     * Photo identifier; 0 for an empty photo. Can be used to find a photo in a list of
+     * user profile photos
+     */
+    public id: string;
 
-  /**
-   * A small (160x160) user profile photo. The file can be downloaded only before the
-   * photo is changed
-   */
-  public small: File
+    /**
+     * A small (160x160) user profile photo. The file can be downloaded only before the
+     * photo is changed
+     */
+    public small: File;
 
-  /**
-   * A big (640x640) user profile photo. The file can be downloaded only before the photo
-   * is changed
-   */
-  public big: File
+    /**
+     * A big (640x640) user profile photo. The file can be downloaded only before the photo
+     * is changed
+     */
+    public big: File;
 
-  /** User profile photo minithumbnail; may be null */
-  public minithumbnail?: Minithumbnail
+    /** User profile photo minithumbnail; may be null */
+    public minithumbnail?: Minithumbnail;
 
-  /** True, if the photo has animated variant */
-  public hasAnimation: boolean
+    /** True, if the photo has animated variant */
+    public hasAnimation: boolean;
 }

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatStatisticsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatStatisticsUnion } from '../outputs';
 
 export interface GetChatStatisticsParams {
-  chatId?: number // Chat identifier
-  isDark?: boolean // Pass true if a dark theme is used by the application
+    chatId?: number; // Chat identifier
+    isDark?: boolean; // Pass true if a dark theme is used by the application
 }
 
 /**
@@ -17,6 +17,6 @@ export interface GetChatStatisticsParams {
  * @returns {Promise<ApiResponse<GetChatStatisticsParams, ChatStatisticsUnion>>}
  */
 export type getChatStatistics = (
-  params?: GetChatStatisticsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatStatisticsParams, ChatStatisticsUnion>>
+    params?: GetChatStatisticsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatStatisticsParams, ChatStatisticsUnion>>;

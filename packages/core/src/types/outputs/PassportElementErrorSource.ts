@@ -1,20 +1,21 @@
 /** Contains the description of an error in a Telegram Passport element */
-export type PassportElementErrorSourceUnion = PassportElementErrorSourceUnspecified
-  | PassportElementErrorSourceDataField
-  | PassportElementErrorSourceFrontSide
-  | PassportElementErrorSourceReverseSide
-  | PassportElementErrorSourceSelfie
-  | PassportElementErrorSourceTranslationFile
-  | PassportElementErrorSourceTranslationFiles
-  | PassportElementErrorSourceFile
-  | PassportElementErrorSourceFiles
+export type PassportElementErrorSourceUnion =
+    | PassportElementErrorSourceUnspecified
+    | PassportElementErrorSourceDataField
+    | PassportElementErrorSourceFrontSide
+    | PassportElementErrorSourceReverseSide
+    | PassportElementErrorSourceSelfie
+    | PassportElementErrorSourceTranslationFile
+    | PassportElementErrorSourceTranslationFiles
+    | PassportElementErrorSourceFile
+    | PassportElementErrorSourceFiles;
 
 /**
  * The element contains an error in an unspecified place. The error will be considered
  * resolved when new data is added
  */
 export interface PassportElementErrorSourceUnspecified {
-  _: 'passportElementErrorSourceUnspecified'
+    _: 'passportElementErrorSourceUnspecified';
 }
 
 /**
@@ -22,9 +23,9 @@ export interface PassportElementErrorSourceUnspecified {
  * the value of the field changes
  */
 export interface PassportElementErrorSourceDataField {
-  _: 'passportElementErrorSourceDataField'
-  /** Field name */
-  fieldName: string
+    _: 'passportElementErrorSourceDataField';
+    /** Field name */
+    fieldName: string;
 }
 
 /**
@@ -32,7 +33,7 @@ export interface PassportElementErrorSourceDataField {
  * when the file with the front side changes
  */
 export interface PassportElementErrorSourceFrontSide {
-  _: 'passportElementErrorSourceFrontSide'
+    _: 'passportElementErrorSourceFrontSide';
 }
 
 /**
@@ -40,7 +41,7 @@ export interface PassportElementErrorSourceFrontSide {
  * resolved when the file with the reverse side changes
  */
 export interface PassportElementErrorSourceReverseSide {
-  _: 'passportElementErrorSourceReverseSide'
+    _: 'passportElementErrorSourceReverseSide';
 }
 
 /**
@@ -48,7 +49,7 @@ export interface PassportElementErrorSourceReverseSide {
  * when the file with the selfie changes
  */
 export interface PassportElementErrorSourceSelfie {
-  _: 'passportElementErrorSourceSelfie'
+    _: 'passportElementErrorSourceSelfie';
 }
 
 /**
@@ -56,9 +57,9 @@ export interface PassportElementErrorSourceSelfie {
  * be considered resolved when the file changes
  */
 export interface PassportElementErrorSourceTranslationFile {
-  _: 'passportElementErrorSourceTranslationFile'
-  /** Index of a file with the error */
-  fileIndex: number
+    _: 'passportElementErrorSourceTranslationFile';
+    /** Index of a file with the error */
+    fileIndex: number;
 }
 
 /**
@@ -66,14 +67,14 @@ export interface PassportElementErrorSourceTranslationFile {
  * when the list of translation files changes
  */
 export interface PassportElementErrorSourceTranslationFiles {
-  _: 'passportElementErrorSourceTranslationFiles'
+    _: 'passportElementErrorSourceTranslationFiles';
 }
 
 /** The file contains an error. The error will be considered resolved when the file changes */
 export interface PassportElementErrorSourceFile {
-  _: 'passportElementErrorSourceFile'
-  /** Index of a file with the error */
-  fileIndex: number
+    _: 'passportElementErrorSourceFile';
+    /** Index of a file with the error */
+    fileIndex: number;
 }
 
 /**
@@ -81,5 +82,5 @@ export interface PassportElementErrorSourceFile {
  * when the list of files changes
  */
 export interface PassportElementErrorSourceFiles {
-  _: 'passportElementErrorSourceFiles'
+    _: 'passportElementErrorSourceFiles';
 }

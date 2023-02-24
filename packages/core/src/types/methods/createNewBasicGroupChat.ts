@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatUnion } from '../outputs';
 
 export interface CreateNewBasicGroupChatParams {
-  userIds?: number[] // Identifiers of users to be added to the basic group
-  title?: string // Title of the new basic group; 1-128 characters
+    userIds?: number[]; // Identifiers of users to be added to the basic group
+    title?: string; // Title of the new basic group; 1-128 characters
 }
 
 /**
@@ -17,6 +17,6 @@ export interface CreateNewBasicGroupChatParams {
  * @returns {Promise<ApiResponse<CreateNewBasicGroupChatParams, ChatUnion>>}
  */
 export type createNewBasicGroupChat = (
-  params?: CreateNewBasicGroupChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CreateNewBasicGroupChatParams, ChatUnion>>
+    params?: CreateNewBasicGroupChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CreateNewBasicGroupChatParams, ChatUnion>>;

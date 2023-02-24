@@ -1,3 +1,3 @@
 export enum VENUE {
-  venue = 'venue'
+    venue = 'venue',
 }

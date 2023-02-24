@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleGroupCallIsMyVideoPausedParams {
-  groupCallId?: number // Group call identifier
-  isMyVideoPaused?: boolean // Pass true if the current user's video is paused
+    groupCallId?: number; // Group call identifier
+    isMyVideoPaused?: boolean; // Pass true if the current user's video is paused
 }
 
 /**
@@ -16,6 +16,6 @@ export interface ToggleGroupCallIsMyVideoPausedParams {
  * @returns {Promise<ApiResponse<ToggleGroupCallIsMyVideoPausedParams, OkUnion>>}
  */
 export type toggleGroupCallIsMyVideoPaused = (
-  params?: ToggleGroupCallIsMyVideoPausedParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleGroupCallIsMyVideoPausedParams, OkUnion>>
+    params?: ToggleGroupCallIsMyVideoPausedParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleGroupCallIsMyVideoPausedParams, OkUnion>>;

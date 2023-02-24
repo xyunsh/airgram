@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleChatHasProtectedContentParams {
-  chatId?: number // Chat identifier
-  hasProtectedContent?: boolean // New value of has_protected_content
+    chatId?: number; // Chat identifier
+    hasProtectedContent?: boolean; // New value of has_protected_content
 }
 
 /**
@@ -16,6 +16,6 @@ export interface ToggleChatHasProtectedContentParams {
  * @returns {Promise<ApiResponse<ToggleChatHasProtectedContentParams, OkUnion>>}
  */
 export type toggleChatHasProtectedContent = (
-  params?: ToggleChatHasProtectedContentParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleChatHasProtectedContentParams, OkUnion>>
+    params?: ToggleChatHasProtectedContentParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleChatHasProtectedContentParams, OkUnion>>;

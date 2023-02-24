@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AvailableReactionsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AvailableReactionsUnion } from '../outputs';
 
 export interface GetMessageAvailableReactionsParams {
-  chatId?: number // Identifier of the chat to which the message belongs
-  messageId?: number // Identifier of the message
+    chatId?: number; // Identifier of the chat to which the message belongs
+    messageId?: number; // Identifier of the message
 }
 
 /**
@@ -18,6 +18,6 @@ export interface GetMessageAvailableReactionsParams {
  * @returns {Promise<ApiResponse<GetMessageAvailableReactionsParams, AvailableReactionsUnion>>}
  */
 export type getMessageAvailableReactions = (
-  params?: GetMessageAvailableReactionsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMessageAvailableReactionsParams, AvailableReactionsUnion>>
+    params?: GetMessageAvailableReactionsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMessageAvailableReactionsParams, AvailableReactionsUnion>>;

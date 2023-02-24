@@ -1,3 +1,3 @@
 export enum CALL_PROTOCOL {
-  callProtocol = 'callProtocol'
+    callProtocol = 'callProtocol',
 }

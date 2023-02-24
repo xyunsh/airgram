@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputPassportElementErrorInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputPassportElementErrorInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetPassportElementErrorsParams {
-  userId?: number // User identifier
-  errors?: InputPassportElementErrorInput[] // The errors
+    userId?: number; // User identifier
+    errors?: InputPassportElementErrorInput[]; // The errors
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetPassportElementErrorsParams {
  * @returns {Promise<ApiResponse<SetPassportElementErrorsParams, OkUnion>>}
  */
 export type setPassportElementErrors = (
-  params?: SetPassportElementErrorsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetPassportElementErrorsParams, OkUnion>>
+    params?: SetPassportElementErrorsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetPassportElementErrorsParams, OkUnion>>;

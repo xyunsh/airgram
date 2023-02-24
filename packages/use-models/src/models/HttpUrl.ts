@@ -1,7 +1,7 @@
 /** Contains an HTTP URL */
 export class HttpUrlBaseModel {
-  public _: 'httpUrl'
+    public _: 'httpUrl';
 
-  /** The URL */
-  public url: string
+    /** The URL */
+    public url: string;
 }

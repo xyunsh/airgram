@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface GetFileExtensionParams {
-  mimeType?: string // The MIME type of the file
+    mimeType?: string; // The MIME type of the file
 }
 
 /**
@@ -14,8 +14,8 @@ export interface GetFileExtensionParams {
  * @returns {Promise<ApiResponse<GetFileExtensionParams, TextUnion>>}
  */
 export type getFileExtension = (
-  params?: GetFileExtensionParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetFileExtensionParams, TextUnion>>
+    params?: GetFileExtensionParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetFileExtensionParams, TextUnion>>;
 
-export type getFileExtensionSync = (params?: GetFileExtensionParams) => TextUnion
+export type getFileExtensionSync = (params?: GetFileExtensionParams) => TextUnion;

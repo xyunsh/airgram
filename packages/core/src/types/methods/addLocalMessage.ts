@@ -1,16 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import {
-  InputMessageContentInputUnion,
-  MessageSenderInputUnion
-} from '../inputs'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputMessageContentInputUnion, MessageSenderInputUnion } from '../inputs';
+import { MessageUnion } from '../outputs';
 
 export interface AddLocalMessageParams {
-  chatId?: number // Target chat
-  senderId?: MessageSenderInputUnion // Identifier of the sender of the message
-  replyToMessageId?: number // Identifier of the message to reply to or 0
-  disableNotification?: boolean // Pass true to disable notification for the message
-  inputMessageContent?: InputMessageContentInputUnion // The content of the message to be added
+    chatId?: number; // Target chat
+    senderId?: MessageSenderInputUnion; // Identifier of the sender of the message
+    replyToMessageId?: number; // Identifier of the message to reply to or 0
+    disableNotification?: boolean; // Pass true to disable notification for the message
+    inputMessageContent?: InputMessageContentInputUnion; // The content of the message to be added
 }
 
 /**
@@ -30,6 +27,6 @@ export interface AddLocalMessageParams {
  * @returns {Promise<ApiResponse<AddLocalMessageParams, MessageUnion>>}
  */
 export type addLocalMessage = (
-  params?: AddLocalMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddLocalMessageParams, MessageUnion>>
+    params?: AddLocalMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddLocalMessageParams, MessageUnion>>;

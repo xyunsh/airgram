@@ -1,7 +1,7 @@
 /** Represents a boolean option */
 export class OptionValueBooleanBaseModel {
-  public _: 'optionValueBoolean'
+    public _: 'optionValueBoolean';
 
-  /** The value of the option */
-  public value: boolean
+    /** The value of the option */
+    public value: boolean;
 }

@@ -1,18 +1,14 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import {
-  InputMessageContentInputUnion,
-  MessageSendOptionsInput,
-  ReplyMarkupInputUnion
-} from '../inputs'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputMessageContentInputUnion, MessageSendOptionsInput, ReplyMarkupInputUnion } from '../inputs';
+import { MessageUnion } from '../outputs';
 
 export interface SendMessageParams {
-  chatId?: number // Target chat
-  messageThreadId?: number // If not 0, a message thread identifier in which the message will be sent
-  replyToMessageId?: number // Identifier of the message to reply to or 0
-  options?: MessageSendOptionsInput // Options to be used to send the message; pass null to use default options
-  replyMarkup?: ReplyMarkupInputUnion // Markup for replying to the message; pass null if none; for bots only
-  inputMessageContent?: InputMessageContentInputUnion // The content of the message to be sent
+    chatId?: number; // Target chat
+    messageThreadId?: number; // If not 0, a message thread identifier in which the message will be sent
+    replyToMessageId?: number; // Identifier of the message to reply to or 0
+    options?: MessageSendOptionsInput; // Options to be used to send the message; pass null to use default options
+    replyMarkup?: ReplyMarkupInputUnion; // Markup for replying to the message; pass null if none; for bots only
+    inputMessageContent?: InputMessageContentInputUnion; // The content of the message to be sent
 }
 
 /**
@@ -33,6 +29,6 @@ export interface SendMessageParams {
  * @returns {Promise<ApiResponse<SendMessageParams, MessageUnion>>}
  */
 export type sendMessage = (
-  params?: SendMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendMessageParams, MessageUnion>>
+    params?: SendMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendMessageParams, MessageUnion>>;

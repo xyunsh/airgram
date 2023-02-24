@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetChatMessageTtlParams {
-  chatId?: number // Chat identifier
-  ttl?: number // New TTL value, in seconds; must be one of 0, 86400, 7 * 86400, or 31 * 86400 unless the chat is secret
+    chatId?: number; // Chat identifier
+    ttl?: number; // New TTL value, in seconds; must be one of 0, 86400, 7 * 86400, or 31 * 86400 unless the chat is secret
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetChatMessageTtlParams {
  * @returns {Promise<ApiResponse<SetChatMessageTtlParams, OkUnion>>}
  */
 export type setChatMessageTtl = (
-  params?: SetChatMessageTtlParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatMessageTtlParams, OkUnion>>
+    params?: SetChatMessageTtlParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatMessageTtlParams, OkUnion>>;

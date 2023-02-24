@@ -3,5 +3,5 @@
  * resolved when the file with the reverse side changes
  */
 export class PassportElementErrorSourceReverseSideBaseModel {
-  public _: 'passportElementErrorSourceReverseSide'
+    public _: 'passportElementErrorSourceReverseSide';
 }

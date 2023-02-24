@@ -1,5 +1,5 @@
 export enum PROXY_TYPE {
-  proxyTypeSocks5 = 'proxyTypeSocks5',
-  proxyTypeHttp = 'proxyTypeHttp',
-  proxyTypeMtproto = 'proxyTypeMtproto'
+    proxyTypeSocks5 = 'proxyTypeSocks5',
+    proxyTypeHttp = 'proxyTypeHttp',
+    proxyTypeMtproto = 'proxyTypeMtproto',
 }

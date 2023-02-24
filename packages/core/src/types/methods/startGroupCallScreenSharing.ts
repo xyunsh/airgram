@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface StartGroupCallScreenSharingParams {
-  groupCallId?: number // Group call identifier
-  audioSourceId?: number // Screen sharing audio channel synchronization source identifier; received from tgcalls
-  payload?: string // Group call join payload; received from tgcalls
+    groupCallId?: number; // Group call identifier
+    audioSourceId?: number; // Screen sharing audio channel synchronization source identifier; received from tgcalls
+    payload?: string; // Group call join payload; received from tgcalls
 }
 
 /**
@@ -18,6 +18,6 @@ export interface StartGroupCallScreenSharingParams {
  * @returns {Promise<ApiResponse<StartGroupCallScreenSharingParams, TextUnion>>}
  */
 export type startGroupCallScreenSharing = (
-  params?: StartGroupCallScreenSharingParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<StartGroupCallScreenSharingParams, TextUnion>>
+    params?: StartGroupCallScreenSharingParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<StartGroupCallScreenSharingParams, TextUnion>>;

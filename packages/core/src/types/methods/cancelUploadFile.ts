@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface CancelUploadFileParams {
-  fileId?: number // Identifier of the file to stop uploading
+    fileId?: number; // Identifier of the file to stop uploading
 }
 
 /**
@@ -14,6 +14,6 @@ export interface CancelUploadFileParams {
  * @returns {Promise<ApiResponse<CancelUploadFileParams, OkUnion>>}
  */
 export type cancelUploadFile = (
-  params?: CancelUploadFileParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CancelUploadFileParams, OkUnion>>
+    params?: CancelUploadFileParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CancelUploadFileParams, OkUnion>>;

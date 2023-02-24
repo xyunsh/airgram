@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LanguagePackInfoInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LanguagePackInfoInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface EditCustomLanguagePackInfoParams {
-  info?: LanguagePackInfoInput // New information about the custom local language pack
+    info?: LanguagePackInfoInput; // New information about the custom local language pack
 }
 
 /**
@@ -16,6 +16,6 @@ export interface EditCustomLanguagePackInfoParams {
  * @returns {Promise<ApiResponse<EditCustomLanguagePackInfoParams, OkUnion>>}
  */
 export type editCustomLanguagePackInfo = (
-  params?: EditCustomLanguagePackInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditCustomLanguagePackInfoParams, OkUnion>>
+    params?: EditCustomLanguagePackInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditCustomLanguagePackInfoParams, OkUnion>>;

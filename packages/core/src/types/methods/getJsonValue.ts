@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { JsonValueUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { JsonValueUnion } from '../outputs';
 
 export interface GetJsonValueParams {
-  json?: string // The JSON-serialized string
+    json?: string; // The JSON-serialized string
 }
 
 /**
@@ -14,8 +14,8 @@ export interface GetJsonValueParams {
  * @returns {Promise<ApiResponse<GetJsonValueParams, JsonValueUnion>>}
  */
 export type getJsonValue = (
-  params?: GetJsonValueParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetJsonValueParams, JsonValueUnion>>
+    params?: GetJsonValueParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetJsonValueParams, JsonValueUnion>>;
 
-export type getJsonValueSync = (params?: GetJsonValueParams) => JsonValueUnion
+export type getJsonValueSync = (params?: GetJsonValueParams) => JsonValueUnion;

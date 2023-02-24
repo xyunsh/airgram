@@ -1,80 +1,81 @@
 /** Represents a filter for message search results */
-export type SearchMessagesFilterInputUnion = SearchMessagesFilterEmptyInput
-  | SearchMessagesFilterAnimationInput
-  | SearchMessagesFilterAudioInput
-  | SearchMessagesFilterDocumentInput
-  | SearchMessagesFilterPhotoInput
-  | SearchMessagesFilterVideoInput
-  | SearchMessagesFilterVoiceNoteInput
-  | SearchMessagesFilterPhotoAndVideoInput
-  | SearchMessagesFilterUrlInput
-  | SearchMessagesFilterChatPhotoInput
-  | SearchMessagesFilterVideoNoteInput
-  | SearchMessagesFilterVoiceAndVideoNoteInput
-  | SearchMessagesFilterMentionInput
-  | SearchMessagesFilterUnreadMentionInput
-  | SearchMessagesFilterUnreadReactionInput
-  | SearchMessagesFilterFailedToSendInput
-  | SearchMessagesFilterPinnedInput
+export type SearchMessagesFilterInputUnion =
+    | SearchMessagesFilterEmptyInput
+    | SearchMessagesFilterAnimationInput
+    | SearchMessagesFilterAudioInput
+    | SearchMessagesFilterDocumentInput
+    | SearchMessagesFilterPhotoInput
+    | SearchMessagesFilterVideoInput
+    | SearchMessagesFilterVoiceNoteInput
+    | SearchMessagesFilterPhotoAndVideoInput
+    | SearchMessagesFilterUrlInput
+    | SearchMessagesFilterChatPhotoInput
+    | SearchMessagesFilterVideoNoteInput
+    | SearchMessagesFilterVoiceAndVideoNoteInput
+    | SearchMessagesFilterMentionInput
+    | SearchMessagesFilterUnreadMentionInput
+    | SearchMessagesFilterUnreadReactionInput
+    | SearchMessagesFilterFailedToSendInput
+    | SearchMessagesFilterPinnedInput;
 
 /** Returns all found messages, no filter is applied */
 export interface SearchMessagesFilterEmptyInput {
-  _: 'searchMessagesFilterEmpty'
+    _: 'searchMessagesFilterEmpty';
 }
 
 /** Returns only animation messages */
 export interface SearchMessagesFilterAnimationInput {
-  _: 'searchMessagesFilterAnimation'
+    _: 'searchMessagesFilterAnimation';
 }
 
 /** Returns only audio messages */
 export interface SearchMessagesFilterAudioInput {
-  _: 'searchMessagesFilterAudio'
+    _: 'searchMessagesFilterAudio';
 }
 
 /** Returns only document messages */
 export interface SearchMessagesFilterDocumentInput {
-  _: 'searchMessagesFilterDocument'
+    _: 'searchMessagesFilterDocument';
 }
 
 /** Returns only photo messages */
 export interface SearchMessagesFilterPhotoInput {
-  _: 'searchMessagesFilterPhoto'
+    _: 'searchMessagesFilterPhoto';
 }
 
 /** Returns only video messages */
 export interface SearchMessagesFilterVideoInput {
-  _: 'searchMessagesFilterVideo'
+    _: 'searchMessagesFilterVideo';
 }
 
 /** Returns only voice note messages */
 export interface SearchMessagesFilterVoiceNoteInput {
-  _: 'searchMessagesFilterVoiceNote'
+    _: 'searchMessagesFilterVoiceNote';
 }
 
 /** Returns only photo and video messages */
 export interface SearchMessagesFilterPhotoAndVideoInput {
-  _: 'searchMessagesFilterPhotoAndVideo'
+    _: 'searchMessagesFilterPhotoAndVideo';
 }
 
 /** Returns only messages containing URLs */
 export interface SearchMessagesFilterUrlInput {
-  _: 'searchMessagesFilterUrl'
+    _: 'searchMessagesFilterUrl';
 }
 
 /** Returns only messages containing chat photos */
 export interface SearchMessagesFilterChatPhotoInput {
-  _: 'searchMessagesFilterChatPhoto'
+    _: 'searchMessagesFilterChatPhoto';
 }
 
 /** Returns only video note messages */
 export interface SearchMessagesFilterVideoNoteInput {
-  _: 'searchMessagesFilterVideoNote'
+    _: 'searchMessagesFilterVideoNote';
 }
 
 /** Returns only voice and video note messages */
 export interface SearchMessagesFilterVoiceAndVideoNoteInput {
-  _: 'searchMessagesFilterVoiceAndVideoNote'
+    _: 'searchMessagesFilterVoiceAndVideoNote';
 }
 
 /**
@@ -82,7 +83,7 @@ export interface SearchMessagesFilterVoiceAndVideoNoteInput {
  * to their messages
  */
 export interface SearchMessagesFilterMentionInput {
-  _: 'searchMessagesFilterMention'
+    _: 'searchMessagesFilterMention';
 }
 
 /**
@@ -91,7 +92,7 @@ export interface SearchMessagesFilterMentionInput {
  * filtered by a query, a message thread or by the sending user
  */
 export interface SearchMessagesFilterUnreadMentionInput {
-  _: 'searchMessagesFilterUnreadMention'
+    _: 'searchMessagesFilterUnreadMention';
 }
 
 /**
@@ -100,7 +101,7 @@ export interface SearchMessagesFilterUnreadMentionInput {
  * by the sending user
  */
 export interface SearchMessagesFilterUnreadReactionInput {
-  _: 'searchMessagesFilterUnreadReaction'
+    _: 'searchMessagesFilterUnreadReaction';
 }
 
 /**
@@ -108,10 +109,10 @@ export interface SearchMessagesFilterUnreadReactionInput {
  * database is used
  */
 export interface SearchMessagesFilterFailedToSendInput {
-  _: 'searchMessagesFilterFailedToSend'
+    _: 'searchMessagesFilterFailedToSend';
 }
 
 /** Returns only pinned messages */
 export interface SearchMessagesFilterPinnedInput {
-  _: 'searchMessagesFilterPinned'
+    _: 'searchMessagesFilterPinned';
 }

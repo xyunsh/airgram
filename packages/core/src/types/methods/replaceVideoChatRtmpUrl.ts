@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { RtmpUrlUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { RtmpUrlUnion } from '../outputs';
 
 export interface ReplaceVideoChatRtmpUrlParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface ReplaceVideoChatRtmpUrlParams {
  * @returns {Promise<ApiResponse<ReplaceVideoChatRtmpUrlParams, RtmpUrlUnion>>}
  */
 export type replaceVideoChatRtmpUrl = (
-  params?: ReplaceVideoChatRtmpUrlParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ReplaceVideoChatRtmpUrlParams, RtmpUrlUnion>>
+    params?: ReplaceVideoChatRtmpUrlParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ReplaceVideoChatRtmpUrlParams, RtmpUrlUnion>>;

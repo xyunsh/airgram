@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteFileParams {
-  fileId?: number // Identifier of the file to delete
+    fileId?: number; // Identifier of the file to delete
 }
 
 /**
@@ -13,6 +13,6 @@ export interface DeleteFileParams {
  * @returns {Promise<ApiResponse<DeleteFileParams, OkUnion>>}
  */
 export type deleteFile = (
-  params?: DeleteFileParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteFileParams, OkUnion>>
+    params?: DeleteFileParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteFileParams, OkUnion>>;

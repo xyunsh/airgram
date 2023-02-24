@@ -1,3 +1,3 @@
 export enum REACTION {
-  reaction = 'reaction'
+    reaction = 'reaction',
 }

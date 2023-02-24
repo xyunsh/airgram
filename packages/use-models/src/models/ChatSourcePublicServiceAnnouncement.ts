@@ -1,10 +1,10 @@
 /** The chat contains a public service announcement */
 export class ChatSourcePublicServiceAnnouncementBaseModel {
-  public _: 'chatSourcePublicServiceAnnouncement'
+    public _: 'chatSourcePublicServiceAnnouncement';
 
-  /** The type of the announcement */
-  public type: string
+    /** The type of the announcement */
+    public type: string;
 
-  /** The text of the announcement */
-  public text: string
+    /** The text of the announcement */
+    public text: string;
 }

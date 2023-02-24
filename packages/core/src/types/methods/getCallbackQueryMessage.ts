@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageUnion } from '../outputs';
 
 export interface GetCallbackQueryMessageParams {
-  chatId?: number // Identifier of the chat the message belongs to
-  messageId?: number // Message identifier
-  callbackQueryId?: string // Identifier of the callback query
+    chatId?: number; // Identifier of the chat the message belongs to
+    messageId?: number; // Message identifier
+    callbackQueryId?: string; // Identifier of the callback query
 }
 
 /**
@@ -18,6 +18,6 @@ export interface GetCallbackQueryMessageParams {
  * @returns {Promise<ApiResponse<GetCallbackQueryMessageParams, MessageUnion>>}
  */
 export type getCallbackQueryMessage = (
-  params?: GetCallbackQueryMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetCallbackQueryMessageParams, MessageUnion>>
+    params?: GetCallbackQueryMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetCallbackQueryMessageParams, MessageUnion>>;

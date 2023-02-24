@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AnimatedEmojiUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AnimatedEmojiUnion } from '../outputs';
 
 export interface GetAnimatedEmojiParams {
-  emoji?: string // The emoji
+    emoji?: string; // The emoji
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetAnimatedEmojiParams {
  * @returns {Promise<ApiResponse<GetAnimatedEmojiParams, AnimatedEmojiUnion>>}
  */
 export type getAnimatedEmoji = (
-  params?: GetAnimatedEmojiParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetAnimatedEmojiParams, AnimatedEmojiUnion>>
+    params?: GetAnimatedEmojiParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetAnimatedEmojiParams, AnimatedEmojiUnion>>;

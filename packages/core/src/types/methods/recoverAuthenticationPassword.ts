@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RecoverAuthenticationPasswordParams {
-  recoveryCode?: string // Recovery code to check
-  newPassword?: string // New password of the user; may be empty to remove the password
-  newHint?: string // New password hint; may be empty
+    recoveryCode?: string; // Recovery code to check
+    newPassword?: string; // New password of the user; may be empty to remove the password
+    newHint?: string; // New password hint; may be empty
 }
 
 /**
@@ -19,6 +19,6 @@ export interface RecoverAuthenticationPasswordParams {
  * @returns {Promise<ApiResponse<RecoverAuthenticationPasswordParams, OkUnion>>}
  */
 export type recoverAuthenticationPassword = (
-  params?: RecoverAuthenticationPasswordParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RecoverAuthenticationPasswordParams, OkUnion>>
+    params?: RecoverAuthenticationPasswordParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RecoverAuthenticationPasswordParams, OkUnion>>;

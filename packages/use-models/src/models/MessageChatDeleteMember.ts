@@ -1,7 +1,7 @@
 /** A chat member was deleted */
 export class MessageChatDeleteMemberBaseModel {
-  public _: 'messageChatDeleteMember'
+    public _: 'messageChatDeleteMember';
 
-  /** User identifier of the deleted chat member */
-  public userId: number
+    /** User identifier of the deleted chat member */
+    public userId: number;
 }

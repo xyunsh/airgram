@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { BotCommandInput, BotCommandScopeInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { BotCommandInput, BotCommandScopeInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetCommandsParams {
-  scope?: BotCommandScopeInputUnion // The scope to which the commands are relevant; pass null to change commands in the default bot command scope
-  languageCode?: string // A two-letter ISO 639-1 language code. If empty, the commands will be applied to all users from the given scope, for which language there are no dedicated commands
-  commands?: BotCommandInput[] // List of the bot's commands
+    scope?: BotCommandScopeInputUnion; // The scope to which the commands are relevant; pass null to change commands in the default bot command scope
+    languageCode?: string; // A two-letter ISO 639-1 language code. If empty, the commands will be applied to all users from the given scope, for which language there are no dedicated commands
+    commands?: BotCommandInput[]; // List of the bot's commands
 }
 
 /**
@@ -22,6 +22,6 @@ export interface SetCommandsParams {
  * @returns {Promise<ApiResponse<SetCommandsParams, OkUnion>>}
  */
 export type setCommands = (
-  params?: SetCommandsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetCommandsParams, OkUnion>>
+    params?: SetCommandsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetCommandsParams, OkUnion>>;

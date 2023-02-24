@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleGroupCallScreenSharingIsPausedParams {
-  groupCallId?: number // Group call identifier
-  isPaused?: boolean // True if screen sharing is paused
+    groupCallId?: number; // Group call identifier
+    isPaused?: boolean; // True if screen sharing is paused
 }
 
 /**
@@ -15,6 +15,6 @@ export interface ToggleGroupCallScreenSharingIsPausedParams {
  * @returns {Promise<ApiResponse<ToggleGroupCallScreenSharingIsPausedParams, OkUnion>>}
  */
 export type toggleGroupCallScreenSharingIsPaused = (
-  params?: ToggleGroupCallScreenSharingIsPausedParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleGroupCallScreenSharingIsPausedParams, OkUnion>>
+    params?: ToggleGroupCallScreenSharingIsPausedParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleGroupCallScreenSharingIsPausedParams, OkUnion>>;

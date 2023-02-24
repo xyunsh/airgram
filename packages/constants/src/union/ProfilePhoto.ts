@@ -1,3 +1,3 @@
 export enum PROFILE_PHOTO {
-  profilePhoto = 'profilePhoto'
+    profilePhoto = 'profilePhoto',
 }

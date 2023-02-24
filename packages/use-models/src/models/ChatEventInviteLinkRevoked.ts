@@ -1,9 +1,9 @@
-import { ChatInviteLink } from '@airgram/core'
+import { ChatInviteLink } from '@airgram/core';
 
 /** A chat invite link was revoked */
 export class ChatEventInviteLinkRevokedBaseModel {
-  public _: 'chatEventInviteLinkRevoked'
+    public _: 'chatEventInviteLinkRevoked';
 
-  /** The invite link */
-  public inviteLink: ChatInviteLink
+    /** The invite link */
+    public inviteLink: ChatInviteLink;
 }

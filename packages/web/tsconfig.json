@@ -1,15 +1,10 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "noEmit": false,
-    "outDir": "dist",
-    "strictPropertyInitialization": false,
-    "lib": [
-      "esnext",
-      "webworker"
-    ]
-  },
-  "include": [
-    "./src"
-  ]
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "noEmit": false,
+        "outDir": "dist",
+        "strictPropertyInitialization": false,
+        "lib": ["esnext", "webworker"]
+    },
+    "include": ["./src"]
 }

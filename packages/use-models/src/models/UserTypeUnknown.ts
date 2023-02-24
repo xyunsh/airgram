@@ -4,5 +4,5 @@
  * user. It is not possible to perform any actions on users of this type
  */
 export class UserTypeUnknownBaseModel {
-  public _: 'userTypeUnknown'
+    public _: 'userTypeUnknown';
 }

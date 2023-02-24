@@ -3,14 +3,14 @@
  * if allowed to do so
  */
 export class InlineKeyboardButtonTypeLoginUrlBaseModel {
-  public _: 'inlineKeyboardButtonTypeLoginUrl'
+    public _: 'inlineKeyboardButtonTypeLoginUrl';
 
-  /** An HTTP URL to open */
-  public url: string
+    /** An HTTP URL to open */
+    public url: string;
 
-  /** Unique button identifier */
-  public id: number
+    /** Unique button identifier */
+    public id: number;
 
-  /** If non-empty, new text of the button in forwarded messages */
-  public forwardText: string
+    /** If non-empty, new text of the button in forwarded messages */
+    public forwardText: string;
 }

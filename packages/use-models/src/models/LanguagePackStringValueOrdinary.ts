@@ -1,7 +1,7 @@
 /** An ordinary language pack string */
 export class LanguagePackStringValueOrdinaryBaseModel {
-  public _: 'languagePackStringValueOrdinary'
+    public _: 'languagePackStringValueOrdinary';
 
-  /** String value */
-  public value: string
+    /** String value */
+    public value: string;
 }

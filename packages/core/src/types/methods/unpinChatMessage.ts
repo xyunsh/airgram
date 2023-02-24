@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface UnpinChatMessageParams {
-  chatId?: number // Identifier of the chat
-  messageId?: number // Identifier of the removed pinned message
+    chatId?: number; // Identifier of the chat
+    messageId?: number; // Identifier of the removed pinned message
 }
 
 /**
@@ -16,6 +16,6 @@ export interface UnpinChatMessageParams {
  * @returns {Promise<ApiResponse<UnpinChatMessageParams, OkUnion>>}
  */
 export type unpinChatMessage = (
-  params?: UnpinChatMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<UnpinChatMessageParams, OkUnion>>
+    params?: UnpinChatMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<UnpinChatMessageParams, OkUnion>>;

@@ -1,3 +1,3 @@
 export enum PHOTO {
-  photo = 'photo'
+    photo = 'photo',
 }

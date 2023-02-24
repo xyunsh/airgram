@@ -1,10 +1,10 @@
-import { Background } from './index'
+import { Background } from './index';
 
-export type BackgroundsUnion = Backgrounds
+export type BackgroundsUnion = Backgrounds;
 
 /** Contains a list of backgrounds */
 export interface Backgrounds {
-  _: 'backgrounds'
-  /** A list of backgrounds */
-  backgrounds: Background[]
+    _: 'backgrounds';
+    /** A list of backgrounds */
+    backgrounds: Background[];
 }

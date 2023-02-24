@@ -3,5 +3,5 @@
  * chats
  */
 export class KeyboardButtonTypeRequestPhoneNumberBaseModel {
-  public _: 'keyboardButtonTypeRequestPhoneNumber'
+    public _: 'keyboardButtonTypeRequestPhoneNumber';
 }

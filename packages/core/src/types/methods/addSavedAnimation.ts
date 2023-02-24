@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface AddSavedAnimationParams {
-  animation?: InputFileInputUnion // The animation file to be added. Only animations known to the server (i.e., successfully sent via a message) can be added to the list
+    animation?: InputFileInputUnion; // The animation file to be added. Only animations known to the server (i.e., successfully sent via a message) can be added to the list
 }
 
 /**
@@ -19,6 +19,6 @@ export interface AddSavedAnimationParams {
  * @returns {Promise<ApiResponse<AddSavedAnimationParams, OkUnion>>}
  */
 export type addSavedAnimation = (
-  params?: AddSavedAnimationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddSavedAnimationParams, OkUnion>>
+    params?: AddSavedAnimationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddSavedAnimationParams, OkUnion>>;

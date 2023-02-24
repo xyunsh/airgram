@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageFileTypeUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageFileTypeUnion } from '../outputs';
 
 export interface GetMessageFileTypeParams {
-  messageFileHead?: string // Beginning of the message file; up to 100 first lines
+    messageFileHead?: string; // Beginning of the message file; up to 100 first lines
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetMessageFileTypeParams {
  * @returns {Promise<ApiResponse<GetMessageFileTypeParams, MessageFileTypeUnion>>}
  */
 export type getMessageFileType = (
-  params?: GetMessageFileTypeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMessageFileTypeParams, MessageFileTypeUnion>>
+    params?: GetMessageFileTypeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMessageFileTypeParams, MessageFileTypeUnion>>;

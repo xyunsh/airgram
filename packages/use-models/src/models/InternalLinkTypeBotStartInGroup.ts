@@ -6,11 +6,11 @@
  * chat. Bots can be added to a public group only by administrators of the group
  */
 export class InternalLinkTypeBotStartInGroupBaseModel {
-  public _: 'internalLinkTypeBotStartInGroup'
+    public _: 'internalLinkTypeBotStartInGroup';
 
-  /** Username of the bot */
-  public botUsername: string
+    /** Username of the bot */
+    public botUsername: string;
 
-  /** The parameter to be passed to sendBotStartMessage */
-  public startParameter: string
+    /** The parameter to be passed to sendBotStartMessage */
+    public startParameter: string;
 }

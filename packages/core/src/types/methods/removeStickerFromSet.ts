@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface RemoveStickerFromSetParams {
-  sticker?: InputFileInputUnion // Sticker
+    sticker?: InputFileInputUnion; // Sticker
 }
 
 /**
@@ -15,6 +15,6 @@ export interface RemoveStickerFromSetParams {
  * @returns {Promise<ApiResponse<RemoveStickerFromSetParams, OkUnion>>}
  */
 export type removeStickerFromSet = (
-  params?: RemoveStickerFromSetParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveStickerFromSetParams, OkUnion>>
+    params?: RemoveStickerFromSetParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveStickerFromSetParams, OkUnion>>;

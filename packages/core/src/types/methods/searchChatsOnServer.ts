@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatsUnion } from '../outputs';
 
 export interface SearchChatsOnServerParams {
-  query?: string // Query to search for
-  limit?: number // The maximum number of chats to be returned
+    query?: string; // Query to search for
+    limit?: number; // The maximum number of chats to be returned
 }
 
 /**
@@ -16,6 +16,6 @@ export interface SearchChatsOnServerParams {
  * @returns {Promise<ApiResponse<SearchChatsOnServerParams, ChatsUnion>>}
  */
 export type searchChatsOnServer = (
-  params?: SearchChatsOnServerParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchChatsOnServerParams, ChatsUnion>>
+    params?: SearchChatsOnServerParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchChatsOnServerParams, ChatsUnion>>;

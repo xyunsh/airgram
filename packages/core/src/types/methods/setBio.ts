@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetBioParams {
-  bio?: string // The new value of the user bio; 0-70 characters without line feeds
+    bio?: string; // The new value of the user bio; 0-70 characters without line feeds
 }
 
 /**
@@ -14,6 +14,6 @@ export interface SetBioParams {
  * @returns {Promise<ApiResponse<SetBioParams, OkUnion>>}
  */
 export type setBio = (
-  params?: SetBioParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetBioParams, OkUnion>>
+    params?: SetBioParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetBioParams, OkUnion>>;

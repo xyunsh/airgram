@@ -1,12 +1,12 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A preformatted text paragraph */
 export class PageBlockPreformattedBaseModel {
-  public _: 'pageBlockPreformatted'
+    public _: 'pageBlockPreformatted';
 
-  /** Paragraph text */
-  public text: RichTextUnion
+    /** Paragraph text */
+    public text: RichTextUnion;
 
-  /** Programming language for which the text needs to be formatted */
-  public language: string
+    /** Programming language for which the text needs to be formatted */
+    public language: string;
 }

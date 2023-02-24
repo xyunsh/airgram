@@ -1,4 +1,4 @@
 export enum PUBLIC_CHAT_TYPE {
-  publicChatTypeHasUsername = 'publicChatTypeHasUsername',
-  publicChatTypeIsLocationBased = 'publicChatTypeIsLocationBased'
+    publicChatTypeHasUsername = 'publicChatTypeHasUsername',
+    publicChatTypeIsLocationBased = 'publicChatTypeIsLocationBased',
 }

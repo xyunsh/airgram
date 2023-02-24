@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A marked rich text */
 export class RichTextMarkedBaseModel {
-  public _: 'richTextMarked'
+    public _: 'richTextMarked';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 }

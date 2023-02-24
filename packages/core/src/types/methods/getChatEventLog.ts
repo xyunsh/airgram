@@ -1,14 +1,14 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatEventLogFiltersInput } from '../inputs'
-import { ChatEventsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatEventLogFiltersInput } from '../inputs';
+import { ChatEventsUnion } from '../outputs';
 
 export interface GetChatEventLogParams {
-  chatId?: number // Chat identifier
-  query?: string // Search query by which to filter events
-  fromEventId?: string // Identifier of an event from which to return results. Use 0 to get results from the latest events
-  limit?: number // The maximum number of events to return; up to 100
-  filters?: ChatEventLogFiltersInput // The types of events to return; pass null to get chat events of all types
-  userIds?: number[] // User identifiers by which to filter events. By default, events relating to all users will be returned
+    chatId?: number; // Chat identifier
+    query?: string; // Search query by which to filter events
+    fromEventId?: string; // Identifier of an event from which to return results. Use 0 to get results from the latest events
+    limit?: number; // The maximum number of events to return; up to 100
+    filters?: ChatEventLogFiltersInput; // The types of events to return; pass null to get chat events of all types
+    userIds?: number[]; // User identifiers by which to filter events. By default, events relating to all users will be returned
 }
 
 /**
@@ -31,6 +31,6 @@ export interface GetChatEventLogParams {
  * @returns {Promise<ApiResponse<GetChatEventLogParams, ChatEventsUnion>>}
  */
 export type getChatEventLog = (
-  params?: GetChatEventLogParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatEventLogParams, ChatEventsUnion>>
+    params?: GetChatEventLogParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatEventLogParams, ChatEventsUnion>>;

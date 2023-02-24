@@ -1,3 +1,3 @@
-export * from './inputs'
-export * from './outputs'
-export * from './methods'
+export * from './inputs';
+export * from './outputs';
+export * from './methods';

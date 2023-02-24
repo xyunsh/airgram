@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SendCallDebugInformationParams {
-  callId?: number // Call identifier
-  debugInformation?: string // Debug information in application-specific format
+    callId?: number; // Call identifier
+    debugInformation?: string; // Debug information in application-specific format
 }
 
 /**
@@ -16,6 +16,6 @@ export interface SendCallDebugInformationParams {
  * @returns {Promise<ApiResponse<SendCallDebugInformationParams, OkUnion>>}
  */
 export type sendCallDebugInformation = (
-  params?: SendCallDebugInformationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendCallDebugInformationParams, OkUnion>>
+    params?: SendCallDebugInformationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendCallDebugInformationParams, OkUnion>>;

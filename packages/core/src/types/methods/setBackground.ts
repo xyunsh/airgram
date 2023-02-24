@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { BackgroundTypeInputUnion, InputBackgroundInputUnion } from '../inputs'
-import { BackgroundUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { BackgroundTypeInputUnion, InputBackgroundInputUnion } from '../inputs';
+import { BackgroundUnion } from '../outputs';
 
 export interface SetBackgroundParams {
-  background?: InputBackgroundInputUnion // The input background to use; pass null to create a new filled backgrounds or to remove the current background
-  type?: BackgroundTypeInputUnion // Background type; pass null to use the default type of the remote background or to remove the current background
-  forDarkTheme?: boolean // Pass true if the background is changed for a dark theme
+    background?: InputBackgroundInputUnion; // The input background to use; pass null to create a new filled backgrounds or to remove the current background
+    type?: BackgroundTypeInputUnion; // Background type; pass null to use the default type of the remote background or to remove the current background
+    forDarkTheme?: boolean; // Pass true if the background is changed for a dark theme
 }
 
 /**
@@ -22,6 +22,6 @@ export interface SetBackgroundParams {
  * @returns {Promise<ApiResponse<SetBackgroundParams, BackgroundUnion>>}
  */
 export type setBackground = (
-  params?: SetBackgroundParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetBackgroundParams, BackgroundUnion>>
+    params?: SetBackgroundParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetBackgroundParams, BackgroundUnion>>;

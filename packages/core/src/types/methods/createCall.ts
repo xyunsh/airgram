@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { CallProtocolInput } from '../inputs'
-import { CallIdUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { CallProtocolInput } from '../inputs';
+import { CallIdUnion } from '../outputs';
 
 export interface CreateCallParams {
-  userId?: number // Identifier of the user to be called
-  protocol?: CallProtocolInput // The call protocols supported by the application
-  isVideo?: boolean // Pass true to create a video call
+    userId?: number; // Identifier of the user to be called
+    protocol?: CallProtocolInput; // The call protocols supported by the application
+    isVideo?: boolean; // Pass true to create a video call
 }
 
 /**
@@ -19,6 +19,6 @@ export interface CreateCallParams {
  * @returns {Promise<ApiResponse<CreateCallParams, CallIdUnion>>}
  */
 export type createCall = (
-  params?: CreateCallParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CreateCallParams, CallIdUnion>>
+    params?: CreateCallParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CreateCallParams, CallIdUnion>>;

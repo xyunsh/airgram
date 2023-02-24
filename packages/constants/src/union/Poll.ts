@@ -1,3 +1,3 @@
 export enum POLL {
-  poll = 'poll'
+    poll = 'poll',
 }

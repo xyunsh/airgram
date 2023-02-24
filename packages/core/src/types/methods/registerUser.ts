@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RegisterUserParams {
-  firstName?: string // The first name of the user; 1-64 characters
-  lastName?: string // The last name of the user; 0-64 characters
+    firstName?: string; // The first name of the user; 1-64 characters
+    lastName?: string; // The last name of the user; 0-64 characters
 }
 
 /**
@@ -15,6 +15,6 @@ export interface RegisterUserParams {
  * @returns {Promise<ApiResponse<RegisterUserParams, OkUnion>>}
  */
 export type registerUser = (
-  params?: RegisterUserParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RegisterUserParams, OkUnion>>
+    params?: RegisterUserParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RegisterUserParams, OkUnion>>;

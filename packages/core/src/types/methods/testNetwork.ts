@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 /**
  * Sends a simple network request to the Telegram servers; for testing only. Can be
@@ -9,7 +7,4 @@ import { OkUnion } from '../outputs'
  * @param {ApiRequestOptions} options
  * @returns {Promise<ApiResponse<never, OkUnion>>}
  */
-export type testNetwork = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, OkUnion>>
+export type testNetwork = (params?: never, options?: ApiRequestOptions) => Promise<ApiResponse<never, OkUnion>>;

@@ -4,5 +4,5 @@
  * to "Allow contacts" or "Allow all"
  */
 export class UserPrivacySettingAllowFindingByPhoneNumberBaseModel {
-  public _: 'userPrivacySettingAllowFindingByPhoneNumber'
+    public _: 'userPrivacySettingAllowFindingByPhoneNumber';
 }

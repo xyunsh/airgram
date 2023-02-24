@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { NetworkTypeInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { NetworkTypeInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetNetworkTypeParams {
-  type?: NetworkTypeInputUnion // The new network type; pass null to set network type to networkTypeOther
+    type?: NetworkTypeInputUnion; // The new network type; pass null to set network type to networkTypeOther
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SetNetworkTypeParams {
  * @returns {Promise<ApiResponse<SetNetworkTypeParams, OkUnion>>}
  */
 export type setNetworkType = (
-  params?: SetNetworkTypeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetNetworkTypeParams, OkUnion>>
+    params?: SetNetworkTypeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetNetworkTypeParams, OkUnion>>;

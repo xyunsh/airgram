@@ -1,10 +1,10 @@
 /** Contains an HTTPS link to a message in a supergroup or channel */
 export class MessageLinkBaseModel {
-  public _: 'messageLink'
+    public _: 'messageLink';
 
-  /** Message link */
-  public link: string
+    /** Message link */
+    public link: string;
 
-  /** True, if the link will work for non-members of the chat */
-  public isPublic: boolean
+    /** True, if the link will work for non-members of the chat */
+    public isPublic: boolean;
 }

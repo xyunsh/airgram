@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatInviteLinkInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatInviteLinkInfoUnion } from '../outputs';
 
 export interface CheckChatInviteLinkParams {
-  inviteLink?: string // Invite link to be checked
+    inviteLink?: string; // Invite link to be checked
 }
 
 /**
@@ -14,6 +14,6 @@ export interface CheckChatInviteLinkParams {
  * @returns {Promise<ApiResponse<CheckChatInviteLinkParams, ChatInviteLinkInfoUnion>>}
  */
 export type checkChatInviteLink = (
-  params?: CheckChatInviteLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckChatInviteLinkParams, ChatInviteLinkInfoUnion>>
+    params?: CheckChatInviteLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckChatInviteLinkParams, ChatInviteLinkInfoUnion>>;

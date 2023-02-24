@@ -3,5 +3,5 @@
  * automatically moved from the Archive to the Main chat list when a new message arrives
  */
 export class ChatListArchiveBaseModel {
-  public _: 'chatListArchive'
+    public _: 'chatListArchive';
 }

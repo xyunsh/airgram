@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DisconnectWebsiteParams {
-  websiteId?: string // Website identifier
+    websiteId?: string; // Website identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface DisconnectWebsiteParams {
  * @returns {Promise<ApiResponse<DisconnectWebsiteParams, OkUnion>>}
  */
 export type disconnectWebsite = (
-  params?: DisconnectWebsiteParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DisconnectWebsiteParams, OkUnion>>
+    params?: DisconnectWebsiteParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DisconnectWebsiteParams, OkUnion>>;

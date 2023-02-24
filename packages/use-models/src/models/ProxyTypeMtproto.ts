@@ -1,7 +1,7 @@
 /** An MTProto proxy server */
 export class ProxyTypeMtprotoBaseModel {
-  public _: 'proxyTypeMtproto'
+    public _: 'proxyTypeMtproto';
 
-  /** The proxy's secret in hexadecimal encoding */
-  public secret: string
+    /** The proxy's secret in hexadecimal encoding */
+    public secret: string;
 }

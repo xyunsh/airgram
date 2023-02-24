@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { CheckStickerSetNameResultUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { CheckStickerSetNameResultUnion } from '../outputs';
 
 export interface CheckStickerSetNameParams {
-  name?: string // Name to be checked
+    name?: string; // Name to be checked
 }
 
 /**
@@ -13,6 +13,6 @@ export interface CheckStickerSetNameParams {
  * @returns {Promise<ApiResponse<CheckStickerSetNameParams, CheckStickerSetNameResultUnion>>}
  */
 export type checkStickerSetName = (
-  params?: CheckStickerSetNameParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckStickerSetNameParams, CheckStickerSetNameResultUnion>>
+    params?: CheckStickerSetNameParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckStickerSetNameParams, CheckStickerSetNameResultUnion>>;

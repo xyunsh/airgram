@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatListInputUnion } from '../inputs'
-import { ChatsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatListInputUnion } from '../inputs';
+import { ChatsUnion } from '../outputs';
 
 export interface GetChatsParams {
-  chatList?: ChatListInputUnion // The chat list in which to return chats; pass null to get chats from the main chat list
-  limit?: number // The maximum number of chats to be returned
+    chatList?: ChatListInputUnion; // The chat list in which to return chats; pass null to get chats from the main chat list
+    limit?: number; // The maximum number of chats to be returned
 }
 
 /**
@@ -19,6 +19,6 @@ export interface GetChatsParams {
  * @returns {Promise<ApiResponse<GetChatsParams, ChatsUnion>>}
  */
 export type getChats = (
-  params?: GetChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatsParams, ChatsUnion>>
+    params?: GetChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatsParams, ChatsUnion>>;

@@ -3,5 +3,5 @@
  * to handle the link
  */
 export class InternalLinkTypeActiveSessionsBaseModel {
-  public _: 'internalLinkTypeActiveSessions'
+    public _: 'internalLinkTypeActiveSessions';
 }

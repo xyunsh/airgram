@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AuthenticationCodeInfoUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AuthenticationCodeInfoUnion } from '../outputs';
 
 /**
  * Re-sends the authentication code sent to confirm a new phone number for the current
@@ -11,6 +9,6 @@ import { AuthenticationCodeInfoUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, AuthenticationCodeInfoUnion>>}
  */
 export type resendChangePhoneNumberCode = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, AuthenticationCodeInfoUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, AuthenticationCodeInfoUnion>>;

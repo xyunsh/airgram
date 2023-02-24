@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface CheckPhoneNumberVerificationCodeParams {
-  code?: string // Verification code to check
+    code?: string; // Verification code to check
 }
 
 /**
@@ -13,6 +13,6 @@ export interface CheckPhoneNumberVerificationCodeParams {
  * @returns {Promise<ApiResponse<CheckPhoneNumberVerificationCodeParams, OkUnion>>}
  */
 export type checkPhoneNumberVerificationCode = (
-  params?: CheckPhoneNumberVerificationCodeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckPhoneNumberVerificationCodeParams, OkUnion>>
+    params?: CheckPhoneNumberVerificationCodeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckPhoneNumberVerificationCodeParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A kicker */
 export class PageBlockKickerBaseModel {
-  public _: 'pageBlockKicker'
+    public _: 'pageBlockKicker';
 
-  /** Kicker */
-  public kicker: RichTextUnion
+    /** Kicker */
+    public kicker: RichTextUnion;
 }

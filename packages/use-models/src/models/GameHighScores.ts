@@ -1,9 +1,9 @@
-import { GameHighScore } from '@airgram/core'
+import { GameHighScore } from '@airgram/core';
 
 /** Contains a list of game high scores */
 export class GameHighScoresBaseModel {
-  public _: 'gameHighScores'
+    public _: 'gameHighScores';
 
-  /** A list of game high scores */
-  public scores: GameHighScore[]
+    /** A list of game high scores */
+    public scores: GameHighScore[];
 }

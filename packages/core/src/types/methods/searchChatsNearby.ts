@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LocationInput } from '../inputs'
-import { ChatsNearbyUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LocationInput } from '../inputs';
+import { ChatsNearbyUnion } from '../outputs';
 
 export interface SearchChatsNearbyParams {
-  location?: LocationInput // Current user location
+    location?: LocationInput; // Current user location
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SearchChatsNearbyParams {
  * @returns {Promise<ApiResponse<SearchChatsNearbyParams, ChatsNearbyUnion>>}
  */
 export type searchChatsNearby = (
-  params?: SearchChatsNearbyParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchChatsNearbyParams, ChatsNearbyUnion>>
+    params?: SearchChatsNearbyParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchChatsNearbyParams, ChatsNearbyUnion>>;

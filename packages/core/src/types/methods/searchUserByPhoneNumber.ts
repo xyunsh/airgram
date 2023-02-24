@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UserUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UserUnion } from '../outputs';
 
 export interface SearchUserByPhoneNumberParams {
-  phoneNumber?: string // Phone number to search for
+    phoneNumber?: string; // Phone number to search for
 }
 
 /**
@@ -13,6 +13,6 @@ export interface SearchUserByPhoneNumberParams {
  * @returns {Promise<ApiResponse<SearchUserByPhoneNumberParams, UserUnion>>}
  */
 export type searchUserByPhoneNumber = (
-  params?: SearchUserByPhoneNumberParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchUserByPhoneNumberParams, UserUnion>>
+    params?: SearchUserByPhoneNumberParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchUserByPhoneNumberParams, UserUnion>>;

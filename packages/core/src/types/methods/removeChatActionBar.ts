@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RemoveChatActionBarParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface RemoveChatActionBarParams {
  * @returns {Promise<ApiResponse<RemoveChatActionBarParams, OkUnion>>}
  */
 export type removeChatActionBar = (
-  params?: RemoveChatActionBarParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveChatActionBarParams, OkUnion>>
+    params?: RemoveChatActionBarParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveChatActionBarParams, OkUnion>>;

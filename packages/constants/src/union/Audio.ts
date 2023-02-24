@@ -1,3 +1,3 @@
 export enum AUDIO {
-  audio = 'audio'
+    audio = 'audio',
 }

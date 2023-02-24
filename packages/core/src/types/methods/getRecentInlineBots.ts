@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UsersUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UsersUnion } from '../outputs';
 
 /**
  * Returns up to 20 recently used inline bots in the order of their last usage
@@ -9,6 +7,6 @@ import { UsersUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, UsersUnion>>}
  */
 export type getRecentInlineBots = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, UsersUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, UsersUnion>>;

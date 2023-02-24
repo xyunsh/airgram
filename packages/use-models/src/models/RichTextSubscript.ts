@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A subscript rich text */
 export class RichTextSubscriptBaseModel {
-  public _: 'richTextSubscript'
+    public _: 'richTextSubscript';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 }

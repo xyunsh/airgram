@@ -1,7 +1,7 @@
 /** An ordinary chat with a user */
 export class ChatTypePrivateBaseModel {
-  public _: 'chatTypePrivate'
+    public _: 'chatTypePrivate';
 
-  /** User identifier */
-  public userId: number
+    /** User identifier */
+    public userId: number;
 }

@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessagesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessagesUnion } from '../outputs';
 
 export interface GetChatScheduledMessagesParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetChatScheduledMessagesParams {
  * @returns {Promise<ApiResponse<GetChatScheduledMessagesParams, MessagesUnion>>}
  */
 export type getChatScheduledMessages = (
-  params?: GetChatScheduledMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatScheduledMessagesParams, MessagesUnion>>
+    params?: GetChatScheduledMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatScheduledMessagesParams, MessagesUnion>>;

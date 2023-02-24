@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { NetworkStatisticsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { NetworkStatisticsUnion } from '../outputs';
 
 export interface GetNetworkStatisticsParams {
-  onlyCurrent?: boolean // Pass true to get statistics only for the current library launch
+    onlyCurrent?: boolean; // Pass true to get statistics only for the current library launch
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetNetworkStatisticsParams {
  * @returns {Promise<ApiResponse<GetNetworkStatisticsParams, NetworkStatisticsUnion>>}
  */
 export type getNetworkStatistics = (
-  params?: GetNetworkStatisticsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetNetworkStatisticsParams, NetworkStatisticsUnion>>
+    params?: GetNetworkStatisticsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetNetworkStatisticsParams, NetworkStatisticsUnion>>;

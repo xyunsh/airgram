@@ -1,12 +1,12 @@
-import { AnimatedEmoji } from '@airgram/core'
+import { AnimatedEmoji } from '@airgram/core';
 
 /** A message with an animated emoji */
 export class MessageAnimatedEmojiBaseModel {
-  public _: 'messageAnimatedEmoji'
+    public _: 'messageAnimatedEmoji';
 
-  /** The animated emoji */
-  public animatedEmoji: AnimatedEmoji
+    /** The animated emoji */
+    public animatedEmoji: AnimatedEmoji;
 
-  /** The corresponding emoji */
-  public emoji: string
+    /** The corresponding emoji */
+    public emoji: string;
 }

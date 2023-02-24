@@ -1,12 +1,12 @@
-import { ChatPhoto } from '@airgram/core'
+import { ChatPhoto } from '@airgram/core';
 
 /** The chat photo was changed */
 export class ChatEventPhotoChangedBaseModel {
-  public _: 'chatEventPhotoChanged'
+    public _: 'chatEventPhotoChanged';
 
-  /** Previous chat photo value; may be null */
-  public oldPhoto?: ChatPhoto
+    /** Previous chat photo value; may be null */
+    public oldPhoto?: ChatPhoto;
 
-  /** New chat photo value; may be null */
-  public newPhoto?: ChatPhoto
+    /** New chat photo value; may be null */
+    public newPhoto?: ChatPhoto;
 }

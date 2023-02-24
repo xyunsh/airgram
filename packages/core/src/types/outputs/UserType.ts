@@ -2,14 +2,11 @@
  * Represents the type of a user. The following types are possible: regular users, deleted
  * users and bots
  */
-export type UserTypeUnion = UserTypeRegular
-  | UserTypeDeleted
-  | UserTypeBot
-  | UserTypeUnknown
+export type UserTypeUnion = UserTypeRegular | UserTypeDeleted | UserTypeBot | UserTypeUnknown;
 
 /** A regular user */
 export interface UserTypeRegular {
-  _: 'userTypeRegular'
+    _: 'userTypeRegular';
 }
 
 /**
@@ -17,29 +14,29 @@ export interface UserTypeRegular {
  * is available. It is not possible to perform any active actions on this type of user
  */
 export interface UserTypeDeleted {
-  _: 'userTypeDeleted'
+    _: 'userTypeDeleted';
 }
 
 /** A bot (see https://core.telegram.org/bots) */
 export interface UserTypeBot {
-  _: 'userTypeBot'
-  /** True, if the bot can be invited to basic group and supergroup chats */
-  canJoinGroups: boolean
-  /**
-   * True, if the bot can read all messages in basic group or supergroup chats and not
-   * just those addressed to the bot. In private and channel chats a bot can always read
-   * all messages
-   */
-  canReadAllGroupMessages: boolean
-  /** True, if the bot supports inline queries */
-  isInline: boolean
-  /** Placeholder for inline queries (displayed on the application input field) */
-  inlineQueryPlaceholder: string
-  /**
-   * True, if the location of the user is expected to be sent with every inline query
-   * to this bot
-   */
-  needLocation: boolean
+    _: 'userTypeBot';
+    /** True, if the bot can be invited to basic group and supergroup chats */
+    canJoinGroups: boolean;
+    /**
+     * True, if the bot can read all messages in basic group or supergroup chats and not
+     * just those addressed to the bot. In private and channel chats a bot can always read
+     * all messages
+     */
+    canReadAllGroupMessages: boolean;
+    /** True, if the bot supports inline queries */
+    isInline: boolean;
+    /** Placeholder for inline queries (displayed on the application input field) */
+    inlineQueryPlaceholder: string;
+    /**
+     * True, if the location of the user is expected to be sent with every inline query
+     * to this bot
+     */
+    needLocation: boolean;
 }
 
 /**
@@ -48,5 +45,5 @@ export interface UserTypeBot {
  * user. It is not possible to perform any actions on users of this type
  */
 export interface UserTypeUnknown {
-  _: 'userTypeUnknown'
+    _: 'userTypeUnknown';
 }

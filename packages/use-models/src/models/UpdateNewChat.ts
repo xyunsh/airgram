@@ -1,4 +1,4 @@
-import { Chat } from '@airgram/core'
+import { Chat } from '@airgram/core';
 
 /**
  * A new chat has been loaded/created. This update is guaranteed to come before the
@@ -6,8 +6,8 @@ import { Chat } from '@airgram/core'
  * through separate updates
  */
 export class UpdateNewChatBaseModel {
-  public _: 'updateNewChat'
+    public _: 'updateNewChat';
 
-  /** The chat */
-  public chat: Chat
+    /** The chat */
+    public chat: Chat;
 }

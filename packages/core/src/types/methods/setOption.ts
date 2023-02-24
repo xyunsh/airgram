@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OptionValueInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OptionValueInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetOptionParams {
-  name?: string // The name of the option
-  value?: OptionValueInputUnion // The new value of the option; pass null to reset option value to a default value
+    name?: string; // The name of the option
+    value?: OptionValueInputUnion; // The new value of the option; pass null to reset option value to a default value
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetOptionParams {
  * @returns {Promise<ApiResponse<SetOptionParams, OkUnion>>}
  */
 export type setOption = (
-  params?: SetOptionParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetOptionParams, OkUnion>>
+    params?: SetOptionParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetOptionParams, OkUnion>>;

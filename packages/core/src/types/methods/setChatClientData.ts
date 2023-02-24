@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetChatClientDataParams {
-  chatId?: number // Chat identifier
-  clientData?: string // New value of client_data
+    chatId?: number; // Chat identifier
+    clientData?: string; // New value of client_data
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SetChatClientDataParams {
  * @returns {Promise<ApiResponse<SetChatClientDataParams, OkUnion>>}
  */
 export type setChatClientData = (
-  params?: SetChatClientDataParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatClientDataParams, OkUnion>>
+    params?: SetChatClientDataParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatClientDataParams, OkUnion>>;

@@ -1,12 +1,12 @@
-import { PageBlockCaption, VoiceNote } from '@airgram/core'
+import { PageBlockCaption, VoiceNote } from '@airgram/core';
 
 /** A voice note */
 export class PageBlockVoiceNoteBaseModel {
-  public _: 'pageBlockVoiceNote'
+    public _: 'pageBlockVoiceNote';
 
-  /** Voice note; may be null */
-  public voiceNote?: VoiceNote
+    /** Voice note; may be null */
+    public voiceNote?: VoiceNote;
 
-  /** Voice note caption */
-  public caption: PageBlockCaption
+    /** Voice note caption */
+    public caption: PageBlockCaption;
 }

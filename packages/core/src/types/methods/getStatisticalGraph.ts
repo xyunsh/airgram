@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { StatisticalGraphUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { StatisticalGraphUnion } from '../outputs';
 
 export interface GetStatisticalGraphParams {
-  chatId?: number // Chat identifier
-  token?: string // The token for graph loading
-  x?: number // X-value for zoomed in graph or 0 otherwise
+    chatId?: number; // Chat identifier
+    token?: string; // The token for graph loading
+    x?: number; // X-value for zoomed in graph or 0 otherwise
 }
 
 /**
@@ -17,6 +17,6 @@ export interface GetStatisticalGraphParams {
  * @returns {Promise<ApiResponse<GetStatisticalGraphParams, StatisticalGraphUnion>>}
  */
 export type getStatisticalGraph = (
-  params?: GetStatisticalGraphParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetStatisticalGraphParams, StatisticalGraphUnion>>
+    params?: GetStatisticalGraphParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetStatisticalGraphParams, StatisticalGraphUnion>>;

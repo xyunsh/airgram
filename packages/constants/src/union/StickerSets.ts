@@ -1,3 +1,3 @@
 export enum STICKER_SETS {
-  stickerSets = 'stickerSets'
+    stickerSets = 'stickerSets',
 }

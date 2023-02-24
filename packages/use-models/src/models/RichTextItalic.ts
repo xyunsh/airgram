@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** An italicized rich text */
 export class RichTextItalicBaseModel {
-  public _: 'richTextItalic'
+    public _: 'richTextItalic';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 }

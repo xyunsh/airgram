@@ -1,4 +1,4 @@
 /** An italic text */
 export class TextEntityTypeItalicBaseModel {
-  public _: 'textEntityTypeItalic'
+    public _: 'textEntityTypeItalic';
 }

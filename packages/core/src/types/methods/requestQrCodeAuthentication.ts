@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RequestQrCodeAuthenticationParams {
-  otherUserIds?: number[] // List of user identifiers of other users currently using the application
+    otherUserIds?: number[]; // List of user identifiers of other users currently using the application
 }
 
 /**
@@ -17,6 +17,6 @@ export interface RequestQrCodeAuthenticationParams {
  * @returns {Promise<ApiResponse<RequestQrCodeAuthenticationParams, OkUnion>>}
  */
 export type requestQrCodeAuthentication = (
-  params?: RequestQrCodeAuthenticationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RequestQrCodeAuthenticationParams, OkUnion>>
+    params?: RequestQrCodeAuthenticationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RequestQrCodeAuthenticationParams, OkUnion>>;

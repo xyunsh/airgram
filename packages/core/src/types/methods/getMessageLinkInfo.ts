@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageLinkInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageLinkInfoUnion } from '../outputs';
 
 export interface GetMessageLinkInfoParams {
-  url?: string // The message link
+    url?: string; // The message link
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetMessageLinkInfoParams {
  * @returns {Promise<ApiResponse<GetMessageLinkInfoParams, MessageLinkInfoUnion>>}
  */
 export type getMessageLinkInfo = (
-  params?: GetMessageLinkInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMessageLinkInfoParams, MessageLinkInfoUnion>>
+    params?: GetMessageLinkInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMessageLinkInfoParams, MessageLinkInfoUnion>>;

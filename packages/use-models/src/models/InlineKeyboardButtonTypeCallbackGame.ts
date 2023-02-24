@@ -4,5 +4,5 @@
  * content of the type messageGame
  */
 export class InlineKeyboardButtonTypeCallbackGameBaseModel {
-  public _: 'inlineKeyboardButtonTypeCallbackGame'
+    public _: 'inlineKeyboardButtonTypeCallbackGame';
 }

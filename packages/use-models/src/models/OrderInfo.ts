@@ -1,18 +1,18 @@
-import { Address } from '@airgram/core'
+import { Address } from '@airgram/core';
 
 /** Order information */
 export class OrderInfoBaseModel {
-  public _: 'orderInfo'
+    public _: 'orderInfo';
 
-  /** Name of the user */
-  public name: string
+    /** Name of the user */
+    public name: string;
 
-  /** Phone number of the user */
-  public phoneNumber: string
+    /** Phone number of the user */
+    public phoneNumber: string;
 
-  /** Email address of the user */
-  public emailAddress: string
+    /** Email address of the user */
+    public emailAddress: string;
 
-  /** Shipping address for this order; may be null */
-  public shippingAddress?: Address
+    /** Shipping address for this order; may be null */
+    public shippingAddress?: Address;
 }

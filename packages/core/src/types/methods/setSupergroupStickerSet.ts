@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetSupergroupStickerSetParams {
-  supergroupId?: number // Identifier of the supergroup
-  stickerSetId?: string // New value of the supergroup sticker set identifier. Use 0 to remove the supergroup sticker set
+    supergroupId?: number; // Identifier of the supergroup
+    stickerSetId?: string; // New value of the supergroup sticker set identifier. Use 0 to remove the supergroup sticker set
 }
 
 /**
@@ -16,6 +16,6 @@ export interface SetSupergroupStickerSetParams {
  * @returns {Promise<ApiResponse<SetSupergroupStickerSetParams, OkUnion>>}
  */
 export type setSupergroupStickerSet = (
-  params?: SetSupergroupStickerSetParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetSupergroupStickerSetParams, OkUnion>>
+    params?: SetSupergroupStickerSetParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetSupergroupStickerSetParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** An underlined rich text */
 export class RichTextUnderlineBaseModel {
-  public _: 'richTextUnderline'
+    public _: 'richTextUnderline';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 }

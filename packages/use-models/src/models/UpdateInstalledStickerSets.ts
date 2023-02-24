@@ -1,10 +1,10 @@
 /** The list of installed sticker sets was updated */
 export class UpdateInstalledStickerSetsBaseModel {
-  public _: 'updateInstalledStickerSets'
+    public _: 'updateInstalledStickerSets';
 
-  /** True, if the list of installed mask sticker sets was updated */
-  public isMasks: boolean
+    /** True, if the list of installed mask sticker sets was updated */
+    public isMasks: boolean;
 
-  /** The new list of installed ordinary sticker sets */
-  public stickerSetIds: string[]
+    /** The new list of installed ordinary sticker sets */
+    public stickerSetIds: string[];
 }

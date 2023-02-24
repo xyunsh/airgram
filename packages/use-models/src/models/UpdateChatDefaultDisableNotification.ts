@@ -3,11 +3,11 @@
  * to the chat, was changed
  */
 export class UpdateChatDefaultDisableNotificationBaseModel {
-  public _: 'updateChatDefaultDisableNotification'
+    public _: 'updateChatDefaultDisableNotification';
 
-  /** Chat identifier */
-  public chatId: number
+    /** Chat identifier */
+    public chatId: number;
 
-  /** The new default_disable_notification value */
-  public defaultDisableNotification: boolean
+    /** The new default_disable_notification value */
+    public defaultDisableNotification: boolean;
 }

@@ -6,8 +6,8 @@
  * the file must be preloaded by the application
  */
 export class InputFileRemoteBaseModel {
-  public _: 'inputFileRemote'
+    public _: 'inputFileRemote';
 
-  /** Remote file identifier */
-  public id: string
+    /** Remote file identifier */
+    public id: string;
 }

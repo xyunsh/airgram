@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FoundMessagesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FoundMessagesUnion } from '../outputs';
 
 export interface SearchOutgoingDocumentMessagesParams {
-  query?: string // Query to search for in document file name and message caption
-  limit?: number // The maximum number of messages to be returned; up to 100
+    query?: string; // Query to search for in document file name and message caption
+    limit?: number; // The maximum number of messages to be returned; up to 100
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SearchOutgoingDocumentMessagesParams {
  * @returns {Promise<ApiResponse<SearchOutgoingDocumentMessagesParams, FoundMessagesUnion>>}
  */
 export type searchOutgoingDocumentMessages = (
-  params?: SearchOutgoingDocumentMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchOutgoingDocumentMessagesParams, FoundMessagesUnion>>
+    params?: SearchOutgoingDocumentMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchOutgoingDocumentMessagesParams, FoundMessagesUnion>>;

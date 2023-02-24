@@ -1,10 +1,10 @@
-import { PassportElementUnion } from './index'
+import { PassportElementUnion } from './index';
 
-export type PassportElementsUnion = PassportElements
+export type PassportElementsUnion = PassportElements;
 
 /** Contains information about saved Telegram Passport elements */
 export interface PassportElements {
-  _: 'passportElements'
-  /** Telegram Passport elements */
-  elements: PassportElementUnion[]
+    _: 'passportElements';
+    /** Telegram Passport elements */
+    elements: PassportElementUnion[];
 }

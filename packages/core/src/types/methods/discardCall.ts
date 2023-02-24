@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DiscardCallParams {
-  callId?: number // Call identifier
-  isDisconnected?: boolean // Pass true if the user was disconnected
-  duration?: number // The call duration, in seconds
-  isVideo?: boolean // Pass true if the call was a video call
-  connectionId?: string // Identifier of the connection used during the call
+    callId?: number; // Call identifier
+    isDisconnected?: boolean; // Pass true if the user was disconnected
+    duration?: number; // The call duration, in seconds
+    isVideo?: boolean; // Pass true if the call was a video call
+    connectionId?: string; // Identifier of the connection used during the call
 }
 
 /**
@@ -22,6 +22,6 @@ export interface DiscardCallParams {
  * @returns {Promise<ApiResponse<DiscardCallParams, OkUnion>>}
  */
 export type discardCall = (
-  params?: DiscardCallParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DiscardCallParams, OkUnion>>
+    params?: DiscardCallParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DiscardCallParams, OkUnion>>;

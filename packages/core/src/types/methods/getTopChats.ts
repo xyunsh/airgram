@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TopChatCategoryInputUnion } from '../inputs'
-import { ChatsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TopChatCategoryInputUnion } from '../inputs';
+import { ChatsUnion } from '../outputs';
 
 export interface GetTopChatsParams {
-  category?: TopChatCategoryInputUnion // Category of chats to be returned
-  limit?: number // The maximum number of chats to be returned; up to 30
+    category?: TopChatCategoryInputUnion; // Category of chats to be returned
+    limit?: number; // The maximum number of chats to be returned; up to 30
 }
 
 /**
@@ -19,6 +19,6 @@ export interface GetTopChatsParams {
  * @returns {Promise<ApiResponse<GetTopChatsParams, ChatsUnion>>}
  */
 export type getTopChats = (
-  params?: GetTopChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetTopChatsParams, ChatsUnion>>
+    params?: GetTopChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetTopChatsParams, ChatsUnion>>;

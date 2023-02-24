@@ -1,3 +1,3 @@
 export enum VIDEO {
-  video = 'video'
+    video = 'video',
 }

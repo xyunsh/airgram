@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ReorderInstalledStickerSetsParams {
-  isMasks?: boolean // Pass true to change the order of mask sticker sets; pass false to change the order of ordinary sticker sets
-  stickerSetIds?: string[] // Identifiers of installed sticker sets in the new correct order
+    isMasks?: boolean; // Pass true to change the order of mask sticker sets; pass false to change the order of ordinary sticker sets
+    stickerSetIds?: string[]; // Identifiers of installed sticker sets in the new correct order
 }
 
 /**
@@ -17,6 +17,6 @@ export interface ReorderInstalledStickerSetsParams {
  * @returns {Promise<ApiResponse<ReorderInstalledStickerSetsParams, OkUnion>>}
  */
 export type reorderInstalledStickerSets = (
-  params?: ReorderInstalledStickerSetsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ReorderInstalledStickerSetsParams, OkUnion>>
+    params?: ReorderInstalledStickerSetsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ReorderInstalledStickerSetsParams, OkUnion>>;

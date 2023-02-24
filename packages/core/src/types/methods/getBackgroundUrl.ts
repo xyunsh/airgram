@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { BackgroundTypeInputUnion } from '../inputs'
-import { HttpUrlUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { BackgroundTypeInputUnion } from '../inputs';
+import { HttpUrlUnion } from '../outputs';
 
 export interface GetBackgroundUrlParams {
-  name?: string // Background name
-  type?: BackgroundTypeInputUnion // Background type
+    name?: string; // Background name
+    type?: BackgroundTypeInputUnion; // Background type
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetBackgroundUrlParams {
  * @returns {Promise<ApiResponse<GetBackgroundUrlParams, HttpUrlUnion>>}
  */
 export type getBackgroundUrl = (
-  params?: GetBackgroundUrlParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetBackgroundUrlParams, HttpUrlUnion>>
+    params?: GetBackgroundUrlParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetBackgroundUrlParams, HttpUrlUnion>>;

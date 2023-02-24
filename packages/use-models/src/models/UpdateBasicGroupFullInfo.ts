@@ -1,12 +1,12 @@
-import { BasicGroupFullInfo } from '@airgram/core'
+import { BasicGroupFullInfo } from '@airgram/core';
 
 /** Some data in basicGroupFullInfo has been changed */
 export class UpdateBasicGroupFullInfoBaseModel {
-  public _: 'updateBasicGroupFullInfo'
+    public _: 'updateBasicGroupFullInfo';
 
-  /** Identifier of a basic group */
-  public basicGroupId: number
+    /** Identifier of a basic group */
+    public basicGroupId: number;
 
-  /** New full information about the group */
-  public basicGroupFullInfo: BasicGroupFullInfo
+    /** New full information about the group */
+    public basicGroupFullInfo: BasicGroupFullInfo;
 }

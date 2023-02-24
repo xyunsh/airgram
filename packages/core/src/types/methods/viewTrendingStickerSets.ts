@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ViewTrendingStickerSetsParams {
-  stickerSetIds?: string[] // Identifiers of viewed trending sticker sets
+    stickerSetIds?: string[]; // Identifiers of viewed trending sticker sets
 }
 
 /**
@@ -14,6 +14,6 @@ export interface ViewTrendingStickerSetsParams {
  * @returns {Promise<ApiResponse<ViewTrendingStickerSetsParams, OkUnion>>}
  */
 export type viewTrendingStickerSets = (
-  params?: ViewTrendingStickerSetsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ViewTrendingStickerSetsParams, OkUnion>>
+    params?: ViewTrendingStickerSetsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ViewTrendingStickerSetsParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UserPrivacySettingInputUnion } from '../inputs'
-import { UserPrivacySettingRulesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UserPrivacySettingInputUnion } from '../inputs';
+import { UserPrivacySettingRulesUnion } from '../outputs';
 
 export interface GetUserPrivacySettingRulesParams {
-  setting?: UserPrivacySettingInputUnion // The privacy setting
+    setting?: UserPrivacySettingInputUnion; // The privacy setting
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetUserPrivacySettingRulesParams {
  * @returns {Promise<ApiResponse<GetUserPrivacySettingRulesParams, UserPrivacySettingRulesUnion>>}
  */
 export type getUserPrivacySettingRules = (
-  params?: GetUserPrivacySettingRulesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetUserPrivacySettingRulesParams, UserPrivacySettingRulesUnion>>
+    params?: GetUserPrivacySettingRulesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetUserPrivacySettingRulesParams, UserPrivacySettingRulesUnion>>;

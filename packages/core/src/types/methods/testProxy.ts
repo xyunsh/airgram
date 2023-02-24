@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ProxyTypeInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ProxyTypeInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface TestProxyParams {
-  server?: string // Proxy server IP address
-  port?: number // Proxy server port
-  type?: ProxyTypeInputUnion // Proxy type
-  dcId?: number // Identifier of a datacenter, with which to test connection
-  timeout?: number // The maximum overall timeout for the request
+    server?: string; // Proxy server IP address
+    port?: number; // Proxy server port
+    type?: ProxyTypeInputUnion; // Proxy type
+    dcId?: number; // Identifier of a datacenter, with which to test connection
+    timeout?: number; // The maximum overall timeout for the request
 }
 
 /**
@@ -24,6 +24,6 @@ export interface TestProxyParams {
  * @returns {Promise<ApiResponse<TestProxyParams, OkUnion>>}
  */
 export type testProxy = (
-  params?: TestProxyParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TestProxyParams, OkUnion>>
+    params?: TestProxyParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TestProxyParams, OkUnion>>;

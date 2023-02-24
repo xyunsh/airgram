@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface TranslateTextParams {
-  text?: string // Text to translate
-  fromLanguageCode?: string // A two-letter ISO 639-1 language code of the language from which the message is translated. If empty, the language will be detected automatically
-  toLanguageCode?: string // A two-letter ISO 639-1 language code of the language to which the message is translated
+    text?: string; // Text to translate
+    fromLanguageCode?: string; // A two-letter ISO 639-1 language code of the language from which the message is translated. If empty, the language will be detected automatically
+    toLanguageCode?: string; // A two-letter ISO 639-1 language code of the language to which the message is translated
 }
 
 /**
@@ -21,6 +21,6 @@ export interface TranslateTextParams {
  * @returns {Promise<ApiResponse<TranslateTextParams, TextUnion>>}
  */
 export type translateText = (
-  params?: TranslateTextParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TranslateTextParams, TextUnion>>
+    params?: TranslateTextParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TranslateTextParams, TextUnion>>;

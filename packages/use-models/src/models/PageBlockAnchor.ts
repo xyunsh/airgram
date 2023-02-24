@@ -3,8 +3,8 @@
  * specified anchor
  */
 export class PageBlockAnchorBaseModel {
-  public _: 'pageBlockAnchor'
+    public _: 'pageBlockAnchor';
 
-  /** Name of the anchor */
-  public name: string
+    /** Name of the anchor */
+    public name: string;
 }

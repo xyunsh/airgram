@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PhoneNumberInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PhoneNumberInfoUnion } from '../outputs';
 
 export interface GetPhoneNumberInfoParams {
-  phoneNumberPrefix?: string // The phone number prefix
+    phoneNumberPrefix?: string; // The phone number prefix
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetPhoneNumberInfoParams {
  * @returns {Promise<ApiResponse<GetPhoneNumberInfoParams, PhoneNumberInfoUnion>>}
  */
 export type getPhoneNumberInfo = (
-  params?: GetPhoneNumberInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPhoneNumberInfoParams, PhoneNumberInfoUnion>>
+    params?: GetPhoneNumberInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPhoneNumberInfoParams, PhoneNumberInfoUnion>>;

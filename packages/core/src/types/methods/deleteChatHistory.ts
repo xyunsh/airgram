@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteChatHistoryParams {
-  chatId?: number // Chat identifier
-  removeFromChatList?: boolean // Pass true to remove the chat from all chat lists
-  revoke?: boolean // Pass true to delete chat history for all users
+    chatId?: number; // Chat identifier
+    removeFromChatList?: boolean; // Pass true to remove the chat from all chat lists
+    revoke?: boolean; // Pass true to delete chat history for all users
 }
 
 /**
@@ -19,6 +19,6 @@ export interface DeleteChatHistoryParams {
  * @returns {Promise<ApiResponse<DeleteChatHistoryParams, OkUnion>>}
  */
 export type deleteChatHistory = (
-  params?: DeleteChatHistoryParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteChatHistoryParams, OkUnion>>
+    params?: DeleteChatHistoryParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteChatHistoryParams, OkUnion>>;

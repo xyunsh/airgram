@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ChangeStickerSetParams {
-  setId?: string // Identifier of the sticker set
-  isInstalled?: boolean // The new value of is_installed
-  isArchived?: boolean // The new value of is_archived. A sticker set can't be installed and archived simultaneously
+    setId?: string; // Identifier of the sticker set
+    isInstalled?: boolean; // The new value of is_installed
+    isArchived?: boolean; // The new value of is_archived. A sticker set can't be installed and archived simultaneously
 }
 
 /**
@@ -18,6 +18,6 @@ export interface ChangeStickerSetParams {
  * @returns {Promise<ApiResponse<ChangeStickerSetParams, OkUnion>>}
  */
 export type changeStickerSet = (
-  params?: ChangeStickerSetParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ChangeStickerSetParams, OkUnion>>
+    params?: ChangeStickerSetParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ChangeStickerSetParams, OkUnion>>;

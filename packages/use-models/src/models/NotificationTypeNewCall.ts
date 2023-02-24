@@ -1,7 +1,7 @@
 /** New call was received */
 export class NotificationTypeNewCallBaseModel {
-  public _: 'notificationTypeNewCall'
+    public _: 'notificationTypeNewCall';
 
-  /** Call identifier */
-  public callId: number
+    /** Call identifier */
+    public callId: number;
 }

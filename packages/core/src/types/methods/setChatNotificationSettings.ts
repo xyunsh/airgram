@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatNotificationSettingsInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatNotificationSettingsInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetChatNotificationSettingsParams {
-  chatId?: number // Chat identifier
-  notificationSettings?: ChatNotificationSettingsInput // New notification settings for the chat. If the chat is muted for more than 1 week, it is considered to be muted forever
+    chatId?: number; // Chat identifier
+    notificationSettings?: ChatNotificationSettingsInput; // New notification settings for the chat. If the chat is muted for more than 1 week, it is considered to be muted forever
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SetChatNotificationSettingsParams {
  * @returns {Promise<ApiResponse<SetChatNotificationSettingsParams, OkUnion>>}
  */
 export type setChatNotificationSettings = (
-  params?: SetChatNotificationSettingsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatNotificationSettingsParams, OkUnion>>
+    params?: SetChatNotificationSettingsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatNotificationSettingsParams, OkUnion>>;

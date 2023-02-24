@@ -3,5 +3,5 @@
  * when the list of translation files changes
  */
 export class PassportElementErrorSourceTranslationFilesBaseModel {
-  public _: 'passportElementErrorSourceTranslationFiles'
+    public _: 'passportElementErrorSourceTranslationFiles';
 }

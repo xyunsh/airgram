@@ -1,24 +1,24 @@
-import { PageBlockCaption, PageBlockUnion, Photo } from '@airgram/core'
+import { PageBlockCaption, PageBlockUnion, Photo } from '@airgram/core';
 
 /** An embedded post */
 export class PageBlockEmbeddedPostBaseModel {
-  public _: 'pageBlockEmbeddedPost'
+    public _: 'pageBlockEmbeddedPost';
 
-  /** Web page URL */
-  public url: string
+    /** Web page URL */
+    public url: string;
 
-  /** Post author */
-  public author: string
+    /** Post author */
+    public author: string;
 
-  /** Post author photo; may be null */
-  public authorPhoto?: Photo
+    /** Post author photo; may be null */
+    public authorPhoto?: Photo;
 
-  /** Point in time (Unix timestamp) when the post was created; 0 if unknown */
-  public date: number
+    /** Point in time (Unix timestamp) when the post was created; 0 if unknown */
+    public date: number;
 
-  /** Post content */
-  public pageBlocks: PageBlockUnion[]
+    /** Post content */
+    public pageBlocks: PageBlockUnion[];
 
-  /** Post caption */
-  public caption: PageBlockCaption
+    /** Post caption */
+    public caption: PageBlockCaption;
 }

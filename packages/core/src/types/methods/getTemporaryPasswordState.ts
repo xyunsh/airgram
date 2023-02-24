@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TemporaryPasswordStateUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TemporaryPasswordStateUnion } from '../outputs';
 
 /**
  * Returns information about the current temporary password
@@ -9,6 +7,6 @@ import { TemporaryPasswordStateUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, TemporaryPasswordStateUnion>>}
  */
 export type getTemporaryPasswordState = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, TemporaryPasswordStateUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, TemporaryPasswordStateUnion>>;

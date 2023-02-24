@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 /**
  * Resets all notification settings to their default values. By default, all chats are
@@ -10,6 +8,6 @@ import { OkUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, OkUnion>>}
  */
 export type resetAllNotificationSettings = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, OkUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, OkUnion>>;

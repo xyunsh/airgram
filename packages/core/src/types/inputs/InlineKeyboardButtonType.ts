@@ -1,18 +1,19 @@
 /** Describes the type of an inline keyboard button */
-export type InlineKeyboardButtonTypeInputUnion = InlineKeyboardButtonTypeUrlInput
-  | InlineKeyboardButtonTypeLoginUrlInput
-  | InlineKeyboardButtonTypeCallbackInput
-  | InlineKeyboardButtonTypeCallbackWithPasswordInput
-  | InlineKeyboardButtonTypeCallbackGameInput
-  | InlineKeyboardButtonTypeSwitchInlineInput
-  | InlineKeyboardButtonTypeBuyInput
-  | InlineKeyboardButtonTypeUserInput
+export type InlineKeyboardButtonTypeInputUnion =
+    | InlineKeyboardButtonTypeUrlInput
+    | InlineKeyboardButtonTypeLoginUrlInput
+    | InlineKeyboardButtonTypeCallbackInput
+    | InlineKeyboardButtonTypeCallbackWithPasswordInput
+    | InlineKeyboardButtonTypeCallbackGameInput
+    | InlineKeyboardButtonTypeSwitchInlineInput
+    | InlineKeyboardButtonTypeBuyInput
+    | InlineKeyboardButtonTypeUserInput;
 
 /** A button that opens a specified URL */
 export interface InlineKeyboardButtonTypeUrlInput {
-  _: 'inlineKeyboardButtonTypeUrl'
-  /** HTTP or tg:// URL to open */
-  url?: string
+    _: 'inlineKeyboardButtonTypeUrl';
+    /** HTTP or tg:// URL to open */
+    url?: string;
 }
 
 /**
@@ -20,20 +21,20 @@ export interface InlineKeyboardButtonTypeUrlInput {
  * if allowed to do so
  */
 export interface InlineKeyboardButtonTypeLoginUrlInput {
-  _: 'inlineKeyboardButtonTypeLoginUrl'
-  /** An HTTP URL to open */
-  url?: string
-  /** Unique button identifier */
-  id?: number
-  /** If non-empty, new text of the button in forwarded messages */
-  forwardText?: string
+    _: 'inlineKeyboardButtonTypeLoginUrl';
+    /** An HTTP URL to open */
+    url?: string;
+    /** Unique button identifier */
+    id?: number;
+    /** If non-empty, new text of the button in forwarded messages */
+    forwardText?: string;
 }
 
 /** A button that sends a callback query to a bot */
 export interface InlineKeyboardButtonTypeCallbackInput {
-  _: 'inlineKeyboardButtonTypeCallback'
-  /** Data to be sent to the bot via a callback query */
-  data?: string
+    _: 'inlineKeyboardButtonTypeCallback';
+    /** Data to be sent to the bot via a callback query */
+    data?: string;
 }
 
 /**
@@ -41,9 +42,9 @@ export interface InlineKeyboardButtonTypeCallbackInput {
  * to a bot
  */
 export interface InlineKeyboardButtonTypeCallbackWithPasswordInput {
-  _: 'inlineKeyboardButtonTypeCallbackWithPassword'
-  /** Data to be sent to the bot via a callback query */
-  data?: string
+    _: 'inlineKeyboardButtonTypeCallbackWithPassword';
+    /** Data to be sent to the bot via a callback query */
+    data?: string;
 }
 
 /**
@@ -52,16 +53,16 @@ export interface InlineKeyboardButtonTypeCallbackWithPasswordInput {
  * content of the type messageGame
  */
 export interface InlineKeyboardButtonTypeCallbackGameInput {
-  _: 'inlineKeyboardButtonTypeCallbackGame'
+    _: 'inlineKeyboardButtonTypeCallbackGame';
 }
 
 /** A button that forces an inline query to the bot to be inserted in the input field */
 export interface InlineKeyboardButtonTypeSwitchInlineInput {
-  _: 'inlineKeyboardButtonTypeSwitchInline'
-  /** Inline query to be sent to the bot */
-  query?: string
-  /** True, if the inline query must be sent from the current chat */
-  inCurrentChat?: boolean
+    _: 'inlineKeyboardButtonTypeSwitchInline';
+    /** Inline query to be sent to the bot */
+    query?: string;
+    /** True, if the inline query must be sent from the current chat */
+    inCurrentChat?: boolean;
 }
 
 /**
@@ -69,7 +70,7 @@ export interface InlineKeyboardButtonTypeSwitchInlineInput {
  * keyboard and can be attached only to a message with content of the type messageInvoice
  */
 export interface InlineKeyboardButtonTypeBuyInput {
-  _: 'inlineKeyboardButtonTypeBuy'
+    _: 'inlineKeyboardButtonTypeBuy';
 }
 
 /**
@@ -77,7 +78,7 @@ export interface InlineKeyboardButtonTypeBuyInput {
  * entities
  */
 export interface InlineKeyboardButtonTypeUserInput {
-  _: 'inlineKeyboardButtonTypeUser'
-  /** User identifier */
-  userId?: number
+    _: 'inlineKeyboardButtonTypeUser';
+    /** User identifier */
+    userId?: number;
 }

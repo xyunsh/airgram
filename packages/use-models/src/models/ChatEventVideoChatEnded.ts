@@ -1,7 +1,7 @@
 /** A video chat was ended */
 export class ChatEventVideoChatEndedBaseModel {
-  public _: 'chatEventVideoChatEnded'
+    public _: 'chatEventVideoChatEnded';
 
-  /** Identifier of the video chat. The video chat can be received through the method getGroupCall */
-  public groupCallId: number
+    /** Identifier of the video chat. The video chat can be received through the method getGroupCall */
+    public groupCallId: number;
 }

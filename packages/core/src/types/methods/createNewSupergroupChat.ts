@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatLocationInput } from '../inputs'
-import { ChatUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatLocationInput } from '../inputs';
+import { ChatUnion } from '../outputs';
 
 export interface CreateNewSupergroupChatParams {
-  title?: string // Title of the new chat; 1-128 characters
-  isChannel?: boolean // Pass true to create a channel chat
-  description?: string // Chat description; 0-255 characters
-  location?: ChatLocationInput // Chat location if a location-based supergroup is being created; pass null to create an ordinary supergroup chat
-  forImport?: boolean // Pass true to create a supergroup for importing messages using importMessage
+    title?: string; // Title of the new chat; 1-128 characters
+    isChannel?: boolean; // Pass true to create a channel chat
+    description?: string; // Chat description; 0-255 characters
+    location?: ChatLocationInput; // Chat location if a location-based supergroup is being created; pass null to create an ordinary supergroup chat
+    forImport?: boolean; // Pass true to create a supergroup for importing messages using importMessage
 }
 
 /**
@@ -25,6 +25,6 @@ export interface CreateNewSupergroupChatParams {
  * @returns {Promise<ApiResponse<CreateNewSupergroupChatParams, ChatUnion>>}
  */
 export type createNewSupergroupChat = (
-  params?: CreateNewSupergroupChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CreateNewSupergroupChatParams, ChatUnion>>
+    params?: CreateNewSupergroupChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CreateNewSupergroupChatParams, ChatUnion>>;

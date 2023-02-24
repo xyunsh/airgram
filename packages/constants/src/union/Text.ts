@@ -1,3 +1,3 @@
 export enum TEXT {
-  text = 'text'
+    text = 'text',
 }

@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { EmailAddressAuthenticationCodeInfoUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { EmailAddressAuthenticationCodeInfoUnion } from '../outputs';
 
 /**
  * Re-sends the code to verify an email address to be added to a user's Telegram Passport
@@ -9,6 +7,6 @@ import { EmailAddressAuthenticationCodeInfoUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, EmailAddressAuthenticationCodeInfoUnion>>}
  */
 export type resendEmailAddressVerificationCode = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, EmailAddressAuthenticationCodeInfoUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, EmailAddressAuthenticationCodeInfoUnion>>;

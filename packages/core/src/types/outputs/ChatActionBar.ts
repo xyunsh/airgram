@@ -1,21 +1,22 @@
 /** Describes actions which must be possible to do through a chat action bar */
-export type ChatActionBarUnion = ChatActionBarReportSpam
-  | ChatActionBarReportUnrelatedLocation
-  | ChatActionBarInviteMembers
-  | ChatActionBarReportAddBlock
-  | ChatActionBarAddContact
-  | ChatActionBarSharePhoneNumber
-  | ChatActionBarJoinRequest
+export type ChatActionBarUnion =
+    | ChatActionBarReportSpam
+    | ChatActionBarReportUnrelatedLocation
+    | ChatActionBarInviteMembers
+    | ChatActionBarReportAddBlock
+    | ChatActionBarAddContact
+    | ChatActionBarSharePhoneNumber
+    | ChatActionBarJoinRequest;
 
 /** The chat can be reported as spam using the method reportChat with the reason chatReportReasonSpam */
 export interface ChatActionBarReportSpam {
-  _: 'chatActionBarReportSpam'
-  /**
-   * If true, the chat was automatically archived and can be moved back to the main chat
-   * list using addChatToList simultaneously with setting chat notification settings to
-   * default using setChatNotificationSettings
-   */
-  canUnarchive: boolean
+    _: 'chatActionBarReportSpam';
+    /**
+     * If true, the chat was automatically archived and can be moved back to the main chat
+     * list using addChatToList simultaneously with setting chat notification settings to
+     * default using setChatNotificationSettings
+     */
+    canUnarchive: boolean;
 }
 
 /**
@@ -23,12 +24,12 @@ export interface ChatActionBarReportSpam {
  * location using the method reportChat with the reason chatReportReasonUnrelatedLocation
  */
 export interface ChatActionBarReportUnrelatedLocation {
-  _: 'chatActionBarReportUnrelatedLocation'
+    _: 'chatActionBarReportUnrelatedLocation';
 }
 
 /** The chat is a recently created group chat to which new members can be invited */
 export interface ChatActionBarInviteMembers {
-  _: 'chatActionBarInviteMembers'
+    _: 'chatActionBarInviteMembers';
 }
 
 /**
@@ -37,18 +38,18 @@ export interface ChatActionBarInviteMembers {
  * the other user can be added to the contact list using the method addContact
  */
 export interface ChatActionBarReportAddBlock {
-  _: 'chatActionBarReportAddBlock'
-  /**
-   * If true, the chat was automatically archived and can be moved back to the main chat
-   * list using addChatToList simultaneously with setting chat notification settings to
-   * default using setChatNotificationSettings
-   */
-  canUnarchive: boolean
-  /**
-   * If non-negative, the current user was found by the peer through searchChatsNearby
-   * and this is the distance between the users
-   */
-  distance: number
+    _: 'chatActionBarReportAddBlock';
+    /**
+     * If true, the chat was automatically archived and can be moved back to the main chat
+     * list using addChatToList simultaneously with setting chat notification settings to
+     * default using setChatNotificationSettings
+     */
+    canUnarchive: boolean;
+    /**
+     * If non-negative, the current user was found by the peer through searchChatsNearby
+     * and this is the distance between the users
+     */
+    distance: number;
 }
 
 /**
@@ -56,7 +57,7 @@ export interface ChatActionBarReportAddBlock {
  * list using the method addContact
  */
 export interface ChatActionBarAddContact {
-  _: 'chatActionBarAddContact'
+    _: 'chatActionBarAddContact';
 }
 
 /**
@@ -64,7 +65,7 @@ export interface ChatActionBarAddContact {
  * can be shared with the other user using the method sharePhoneNumber
  */
 export interface ChatActionBarSharePhoneNumber {
-  _: 'chatActionBarSharePhoneNumber'
+    _: 'chatActionBarSharePhoneNumber';
 }
 
 /**
@@ -72,11 +73,11 @@ export interface ChatActionBarSharePhoneNumber {
  * join request
  */
 export interface ChatActionBarJoinRequest {
-  _: 'chatActionBarJoinRequest'
-  /** Title of the chat to which the join request was sent */
-  title: string
-  /** True, if the join request was sent to a channel chat */
-  isChannel: boolean
-  /** Point in time (Unix timestamp) when the join request was sent */
-  requestDate: number
+    _: 'chatActionBarJoinRequest';
+    /** Title of the chat to which the join request was sent */
+    title: string;
+    /** True, if the join request was sent to a channel chat */
+    isChannel: boolean;
+    /** Point in time (Unix timestamp) when the join request was sent */
+    requestDate: number;
 }

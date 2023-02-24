@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSenderInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSenderInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetChatMessageSenderParams {
-  chatId?: number // Chat identifier
-  messageSenderId?: MessageSenderInputUnion // New message sender for the chat
+    chatId?: number; // Chat identifier
+    messageSenderId?: MessageSenderInputUnion; // New message sender for the chat
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SetChatMessageSenderParams {
  * @returns {Promise<ApiResponse<SetChatMessageSenderParams, OkUnion>>}
  */
 export type setChatMessageSender = (
-  params?: SetChatMessageSenderParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatMessageSenderParams, OkUnion>>
+    params?: SetChatMessageSenderParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatMessageSenderParams, OkUnion>>;

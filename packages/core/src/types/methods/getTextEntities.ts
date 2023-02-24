@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextEntitiesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextEntitiesUnion } from '../outputs';
 
 export interface GetTextEntitiesParams {
-  text?: string // The text in which to look for entites
+    text?: string; // The text in which to look for entites
 }
 
 /**
@@ -14,8 +14,8 @@ export interface GetTextEntitiesParams {
  * @returns {Promise<ApiResponse<GetTextEntitiesParams, TextEntitiesUnion>>}
  */
 export type getTextEntities = (
-  params?: GetTextEntitiesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetTextEntitiesParams, TextEntitiesUnion>>
+    params?: GetTextEntitiesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetTextEntitiesParams, TextEntitiesUnion>>;
 
-export type getTextEntitiesSync = (params?: GetTextEntitiesParams) => TextEntitiesUnion
+export type getTextEntitiesSync = (params?: GetTextEntitiesParams) => TextEntitiesUnion;

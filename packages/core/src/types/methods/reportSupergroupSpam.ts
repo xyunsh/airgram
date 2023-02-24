@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ReportSupergroupSpamParams {
-  supergroupId?: number // Supergroup identifier
-  messageIds?: number[] // Identifiers of messages to report
+    supergroupId?: number; // Supergroup identifier
+    messageIds?: number[]; // Identifiers of messages to report
 }
 
 /**
@@ -15,6 +15,6 @@ export interface ReportSupergroupSpamParams {
  * @returns {Promise<ApiResponse<ReportSupergroupSpamParams, OkUnion>>}
  */
 export type reportSupergroupSpam = (
-  params?: ReportSupergroupSpamParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ReportSupergroupSpamParams, OkUnion>>
+    params?: ReportSupergroupSpamParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ReportSupergroupSpamParams, OkUnion>>;

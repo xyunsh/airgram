@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LogVerbosityLevelUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LogVerbosityLevelUnion } from '../outputs';
 
 export interface GetLogTagVerbosityLevelParams {
-  tag?: string // Logging tag to change verbosity level
+    tag?: string; // Logging tag to change verbosity level
 }
 
 /**
@@ -14,8 +14,8 @@ export interface GetLogTagVerbosityLevelParams {
  * @returns {Promise<ApiResponse<GetLogTagVerbosityLevelParams, LogVerbosityLevelUnion>>}
  */
 export type getLogTagVerbosityLevel = (
-  params?: GetLogTagVerbosityLevelParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetLogTagVerbosityLevelParams, LogVerbosityLevelUnion>>
+    params?: GetLogTagVerbosityLevelParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetLogTagVerbosityLevelParams, LogVerbosityLevelUnion>>;
 
-export type getLogTagVerbosityLevelSync = (params?: GetLogTagVerbosityLevelParams) => LogVerbosityLevelUnion
+export type getLogTagVerbosityLevelSync = (params?: GetLogTagVerbosityLevelParams) => LogVerbosityLevelUnion;

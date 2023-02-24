@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SearchMessagesFilterInputUnion } from '../inputs'
-import { MessageCalendarUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SearchMessagesFilterInputUnion } from '../inputs';
+import { MessageCalendarUnion } from '../outputs';
 
 export interface GetChatMessageCalendarParams {
-  chatId?: number // Identifier of the chat in which to return information about messages
-  filter?: SearchMessagesFilterInputUnion // Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function
-  fromMessageId?: number // The message identifier from which to return information about messages; use 0 to get results from the last message
+    chatId?: number; // Identifier of the chat in which to return information about messages
+    filter?: SearchMessagesFilterInputUnion; // Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function
+    fromMessageId?: number; // The message identifier from which to return information about messages; use 0 to get results from the last message
 }
 
 /**
@@ -25,6 +25,6 @@ export interface GetChatMessageCalendarParams {
  * @returns {Promise<ApiResponse<GetChatMessageCalendarParams, MessageCalendarUnion>>}
  */
 export type getChatMessageCalendar = (
-  params?: GetChatMessageCalendarParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatMessageCalendarParams, MessageCalendarUnion>>
+    params?: GetChatMessageCalendarParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatMessageCalendarParams, MessageCalendarUnion>>;

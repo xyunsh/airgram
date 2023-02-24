@@ -3,5 +3,5 @@
  * is available. It is not possible to perform any active actions on this type of user
  */
 export class UserTypeDeletedBaseModel {
-  public _: 'userTypeDeleted'
+    public _: 'userTypeDeleted';
 }

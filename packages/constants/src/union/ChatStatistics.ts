@@ -1,4 +1,4 @@
 export enum CHAT_STATISTICS {
-  chatStatisticsSupergroup = 'chatStatisticsSupergroup',
-  chatStatisticsChannel = 'chatStatisticsChannel'
+    chatStatisticsSupergroup = 'chatStatisticsSupergroup',
+    chatStatisticsChannel = 'chatStatisticsChannel',
 }

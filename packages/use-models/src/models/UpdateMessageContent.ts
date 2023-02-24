@@ -1,15 +1,15 @@
-import { MessageContentUnion } from '@airgram/core'
+import { MessageContentUnion } from '@airgram/core';
 
 /** The message content has changed */
 export class UpdateMessageContentBaseModel {
-  public _: 'updateMessageContent'
+    public _: 'updateMessageContent';
 
-  /** Chat identifier */
-  public chatId: number
+    /** Chat identifier */
+    public chatId: number;
 
-  /** Message identifier */
-  public messageId: number
+    /** Message identifier */
+    public messageId: number;
 
-  /** New message content */
-  public newContent: MessageContentUnion
+    /** New message content */
+    public newContent: MessageContentUnion;
 }

@@ -1,9 +1,9 @@
-import { StickerSet } from '@airgram/core'
+import { StickerSet } from '@airgram/core';
 
 /** A sticker set has changed */
 export class UpdateStickerSetBaseModel {
-  public _: 'updateStickerSet'
+    public _: 'updateStickerSet';
 
-  /** The sticker set */
-  public stickerSet: StickerSet
+    /** The sticker set */
+    public stickerSet: StickerSet;
 }

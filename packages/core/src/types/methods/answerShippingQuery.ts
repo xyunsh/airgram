@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ShippingOptionInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ShippingOptionInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface AnswerShippingQueryParams {
-  shippingQueryId?: string // Identifier of the shipping query
-  shippingOptions?: ShippingOptionInput[] // Available shipping options
-  errorMessage?: string // An error message, empty on success
+    shippingQueryId?: string; // Identifier of the shipping query
+    shippingOptions?: ShippingOptionInput[]; // Available shipping options
+    errorMessage?: string; // An error message, empty on success
 }
 
 /**
@@ -18,6 +18,6 @@ export interface AnswerShippingQueryParams {
  * @returns {Promise<ApiResponse<AnswerShippingQueryParams, OkUnion>>}
  */
 export type answerShippingQuery = (
-  params?: AnswerShippingQueryParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AnswerShippingQueryParams, OkUnion>>
+    params?: AnswerShippingQueryParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AnswerShippingQueryParams, OkUnion>>;

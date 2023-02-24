@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PasswordStateUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PasswordStateUnion } from '../outputs';
 
 export interface CheckRecoveryEmailAddressCodeParams {
-  code?: string // Verification code to check
+    code?: string; // Verification code to check
 }
 
 /**
@@ -13,6 +13,6 @@ export interface CheckRecoveryEmailAddressCodeParams {
  * @returns {Promise<ApiResponse<CheckRecoveryEmailAddressCodeParams, PasswordStateUnion>>}
  */
 export type checkRecoveryEmailAddressCode = (
-  params?: CheckRecoveryEmailAddressCodeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckRecoveryEmailAddressCodeParams, PasswordStateUnion>>
+    params?: CheckRecoveryEmailAddressCodeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckRecoveryEmailAddressCodeParams, PasswordStateUnion>>;

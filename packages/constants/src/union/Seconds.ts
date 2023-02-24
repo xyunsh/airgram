@@ -1,3 +1,3 @@
 export enum SECONDS {
-  seconds = 'seconds'
+    seconds = 'seconds',
 }

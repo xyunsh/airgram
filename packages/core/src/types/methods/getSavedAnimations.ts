@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AnimationsUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AnimationsUnion } from '../outputs';
 
 /**
  * Returns saved animations
@@ -9,6 +7,6 @@ import { AnimationsUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, AnimationsUnion>>}
  */
 export type getSavedAnimations = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, AnimationsUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, AnimationsUnion>>;

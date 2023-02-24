@@ -3,8 +3,8 @@
  * pack identifier to process the link
  */
 export class InternalLinkTypeLanguagePackBaseModel {
-  public _: 'internalLinkTypeLanguagePack'
+    public _: 'internalLinkTypeLanguagePack';
 
-  /** Language pack identifier */
-  public languagePackId: string
+    /** Language pack identifier */
+    public languagePackId: string;
 }

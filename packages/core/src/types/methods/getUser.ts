@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UserUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UserUnion } from '../outputs';
 
 export interface GetUserParams {
-  userId?: number // User identifier
+    userId?: number; // User identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetUserParams {
  * @returns {Promise<ApiResponse<GetUserParams, UserUnion>>}
  */
 export type getUser = (
-  params?: GetUserParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetUserParams, UserUnion>>
+    params?: GetUserParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetUserParams, UserUnion>>;

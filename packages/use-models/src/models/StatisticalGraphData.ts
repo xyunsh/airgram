@@ -1,10 +1,10 @@
 /** A graph data */
 export class StatisticalGraphDataBaseModel {
-  public _: 'statisticalGraphData'
+    public _: 'statisticalGraphData';
 
-  /** Graph data in JSON format */
-  public jsonData: string
+    /** Graph data in JSON format */
+    public jsonData: string;
 
-  /** If non-empty, a token which can be used to receive a zoomed in graph */
-  public zoomToken: string
+    /** If non-empty, a token which can be used to receive a zoomed in graph */
+    public zoomToken: string;
 }

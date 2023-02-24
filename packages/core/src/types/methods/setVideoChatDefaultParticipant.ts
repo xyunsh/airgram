@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSenderInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSenderInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetVideoChatDefaultParticipantParams {
-  chatId?: number // Chat identifier
-  defaultParticipantId?: MessageSenderInputUnion // Default group call participant identifier to join the video chats
+    chatId?: number; // Chat identifier
+    defaultParticipantId?: MessageSenderInputUnion; // Default group call participant identifier to join the video chats
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetVideoChatDefaultParticipantParams {
  * @returns {Promise<ApiResponse<SetVideoChatDefaultParticipantParams, OkUnion>>}
  */
 export type setVideoChatDefaultParticipant = (
-  params?: SetVideoChatDefaultParticipantParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetVideoChatDefaultParticipantParams, OkUnion>>
+    params?: SetVideoChatDefaultParticipantParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetVideoChatDefaultParticipantParams, OkUnion>>;

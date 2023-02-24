@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface OpenMessageContentParams {
-  chatId?: number // Chat identifier of the message
-  messageId?: number // Identifier of the message with the opened content
+    chatId?: number; // Chat identifier of the message
+    messageId?: number; // Identifier of the message with the opened content
 }
 
 /**
@@ -19,6 +19,6 @@ export interface OpenMessageContentParams {
  * @returns {Promise<ApiResponse<OpenMessageContentParams, OkUnion>>}
  */
 export type openMessageContent = (
-  params?: OpenMessageContentParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<OpenMessageContentParams, OkUnion>>
+    params?: OpenMessageContentParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<OpenMessageContentParams, OkUnion>>;

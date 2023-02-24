@@ -4,12 +4,12 @@
  * to join a video chat of the chat
  */
 export class ChatMemberStatusBannedBaseModel {
-  public _: 'chatMemberStatusBanned'
+    public _: 'chatMemberStatusBanned';
 
-  /**
-   * Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the
-   * user is banned for more than 366 days or for less than 30 seconds from the current
-   * time, the user is considered to be banned forever. Always 0 in basic groups
-   */
-  public bannedUntilDate: number
+    /**
+     * Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the
+     * user is banned for more than 366 days or for less than 30 seconds from the current
+     * time, the user is considered to be banned forever. Always 0 in basic groups
+     */
+    public bannedUntilDate: number;
 }

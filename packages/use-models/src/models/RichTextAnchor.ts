@@ -1,7 +1,7 @@
 /** An anchor */
 export class RichTextAnchorBaseModel {
-  public _: 'richTextAnchor'
+    public _: 'richTextAnchor';
 
-  /** Anchor name */
-  public name: string
+    /** Anchor name */
+    public name: string;
 }

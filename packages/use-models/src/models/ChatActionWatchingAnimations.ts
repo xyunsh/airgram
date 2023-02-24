@@ -3,8 +3,8 @@
  * emoji
  */
 export class ChatActionWatchingAnimationsBaseModel {
-  public _: 'chatActionWatchingAnimations'
+    public _: 'chatActionWatchingAnimations';
 
-  /** The animated emoji */
-  public emoji: string
+    /** The animated emoji */
+    public emoji: string;
 }

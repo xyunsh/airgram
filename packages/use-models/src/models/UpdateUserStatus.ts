@@ -1,12 +1,12 @@
-import { UserStatusUnion } from '@airgram/core'
+import { UserStatusUnion } from '@airgram/core';
 
 /** The user went online or offline */
 export class UpdateUserStatusBaseModel {
-  public _: 'updateUserStatus'
+    public _: 'updateUserStatus';
 
-  /** User identifier */
-  public userId: number
+    /** User identifier */
+    public userId: number;
 
-  /** New status of the user */
-  public status: UserStatusUnion
+    /** New status of the user */
+    public status: UserStatusUnion;
 }

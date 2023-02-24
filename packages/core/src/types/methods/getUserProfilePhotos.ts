@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatPhotosUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatPhotosUnion } from '../outputs';
 
 export interface GetUserProfilePhotosParams {
-  userId?: number // User identifier
-  offset?: number // The number of photos to skip; must be non-negative
-  limit?: number // The maximum number of photos to be returned; up to 100
+    userId?: number; // User identifier
+    offset?: number; // The number of photos to skip; must be non-negative
+    limit?: number; // The maximum number of photos to be returned; up to 100
 }
 
 /**
@@ -19,6 +19,6 @@ export interface GetUserProfilePhotosParams {
  * @returns {Promise<ApiResponse<GetUserProfilePhotosParams, ChatPhotosUnion>>}
  */
 export type getUserProfilePhotos = (
-  params?: GetUserProfilePhotosParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetUserProfilePhotosParams, ChatPhotosUnion>>
+    params?: GetUserProfilePhotosParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetUserProfilePhotosParams, ChatPhotosUnion>>;

@@ -1,3 +1,3 @@
 export enum GAME {
-  game = 'game'
+    game = 'game',
 }

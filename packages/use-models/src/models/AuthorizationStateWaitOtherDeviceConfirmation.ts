@@ -3,8 +3,8 @@
  * QR code with the provided link
  */
 export class AuthorizationStateWaitOtherDeviceConfirmationBaseModel {
-  public _: 'authorizationStateWaitOtherDeviceConfirmation'
+    public _: 'authorizationStateWaitOtherDeviceConfirmation';
 
-  /** A tg:// URL for the QR code. The link will be updated frequently */
-  public link: string
+    /** A tg:// URL for the QR code. The link will be updated frequently */
+    public link: string;
 }

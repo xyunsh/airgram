@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleSupergroupIsAllHistoryAvailableParams {
-  supergroupId?: number // The identifier of the supergroup
-  isAllHistoryAvailable?: boolean // The new value of is_all_history_available
+    supergroupId?: number; // The identifier of the supergroup
+    isAllHistoryAvailable?: boolean; // The new value of is_all_history_available
 }
 
 /**
@@ -16,6 +16,6 @@ export interface ToggleSupergroupIsAllHistoryAvailableParams {
  * @returns {Promise<ApiResponse<ToggleSupergroupIsAllHistoryAvailableParams, OkUnion>>}
  */
 export type toggleSupergroupIsAllHistoryAvailable = (
-  params?: ToggleSupergroupIsAllHistoryAvailableParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleSupergroupIsAllHistoryAvailableParams, OkUnion>>
+    params?: ToggleSupergroupIsAllHistoryAvailableParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleSupergroupIsAllHistoryAvailableParams, OkUnion>>;

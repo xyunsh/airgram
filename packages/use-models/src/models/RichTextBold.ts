@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A bold rich text */
 export class RichTextBoldBaseModel {
-  public _: 'richTextBold'
+    public _: 'richTextBold';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 }

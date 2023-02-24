@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PaymentReceiptUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PaymentReceiptUnion } from '../outputs';
 
 export interface GetPaymentReceiptParams {
-  chatId?: number // Chat identifier of the PaymentSuccessful message
-  messageId?: number // Message identifier
+    chatId?: number; // Chat identifier of the PaymentSuccessful message
+    messageId?: number; // Message identifier
 }
 
 /**
@@ -15,6 +15,6 @@ export interface GetPaymentReceiptParams {
  * @returns {Promise<ApiResponse<GetPaymentReceiptParams, PaymentReceiptUnion>>}
  */
 export type getPaymentReceipt = (
-  params?: GetPaymentReceiptParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPaymentReceiptParams, PaymentReceiptUnion>>
+    params?: GetPaymentReceiptParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPaymentReceiptParams, PaymentReceiptUnion>>;

@@ -1,3 +1,3 @@
 export enum SAVED_CREDENTIALS {
-  savedCredentials = 'savedCredentials'
+    savedCredentials = 'savedCredentials',
 }

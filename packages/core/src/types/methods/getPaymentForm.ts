@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PaymentFormThemeInput } from '../inputs'
-import { PaymentFormUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PaymentFormThemeInput } from '../inputs';
+import { PaymentFormUnion } from '../outputs';
 
 export interface GetPaymentFormParams {
-  chatId?: number // Chat identifier of the Invoice message
-  messageId?: number // Message identifier
-  theme?: PaymentFormThemeInput // Preferred payment form theme; pass null to use the default theme
+    chatId?: number; // Chat identifier of the Invoice message
+    messageId?: number; // Message identifier
+    theme?: PaymentFormThemeInput; // Preferred payment form theme; pass null to use the default theme
 }
 
 /**
@@ -20,6 +20,6 @@ export interface GetPaymentFormParams {
  * @returns {Promise<ApiResponse<GetPaymentFormParams, PaymentFormUnion>>}
  */
 export type getPaymentForm = (
-  params?: GetPaymentFormParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPaymentFormParams, PaymentFormUnion>>
+    params?: GetPaymentFormParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPaymentFormParams, PaymentFormUnion>>;

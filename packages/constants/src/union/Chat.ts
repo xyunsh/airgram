@@ -1,3 +1,3 @@
 export enum CHAT {
-  chat = 'chat'
+    chat = 'chat',
 }

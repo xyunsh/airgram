@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { NotificationSettingsScopeInputUnion } from '../inputs'
-import { ScopeNotificationSettingsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { NotificationSettingsScopeInputUnion } from '../inputs';
+import { ScopeNotificationSettingsUnion } from '../outputs';
 
 export interface GetScopeNotificationSettingsParams {
-  scope?: NotificationSettingsScopeInputUnion // Types of chats for which to return the notification settings information
+    scope?: NotificationSettingsScopeInputUnion; // Types of chats for which to return the notification settings information
 }
 
 /**
@@ -15,6 +15,6 @@ export interface GetScopeNotificationSettingsParams {
  * @returns {Promise<ApiResponse<GetScopeNotificationSettingsParams, ScopeNotificationSettingsUnion>>}
  */
 export type getScopeNotificationSettings = (
-  params?: GetScopeNotificationSettingsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetScopeNotificationSettingsParams, ScopeNotificationSettingsUnion>>
+    params?: GetScopeNotificationSettingsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetScopeNotificationSettingsParams, ScopeNotificationSettingsUnion>>;

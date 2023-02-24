@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LoginUrlInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LoginUrlInfoUnion } from '../outputs';
 
 export interface GetExternalLinkInfoParams {
-  link?: string // The link
+    link?: string; // The link
 }
 
 /**
@@ -15,6 +15,6 @@ export interface GetExternalLinkInfoParams {
  * @returns {Promise<ApiResponse<GetExternalLinkInfoParams, LoginUrlInfoUnion>>}
  */
 export type getExternalLinkInfo = (
-  params?: GetExternalLinkInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetExternalLinkInfoParams, LoginUrlInfoUnion>>
+    params?: GetExternalLinkInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetExternalLinkInfoParams, LoginUrlInfoUnion>>;

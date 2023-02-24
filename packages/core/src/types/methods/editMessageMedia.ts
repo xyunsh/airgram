@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputMessageContentInputUnion, ReplyMarkupInputUnion } from '../inputs'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputMessageContentInputUnion, ReplyMarkupInputUnion } from '../inputs';
+import { MessageUnion } from '../outputs';
 
 export interface EditMessageMediaParams {
-  chatId?: number // The chat the message belongs to
-  messageId?: number // Identifier of the message
-  replyMarkup?: ReplyMarkupInputUnion // The new message reply markup; pass null if none; for bots only
-  inputMessageContent?: InputMessageContentInputUnion // New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
+    chatId?: number; // The chat the message belongs to
+    messageId?: number; // Identifier of the message
+    replyMarkup?: ReplyMarkupInputUnion; // The new message reply markup; pass null if none; for bots only
+    inputMessageContent?: InputMessageContentInputUnion; // New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
 }
 
 /**
@@ -28,6 +28,6 @@ export interface EditMessageMediaParams {
  * @returns {Promise<ApiResponse<EditMessageMediaParams, MessageUnion>>}
  */
 export type editMessageMedia = (
-  params?: EditMessageMediaParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditMessageMediaParams, MessageUnion>>
+    params?: EditMessageMediaParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditMessageMediaParams, MessageUnion>>;

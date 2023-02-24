@@ -1,15 +1,15 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSendOptionsInput } from '../inputs'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSendOptionsInput } from '../inputs';
+import { MessageUnion } from '../outputs';
 
 export interface SendInlineQueryResultMessageParams {
-  chatId?: number // Target chat
-  messageThreadId?: number // If not 0, a message thread identifier in which the message will be sent
-  replyToMessageId?: number // Identifier of a message to reply to or 0
-  options?: MessageSendOptionsInput // Options to be used to send the message; pass null to use default options
-  queryId?: string // Identifier of the inline query
-  resultId?: string // Identifier of the inline result
-  hideViaBot?: boolean // Pass true to hide the bot, via which the message is sent. Can be used only for bots GetOption("animation_search_bot_username"), GetOption("photo_search_bot_username"), and GetOption("venue_search_bot_username")
+    chatId?: number; // Target chat
+    messageThreadId?: number; // If not 0, a message thread identifier in which the message will be sent
+    replyToMessageId?: number; // Identifier of a message to reply to or 0
+    options?: MessageSendOptionsInput; // Options to be used to send the message; pass null to use default options
+    queryId?: string; // Identifier of the inline query
+    resultId?: string; // Identifier of the inline result
+    hideViaBot?: boolean; // Pass true to hide the bot, via which the message is sent. Can be used only for bots GetOption("animation_search_bot_username"), GetOption("photo_search_bot_username"), and GetOption("venue_search_bot_username")
 }
 
 /**
@@ -32,6 +32,6 @@ export interface SendInlineQueryResultMessageParams {
  * @returns {Promise<ApiResponse<SendInlineQueryResultMessageParams, MessageUnion>>}
  */
 export type sendInlineQueryResultMessage = (
-  params?: SendInlineQueryResultMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendInlineQueryResultMessageParams, MessageUnion>>
+    params?: SendInlineQueryResultMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendInlineQueryResultMessageParams, MessageUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { StickerUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { StickerUnion } from '../outputs';
 
 export interface ClickAnimatedEmojiMessageParams {
-  chatId?: number // Chat identifier of the message
-  messageId?: number // Identifier of the clicked message
+    chatId?: number; // Chat identifier of the message
+    messageId?: number; // Identifier of the clicked message
 }
 
 /**
@@ -17,6 +17,6 @@ export interface ClickAnimatedEmojiMessageParams {
  * @returns {Promise<ApiResponse<ClickAnimatedEmojiMessageParams, StickerUnion>>}
  */
 export type clickAnimatedEmojiMessage = (
-  params?: ClickAnimatedEmojiMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ClickAnimatedEmojiMessageParams, StickerUnion>>
+    params?: ClickAnimatedEmojiMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ClickAnimatedEmojiMessageParams, StickerUnion>>;

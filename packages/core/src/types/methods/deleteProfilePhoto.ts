@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteProfilePhotoParams {
-  profilePhotoId?: string // Identifier of the profile photo to delete
+    profilePhotoId?: string; // Identifier of the profile photo to delete
 }
 
 /**
@@ -13,6 +13,6 @@ export interface DeleteProfilePhotoParams {
  * @returns {Promise<ApiResponse<DeleteProfilePhotoParams, OkUnion>>}
  */
 export type deleteProfilePhoto = (
-  params?: DeleteProfilePhotoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteProfilePhotoParams, OkUnion>>
+    params?: DeleteProfilePhotoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteProfilePhotoParams, OkUnion>>;

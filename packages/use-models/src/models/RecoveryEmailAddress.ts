@@ -1,7 +1,7 @@
 /** Contains information about the current recovery email address */
 export class RecoveryEmailAddressBaseModel {
-  public _: 'recoveryEmailAddress'
+    public _: 'recoveryEmailAddress';
 
-  /** Recovery email address */
-  public recoveryEmailAddress: string
+    /** Recovery email address */
+    public recoveryEmailAddress: string;
 }

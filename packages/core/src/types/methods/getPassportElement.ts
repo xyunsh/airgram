@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PassportElementTypeInputUnion } from '../inputs'
-import { PassportElementUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PassportElementTypeInputUnion } from '../inputs';
+import { PassportElementUnion } from '../outputs';
 
 export interface GetPassportElementParams {
-  type?: PassportElementTypeInputUnion // Telegram Passport element type
-  password?: string // Password of the current user
+    type?: PassportElementTypeInputUnion; // Telegram Passport element type
+    password?: string; // Password of the current user
 }
 
 /**
@@ -17,6 +17,6 @@ export interface GetPassportElementParams {
  * @returns {Promise<ApiResponse<GetPassportElementParams, PassportElementUnion>>}
  */
 export type getPassportElement = (
-  params?: GetPassportElementParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPassportElementParams, PassportElementUnion>>
+    params?: GetPassportElementParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPassportElementParams, PassportElementUnion>>;

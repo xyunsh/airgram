@@ -1,7 +1,7 @@
 /** Contains a list of hashtags */
 export class HashtagsBaseModel {
-  public _: 'hashtags'
+    public _: 'hashtags';
 
-  /** A list of hashtags */
-  public hashtags: string[]
+    /** A list of hashtags */
+    public hashtags: string[];
 }

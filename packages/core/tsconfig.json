@@ -1,12 +1,9 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "noEmit": false,
-    "outDir": "dist",
-    "resolveJsonModule": true
-  },
-  "include": [
-    "./src",
-    "./examples"
-  ]
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "noEmit": false,
+        "outDir": "dist",
+        "resolveJsonModule": true
+    },
+    "include": ["./src", "./examples"]
 }

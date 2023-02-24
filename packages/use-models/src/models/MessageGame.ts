@@ -1,9 +1,9 @@
-import { Game } from '@airgram/core'
+import { Game } from '@airgram/core';
 
 /** A message with a game */
 export class MessageGameBaseModel {
-  public _: 'messageGame'
+    public _: 'messageGame';
 
-  /** The game description */
-  public game: Game
+    /** The game description */
+    public game: Game;
 }

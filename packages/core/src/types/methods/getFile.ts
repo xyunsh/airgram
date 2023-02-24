@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FileUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FileUnion } from '../outputs';
 
 export interface GetFileParams {
-  fileId?: number // Identifier of the file to get
+    fileId?: number; // Identifier of the file to get
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetFileParams {
  * @returns {Promise<ApiResponse<GetFileParams, FileUnion>>}
  */
 export type getFile = (
-  params?: GetFileParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetFileParams, FileUnion>>
+    params?: GetFileParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetFileParams, FileUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ContactInput } from '../inputs'
-import { ImportedContactsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ContactInput } from '../inputs';
+import { ImportedContactsUnion } from '../outputs';
 
 export interface ChangeImportedContactsParams {
-  contacts?: ContactInput[] // The new list of contacts, contact's vCard are ignored and are not imported
+    contacts?: ContactInput[]; // The new list of contacts, contact's vCard are ignored and are not imported
 }
 
 /**
@@ -18,6 +18,6 @@ export interface ChangeImportedContactsParams {
  * @returns {Promise<ApiResponse<ChangeImportedContactsParams, ImportedContactsUnion>>}
  */
 export type changeImportedContacts = (
-  params?: ChangeImportedContactsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ChangeImportedContactsParams, ImportedContactsUnion>>
+    params?: ChangeImportedContactsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ChangeImportedContactsParams, ImportedContactsUnion>>;

@@ -4,5 +4,5 @@
  * for other authentication options
  */
 export class AuthorizationStateWaitPhoneNumberBaseModel {
-  public _: 'authorizationStateWaitPhoneNumber'
+    public _: 'authorizationStateWaitPhoneNumber';
 }

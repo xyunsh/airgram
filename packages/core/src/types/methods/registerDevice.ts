@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { DeviceTokenInputUnion } from '../inputs'
-import { PushReceiverIdUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { DeviceTokenInputUnion } from '../inputs';
+import { PushReceiverIdUnion } from '../outputs';
 
 export interface RegisterDeviceParams {
-  deviceToken?: DeviceTokenInputUnion // Device token
-  otherUserIds?: number[] // List of user identifiers of other users currently using the application
+    deviceToken?: DeviceTokenInputUnion; // Device token
+    otherUserIds?: number[]; // List of user identifiers of other users currently using the application
 }
 
 /**
@@ -18,6 +18,6 @@ export interface RegisterDeviceParams {
  * @returns {Promise<ApiResponse<RegisterDeviceParams, PushReceiverIdUnion>>}
  */
 export type registerDevice = (
-  params?: RegisterDeviceParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RegisterDeviceParams, PushReceiverIdUnion>>
+    params?: RegisterDeviceParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RegisterDeviceParams, PushReceiverIdUnion>>;

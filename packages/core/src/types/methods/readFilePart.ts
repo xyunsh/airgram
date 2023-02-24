@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FilePartUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FilePartUnion } from '../outputs';
 
 export interface ReadFilePartParams {
-  fileId?: number // Identifier of the file. The file must be located in the TDLib file cache
-  offset?: number // The offset from which to read the file
-  count?: number // Number of bytes to read. An error will be returned if there are not enough bytes available in the file from the specified position. Pass 0 to read all available data from the specified position
+    fileId?: number; // Identifier of the file. The file must be located in the TDLib file cache
+    offset?: number; // The offset from which to read the file
+    count?: number; // Number of bytes to read. An error will be returned if there are not enough bytes available in the file from the specified position. Pass 0 to read all available data from the specified position
 }
 
 /**
@@ -22,6 +22,6 @@ export interface ReadFilePartParams {
  * @returns {Promise<ApiResponse<ReadFilePartParams, FilePartUnion>>}
  */
 export type readFilePart = (
-  params?: ReadFilePartParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ReadFilePartParams, FilePartUnion>>
+    params?: ReadFilePartParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ReadFilePartParams, FilePartUnion>>;

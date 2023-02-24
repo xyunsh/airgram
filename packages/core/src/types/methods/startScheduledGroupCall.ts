@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface StartScheduledGroupCallParams {
-  groupCallId?: number // Group call identifier
+    groupCallId?: number; // Group call identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface StartScheduledGroupCallParams {
  * @returns {Promise<ApiResponse<StartScheduledGroupCallParams, OkUnion>>}
  */
 export type startScheduledGroupCall = (
-  params?: StartScheduledGroupCallParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<StartScheduledGroupCallParams, OkUnion>>
+    params?: StartScheduledGroupCallParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<StartScheduledGroupCallParams, OkUnion>>;

@@ -1,3 +1,3 @@
 export enum KEYBOARD_BUTTON {
-  keyboardButton = 'keyboardButton'
+    keyboardButton = 'keyboardButton',
 }

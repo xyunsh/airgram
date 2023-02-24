@@ -1,12 +1,12 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A rich text phone number */
 export class RichTextPhoneNumberBaseModel {
-  public _: 'richTextPhoneNumber'
+    public _: 'richTextPhoneNumber';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 
-  /** Phone number */
-  public phoneNumber: string
+    /** Phone number */
+    public phoneNumber: string;
 }

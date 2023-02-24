@@ -1,3 +1,3 @@
 export enum HASHTAGS {
-  hashtags = 'hashtags'
+    hashtags = 'hashtags',
 }

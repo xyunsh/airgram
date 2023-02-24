@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { EmailAddressAuthenticationCodeInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { EmailAddressAuthenticationCodeInfoUnion } from '../outputs';
 
 export interface SendEmailAddressVerificationCodeParams {
-  emailAddress?: string // Email address
+    emailAddress?: string; // Email address
 }
 
 /**
@@ -13,6 +13,6 @@ export interface SendEmailAddressVerificationCodeParams {
  * @returns {Promise<ApiResponse<SendEmailAddressVerificationCodeParams, EmailAddressAuthenticationCodeInfoUnion>>}
  */
 export type sendEmailAddressVerificationCode = (
-  params?: SendEmailAddressVerificationCodeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendEmailAddressVerificationCodeParams, EmailAddressAuthenticationCodeInfoUnion>>
+    params?: SendEmailAddressVerificationCodeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendEmailAddressVerificationCodeParams, EmailAddressAuthenticationCodeInfoUnion>>;

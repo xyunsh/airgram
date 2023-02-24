@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PassportElementsWithErrorsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PassportElementsWithErrorsUnion } from '../outputs';
 
 export interface GetPassportAuthorizationFormAvailableElementsParams {
-  autorizationFormId?: number // Authorization form identifier
-  password?: string // Password of the current user
+    autorizationFormId?: number; // Authorization form identifier
+    password?: string; // Password of the current user
 }
 
 /**
@@ -18,6 +18,6 @@ export interface GetPassportAuthorizationFormAvailableElementsParams {
  * PassportElementsWithErrorsUnion>>}
  */
 export type getPassportAuthorizationFormAvailableElements = (
-  params?: GetPassportAuthorizationFormAvailableElementsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPassportAuthorizationFormAvailableElementsParams, PassportElementsWithErrorsUnion>>
+    params?: GetPassportAuthorizationFormAvailableElementsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPassportAuthorizationFormAvailableElementsParams, PassportElementsWithErrorsUnion>>;

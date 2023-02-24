@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PassportAuthorizationFormUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PassportAuthorizationFormUnion } from '../outputs';
 
 export interface GetPassportAuthorizationFormParams {
-  botUserId?: number // User identifier of the service's bot
-  scope?: string // Telegram Passport element types requested by the service
-  publicKey?: string // Service's public key
-  nonce?: string // Unique request identifier provided by the service
+    botUserId?: number; // User identifier of the service's bot
+    scope?: string; // Telegram Passport element types requested by the service
+    publicKey?: string; // Service's public key
+    nonce?: string; // Unique request identifier provided by the service
 }
 
 /**
@@ -20,6 +20,6 @@ export interface GetPassportAuthorizationFormParams {
  * @returns {Promise<ApiResponse<GetPassportAuthorizationFormParams, PassportAuthorizationFormUnion>>}
  */
 export type getPassportAuthorizationForm = (
-  params?: GetPassportAuthorizationFormParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPassportAuthorizationFormParams, PassportAuthorizationFormUnion>>
+    params?: GetPassportAuthorizationFormParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPassportAuthorizationFormParams, PassportAuthorizationFormUnion>>;

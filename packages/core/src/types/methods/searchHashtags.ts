@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { HashtagsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { HashtagsUnion } from '../outputs';
 
 export interface SearchHashtagsParams {
-  prefix?: string // Hashtag prefix to search for
-  limit?: number // The maximum number of hashtags to be returned
+    prefix?: string; // Hashtag prefix to search for
+    limit?: number; // The maximum number of hashtags to be returned
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SearchHashtagsParams {
  * @returns {Promise<ApiResponse<SearchHashtagsParams, HashtagsUnion>>}
  */
 export type searchHashtags = (
-  params?: SearchHashtagsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchHashtagsParams, HashtagsUnion>>
+    params?: SearchHashtagsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchHashtagsParams, HashtagsUnion>>;

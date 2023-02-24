@@ -1,9 +1,9 @@
-import { PageBlockUnion } from '@airgram/core'
+import { PageBlockUnion } from '@airgram/core';
 
 /** A page cover */
 export class PageBlockCoverBaseModel {
-  public _: 'pageBlockCover'
+    public _: 'pageBlockCover';
 
-  /** Cover */
-  public cover: PageBlockUnion
+    /** Cover */
+    public cover: PageBlockUnion;
 }

@@ -1,4 +1,4 @@
 /** A strikethrough text */
 export class TextEntityTypeStrikethroughBaseModel {
-  public _: 'textEntityTypeStrikethrough'
+    public _: 'textEntityTypeStrikethrough';
 }

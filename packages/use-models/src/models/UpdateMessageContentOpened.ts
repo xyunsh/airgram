@@ -3,11 +3,11 @@
  * note messages to "viewed" and starts the TTL timer for self-destructing messages
  */
 export class UpdateMessageContentOpenedBaseModel {
-  public _: 'updateMessageContentOpened'
+    public _: 'updateMessageContentOpened';
 
-  /** Chat identifier */
-  public chatId: number
+    /** Chat identifier */
+    public chatId: number;
 
-  /** Message identifier */
-  public messageId: number
+    /** Message identifier */
+    public messageId: number;
 }

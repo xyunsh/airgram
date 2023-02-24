@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** The subtitle of a page */
 export class PageBlockSubtitleBaseModel {
-  public _: 'pageBlockSubtitle'
+    public _: 'pageBlockSubtitle';
 
-  /** Subtitle */
-  public subtitle: RichTextUnion
+    /** Subtitle */
+    public subtitle: RichTextUnion;
 }

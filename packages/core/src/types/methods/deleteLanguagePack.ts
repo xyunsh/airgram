@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteLanguagePackParams {
-  languagePackId?: string // Identifier of the language pack to delete
+    languagePackId?: string; // Identifier of the language pack to delete
 }
 
 /**
@@ -15,6 +15,6 @@ export interface DeleteLanguagePackParams {
  * @returns {Promise<ApiResponse<DeleteLanguagePackParams, OkUnion>>}
  */
 export type deleteLanguagePack = (
-  params?: DeleteLanguagePackParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteLanguagePackParams, OkUnion>>
+    params?: DeleteLanguagePackParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteLanguagePackParams, OkUnion>>;

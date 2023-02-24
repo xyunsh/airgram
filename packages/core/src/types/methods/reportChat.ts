@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatReportReasonInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatReportReasonInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface ReportChatParams {
-  chatId?: number // Chat identifier
-  messageIds?: number[] // Identifiers of reported messages; may be empty to report the whole chat
-  reason?: ChatReportReasonInputUnion // The reason for reporting the chat
-  text?: string // Additional report details; 0-1024 characters
+    chatId?: number; // Chat identifier
+    messageIds?: number[]; // Identifiers of reported messages; may be empty to report the whole chat
+    reason?: ChatReportReasonInputUnion; // The reason for reporting the chat
+    text?: string; // Additional report details; 0-1024 characters
 }
 
 /**
@@ -23,6 +23,6 @@ export interface ReportChatParams {
  * @returns {Promise<ApiResponse<ReportChatParams, OkUnion>>}
  */
 export type reportChat = (
-  params?: ReportChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ReportChatParams, OkUnion>>
+    params?: ReportChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ReportChatParams, OkUnion>>;

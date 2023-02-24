@@ -1,3 +1,3 @@
 export enum MINITHUMBNAIL {
-  minithumbnail = 'minithumbnail'
+    minithumbnail = 'minithumbnail',
 }

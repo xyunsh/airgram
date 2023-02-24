@@ -1,2 +1,2 @@
-export * from './methods'
-export * from './union'
+export * from './methods';
+export * from './union';

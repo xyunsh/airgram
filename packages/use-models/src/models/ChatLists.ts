@@ -1,9 +1,9 @@
-import { ChatListUnion } from '@airgram/core'
+import { ChatListUnion } from '@airgram/core';
 
 /** Contains a list of chat lists */
 export class ChatListsBaseModel {
-  public _: 'chatLists'
+    public _: 'chatLists';
 
-  /** List of chat lists */
-  public chatLists: ChatListUnion[]
+    /** List of chat lists */
+    public chatLists: ChatListUnion[];
 }

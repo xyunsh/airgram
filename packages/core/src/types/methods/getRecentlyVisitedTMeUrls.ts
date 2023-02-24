@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TMeUrlsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TMeUrlsUnion } from '../outputs';
 
 export interface GetRecentlyVisitedTMeUrlsParams {
-  referrer?: string // Google Play referrer to identify the user
+    referrer?: string; // Google Play referrer to identify the user
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetRecentlyVisitedTMeUrlsParams {
  * @returns {Promise<ApiResponse<GetRecentlyVisitedTMeUrlsParams, TMeUrlsUnion>>}
  */
 export type getRecentlyVisitedTMeUrls = (
-  params?: GetRecentlyVisitedTMeUrlsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetRecentlyVisitedTMeUrlsParams, TMeUrlsUnion>>
+    params?: GetRecentlyVisitedTMeUrlsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetRecentlyVisitedTMeUrlsParams, TMeUrlsUnion>>;

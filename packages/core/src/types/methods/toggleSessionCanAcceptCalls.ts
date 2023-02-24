@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleSessionCanAcceptCallsParams {
-  sessionId?: string // Session identifier
-  canAcceptCalls?: boolean // Pass true to allow accepting incoming calls by the session; pass false otherwise
+    sessionId?: string; // Session identifier
+    canAcceptCalls?: boolean; // Pass true to allow accepting incoming calls by the session; pass false otherwise
 }
 
 /**
@@ -16,6 +16,6 @@ export interface ToggleSessionCanAcceptCallsParams {
  * @returns {Promise<ApiResponse<ToggleSessionCanAcceptCallsParams, OkUnion>>}
  */
 export type toggleSessionCanAcceptCalls = (
-  params?: ToggleSessionCanAcceptCallsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleSessionCanAcceptCallsParams, OkUnion>>
+    params?: ToggleSessionCanAcceptCallsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleSessionCanAcceptCallsParams, OkUnion>>;

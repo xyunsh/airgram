@@ -1,3 +1,3 @@
 export enum THUMBNAIL {
-  thumbnail = 'thumbnail'
+    thumbnail = 'thumbnail',
 }

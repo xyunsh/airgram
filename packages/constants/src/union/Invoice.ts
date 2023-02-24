@@ -1,3 +1,3 @@
 export enum INVOICE {
-  invoice = 'invoice'
+    invoice = 'invoice',
 }

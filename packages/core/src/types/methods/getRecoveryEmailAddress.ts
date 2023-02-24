@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { RecoveryEmailAddressUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { RecoveryEmailAddressUnion } from '../outputs';
 
 export interface GetRecoveryEmailAddressParams {
-  password?: string // The password for the current user
+    password?: string; // The password for the current user
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetRecoveryEmailAddressParams {
  * @returns {Promise<ApiResponse<GetRecoveryEmailAddressParams, RecoveryEmailAddressUnion>>}
  */
 export type getRecoveryEmailAddress = (
-  params?: GetRecoveryEmailAddressParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetRecoveryEmailAddressParams, RecoveryEmailAddressUnion>>
+    params?: GetRecoveryEmailAddressParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetRecoveryEmailAddressParams, RecoveryEmailAddressUnion>>;

@@ -3,8 +3,8 @@
  * something
  */
 export class UserPrivacySettingRuleRestrictChatMembersBaseModel {
-  public _: 'userPrivacySettingRuleRestrictChatMembers'
+    public _: 'userPrivacySettingRuleRestrictChatMembers';
 
-  /** The chat identifiers, total number of chats in all rules must not exceed 20 */
-  public chatIds: number[]
+    /** The chat identifiers, total number of chats in all rules must not exceed 20 */
+    public chatIds: number[];
 }

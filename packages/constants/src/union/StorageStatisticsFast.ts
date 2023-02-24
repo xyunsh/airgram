@@ -1,3 +1,3 @@
 export enum STORAGE_STATISTICS_FAST {
-  storageStatisticsFast = 'storageStatisticsFast'
+    storageStatisticsFast = 'storageStatisticsFast',
 }

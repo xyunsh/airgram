@@ -1,3 +1,3 @@
 export enum THEME_SETTINGS {
-  themeSettings = 'themeSettings'
+    themeSettings = 'themeSettings',
 }

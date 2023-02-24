@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ReplyMarkupInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ReplyMarkupInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface EditInlineMessageReplyMarkupParams {
-  inlineMessageId?: string // Inline message identifier
-  replyMarkup?: ReplyMarkupInputUnion // The new message reply markup; pass null if none
+    inlineMessageId?: string; // Inline message identifier
+    replyMarkup?: ReplyMarkupInputUnion; // The new message reply markup; pass null if none
 }
 
 /**
@@ -17,6 +17,6 @@ export interface EditInlineMessageReplyMarkupParams {
  * @returns {Promise<ApiResponse<EditInlineMessageReplyMarkupParams, OkUnion>>}
  */
 export type editInlineMessageReplyMarkup = (
-  params?: EditInlineMessageReplyMarkupParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditInlineMessageReplyMarkupParams, OkUnion>>
+    params?: EditInlineMessageReplyMarkupParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditInlineMessageReplyMarkupParams, OkUnion>>;

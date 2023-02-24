@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface EnableProxyParams {
-  proxyId?: number // Proxy identifier
+    proxyId?: number; // Proxy identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface EnableProxyParams {
  * @returns {Promise<ApiResponse<EnableProxyParams, OkUnion>>}
  */
 export type enableProxy = (
-  params?: EnableProxyParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EnableProxyParams, OkUnion>>
+    params?: EnableProxyParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EnableProxyParams, OkUnion>>;

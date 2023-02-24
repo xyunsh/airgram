@@ -1,24 +1,24 @@
 {
-  "name": "@airgram/constants",
-  "version": "4.1.1",
-  "private": false,
-  "main": "src/index.ts",
-  "types": "src/index.ts",
-  "keywords": [
-    "telegram",
-    "tdlib typings",
-    "tdlib wrapper",
-    "tdlib javascript",
-    "tdlib typescript"
-  ],
-  "scripts": {
-    "build": "gulp build",
-    "check": "tsc --noEmit",
-    "prepublishOnly": "yarn run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "35eec9d2e4fb34a7d0183ecf8a4558c047e8a5bf"
+    "name": "@airgram/constants",
+    "version": "4.1.1",
+    "private": false,
+    "main": "src/index.ts",
+    "types": "src/index.ts",
+    "keywords": [
+        "telegram",
+        "tdlib typings",
+        "tdlib wrapper",
+        "tdlib javascript",
+        "tdlib typescript"
+    ],
+    "scripts": {
+        "build": "gulp build",
+        "check": "tsc --noEmit",
+        "prepublishOnly": "yarn run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "gitHead": "35eec9d2e4fb34a7d0183ecf8a4558c047e8a5bf"
 }

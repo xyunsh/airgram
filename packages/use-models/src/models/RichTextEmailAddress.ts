@@ -1,12 +1,12 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A rich text email link */
 export class RichTextEmailAddressBaseModel {
-  public _: 'richTextEmailAddress'
+    public _: 'richTextEmailAddress';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 
-  /** Email address */
-  public emailAddress: string
+    /** Email address */
+    public emailAddress: string;
 }

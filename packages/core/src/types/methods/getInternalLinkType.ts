@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InternalLinkTypeUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InternalLinkTypeUnion } from '../outputs';
 
 export interface GetInternalLinkTypeParams {
-  link?: string // The link
+    link?: string; // The link
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetInternalLinkTypeParams {
  * @returns {Promise<ApiResponse<GetInternalLinkTypeParams, InternalLinkTypeUnion>>}
  */
 export type getInternalLinkType = (
-  params?: GetInternalLinkTypeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetInternalLinkTypeParams, InternalLinkTypeUnion>>
+    params?: GetInternalLinkTypeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetInternalLinkTypeParams, InternalLinkTypeUnion>>;

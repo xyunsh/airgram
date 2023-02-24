@@ -1,3 +1,3 @@
 export enum LOCATION {
-  location = 'location'
+    location = 'location',
 }

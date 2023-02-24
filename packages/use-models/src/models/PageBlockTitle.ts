@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** The title of a page */
 export class PageBlockTitleBaseModel {
-  public _: 'pageBlockTitle'
+    public _: 'pageBlockTitle';
 
-  /** Title */
-  public title: RichTextUnion
+    /** Title */
+    public title: RichTextUnion;
 }

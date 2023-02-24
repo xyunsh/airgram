@@ -1,10 +1,10 @@
 /** The chat theme was changed */
 export class UpdateChatThemeBaseModel {
-  public _: 'updateChatTheme'
+    public _: 'updateChatTheme';
 
-  /** Chat identifier */
-  public chatId: number
+    /** Chat identifier */
+    public chatId: number;
 
-  /** The new name of the chat theme; may be empty if theme was reset to default */
-  public themeName: string
+    /** The new name of the chat theme; may be empty if theme was reset to default */
+    public themeName: string;
 }

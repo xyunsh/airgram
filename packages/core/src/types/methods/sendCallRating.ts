@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { CallProblemInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { CallProblemInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SendCallRatingParams {
-  callId?: number // Call identifier
-  rating?: number // Call rating; 1-5
-  comment?: string // An optional user comment if the rating is less than 5
-  problems?: CallProblemInputUnion[] // List of the exact types of problems with the call, specified by the user
+    callId?: number; // Call identifier
+    rating?: number; // Call rating; 1-5
+    comment?: string; // An optional user comment if the rating is less than 5
+    problems?: CallProblemInputUnion[]; // List of the exact types of problems with the call, specified by the user
 }
 
 /**
@@ -22,6 +22,6 @@ export interface SendCallRatingParams {
  * @returns {Promise<ApiResponse<SendCallRatingParams, OkUnion>>}
  */
 export type sendCallRating = (
-  params?: SendCallRatingParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendCallRatingParams, OkUnion>>
+    params?: SendCallRatingParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendCallRatingParams, OkUnion>>;

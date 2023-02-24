@@ -1,10 +1,10 @@
-import { TMeUrl } from './index'
+import { TMeUrl } from './index';
 
-export type TMeUrlsUnion = TMeUrls
+export type TMeUrlsUnion = TMeUrls;
 
 /** Contains a list of t.me URLs */
 export interface TMeUrls {
-  _: 'tMeUrls'
-  /** List of URLs */
-  urls: TMeUrl[]
+    _: 'tMeUrls';
+    /** List of URLs */
+    urls: TMeUrl[];
 }

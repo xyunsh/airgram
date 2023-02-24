@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SponsoredMessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SponsoredMessageUnion } from '../outputs';
 
 export interface GetChatSponsoredMessageParams {
-  chatId?: number // Identifier of the chat
+    chatId?: number; // Identifier of the chat
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetChatSponsoredMessageParams {
  * @returns {Promise<ApiResponse<GetChatSponsoredMessageParams, SponsoredMessageUnion>>}
  */
 export type getChatSponsoredMessage = (
-  params?: GetChatSponsoredMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatSponsoredMessageParams, SponsoredMessageUnion>>
+    params?: GetChatSponsoredMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatSponsoredMessageParams, SponsoredMessageUnion>>;

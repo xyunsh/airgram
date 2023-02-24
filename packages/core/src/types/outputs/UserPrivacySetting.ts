@@ -1,21 +1,22 @@
 /** Describes available user privacy settings */
-export type UserPrivacySettingUnion = UserPrivacySettingShowStatus
-  | UserPrivacySettingShowProfilePhoto
-  | UserPrivacySettingShowLinkInForwardedMessages
-  | UserPrivacySettingShowPhoneNumber
-  | UserPrivacySettingAllowChatInvites
-  | UserPrivacySettingAllowCalls
-  | UserPrivacySettingAllowPeerToPeerCalls
-  | UserPrivacySettingAllowFindingByPhoneNumber
+export type UserPrivacySettingUnion =
+    | UserPrivacySettingShowStatus
+    | UserPrivacySettingShowProfilePhoto
+    | UserPrivacySettingShowLinkInForwardedMessages
+    | UserPrivacySettingShowPhoneNumber
+    | UserPrivacySettingAllowChatInvites
+    | UserPrivacySettingAllowCalls
+    | UserPrivacySettingAllowPeerToPeerCalls
+    | UserPrivacySettingAllowFindingByPhoneNumber;
 
 /** A privacy setting for managing whether the user's online status is visible */
 export interface UserPrivacySettingShowStatus {
-  _: 'userPrivacySettingShowStatus'
+    _: 'userPrivacySettingShowStatus';
 }
 
 /** A privacy setting for managing whether the user's profile photo is visible */
 export interface UserPrivacySettingShowProfilePhoto {
-  _: 'userPrivacySettingShowProfilePhoto'
+    _: 'userPrivacySettingShowProfilePhoto';
 }
 
 /**
@@ -23,27 +24,27 @@ export interface UserPrivacySettingShowProfilePhoto {
  * forwarded messages
  */
 export interface UserPrivacySettingShowLinkInForwardedMessages {
-  _: 'userPrivacySettingShowLinkInForwardedMessages'
+    _: 'userPrivacySettingShowLinkInForwardedMessages';
 }
 
 /** A privacy setting for managing whether the user's phone number is visible */
 export interface UserPrivacySettingShowPhoneNumber {
-  _: 'userPrivacySettingShowPhoneNumber'
+    _: 'userPrivacySettingShowPhoneNumber';
 }
 
 /** A privacy setting for managing whether the user can be invited to chats */
 export interface UserPrivacySettingAllowChatInvites {
-  _: 'userPrivacySettingAllowChatInvites'
+    _: 'userPrivacySettingAllowChatInvites';
 }
 
 /** A privacy setting for managing whether the user can be called */
 export interface UserPrivacySettingAllowCalls {
-  _: 'userPrivacySettingAllowCalls'
+    _: 'userPrivacySettingAllowCalls';
 }
 
 /** A privacy setting for managing whether peer-to-peer connections can be used for calls */
 export interface UserPrivacySettingAllowPeerToPeerCalls {
-  _: 'userPrivacySettingAllowPeerToPeerCalls'
+    _: 'userPrivacySettingAllowPeerToPeerCalls';
 }
 
 /**
@@ -52,5 +53,5 @@ export interface UserPrivacySettingAllowPeerToPeerCalls {
  * to "Allow contacts" or "Allow all"
  */
 export interface UserPrivacySettingAllowFindingByPhoneNumber {
-  _: 'userPrivacySettingAllowFindingByPhoneNumber'
+    _: 'userPrivacySettingAllowFindingByPhoneNumber';
 }

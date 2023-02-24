@@ -1,9 +1,9 @@
-import { PersonalDetails } from '@airgram/core'
+import { PersonalDetails } from '@airgram/core';
 
 /** A Telegram Passport element containing the user's personal details */
 export class PassportElementPersonalDetailsBaseModel {
-  public _: 'passportElementPersonalDetails'
+    public _: 'passportElementPersonalDetails';
 
-  /** Personal details of the user */
-  public personalDetails: PersonalDetails
+    /** Personal details of the user */
+    public personalDetails: PersonalDetails;
 }

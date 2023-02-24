@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PassportElementTypeInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PassportElementTypeInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface DeletePassportElementParams {
-  type?: PassportElementTypeInputUnion // Element type
+    type?: PassportElementTypeInputUnion; // Element type
 }
 
 /**
@@ -14,6 +14,6 @@ export interface DeletePassportElementParams {
  * @returns {Promise<ApiResponse<DeletePassportElementParams, OkUnion>>}
  */
 export type deletePassportElement = (
-  params?: DeletePassportElementParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeletePassportElementParams, OkUnion>>
+    params?: DeletePassportElementParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeletePassportElementParams, OkUnion>>;

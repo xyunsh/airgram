@@ -3,11 +3,11 @@
  * bot has changed
  */
 export class UpdateAnimationSearchParametersBaseModel {
-  public _: 'updateAnimationSearchParameters'
+    public _: 'updateAnimationSearchParameters';
 
-  /** Name of the animation search provider */
-  public provider: string
+    /** Name of the animation search provider */
+    public provider: string;
 
-  /** The new list of emojis suggested for searching */
-  public emojis: string[]
+    /** The new list of emojis suggested for searching */
+    public emojis: string[];
 }

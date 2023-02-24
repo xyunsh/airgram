@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageThreadInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageThreadInfoUnion } from '../outputs';
 
 export interface GetMessageThreadParams {
-  chatId?: number // Chat identifier
-  messageId?: number // Identifier of the message
+    chatId?: number; // Chat identifier
+    messageId?: number; // Identifier of the message
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetMessageThreadParams {
  * @returns {Promise<ApiResponse<GetMessageThreadParams, MessageThreadInfoUnion>>}
  */
 export type getMessageThread = (
-  params?: GetMessageThreadParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMessageThreadParams, MessageThreadInfoUnion>>
+    params?: GetMessageThreadParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMessageThreadParams, MessageThreadInfoUnion>>;

@@ -3,8 +3,8 @@
  * be considered resolved when the file changes
  */
 export class PassportElementErrorSourceTranslationFileBaseModel {
-  public _: 'passportElementErrorSourceTranslationFile'
+    public _: 'passportElementErrorSourceTranslationFile';
 
-  /** Index of a file with the error */
-  public fileIndex: number
+    /** Index of a file with the error */
+    public fileIndex: number;
 }

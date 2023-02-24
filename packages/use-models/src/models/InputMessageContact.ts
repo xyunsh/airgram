@@ -1,9 +1,9 @@
-import { Contact } from '@airgram/core'
+import { Contact } from '@airgram/core';
 
 /** A message containing a user contact */
 export class InputMessageContactBaseModel {
-  public _: 'inputMessageContact'
+    public _: 'inputMessageContact';
 
-  /** Contact to send */
-  public contact: Contact
+    /** Contact to send */
+    public contact: Contact;
 }

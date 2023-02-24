@@ -1,3 +1,3 @@
 export enum UNREAD_REACTION {
-  unreadReaction = 'unreadReaction'
+    unreadReaction = 'unreadReaction',
 }

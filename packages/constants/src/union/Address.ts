@@ -1,3 +1,3 @@
 export enum ADDRESS {
-  address = 'address'
+    address = 'address',
 }

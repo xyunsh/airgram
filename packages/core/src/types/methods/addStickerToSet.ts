@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputStickerInput } from '../inputs'
-import { StickerSetUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputStickerInput } from '../inputs';
+import { StickerSetUnion } from '../outputs';
 
 export interface AddStickerToSetParams {
-  userId?: number // Sticker set owner
-  name?: string // Sticker set name
-  sticker?: InputStickerInput // Sticker to add to the set
+    userId?: number; // Sticker set owner
+    name?: string; // Sticker set name
+    sticker?: InputStickerInput; // Sticker to add to the set
 }
 
 /**
@@ -18,6 +18,6 @@ export interface AddStickerToSetParams {
  * @returns {Promise<ApiResponse<AddStickerToSetParams, StickerSetUnion>>}
  */
 export type addStickerToSet = (
-  params?: AddStickerToSetParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddStickerToSetParams, StickerSetUnion>>
+    params?: AddStickerToSetParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddStickerToSetParams, StickerSetUnion>>;

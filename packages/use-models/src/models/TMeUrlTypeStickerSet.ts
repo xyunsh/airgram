@@ -1,7 +1,7 @@
 /** A URL linking to a sticker set */
 export class TMeUrlTypeStickerSetBaseModel {
-  public _: 'tMeUrlTypeStickerSet'
+    public _: 'tMeUrlTypeStickerSet';
 
-  /** Identifier of the sticker set */
-  public stickerSetId: string
+    /** Identifier of the sticker set */
+    public stickerSetId: string;
 }

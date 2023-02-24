@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AddRecentlyFoundChatParams {
-  chatId?: number // Identifier of the chat to add
+    chatId?: number; // Identifier of the chat to add
 }
 
 /**
@@ -15,6 +15,6 @@ export interface AddRecentlyFoundChatParams {
  * @returns {Promise<ApiResponse<AddRecentlyFoundChatParams, OkUnion>>}
  */
 export type addRecentlyFoundChat = (
-  params?: AddRecentlyFoundChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddRecentlyFoundChatParams, OkUnion>>
+    params?: AddRecentlyFoundChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddRecentlyFoundChatParams, OkUnion>>;

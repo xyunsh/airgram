@@ -1,10 +1,10 @@
-import { ChatInviteLinkCount } from './index'
+import { ChatInviteLinkCount } from './index';
 
-export type ChatInviteLinkCountsUnion = ChatInviteLinkCounts
+export type ChatInviteLinkCountsUnion = ChatInviteLinkCounts;
 
 /** Contains a list of chat invite link counts */
 export interface ChatInviteLinkCounts {
-  _: 'chatInviteLinkCounts'
-  /** List of invite link counts */
-  inviteLinkCounts: ChatInviteLinkCount[]
+    _: 'chatInviteLinkCounts';
+    /** List of invite link counts */
+    inviteLinkCounts: ChatInviteLinkCount[];
 }

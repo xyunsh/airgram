@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { EmailAddressAuthenticationCodeInfoUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { EmailAddressAuthenticationCodeInfoUnion } from '../outputs';
 
 /**
  * Requests to send a 2-step verification password recovery code to an email address
@@ -10,6 +8,6 @@ import { EmailAddressAuthenticationCodeInfoUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, EmailAddressAuthenticationCodeInfoUnion>>}
  */
 export type requestPasswordRecovery = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, EmailAddressAuthenticationCodeInfoUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, EmailAddressAuthenticationCodeInfoUnion>>;

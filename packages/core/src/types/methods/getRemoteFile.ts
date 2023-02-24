@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FileTypeInputUnion } from '../inputs'
-import { FileUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FileTypeInputUnion } from '../inputs';
+import { FileUnion } from '../outputs';
 
 export interface GetRemoteFileParams {
-  remoteFileId?: string // Remote identifier of the file to get
-  fileType?: FileTypeInputUnion // File type; pass null if unknown
+    remoteFileId?: string; // Remote identifier of the file to get
+    fileType?: FileTypeInputUnion; // File type; pass null if unknown
 }
 
 /**
@@ -21,6 +21,6 @@ export interface GetRemoteFileParams {
  * @returns {Promise<ApiResponse<GetRemoteFileParams, FileUnion>>}
  */
 export type getRemoteFile = (
-  params?: GetRemoteFileParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetRemoteFileParams, FileUnion>>
+    params?: GetRemoteFileParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetRemoteFileParams, FileUnion>>;

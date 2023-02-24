@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LanguagePackInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LanguagePackInfoUnion } from '../outputs';
 
 export interface GetLanguagePackInfoParams {
-  languagePackId?: string // Language pack identifier
+    languagePackId?: string; // Language pack identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetLanguagePackInfoParams {
  * @returns {Promise<ApiResponse<GetLanguagePackInfoParams, LanguagePackInfoUnion>>}
  */
 export type getLanguagePackInfo = (
-  params?: GetLanguagePackInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetLanguagePackInfoParams, LanguagePackInfoUnion>>
+    params?: GetLanguagePackInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetLanguagePackInfoParams, LanguagePackInfoUnion>>;

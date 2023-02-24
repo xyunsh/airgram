@@ -1,12 +1,9 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "noEmit": false,
-    "outDir": "dist"
-  },
-  "include": [
-    "./src",
-    "./examples"
-  ]
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "noEmit": false,
+        "outDir": "dist"
+    },
+    "include": ["./src", "./examples"]
 }

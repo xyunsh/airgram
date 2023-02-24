@@ -1,4 +1,4 @@
 export enum INPUT_BACKGROUND {
-  inputBackgroundLocal = 'inputBackgroundLocal',
-  inputBackgroundRemote = 'inputBackgroundRemote'
+    inputBackgroundLocal = 'inputBackgroundLocal',
+    inputBackgroundRemote = 'inputBackgroundRemote',
 }

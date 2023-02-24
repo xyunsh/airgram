@@ -1,6 +1,6 @@
 export enum STICKER_TYPE {
-  stickerTypeStatic = 'stickerTypeStatic',
-  stickerTypeAnimated = 'stickerTypeAnimated',
-  stickerTypeVideo = 'stickerTypeVideo',
-  stickerTypeMask = 'stickerTypeMask'
+    stickerTypeStatic = 'stickerTypeStatic',
+    stickerTypeAnimated = 'stickerTypeAnimated',
+    stickerTypeVideo = 'stickerTypeVideo',
+    stickerTypeMask = 'stickerTypeMask',
 }

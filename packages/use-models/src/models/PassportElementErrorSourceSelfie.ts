@@ -3,5 +3,5 @@
  * when the file with the selfie changes
  */
 export class PassportElementErrorSourceSelfieBaseModel {
-  public _: 'passportElementErrorSourceSelfie'
+    public _: 'passportElementErrorSourceSelfie';
 }

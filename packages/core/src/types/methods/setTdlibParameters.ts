@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TdlibParametersInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TdlibParametersInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetTdlibParametersParams {
-  parameters?: TdlibParametersInput // Parameters for TDLib initialization
+    parameters?: TdlibParametersInput; // Parameters for TDLib initialization
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SetTdlibParametersParams {
  * @returns {Promise<ApiResponse<SetTdlibParametersParams, OkUnion>>}
  */
 export type setTdlibParameters = (
-  params?: SetTdlibParametersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetTdlibParametersParams, OkUnion>>
+    params?: SetTdlibParametersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetTdlibParametersParams, OkUnion>>;

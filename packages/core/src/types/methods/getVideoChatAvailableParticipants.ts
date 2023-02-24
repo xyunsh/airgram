@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSendersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSendersUnion } from '../outputs';
 
 export interface GetVideoChatAvailableParticipantsParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetVideoChatAvailableParticipantsParams {
  * @returns {Promise<ApiResponse<GetVideoChatAvailableParticipantsParams, MessageSendersUnion>>}
  */
 export type getVideoChatAvailableParticipants = (
-  params?: GetVideoChatAvailableParticipantsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetVideoChatAvailableParticipantsParams, MessageSendersUnion>>
+    params?: GetVideoChatAvailableParticipantsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetVideoChatAvailableParticipantsParams, MessageSendersUnion>>;

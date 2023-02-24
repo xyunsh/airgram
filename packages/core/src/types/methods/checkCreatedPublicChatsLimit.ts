@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PublicChatTypeInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PublicChatTypeInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface CheckCreatedPublicChatsLimitParams {
-  type?: PublicChatTypeInputUnion // Type of the public chats, for which to check the limit
+    type?: PublicChatTypeInputUnion; // Type of the public chats, for which to check the limit
 }
 
 /**
@@ -16,6 +16,6 @@ export interface CheckCreatedPublicChatsLimitParams {
  * @returns {Promise<ApiResponse<CheckCreatedPublicChatsLimitParams, OkUnion>>}
  */
 export type checkCreatedPublicChatsLimit = (
-  params?: CheckCreatedPublicChatsLimitParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckCreatedPublicChatsLimitParams, OkUnion>>
+    params?: CheckCreatedPublicChatsLimitParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckCreatedPublicChatsLimitParams, OkUnion>>;

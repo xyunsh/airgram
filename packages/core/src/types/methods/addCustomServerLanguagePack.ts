@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AddCustomServerLanguagePackParams {
-  languagePackId?: string // Identifier of a language pack to be added; may be different from a name that is used in an "https://t.me/setlanguage/" link
+    languagePackId?: string; // Identifier of a language pack to be added; may be different from a name that is used in an "https://t.me/setlanguage/" link
 }
 
 /**
@@ -16,6 +16,6 @@ export interface AddCustomServerLanguagePackParams {
  * @returns {Promise<ApiResponse<AddCustomServerLanguagePackParams, OkUnion>>}
  */
 export type addCustomServerLanguagePack = (
-  params?: AddCustomServerLanguagePackParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddCustomServerLanguagePackParams, OkUnion>>
+    params?: AddCustomServerLanguagePackParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddCustomServerLanguagePackParams, OkUnion>>;

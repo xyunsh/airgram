@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SuggestedActionInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SuggestedActionInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface HideSuggestedActionParams {
-  action?: SuggestedActionInputUnion // Suggested action to hide
+    action?: SuggestedActionInputUnion; // Suggested action to hide
 }
 
 /**
@@ -14,6 +14,6 @@ export interface HideSuggestedActionParams {
  * @returns {Promise<ApiResponse<HideSuggestedActionParams, OkUnion>>}
  */
 export type hideSuggestedAction = (
-  params?: HideSuggestedActionParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<HideSuggestedActionParams, OkUnion>>
+    params?: HideSuggestedActionParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<HideSuggestedActionParams, OkUnion>>;

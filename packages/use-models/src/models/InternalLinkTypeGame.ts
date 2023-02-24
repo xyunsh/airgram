@@ -4,11 +4,11 @@
  * and then call sendMessage with inputMessageGame
  */
 export class InternalLinkTypeGameBaseModel {
-  public _: 'internalLinkTypeGame'
+    public _: 'internalLinkTypeGame';
 
-  /** Username of the bot that owns the game */
-  public botUsername: string
+    /** Username of the bot that owns the game */
+    public botUsername: string;
 
-  /** Short name of the game */
-  public gameShortName: string
+    /** Short name of the game */
+    public gameShortName: string;
 }

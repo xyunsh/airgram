@@ -3,11 +3,11 @@
  * is supposed to update the live location
  */
 export class UpdateMessageLiveLocationViewedBaseModel {
-  public _: 'updateMessageLiveLocationViewed'
+    public _: 'updateMessageLiveLocationViewed';
 
-  /** Identifier of the chat with the live location message */
-  public chatId: number
+    /** Identifier of the chat with the live location message */
+    public chatId: number;
 
-  /** Identifier of the message with live location */
-  public messageId: number
+    /** Identifier of the message with live location */
+    public messageId: number;
 }

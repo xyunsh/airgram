@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AddChatMemberParams {
-  chatId?: number // Chat identifier
-  userId?: number // Identifier of the user
-  forwardLimit?: number // The number of earlier messages from the chat to be forwarded to the new member; up to 100. Ignored for supergroups and channels, or if the added user is a bot
+    chatId?: number; // Chat identifier
+    userId?: number; // Identifier of the user
+    forwardLimit?: number; // The number of earlier messages from the chat to be forwarded to the new member; up to 100. Ignored for supergroups and channels, or if the added user is a bot
 }
 
 /**
@@ -19,6 +19,6 @@ export interface AddChatMemberParams {
  * @returns {Promise<ApiResponse<AddChatMemberParams, OkUnion>>}
  */
 export type addChatMember = (
-  params?: AddChatMemberParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddChatMemberParams, OkUnion>>
+    params?: AddChatMemberParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddChatMemberParams, OkUnion>>;

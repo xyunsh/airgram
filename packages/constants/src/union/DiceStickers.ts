@@ -1,4 +1,4 @@
 export enum DICE_STICKERS {
-  diceStickersRegular = 'diceStickersRegular',
-  diceStickersSlotMachine = 'diceStickersSlotMachine'
+    diceStickersRegular = 'diceStickersRegular',
+    diceStickersSlotMachine = 'diceStickersSlotMachine',
 }

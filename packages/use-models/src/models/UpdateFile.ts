@@ -1,9 +1,9 @@
-import { File } from '@airgram/core'
+import { File } from '@airgram/core';
 
 /** Information about a file was updated */
 export class UpdateFileBaseModel {
-  public _: 'updateFile'
+    public _: 'updateFile';
 
-  /** New data about the file */
-  public file: File
+    /** New data about the file */
+    public file: File;
 }

@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="ie=edge" http-equiv="x-ua-compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="ie=edge" http-equiv="x-ua-compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title><%= htmlWebpackPlugin.options.title %></title>
 
-  <title>
-    <%= htmlWebpackPlugin.options.title %>
-  </title>
+        <meta content="<%= htmlWebpackPlugin.options.title %>" name="description" />
+    </head>
 
-  <meta content="<%= htmlWebpackPlugin.options.title %>" name="description">
-
-</head>
-
-<body>
-<h1><%= htmlWebpackPlugin.options.title %></h1>
-<div> Please open browser console.</div>
-</body>
-
+    <body>
+        <h1><%= htmlWebpackPlugin.options.title %></h1>
+        <div>Please open browser console.</div>
+    </body>
 </html>

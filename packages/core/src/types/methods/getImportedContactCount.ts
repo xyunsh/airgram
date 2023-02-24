@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { CountUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { CountUnion } from '../outputs';
 
 /**
  * Returns the total number of imported contacts
@@ -9,6 +7,6 @@ import { CountUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, CountUnion>>}
  */
 export type getImportedContactCount = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, CountUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, CountUnion>>;

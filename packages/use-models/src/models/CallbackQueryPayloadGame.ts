@@ -1,7 +1,7 @@
 /** The payload for a game callback button */
 export class CallbackQueryPayloadGameBaseModel {
-  public _: 'callbackQueryPayloadGame'
+    public _: 'callbackQueryPayloadGame';
 
-  /** A short name of the game that was attached to the callback button */
-  public gameShortName: string
+    /** A short name of the game that was attached to the callback button */
+    public gameShortName: string;
 }

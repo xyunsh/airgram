@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LanguagePackStringInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LanguagePackStringInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetCustomLanguagePackStringParams {
-  languagePackId?: string // Identifier of a previously added custom local language pack in the current localization target
-  newString?: LanguagePackStringInput // New language pack string
+    languagePackId?: string; // Identifier of a previously added custom local language pack in the current localization target
+    newString?: LanguagePackStringInput; // New language pack string
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetCustomLanguagePackStringParams {
  * @returns {Promise<ApiResponse<SetCustomLanguagePackStringParams, OkUnion>>}
  */
 export type setCustomLanguagePackString = (
-  params?: SetCustomLanguagePackStringParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetCustomLanguagePackStringParams, OkUnion>>
+    params?: SetCustomLanguagePackStringParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetCustomLanguagePackStringParams, OkUnion>>;

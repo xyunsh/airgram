@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LoginUrlInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LoginUrlInfoUnion } from '../outputs';
 
 export interface GetLoginUrlInfoParams {
-  chatId?: number // Chat identifier of the message with the button
-  messageId?: number // Message identifier of the message with the button
-  buttonId?: number // Button identifier
+    chatId?: number; // Chat identifier of the message with the button
+    messageId?: number; // Message identifier of the message with the button
+    buttonId?: number; // Button identifier
 }
 
 /**
@@ -19,6 +19,6 @@ export interface GetLoginUrlInfoParams {
  * @returns {Promise<ApiResponse<GetLoginUrlInfoParams, LoginUrlInfoUnion>>}
  */
 export type getLoginUrlInfo = (
-  params?: GetLoginUrlInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetLoginUrlInfoParams, LoginUrlInfoUnion>>
+    params?: GetLoginUrlInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetLoginUrlInfoParams, LoginUrlInfoUnion>>;

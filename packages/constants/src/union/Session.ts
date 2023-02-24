@@ -1,3 +1,3 @@
 export enum SESSION {
-  session = 'session'
+    session = 'session',
 }

@@ -1,15 +1,15 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A rich text URL link */
 export class RichTextUrlBaseModel {
-  public _: 'richTextUrl'
+    public _: 'richTextUrl';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 
-  /** URL */
-  public url: string
+    /** URL */
+    public url: string;
 
-  /** True, if the URL has cached instant view server-side */
-  public isCached: boolean
+    /** True, if the URL has cached instant view server-side */
+    public isCached: boolean;
 }

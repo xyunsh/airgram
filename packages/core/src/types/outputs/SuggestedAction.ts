@@ -1,14 +1,15 @@
 /** Describes an action suggested to the current user */
-export type SuggestedActionUnion = SuggestedActionEnableArchiveAndMuteNewChats
-  | SuggestedActionCheckPassword
-  | SuggestedActionCheckPhoneNumber
-  | SuggestedActionViewChecksHint
-  | SuggestedActionConvertToBroadcastGroup
-  | SuggestedActionSetPassword
+export type SuggestedActionUnion =
+    | SuggestedActionEnableArchiveAndMuteNewChats
+    | SuggestedActionCheckPassword
+    | SuggestedActionCheckPhoneNumber
+    | SuggestedActionViewChecksHint
+    | SuggestedActionConvertToBroadcastGroup
+    | SuggestedActionSetPassword;
 
 /** Suggests the user to enable "archive_and_mute_new_chats_from_unknown_users" option */
 export interface SuggestedActionEnableArchiveAndMuteNewChats {
-  _: 'suggestedActionEnableArchiveAndMuteNewChats'
+    _: 'suggestedActionEnableArchiveAndMuteNewChats';
 }
 
 /**
@@ -16,7 +17,7 @@ export interface SuggestedActionEnableArchiveAndMuteNewChats {
  * password
  */
 export interface SuggestedActionCheckPassword {
-  _: 'suggestedActionCheckPassword'
+    _: 'suggestedActionCheckPassword';
 }
 
 /**
@@ -24,7 +25,7 @@ export interface SuggestedActionCheckPassword {
  * the phone number if it is inaccessible
  */
 export interface SuggestedActionCheckPhoneNumber {
-  _: 'suggestedActionCheckPhoneNumber'
+    _: 'suggestedActionCheckPhoneNumber';
 }
 
 /**
@@ -32,22 +33,22 @@ export interface SuggestedActionCheckPhoneNumber {
  * sent messages
  */
 export interface SuggestedActionViewChecksHint {
-  _: 'suggestedActionViewChecksHint'
+    _: 'suggestedActionViewChecksHint';
 }
 
 /** Suggests the user to convert specified supergroup to a broadcast group */
 export interface SuggestedActionConvertToBroadcastGroup {
-  _: 'suggestedActionConvertToBroadcastGroup'
-  /** Supergroup identifier */
-  supergroupId: number
+    _: 'suggestedActionConvertToBroadcastGroup';
+    /** Supergroup identifier */
+    supergroupId: number;
 }
 
 /** Suggests the user to set a 2-step verification password to be able to log in again */
 export interface SuggestedActionSetPassword {
-  _: 'suggestedActionSetPassword'
-  /**
-   * The number of days to pass between consecutive authorizations if the user declines
-   * to set password
-   */
-  authorizationDelay: number
+    _: 'suggestedActionSetPassword';
+    /**
+     * The number of days to pass between consecutive authorizations if the user declines
+     * to set password
+     */
+    authorizationDelay: number;
 }

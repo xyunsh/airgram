@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RemoveContactsParams {
-  userIds?: number[] // Identifiers of users to be deleted
+    userIds?: number[]; // Identifiers of users to be deleted
 }
 
 /**
@@ -13,6 +13,6 @@ export interface RemoveContactsParams {
  * @returns {Promise<ApiResponse<RemoveContactsParams, OkUnion>>}
  */
 export type removeContacts = (
-  params?: RemoveContactsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveContactsParams, OkUnion>>
+    params?: RemoveContactsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveContactsParams, OkUnion>>;

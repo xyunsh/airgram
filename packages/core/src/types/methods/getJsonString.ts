@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { JsonValueInputUnion } from '../inputs'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { JsonValueInputUnion } from '../inputs';
+import { TextUnion } from '../outputs';
 
 export interface GetJsonStringParams {
-  jsonValue?: JsonValueInputUnion // The JsonValue object
+    jsonValue?: JsonValueInputUnion; // The JsonValue object
 }
 
 /**
@@ -15,8 +15,8 @@ export interface GetJsonStringParams {
  * @returns {Promise<ApiResponse<GetJsonStringParams, TextUnion>>}
  */
 export type getJsonString = (
-  params?: GetJsonStringParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetJsonStringParams, TextUnion>>
+    params?: GetJsonStringParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetJsonStringParams, TextUnion>>;
 
-export type getJsonStringSync = (params?: GetJsonStringParams) => TextUnion
+export type getJsonStringSync = (params?: GetJsonStringParams) => TextUnion;

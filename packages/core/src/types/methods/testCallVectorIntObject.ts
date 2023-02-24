@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TestIntInput } from '../inputs'
-import { TestVectorIntObjectUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TestIntInput } from '../inputs';
+import { TestVectorIntObjectUnion } from '../outputs';
 
 export interface TestCallVectorIntObjectParams {
-  x?: TestIntInput[] // Vector of objects to return
+    x?: TestIntInput[]; // Vector of objects to return
 }
 
 /**
@@ -15,6 +15,6 @@ export interface TestCallVectorIntObjectParams {
  * @returns {Promise<ApiResponse<TestCallVectorIntObjectParams, TestVectorIntObjectUnion>>}
  */
 export type testCallVectorIntObject = (
-  params?: TestCallVectorIntObjectParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TestCallVectorIntObjectParams, TestVectorIntObjectUnion>>
+    params?: TestCallVectorIntObjectParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TestCallVectorIntObjectParams, TestVectorIntObjectUnion>>;

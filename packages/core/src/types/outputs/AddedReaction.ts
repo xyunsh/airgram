@@ -1,12 +1,12 @@
-import { MessageSenderUnion } from './index'
+import { MessageSenderUnion } from './index';
 
-export type AddedReactionUnion = AddedReaction
+export type AddedReactionUnion = AddedReaction;
 
 /** Represents a reaction applied to a message */
 export interface AddedReaction {
-  _: 'addedReaction'
-  /** Text representation of the reaction */
-  reaction: string
-  /** Identifier of the chat member, applied the reaction */
-  senderId: MessageSenderUnion
+    _: 'addedReaction';
+    /** Text representation of the reaction */
+    reaction: string;
+    /** Identifier of the chat member, applied the reaction */
+    senderId: MessageSenderUnion;
 }

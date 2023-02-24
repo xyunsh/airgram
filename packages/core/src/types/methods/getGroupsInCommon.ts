@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatsUnion } from '../outputs';
 
 export interface GetGroupsInCommonParams {
-  userId?: number // User identifier
-  offsetChatId?: number // Chat identifier starting from which to return chats; use 0 for the first request
-  limit?: number // The maximum number of chats to be returned; up to 100
+    userId?: number; // User identifier
+    offsetChatId?: number; // Chat identifier starting from which to return chats; use 0 for the first request
+    limit?: number; // The maximum number of chats to be returned; up to 100
 }
 
 /**
@@ -20,6 +20,6 @@ export interface GetGroupsInCommonParams {
  * @returns {Promise<ApiResponse<GetGroupsInCommonParams, ChatsUnion>>}
  */
 export type getGroupsInCommon = (
-  params?: GetGroupsInCommonParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetGroupsInCommonParams, ChatsUnion>>
+    params?: GetGroupsInCommonParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetGroupsInCommonParams, ChatsUnion>>;

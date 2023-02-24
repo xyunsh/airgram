@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessagesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessagesUnion } from '../outputs';
 
 export interface SearchChatRecentLocationMessagesParams {
-  chatId?: number // Chat identifier
-  limit?: number // The maximum number of messages to be returned
+    chatId?: number; // Chat identifier
+    limit?: number; // The maximum number of messages to be returned
 }
 
 /**
@@ -16,6 +16,6 @@ export interface SearchChatRecentLocationMessagesParams {
  * @returns {Promise<ApiResponse<SearchChatRecentLocationMessagesParams, MessagesUnion>>}
  */
 export type searchChatRecentLocationMessages = (
-  params?: SearchChatRecentLocationMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchChatRecentLocationMessagesParams, MessagesUnion>>
+    params?: SearchChatRecentLocationMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchChatRecentLocationMessagesParams, MessagesUnion>>;

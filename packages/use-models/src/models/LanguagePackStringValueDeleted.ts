@@ -3,5 +3,5 @@
  * language pack
  */
 export class LanguagePackStringValueDeletedBaseModel {
-  public _: 'languagePackStringValueDeleted'
+    public _: 'languagePackStringValueDeleted';
 }

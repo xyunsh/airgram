@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LanguagePackInfoInput, LanguagePackStringInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LanguagePackInfoInput, LanguagePackStringInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetCustomLanguagePackParams {
-  info?: LanguagePackInfoInput // Information about the language pack. Language pack ID must start with 'X', consist only of English letters, digits and hyphens, and must not exceed 64 characters. Can be called before authorization
-  strings?: LanguagePackStringInput[] // Strings of the new language pack
+    info?: LanguagePackInfoInput; // Information about the language pack. Language pack ID must start with 'X', consist only of English letters, digits and hyphens, and must not exceed 64 characters. Can be called before authorization
+    strings?: LanguagePackStringInput[]; // Strings of the new language pack
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SetCustomLanguagePackParams {
  * @returns {Promise<ApiResponse<SetCustomLanguagePackParams, OkUnion>>}
  */
 export type setCustomLanguagePack = (
-  params?: SetCustomLanguagePackParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetCustomLanguagePackParams, OkUnion>>
+    params?: SetCustomLanguagePackParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetCustomLanguagePackParams, OkUnion>>;

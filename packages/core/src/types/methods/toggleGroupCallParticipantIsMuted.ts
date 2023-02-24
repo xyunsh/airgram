@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSenderInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSenderInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface ToggleGroupCallParticipantIsMutedParams {
-  groupCallId?: number // Group call identifier
-  participantId?: MessageSenderInputUnion // Participant identifier
-  isMuted?: boolean // Pass true to mute the user; pass false to unmute the them
+    groupCallId?: number; // Group call identifier
+    participantId?: MessageSenderInputUnion; // Participant identifier
+    isMuted?: boolean; // Pass true to mute the user; pass false to unmute the them
 }
 
 /**
@@ -20,6 +20,6 @@ export interface ToggleGroupCallParticipantIsMutedParams {
  * @returns {Promise<ApiResponse<ToggleGroupCallParticipantIsMutedParams, OkUnion>>}
  */
 export type toggleGroupCallParticipantIsMuted = (
-  params?: ToggleGroupCallParticipantIsMutedParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleGroupCallParticipantIsMutedParams, OkUnion>>
+    params?: ToggleGroupCallParticipantIsMutedParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleGroupCallParticipantIsMutedParams, OkUnion>>;

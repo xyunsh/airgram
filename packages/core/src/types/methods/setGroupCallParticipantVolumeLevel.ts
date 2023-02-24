@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSenderInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSenderInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetGroupCallParticipantVolumeLevelParams {
-  groupCallId?: number // Group call identifier
-  participantId?: MessageSenderInputUnion // Participant identifier
-  volumeLevel?: number // New participant's volume level; 1-20000 in hundreds of percents
+    groupCallId?: number; // Group call identifier
+    participantId?: MessageSenderInputUnion; // Participant identifier
+    volumeLevel?: number; // New participant's volume level; 1-20000 in hundreds of percents
 }
 
 /**
@@ -21,6 +21,6 @@ export interface SetGroupCallParticipantVolumeLevelParams {
  * @returns {Promise<ApiResponse<SetGroupCallParticipantVolumeLevelParams, OkUnion>>}
  */
 export type setGroupCallParticipantVolumeLevel = (
-  params?: SetGroupCallParticipantVolumeLevelParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetGroupCallParticipantVolumeLevelParams, OkUnion>>
+    params?: SetGroupCallParticipantVolumeLevelParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetGroupCallParticipantVolumeLevelParams, OkUnion>>;

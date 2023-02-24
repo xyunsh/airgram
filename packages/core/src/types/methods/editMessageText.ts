@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputMessageContentInputUnion, ReplyMarkupInputUnion } from '../inputs'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputMessageContentInputUnion, ReplyMarkupInputUnion } from '../inputs';
+import { MessageUnion } from '../outputs';
 
 export interface EditMessageTextParams {
-  chatId?: number // The chat the message belongs to
-  messageId?: number // Identifier of the message
-  replyMarkup?: ReplyMarkupInputUnion // The new message reply markup; pass null if none; for bots only
-  inputMessageContent?: InputMessageContentInputUnion // New text content of the message. Must be of type inputMessageText
+    chatId?: number; // The chat the message belongs to
+    messageId?: number; // Identifier of the message
+    replyMarkup?: ReplyMarkupInputUnion; // The new message reply markup; pass null if none; for bots only
+    inputMessageContent?: InputMessageContentInputUnion; // New text content of the message. Must be of type inputMessageText
 }
 
 /**
@@ -23,6 +23,6 @@ export interface EditMessageTextParams {
  * @returns {Promise<ApiResponse<EditMessageTextParams, MessageUnion>>}
  */
 export type editMessageText = (
-  params?: EditMessageTextParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditMessageTextParams, MessageUnion>>
+    params?: EditMessageTextParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditMessageTextParams, MessageUnion>>;

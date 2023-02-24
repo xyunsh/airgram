@@ -1,3 +1,3 @@
 export enum POINT {
-  point = 'point'
+    point = 'point',
 }

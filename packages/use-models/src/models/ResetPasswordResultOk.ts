@@ -1,4 +1,4 @@
 /** The password was reset */
 export class ResetPasswordResultOkBaseModel {
-  public _: 'resetPasswordResultOk'
+    public _: 'resetPasswordResultOk';
 }

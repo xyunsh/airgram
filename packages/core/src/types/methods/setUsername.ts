@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetUsernameParams {
-  username?: string // The new value of the username. Use an empty string to remove the username
+    username?: string; // The new value of the username. Use an empty string to remove the username
 }
 
 /**
@@ -14,6 +14,6 @@ export interface SetUsernameParams {
  * @returns {Promise<ApiResponse<SetUsernameParams, OkUnion>>}
  */
 export type setUsername = (
-  params?: SetUsernameParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetUsernameParams, OkUnion>>
+    params?: SetUsernameParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetUsernameParams, OkUnion>>;

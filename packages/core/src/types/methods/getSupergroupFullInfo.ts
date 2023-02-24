@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SupergroupFullInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SupergroupFullInfoUnion } from '../outputs';
 
 export interface GetSupergroupFullInfoParams {
-  supergroupId?: number // Supergroup or channel identifier
+    supergroupId?: number; // Supergroup or channel identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetSupergroupFullInfoParams {
  * @returns {Promise<ApiResponse<GetSupergroupFullInfoParams, SupergroupFullInfoUnion>>}
  */
 export type getSupergroupFullInfo = (
-  params?: GetSupergroupFullInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetSupergroupFullInfoParams, SupergroupFullInfoUnion>>
+    params?: GetSupergroupFullInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetSupergroupFullInfoParams, SupergroupFullInfoUnion>>;

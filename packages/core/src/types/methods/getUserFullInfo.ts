@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UserFullInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UserFullInfoUnion } from '../outputs';
 
 export interface GetUserFullInfoParams {
-  userId?: number // User identifier
+    userId?: number; // User identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetUserFullInfoParams {
  * @returns {Promise<ApiResponse<GetUserFullInfoParams, UserFullInfoUnion>>}
  */
 export type getUserFullInfo = (
-  params?: GetUserFullInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetUserFullInfoParams, UserFullInfoUnion>>
+    params?: GetUserFullInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetUserFullInfoParams, UserFullInfoUnion>>;

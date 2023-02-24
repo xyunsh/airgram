@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface CancelDownloadFileParams {
-  fileId?: number // Identifier of a file to stop downloading
-  onlyIfPending?: boolean // Pass true to stop downloading only if it hasn't been started, i.e. request hasn't been sent to server
+    fileId?: number; // Identifier of a file to stop downloading
+    onlyIfPending?: boolean; // Pass true to stop downloading only if it hasn't been started, i.e. request hasn't been sent to server
 }
 
 /**
@@ -16,6 +16,6 @@ export interface CancelDownloadFileParams {
  * @returns {Promise<ApiResponse<CancelDownloadFileParams, OkUnion>>}
  */
 export type cancelDownloadFile = (
-  params?: CancelDownloadFileParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CancelDownloadFileParams, OkUnion>>
+    params?: CancelDownloadFileParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CancelDownloadFileParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { GameHighScoresUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { GameHighScoresUnion } from '../outputs';
 
 export interface GetInlineGameHighScoresParams {
-  inlineMessageId?: string // Inline message identifier
-  userId?: number // User identifier
+    inlineMessageId?: string; // Inline message identifier
+    userId?: number; // User identifier
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetInlineGameHighScoresParams {
  * @returns {Promise<ApiResponse<GetInlineGameHighScoresParams, GameHighScoresUnion>>}
  */
 export type getInlineGameHighScores = (
-  params?: GetInlineGameHighScoresParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetInlineGameHighScoresParams, GameHighScoresUnion>>
+    params?: GetInlineGameHighScoresParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetInlineGameHighScoresParams, GameHighScoresUnion>>;

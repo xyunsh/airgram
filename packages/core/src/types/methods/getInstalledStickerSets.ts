@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { StickerSetsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { StickerSetsUnion } from '../outputs';
 
 export interface GetInstalledStickerSetsParams {
-  isMasks?: boolean // Pass true to return mask sticker sets; pass false to return ordinary sticker sets
+    isMasks?: boolean; // Pass true to return mask sticker sets; pass false to return ordinary sticker sets
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetInstalledStickerSetsParams {
  * @returns {Promise<ApiResponse<GetInstalledStickerSetsParams, StickerSetsUnion>>}
  */
 export type getInstalledStickerSets = (
-  params?: GetInstalledStickerSetsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetInstalledStickerSetsParams, StickerSetsUnion>>
+    params?: GetInstalledStickerSetsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetInstalledStickerSetsParams, StickerSetsUnion>>;

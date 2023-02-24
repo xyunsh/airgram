@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatMembersFilterInputUnion } from '../inputs'
-import { ChatMembersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatMembersFilterInputUnion } from '../inputs';
+import { ChatMembersUnion } from '../outputs';
 
 export interface SearchChatMembersParams {
-  chatId?: number // Chat identifier
-  query?: string // Query to search for
-  limit?: number // The maximum number of users to be returned; up to 200
-  filter?: ChatMembersFilterInputUnion // The type of users to search for; pass null to search among all chat members
+    chatId?: number; // Chat identifier
+    query?: string; // Query to search for
+    limit?: number; // The maximum number of users to be returned; up to 200
+    filter?: ChatMembersFilterInputUnion; // The type of users to search for; pass null to search among all chat members
 }
 
 /**
@@ -23,6 +23,6 @@ export interface SearchChatMembersParams {
  * @returns {Promise<ApiResponse<SearchChatMembersParams, ChatMembersUnion>>}
  */
 export type searchChatMembers = (
-  params?: SearchChatMembersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchChatMembersParams, ChatMembersUnion>>
+    params?: SearchChatMembersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchChatMembersParams, ChatMembersUnion>>;

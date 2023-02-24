@@ -3,5 +3,5 @@
  * the phone number if it is inaccessible
  */
 export class SuggestedActionCheckPhoneNumberBaseModel {
-  public _: 'suggestedActionCheckPhoneNumber'
+    public _: 'suggestedActionCheckPhoneNumber';
 }

@@ -1,3 +1,3 @@
 export enum TEST_STRING {
-  testString = 'testString'
+    testString = 'testString',
 }

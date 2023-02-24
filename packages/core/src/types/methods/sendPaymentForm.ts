@@ -1,15 +1,15 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputCredentialsInputUnion } from '../inputs'
-import { PaymentResultUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputCredentialsInputUnion } from '../inputs';
+import { PaymentResultUnion } from '../outputs';
 
 export interface SendPaymentFormParams {
-  chatId?: number // Chat identifier of the Invoice message
-  messageId?: number // Message identifier
-  paymentFormId?: string // Payment form identifier returned by getPaymentForm
-  orderInfoId?: string // Identifier returned by validateOrderInfo, or an empty string
-  shippingOptionId?: string // Identifier of a chosen shipping option, if applicable
-  credentials?: InputCredentialsInputUnion // The credentials chosen by user for payment
-  tipAmount?: number // Chosen by the user amount of tip in the smallest units of the currency
+    chatId?: number; // Chat identifier of the Invoice message
+    messageId?: number; // Message identifier
+    paymentFormId?: string; // Payment form identifier returned by getPaymentForm
+    orderInfoId?: string; // Identifier returned by validateOrderInfo, or an empty string
+    shippingOptionId?: string; // Identifier of a chosen shipping option, if applicable
+    credentials?: InputCredentialsInputUnion; // The credentials chosen by user for payment
+    tipAmount?: number; // Chosen by the user amount of tip in the smallest units of the currency
 }
 
 /**
@@ -30,6 +30,6 @@ export interface SendPaymentFormParams {
  * @returns {Promise<ApiResponse<SendPaymentFormParams, PaymentResultUnion>>}
  */
 export type sendPaymentForm = (
-  params?: SendPaymentFormParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendPaymentFormParams, PaymentResultUnion>>
+    params?: SendPaymentFormParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendPaymentFormParams, PaymentResultUnion>>;

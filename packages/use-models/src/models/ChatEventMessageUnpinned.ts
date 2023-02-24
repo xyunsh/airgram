@@ -1,9 +1,9 @@
-import { Message } from '@airgram/core'
+import { Message } from '@airgram/core';
 
 /** A message was unpinned */
 export class ChatEventMessageUnpinnedBaseModel {
-  public _: 'chatEventMessageUnpinned'
+    public _: 'chatEventMessageUnpinned';
 
-  /** Unpinned message */
-  public message: Message
+    /** Unpinned message */
+    public message: Message;
 }

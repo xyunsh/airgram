@@ -1,7 +1,7 @@
 /** A forwarded messages */
 export class PushMessageContentMessageForwardsBaseModel {
-  public _: 'pushMessageContentMessageForwards'
+    public _: 'pushMessageContentMessageForwards';
 
-  /** Number of forwarded messages */
-  public totalCount: number
+    /** Number of forwarded messages */
+    public totalCount: number;
 }

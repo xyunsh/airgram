@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FormattedTextInput, ReplyMarkupInputUnion } from '../inputs'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FormattedTextInput, ReplyMarkupInputUnion } from '../inputs';
+import { MessageUnion } from '../outputs';
 
 export interface EditMessageCaptionParams {
-  chatId?: number // The chat the message belongs to
-  messageId?: number // Identifier of the message
-  replyMarkup?: ReplyMarkupInputUnion // The new message reply markup; pass null if none; for bots only
-  caption?: FormattedTextInput // New message content caption; 0-GetOption("message_caption_length_max") characters; pass null to remove caption
+    chatId?: number; // The chat the message belongs to
+    messageId?: number; // Identifier of the message
+    replyMarkup?: ReplyMarkupInputUnion; // The new message reply markup; pass null if none; for bots only
+    caption?: FormattedTextInput; // New message content caption; 0-GetOption("message_caption_length_max") characters; pass null to remove caption
 }
 
 /**
@@ -23,6 +23,6 @@ export interface EditMessageCaptionParams {
  * @returns {Promise<ApiResponse<EditMessageCaptionParams, MessageUnion>>}
  */
 export type editMessageCaption = (
-  params?: EditMessageCaptionParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditMessageCaptionParams, MessageUnion>>
+    params?: EditMessageCaptionParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditMessageCaptionParams, MessageUnion>>;

@@ -1,9 +1,9 @@
-import { Poll } from '@airgram/core'
+import { Poll } from '@airgram/core';
 
 /** A message with a poll */
 export class MessagePollBaseModel {
-  public _: 'messagePoll'
+    public _: 'messagePoll';
 
-  /** The poll description */
-  public poll: Poll
+    /** The poll description */
+    public poll: Poll;
 }

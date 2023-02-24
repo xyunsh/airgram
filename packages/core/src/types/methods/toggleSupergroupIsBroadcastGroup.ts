@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleSupergroupIsBroadcastGroupParams {
-  supergroupId?: number // Identifier of the supergroup
+    supergroupId?: number; // Identifier of the supergroup
 }
 
 /**
@@ -13,6 +13,6 @@ export interface ToggleSupergroupIsBroadcastGroupParams {
  * @returns {Promise<ApiResponse<ToggleSupergroupIsBroadcastGroupParams, OkUnion>>}
  */
 export type toggleSupergroupIsBroadcastGroup = (
-  params?: ToggleSupergroupIsBroadcastGroupParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleSupergroupIsBroadcastGroupParams, OkUnion>>
+    params?: ToggleSupergroupIsBroadcastGroupParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleSupergroupIsBroadcastGroupParams, OkUnion>>;

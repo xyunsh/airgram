@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextParseModeInputUnion } from '../inputs'
-import { FormattedTextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextParseModeInputUnion } from '../inputs';
+import { FormattedTextUnion } from '../outputs';
 
 export interface ParseTextEntitiesParams {
-  text?: string // The text to parse
-  parseMode?: TextParseModeInputUnion // Text parse mode
+    text?: string; // The text to parse
+    parseMode?: TextParseModeInputUnion; // Text parse mode
 }
 
 /**
@@ -17,8 +17,8 @@ export interface ParseTextEntitiesParams {
  * @returns {Promise<ApiResponse<ParseTextEntitiesParams, FormattedTextUnion>>}
  */
 export type parseTextEntities = (
-  params?: ParseTextEntitiesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ParseTextEntitiesParams, FormattedTextUnion>>
+    params?: ParseTextEntitiesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ParseTextEntitiesParams, FormattedTextUnion>>;
 
-export type parseTextEntitiesSync = (params?: ParseTextEntitiesParams) => FormattedTextUnion
+export type parseTextEntitiesSync = (params?: ParseTextEntitiesParams) => FormattedTextUnion;

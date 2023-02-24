@@ -1,12 +1,12 @@
-import { TMeUrlTypeUnion } from '@airgram/core'
+import { TMeUrlTypeUnion } from '@airgram/core';
 
 /** Represents a URL linking to an internal Telegram entity */
 export class TMeUrlBaseModel {
-  public _: 'tMeUrl'
+    public _: 'tMeUrl';
 
-  /** URL */
-  public url: string
+    /** URL */
+    public url: string;
 
-  /** Type of the URL */
-  public type: TMeUrlTypeUnion
+    /** Type of the URL */
+    public type: TMeUrlTypeUnion;
 }

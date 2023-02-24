@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FormattedTextInput, ReplyMarkupInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FormattedTextInput, ReplyMarkupInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface EditInlineMessageCaptionParams {
-  inlineMessageId?: string // Inline message identifier
-  replyMarkup?: ReplyMarkupInputUnion // The new message reply markup; pass null if none
-  caption?: FormattedTextInput // New message content caption; pass null to remove caption; 0-GetOption("message_caption_length_max") characters
+    inlineMessageId?: string; // Inline message identifier
+    replyMarkup?: ReplyMarkupInputUnion; // The new message reply markup; pass null if none
+    caption?: FormattedTextInput; // New message content caption; pass null to remove caption; 0-GetOption("message_caption_length_max") characters
 }
 
 /**
@@ -20,6 +20,6 @@ export interface EditInlineMessageCaptionParams {
  * @returns {Promise<ApiResponse<EditInlineMessageCaptionParams, OkUnion>>}
  */
 export type editInlineMessageCaption = (
-  params?: EditInlineMessageCaptionParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditInlineMessageCaptionParams, OkUnion>>
+    params?: EditInlineMessageCaptionParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditInlineMessageCaptionParams, OkUnion>>;

@@ -1,3 +1,3 @@
 export enum COUNTRIES {
-  countries = 'countries'
+    countries = 'countries',
 }

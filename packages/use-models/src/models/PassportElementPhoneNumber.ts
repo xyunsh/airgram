@@ -1,7 +1,7 @@
 /** A Telegram Passport element containing the user's phone number */
 export class PassportElementPhoneNumberBaseModel {
-  public _: 'passportElementPhoneNumber'
+    public _: 'passportElementPhoneNumber';
 
-  /** Phone number */
-  public phoneNumber: string
+    /** Phone number */
+    public phoneNumber: string;
 }

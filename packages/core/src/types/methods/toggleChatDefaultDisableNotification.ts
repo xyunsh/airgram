@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleChatDefaultDisableNotificationParams {
-  chatId?: number // Chat identifier
-  defaultDisableNotification?: boolean // New value of default_disable_notification
+    chatId?: number; // Chat identifier
+    defaultDisableNotification?: boolean; // New value of default_disable_notification
 }
 
 /**
@@ -16,6 +16,6 @@ export interface ToggleChatDefaultDisableNotificationParams {
  * @returns {Promise<ApiResponse<ToggleChatDefaultDisableNotificationParams, OkUnion>>}
  */
 export type toggleChatDefaultDisableNotification = (
-  params?: ToggleChatDefaultDisableNotificationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleChatDefaultDisableNotificationParams, OkUnion>>
+    params?: ToggleChatDefaultDisableNotificationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleChatDefaultDisableNotificationParams, OkUnion>>;

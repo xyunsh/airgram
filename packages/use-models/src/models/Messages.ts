@@ -1,12 +1,12 @@
-import { Message } from '@airgram/core'
+import { Message } from '@airgram/core';
 
 /** Contains a list of messages */
 export class MessagesBaseModel {
-  public _: 'messages'
+    public _: 'messages';
 
-  /** Approximate total number of messages found */
-  public totalCount: number
+    /** Approximate total number of messages found */
+    public totalCount: number;
 
-  /** List of messages; messages may be null */
-  public messages?: Message[]
+    /** List of messages; messages may be null */
+    public messages?: Message[];
 }

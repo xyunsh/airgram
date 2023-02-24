@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FileUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FileUnion } from '../outputs';
 
 export interface AddFileToDownloadsParams {
-  fileId?: number // Identifier of the file to download
-  chatId?: number // Chat identifier of the message with the file
-  messageId?: number // Message identifier
-  priority?: number // Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first
+    fileId?: number; // Identifier of the file to download
+    chatId?: number; // Chat identifier of the message with the file
+    messageId?: number; // Message identifier
+    priority?: number; // Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first
 }
 
 /**
@@ -26,6 +26,6 @@ export interface AddFileToDownloadsParams {
  * @returns {Promise<ApiResponse<AddFileToDownloadsParams, FileUnion>>}
  */
 export type addFileToDownloads = (
-  params?: AddFileToDownloadsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddFileToDownloadsParams, FileUnion>>
+    params?: AddFileToDownloadsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddFileToDownloadsParams, FileUnion>>;

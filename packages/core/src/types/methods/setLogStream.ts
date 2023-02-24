@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LogStreamInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LogStreamInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetLogStreamParams {
-  logStream?: LogStreamInputUnion // New log stream
+    logStream?: LogStreamInputUnion; // New log stream
 }
 
 /**
@@ -14,8 +14,8 @@ export interface SetLogStreamParams {
  * @returns {Promise<ApiResponse<SetLogStreamParams, OkUnion>>}
  */
 export type setLogStream = (
-  params?: SetLogStreamParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetLogStreamParams, OkUnion>>
+    params?: SetLogStreamParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetLogStreamParams, OkUnion>>;
 
-export type setLogStreamSync = (params?: SetLogStreamParams) => OkUnion
+export type setLogStreamSync = (params?: SetLogStreamParams) => OkUnion;

@@ -1,3 +1,3 @@
 export enum CONTACT {
-  contact = 'contact'
+    contact = 'contact',
 }

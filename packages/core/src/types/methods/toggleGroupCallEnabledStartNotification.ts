@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleGroupCallEnabledStartNotificationParams {
-  groupCallId?: number // Group call identifier
-  enabledStartNotification?: boolean // New value of the enabled_start_notification setting
+    groupCallId?: number; // Group call identifier
+    enabledStartNotification?: boolean; // New value of the enabled_start_notification setting
 }
 
 /**
@@ -17,6 +17,6 @@ export interface ToggleGroupCallEnabledStartNotificationParams {
  * @returns {Promise<ApiResponse<ToggleGroupCallEnabledStartNotificationParams, OkUnion>>}
  */
 export type toggleGroupCallEnabledStartNotification = (
-  params?: ToggleGroupCallEnabledStartNotificationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleGroupCallEnabledStartNotificationParams, OkUnion>>
+    params?: ToggleGroupCallEnabledStartNotificationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleGroupCallEnabledStartNotificationParams, OkUnion>>;

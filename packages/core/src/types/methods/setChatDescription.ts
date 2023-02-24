@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetChatDescriptionParams {
-  chatId?: number // Identifier of the chat
-  description?: string // New chat description; 0-255 characters
+    chatId?: number; // Identifier of the chat
+    description?: string; // New chat description; 0-255 characters
 }
 
 /**
@@ -16,6 +16,6 @@ export interface SetChatDescriptionParams {
  * @returns {Promise<ApiResponse<SetChatDescriptionParams, OkUnion>>}
  */
 export type setChatDescription = (
-  params?: SetChatDescriptionParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatDescriptionParams, OkUnion>>
+    params?: SetChatDescriptionParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatDescriptionParams, OkUnion>>;

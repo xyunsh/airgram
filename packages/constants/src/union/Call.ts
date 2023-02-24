@@ -1,3 +1,3 @@
 export enum CALL {
-  call = 'call'
+    call = 'call',
 }

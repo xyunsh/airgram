@@ -1,3 +1,3 @@
 export enum UPDATES {
-  updates = 'updates'
+    updates = 'updates',
 }

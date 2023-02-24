@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface TerminateSessionParams {
-  sessionId?: string // Session identifier
+    sessionId?: string; // Session identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface TerminateSessionParams {
  * @returns {Promise<ApiResponse<TerminateSessionParams, OkUnion>>}
  */
 export type terminateSession = (
-  params?: TerminateSessionParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TerminateSessionParams, OkUnion>>
+    params?: TerminateSessionParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TerminateSessionParams, OkUnion>>;

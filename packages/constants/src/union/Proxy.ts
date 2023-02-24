@@ -1,3 +1,3 @@
 export enum PROXY {
-  proxy = 'proxy'
+    proxy = 'proxy',
 }

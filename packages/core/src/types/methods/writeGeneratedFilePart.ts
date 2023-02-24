@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface WriteGeneratedFilePartParams {
-  generationId?: string // The identifier of the generation process
-  offset?: number // The offset from which to write the data to the file
-  data?: string // The data to write
+    generationId?: string; // The identifier of the generation process
+    offset?: number; // The offset from which to write the data to the file
+    data?: string; // The data to write
 }
 
 /**
@@ -20,6 +20,6 @@ export interface WriteGeneratedFilePartParams {
  * @returns {Promise<ApiResponse<WriteGeneratedFilePartParams, OkUnion>>}
  */
 export type writeGeneratedFilePart = (
-  params?: WriteGeneratedFilePartParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<WriteGeneratedFilePartParams, OkUnion>>
+    params?: WriteGeneratedFilePartParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<WriteGeneratedFilePartParams, OkUnion>>;

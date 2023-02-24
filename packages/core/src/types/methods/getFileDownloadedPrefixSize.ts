@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { CountUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { CountUnion } from '../outputs';
 
 export interface GetFileDownloadedPrefixSizeParams {
-  fileId?: number // Identifier of the file
-  offset?: number // Offset from which downloaded prefix size needs to be calculated
+    fileId?: number; // Identifier of the file
+    offset?: number; // Offset from which downloaded prefix size needs to be calculated
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetFileDownloadedPrefixSizeParams {
  * @returns {Promise<ApiResponse<GetFileDownloadedPrefixSizeParams, CountUnion>>}
  */
 export type getFileDownloadedPrefixSize = (
-  params?: GetFileDownloadedPrefixSizeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetFileDownloadedPrefixSizeParams, CountUnion>>
+    params?: GetFileDownloadedPrefixSizeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetFileDownloadedPrefixSizeParams, CountUnion>>;

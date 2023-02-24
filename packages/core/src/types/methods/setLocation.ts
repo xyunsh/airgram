@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LocationInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LocationInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetLocationParams {
-  location?: LocationInput // The new location of the user
+    location?: LocationInput; // The new location of the user
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SetLocationParams {
  * @returns {Promise<ApiResponse<SetLocationParams, OkUnion>>}
  */
 export type setLocation = (
-  params?: SetLocationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetLocationParams, OkUnion>>
+    params?: SetLocationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetLocationParams, OkUnion>>;

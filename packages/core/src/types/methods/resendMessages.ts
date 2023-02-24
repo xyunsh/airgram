@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessagesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessagesUnion } from '../outputs';
 
 export interface ResendMessagesParams {
-  chatId?: number // Identifier of the chat to send messages
-  messageIds?: number[] // Identifiers of the messages to resend. Message identifiers must be in a strictly increasing order
+    chatId?: number; // Identifier of the chat to send messages
+    messageIds?: number[]; // Identifiers of the messages to resend. Message identifiers must be in a strictly increasing order
 }
 
 /**
@@ -21,6 +21,6 @@ export interface ResendMessagesParams {
  * @returns {Promise<ApiResponse<ResendMessagesParams, MessagesUnion>>}
  */
 export type resendMessages = (
-  params?: ResendMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ResendMessagesParams, MessagesUnion>>
+    params?: ResendMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ResendMessagesParams, MessagesUnion>>;

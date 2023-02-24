@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RemoveNotificationParams {
-  notificationGroupId?: number // Identifier of notification group to which the notification belongs
-  notificationId?: number // Identifier of removed notification
+    notificationGroupId?: number; // Identifier of notification group to which the notification belongs
+    notificationId?: number; // Identifier of removed notification
 }
 
 /**
@@ -17,6 +17,6 @@ export interface RemoveNotificationParams {
  * @returns {Promise<ApiResponse<RemoveNotificationParams, OkUnion>>}
  */
 export type removeNotification = (
-  params?: RemoveNotificationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveNotificationParams, OkUnion>>
+    params?: RemoveNotificationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveNotificationParams, OkUnion>>;

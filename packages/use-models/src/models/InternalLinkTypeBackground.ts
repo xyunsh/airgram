@@ -3,8 +3,8 @@
  * name to process the link
  */
 export class InternalLinkTypeBackgroundBaseModel {
-  public _: 'internalLinkTypeBackground'
+    public _: 'internalLinkTypeBackground';
 
-  /** Name of the background */
-  public backgroundName: string
+    /** Name of the background */
+    public backgroundName: string;
 }

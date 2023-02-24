@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatUnion } from '../outputs';
 
 export interface UpgradeBasicGroupChatToSupergroupChatParams {
-  chatId?: number // Identifier of the chat to upgrade
+    chatId?: number; // Identifier of the chat to upgrade
 }
 
 /**
@@ -15,6 +15,6 @@ export interface UpgradeBasicGroupChatToSupergroupChatParams {
  * @returns {Promise<ApiResponse<UpgradeBasicGroupChatToSupergroupChatParams, ChatUnion>>}
  */
 export type upgradeBasicGroupChatToSupergroupChat = (
-  params?: UpgradeBasicGroupChatToSupergroupChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<UpgradeBasicGroupChatToSupergroupChatParams, ChatUnion>>
+    params?: UpgradeBasicGroupChatToSupergroupChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<UpgradeBasicGroupChatToSupergroupChatParams, ChatUnion>>;

@@ -1,21 +1,21 @@
-import { Location, PageBlockCaption } from '@airgram/core'
+import { Location, PageBlockCaption } from '@airgram/core';
 
 /** A map */
 export class PageBlockMapBaseModel {
-  public _: 'pageBlockMap'
+    public _: 'pageBlockMap';
 
-  /** Location of the map center */
-  public location: Location
+    /** Location of the map center */
+    public location: Location;
 
-  /** Map zoom level */
-  public zoom: number
+    /** Map zoom level */
+    public zoom: number;
 
-  /** Map width */
-  public width: number
+    /** Map width */
+    public width: number;
 
-  /** Map height */
-  public height: number
+    /** Map height */
+    public height: number;
 
-  /** Block caption */
-  public caption: PageBlockCaption
+    /** Block caption */
+    public caption: PageBlockCaption;
 }

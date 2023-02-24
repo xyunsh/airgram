@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { CustomRequestResultUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { CustomRequestResultUnion } from '../outputs';
 
 export interface SendCustomRequestParams {
-  method?: string // The method name
-  parameters?: string // JSON-serialized method parameters
+    method?: string; // The method name
+    parameters?: string; // JSON-serialized method parameters
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SendCustomRequestParams {
  * @returns {Promise<ApiResponse<SendCustomRequestParams, CustomRequestResultUnion>>}
  */
 export type sendCustomRequest = (
-  params?: SendCustomRequestParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendCustomRequestParams, CustomRequestResultUnion>>
+    params?: SendCustomRequestParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendCustomRequestParams, CustomRequestResultUnion>>;

@@ -1,7 +1,7 @@
 /** A Telegram call reflector */
 export class CallServerTypeTelegramReflectorBaseModel {
-  public _: 'callServerTypeTelegramReflector'
+    public _: 'callServerTypeTelegramReflector';
 
-  /** A peer tag to be used with the reflector */
-  public peerTag: string
+    /** A peer tag to be used with the reflector */
+    public peerTag: string;
 }

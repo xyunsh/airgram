@@ -1,15 +1,15 @@
-import { FileTypeUnion } from '@airgram/core'
+import { FileTypeUnion } from '@airgram/core';
 
 /** Contains the storage usage statistics for a specific file type */
 export class StorageStatisticsByFileTypeBaseModel {
-  public _: 'storageStatisticsByFileType'
+    public _: 'storageStatisticsByFileType';
 
-  /** File type */
-  public fileType: FileTypeUnion
+    /** File type */
+    public fileType: FileTypeUnion;
 
-  /** Total size of the files, in bytes */
-  public size: number
+    /** Total size of the files, in bytes */
+    public size: number;
 
-  /** Total number of files */
-  public count: number
+    /** Total number of files */
+    public count: number;
 }

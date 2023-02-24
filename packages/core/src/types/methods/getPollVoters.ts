@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UsersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UsersUnion } from '../outputs';
 
 export interface GetPollVotersParams {
-  chatId?: number // Identifier of the chat to which the poll belongs
-  messageId?: number // Identifier of the message containing the poll
-  optionId?: number // 0-based identifier of the answer option
-  offset?: number // Number of users to skip in the result; must be non-negative
-  limit?: number // The maximum number of users to be returned; must be positive and can't be greater than 50. For optimal performance, the number of returned users is chosen by TDLib and can be smaller than the specified limit, even if the end of the voter list has not been reached
+    chatId?: number; // Identifier of the chat to which the poll belongs
+    messageId?: number; // Identifier of the message containing the poll
+    optionId?: number; // 0-based identifier of the answer option
+    offset?: number; // Number of users to skip in the result; must be non-negative
+    limit?: number; // The maximum number of users to be returned; must be positive and can't be greater than 50. For optimal performance, the number of returned users is chosen by TDLib and can be smaller than the specified limit, even if the end of the voter list has not been reached
 }
 
 /**
@@ -27,6 +27,6 @@ export interface GetPollVotersParams {
  * @returns {Promise<ApiResponse<GetPollVotersParams, UsersUnion>>}
  */
 export type getPollVoters = (
-  params?: GetPollVotersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPollVotersParams, UsersUnion>>
+    params?: GetPollVotersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPollVotersParams, UsersUnion>>;

@@ -1,15 +1,15 @@
-import { Message } from '@airgram/core'
+import { Message } from '@airgram/core';
 
 /** Contains a list of messages found by a search */
 export class FoundMessagesBaseModel {
-  public _: 'foundMessages'
+    public _: 'foundMessages';
 
-  /** Approximate total number of messages found; -1 if unknown */
-  public totalCount: number
+    /** Approximate total number of messages found; -1 if unknown */
+    public totalCount: number;
 
-  /** List of messages */
-  public messages: Message[]
+    /** List of messages */
+    public messages: Message[];
 
-  /** The offset for the next request. If empty, there are no more results */
-  public nextOffset: string
+    /** The offset for the next request. If empty, there are no more results */
+    public nextOffset: string;
 }

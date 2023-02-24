@@ -1,3 +1,3 @@
 export enum IDENTITY_DOCUMENT {
-  identityDocument = 'identityDocument'
+    identityDocument = 'identityDocument',
 }

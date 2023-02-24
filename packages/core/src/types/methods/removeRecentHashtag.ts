@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RemoveRecentHashtagParams {
-  hashtag?: string // Hashtag to delete
+    hashtag?: string; // Hashtag to delete
 }
 
 /**
@@ -13,6 +13,6 @@ export interface RemoveRecentHashtagParams {
  * @returns {Promise<ApiResponse<RemoveRecentHashtagParams, OkUnion>>}
  */
 export type removeRecentHashtag = (
-  params?: RemoveRecentHashtagParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveRecentHashtagParams, OkUnion>>
+    params?: RemoveRecentHashtagParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveRecentHashtagParams, OkUnion>>;

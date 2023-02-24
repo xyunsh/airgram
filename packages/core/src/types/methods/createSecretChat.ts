@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatUnion } from '../outputs';
 
 export interface CreateSecretChatParams {
-  secretChatId?: number // Secret chat identifier
+    secretChatId?: number; // Secret chat identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface CreateSecretChatParams {
  * @returns {Promise<ApiResponse<CreateSecretChatParams, ChatUnion>>}
  */
 export type createSecretChat = (
-  params?: CreateSecretChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CreateSecretChatParams, ChatUnion>>
+    params?: CreateSecretChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CreateSecretChatParams, ChatUnion>>;

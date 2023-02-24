@@ -1,7 +1,7 @@
 /** Represents a string JSON value */
 export class JsonValueStringBaseModel {
-  public _: 'jsonValueString'
+    public _: 'jsonValueString';
 
-  /** The value */
-  public value: string
+    /** The value */
+    public value: string;
 }

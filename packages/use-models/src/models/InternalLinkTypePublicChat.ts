@@ -3,8 +3,8 @@
  * chat username to process the link
  */
 export class InternalLinkTypePublicChatBaseModel {
-  public _: 'internalLinkTypePublicChat'
+    public _: 'internalLinkTypePublicChat';
 
-  /** Username of the chat */
-  public chatUsername: string
+    /** Username of the chat */
+    public chatUsername: string;
 }

@@ -3,5 +3,5 @@
  * sent messages
  */
 export class SuggestedActionViewChecksHintBaseModel {
-  public _: 'suggestedActionViewChecksHint'
+    public _: 'suggestedActionViewChecksHint';
 }

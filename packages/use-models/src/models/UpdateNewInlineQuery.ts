@@ -1,24 +1,24 @@
-import { ChatTypeUnion, Location } from '@airgram/core'
+import { ChatTypeUnion, Location } from '@airgram/core';
 
 /** A new incoming inline query; for bots only */
 export class UpdateNewInlineQueryBaseModel {
-  public _: 'updateNewInlineQuery'
+    public _: 'updateNewInlineQuery';
 
-  /** Unique query identifier */
-  public id: string
+    /** Unique query identifier */
+    public id: string;
 
-  /** Identifier of the user who sent the query */
-  public senderUserId: number
+    /** Identifier of the user who sent the query */
+    public senderUserId: number;
 
-  /** User location; may be null */
-  public userLocation?: Location
+    /** User location; may be null */
+    public userLocation?: Location;
 
-  /** The type of the chat, from which the query originated; may be null if unknown */
-  public chatType?: ChatTypeUnion
+    /** The type of the chat, from which the query originated; may be null if unknown */
+    public chatType?: ChatTypeUnion;
 
-  /** Text of the query */
-  public query: string
+    /** Text of the query */
+    public query: string;
 
-  /** Offset of the first entry to return */
-  public offset: string
+    /** Offset of the first entry to return */
+    public offset: string;
 }

@@ -1,25 +1,22 @@
 /** Part of the face, relative to which a mask is placed */
-export type MaskPointUnion = MaskPointForehead
-  | MaskPointEyes
-  | MaskPointMouth
-  | MaskPointChin
+export type MaskPointUnion = MaskPointForehead | MaskPointEyes | MaskPointMouth | MaskPointChin;
 
 /** The mask is placed relatively to the forehead */
 export interface MaskPointForehead {
-  _: 'maskPointForehead'
+    _: 'maskPointForehead';
 }
 
 /** The mask is placed relatively to the eyes */
 export interface MaskPointEyes {
-  _: 'maskPointEyes'
+    _: 'maskPointEyes';
 }
 
 /** The mask is placed relatively to the mouth */
 export interface MaskPointMouth {
-  _: 'maskPointMouth'
+    _: 'maskPointMouth';
 }
 
 /** The mask is placed relatively to the chin */
 export interface MaskPointChin {
-  _: 'maskPointChin'
+    _: 'maskPointChin';
 }

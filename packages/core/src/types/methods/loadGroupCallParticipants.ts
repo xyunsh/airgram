@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface LoadGroupCallParticipantsParams {
-  groupCallId?: number // Group call identifier. The group call must be previously received through getGroupCall and must be joined or being joined
-  limit?: number // The maximum number of participants to load; up to 100
+    groupCallId?: number; // Group call identifier. The group call must be previously received through getGroupCall and must be joined or being joined
+    limit?: number; // The maximum number of participants to load; up to 100
 }
 
 /**
@@ -19,6 +19,6 @@ export interface LoadGroupCallParticipantsParams {
  * @returns {Promise<ApiResponse<LoadGroupCallParticipantsParams, OkUnion>>}
  */
 export type loadGroupCallParticipants = (
-  params?: LoadGroupCallParticipantsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<LoadGroupCallParticipantsParams, OkUnion>>
+    params?: LoadGroupCallParticipantsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<LoadGroupCallParticipantsParams, OkUnion>>;

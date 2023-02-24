@@ -5,5 +5,5 @@
  * TDLib client
  */
 export class AuthorizationStateClosedBaseModel {
-  public _: 'authorizationStateClosed'
+    public _: 'authorizationStateClosed';
 }

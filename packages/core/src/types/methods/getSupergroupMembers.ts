@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SupergroupMembersFilterInputUnion } from '../inputs'
-import { ChatMembersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SupergroupMembersFilterInputUnion } from '../inputs';
+import { ChatMembersUnion } from '../outputs';
 
 export interface GetSupergroupMembersParams {
-  supergroupId?: number // Identifier of the supergroup or channel
-  filter?: SupergroupMembersFilterInputUnion // The type of users to return; pass null to use supergroupMembersFilterRecent
-  offset?: number // Number of users to skip
-  limit?: number // The maximum number of users be returned; up to 200
+    supergroupId?: number; // Identifier of the supergroup or channel
+    filter?: SupergroupMembersFilterInputUnion; // The type of users to return; pass null to use supergroupMembersFilterRecent
+    offset?: number; // Number of users to skip
+    limit?: number; // The maximum number of users be returned; up to 200
 }
 
 /**
@@ -24,6 +24,6 @@ export interface GetSupergroupMembersParams {
  * @returns {Promise<ApiResponse<GetSupergroupMembersParams, ChatMembersUnion>>}
  */
 export type getSupergroupMembers = (
-  params?: GetSupergroupMembersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetSupergroupMembersParams, ChatMembersUnion>>
+    params?: GetSupergroupMembersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetSupergroupMembersParams, ChatMembersUnion>>;

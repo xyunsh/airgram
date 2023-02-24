@@ -1,7 +1,7 @@
 /** Contains a counter */
 export class CountBaseModel {
-  public _: 'count'
+    public _: 'count';
 
-  /** Count */
-  public count: number
+    /** Count */
+    public count: number;
 }

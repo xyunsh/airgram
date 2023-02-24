@@ -3,8 +3,8 @@
  * set name to process the link and show the sticker set
  */
 export class InternalLinkTypeStickerSetBaseModel {
-  public _: 'internalLinkTypeStickerSet'
+    public _: 'internalLinkTypeStickerSet';
 
-  /** Name of the sticker set */
-  public stickerSetName: string
+    /** Name of the sticker set */
+    public stickerSetName: string;
 }

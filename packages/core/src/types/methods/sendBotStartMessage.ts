@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageUnion } from '../outputs';
 
 export interface SendBotStartMessageParams {
-  botUserId?: number // Identifier of the bot
-  chatId?: number // Identifier of the target chat
-  parameter?: string // A hidden parameter sent to the bot for deep linking purposes (https://core.telegram.org/bots#deep-linking)
+    botUserId?: number; // Identifier of the bot
+    chatId?: number; // Identifier of the target chat
+    parameter?: string; // A hidden parameter sent to the bot for deep linking purposes (https://core.telegram.org/bots#deep-linking)
 }
 
 /**
@@ -21,6 +21,6 @@ export interface SendBotStartMessageParams {
  * @returns {Promise<ApiResponse<SendBotStartMessageParams, MessageUnion>>}
  */
 export type sendBotStartMessage = (
-  params?: SendBotStartMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendBotStartMessageParams, MessageUnion>>
+    params?: SendBotStartMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendBotStartMessageParams, MessageUnion>>;

@@ -1,8 +1,8 @@
-export type TextUnion = Text
+export type TextUnion = Text;
 
 /** Contains some text */
 export interface Text {
-  _: 'text'
-  /** Text */
-  text: string
+    _: 'text';
+    /** Text */
+    text: string;
 }

@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A fixed-width rich text */
 export class RichTextFixedBaseModel {
-  public _: 'richTextFixed'
+    public _: 'richTextFixed';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 }

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TemporaryPasswordStateUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TemporaryPasswordStateUnion } from '../outputs';
 
 export interface CreateTemporaryPasswordParams {
-  password?: string // Persistent user password
-  validFor?: number // Time during which the temporary password will be valid, in seconds; must be between 60 and 86400
+    password?: string; // Persistent user password
+    validFor?: number; // Time during which the temporary password will be valid, in seconds; must be between 60 and 86400
 }
 
 /**
@@ -16,6 +16,6 @@ export interface CreateTemporaryPasswordParams {
  * @returns {Promise<ApiResponse<CreateTemporaryPasswordParams, TemporaryPasswordStateUnion>>}
  */
 export type createTemporaryPassword = (
-  params?: CreateTemporaryPasswordParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CreateTemporaryPasswordParams, TemporaryPasswordStateUnion>>
+    params?: CreateTemporaryPasswordParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CreateTemporaryPasswordParams, TemporaryPasswordStateUnion>>;

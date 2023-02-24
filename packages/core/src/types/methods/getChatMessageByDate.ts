@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageUnion } from '../outputs';
 
 export interface GetChatMessageByDateParams {
-  chatId?: number // Chat identifier
-  date?: number // Point in time (Unix timestamp) relative to which to search for messages
+    chatId?: number; // Chat identifier
+    date?: number; // Point in time (Unix timestamp) relative to which to search for messages
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetChatMessageByDateParams {
  * @returns {Promise<ApiResponse<GetChatMessageByDateParams, MessageUnion>>}
  */
 export type getChatMessageByDate = (
-  params?: GetChatMessageByDateParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatMessageByDateParams, MessageUnion>>
+    params?: GetChatMessageByDateParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatMessageByDateParams, MessageUnion>>;

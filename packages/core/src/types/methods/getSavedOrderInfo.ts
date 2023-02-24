@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OrderInfoUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OrderInfoUnion } from '../outputs';
 
 /**
  * Returns saved order information. Returns a 404 error if there is no saved order information
@@ -9,6 +7,6 @@ import { OrderInfoUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, OrderInfoUnion>>}
  */
 export type getSavedOrderInfo = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, OrderInfoUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, OrderInfoUnion>>;

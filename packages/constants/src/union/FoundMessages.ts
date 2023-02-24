@@ -1,3 +1,3 @@
 export enum FOUND_MESSAGES {
-  foundMessages = 'foundMessages'
+    foundMessages = 'foundMessages',
 }

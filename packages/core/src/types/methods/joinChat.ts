@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface JoinChatParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface JoinChatParams {
  * @returns {Promise<ApiResponse<JoinChatParams, OkUnion>>}
  */
 export type joinChat = (
-  params?: JoinChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<JoinChatParams, OkUnion>>
+    params?: JoinChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<JoinChatParams, OkUnion>>;

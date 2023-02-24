@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessagesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessagesUnion } from '../outputs';
 
 export interface SearchCallMessagesParams {
-  fromMessageId?: number // Identifier of the message from which to search; use 0 to get results from the last message
-  limit?: number // The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
-  onlyMissed?: boolean // Pass true to search only for messages with missed/declined calls
+    fromMessageId?: number; // Identifier of the message from which to search; use 0 to get results from the last message
+    limit?: number; // The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+    onlyMissed?: boolean; // Pass true to search only for messages with missed/declined calls
 }
 
 /**
@@ -23,6 +23,6 @@ export interface SearchCallMessagesParams {
  * @returns {Promise<ApiResponse<SearchCallMessagesParams, MessagesUnion>>}
  */
 export type searchCallMessages = (
-  params?: SearchCallMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchCallMessagesParams, MessagesUnion>>
+    params?: SearchCallMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchCallMessagesParams, MessagesUnion>>;

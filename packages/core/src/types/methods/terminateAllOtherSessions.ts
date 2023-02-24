@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 /**
  * Terminates all other sessions of the current user
@@ -9,6 +7,6 @@ import { OkUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, OkUnion>>}
  */
 export type terminateAllOtherSessions = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, OkUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, OkUnion>>;

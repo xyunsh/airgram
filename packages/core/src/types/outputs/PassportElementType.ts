@@ -1,79 +1,80 @@
 /** Contains the type of a Telegram Passport element */
-export type PassportElementTypeUnion = PassportElementTypePersonalDetails
-  | PassportElementTypePassport
-  | PassportElementTypeDriverLicense
-  | PassportElementTypeIdentityCard
-  | PassportElementTypeInternalPassport
-  | PassportElementTypeAddress
-  | PassportElementTypeUtilityBill
-  | PassportElementTypeBankStatement
-  | PassportElementTypeRentalAgreement
-  | PassportElementTypePassportRegistration
-  | PassportElementTypeTemporaryRegistration
-  | PassportElementTypePhoneNumber
-  | PassportElementTypeEmailAddress
+export type PassportElementTypeUnion =
+    | PassportElementTypePersonalDetails
+    | PassportElementTypePassport
+    | PassportElementTypeDriverLicense
+    | PassportElementTypeIdentityCard
+    | PassportElementTypeInternalPassport
+    | PassportElementTypeAddress
+    | PassportElementTypeUtilityBill
+    | PassportElementTypeBankStatement
+    | PassportElementTypeRentalAgreement
+    | PassportElementTypePassportRegistration
+    | PassportElementTypeTemporaryRegistration
+    | PassportElementTypePhoneNumber
+    | PassportElementTypeEmailAddress;
 
 /** A Telegram Passport element containing the user's personal details */
 export interface PassportElementTypePersonalDetails {
-  _: 'passportElementTypePersonalDetails'
+    _: 'passportElementTypePersonalDetails';
 }
 
 /** A Telegram Passport element containing the user's passport */
 export interface PassportElementTypePassport {
-  _: 'passportElementTypePassport'
+    _: 'passportElementTypePassport';
 }
 
 /** A Telegram Passport element containing the user's driver license */
 export interface PassportElementTypeDriverLicense {
-  _: 'passportElementTypeDriverLicense'
+    _: 'passportElementTypeDriverLicense';
 }
 
 /** A Telegram Passport element containing the user's identity card */
 export interface PassportElementTypeIdentityCard {
-  _: 'passportElementTypeIdentityCard'
+    _: 'passportElementTypeIdentityCard';
 }
 
 /** A Telegram Passport element containing the user's internal passport */
 export interface PassportElementTypeInternalPassport {
-  _: 'passportElementTypeInternalPassport'
+    _: 'passportElementTypeInternalPassport';
 }
 
 /** A Telegram Passport element containing the user's address */
 export interface PassportElementTypeAddress {
-  _: 'passportElementTypeAddress'
+    _: 'passportElementTypeAddress';
 }
 
 /** A Telegram Passport element containing the user's utility bill */
 export interface PassportElementTypeUtilityBill {
-  _: 'passportElementTypeUtilityBill'
+    _: 'passportElementTypeUtilityBill';
 }
 
 /** A Telegram Passport element containing the user's bank statement */
 export interface PassportElementTypeBankStatement {
-  _: 'passportElementTypeBankStatement'
+    _: 'passportElementTypeBankStatement';
 }
 
 /** A Telegram Passport element containing the user's rental agreement */
 export interface PassportElementTypeRentalAgreement {
-  _: 'passportElementTypeRentalAgreement'
+    _: 'passportElementTypeRentalAgreement';
 }
 
 /** A Telegram Passport element containing the registration page of the user's passport */
 export interface PassportElementTypePassportRegistration {
-  _: 'passportElementTypePassportRegistration'
+    _: 'passportElementTypePassportRegistration';
 }
 
 /** A Telegram Passport element containing the user's temporary registration */
 export interface PassportElementTypeTemporaryRegistration {
-  _: 'passportElementTypeTemporaryRegistration'
+    _: 'passportElementTypeTemporaryRegistration';
 }
 
 /** A Telegram Passport element containing the user's phone number */
 export interface PassportElementTypePhoneNumber {
-  _: 'passportElementTypePhoneNumber'
+    _: 'passportElementTypePhoneNumber';
 }
 
 /** A Telegram Passport element containing the user's email address */
 export interface PassportElementTypeEmailAddress {
-  _: 'passportElementTypeEmailAddress'
+    _: 'passportElementTypeEmailAddress';
 }

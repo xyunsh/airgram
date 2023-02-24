@@ -1,9 +1,9 @@
-import { JsonObjectMember } from '@airgram/core'
+import { JsonObjectMember } from '@airgram/core';
 
 /** Represents a JSON object */
 export class JsonValueObjectBaseModel {
-  public _: 'jsonValueObject'
+    public _: 'jsonValueObject';
 
-  /** The list of object members */
-  public members: JsonObjectMember[]
+    /** The list of object members */
+    public members: JsonObjectMember[];
 }

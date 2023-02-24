@@ -1,7 +1,7 @@
 /** Represents a string option */
 export class OptionValueStringBaseModel {
-  public _: 'optionValueString'
+    public _: 'optionValueString';
 
-  /** The value of the option */
-  public value: string
+    /** The value of the option */
+    public value: string;
 }

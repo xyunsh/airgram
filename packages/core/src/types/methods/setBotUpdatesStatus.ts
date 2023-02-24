@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetBotUpdatesStatusParams {
-  pendingUpdateCount?: number // The number of pending updates
-  errorMessage?: string // The last error message
+    pendingUpdateCount?: number; // The number of pending updates
+    errorMessage?: string; // The last error message
 }
 
 /**
@@ -16,6 +16,6 @@ export interface SetBotUpdatesStatusParams {
  * @returns {Promise<ApiResponse<SetBotUpdatesStatusParams, OkUnion>>}
  */
 export type setBotUpdatesStatus = (
-  params?: SetBotUpdatesStatusParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetBotUpdatesStatusParams, OkUnion>>
+    params?: SetBotUpdatesStatusParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetBotUpdatesStatusParams, OkUnion>>;

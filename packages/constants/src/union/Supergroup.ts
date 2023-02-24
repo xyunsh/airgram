@@ -1,3 +1,3 @@
 export enum SUPERGROUP {
-  supergroup = 'supergroup'
+    supergroup = 'supergroup',
 }

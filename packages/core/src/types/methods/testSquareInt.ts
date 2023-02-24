@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TestIntUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TestIntUnion } from '../outputs';
 
 export interface TestSquareIntParams {
-  x?: number // Number to square
+    x?: number; // Number to square
 }
 
 /**
@@ -14,6 +14,6 @@ export interface TestSquareIntParams {
  * @returns {Promise<ApiResponse<TestSquareIntParams, TestIntUnion>>}
  */
 export type testSquareInt = (
-  params?: TestSquareIntParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TestSquareIntParams, TestIntUnion>>
+    params?: TestSquareIntParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TestSquareIntParams, TestIntUnion>>;

@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UpdatesUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UpdatesUnion } from '../outputs';
 
 /**
  * Returns all updates needed to restore current TDLib state, i.e. all actual UpdateAuthorizationState/UpdateUser/UpdateNewChat
@@ -11,6 +9,6 @@ import { UpdatesUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, UpdatesUnion>>}
  */
 export type getCurrentState = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, UpdatesUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, UpdatesUnion>>;

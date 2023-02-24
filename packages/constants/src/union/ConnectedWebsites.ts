@@ -1,3 +1,3 @@
 export enum CONNECTED_WEBSITES {
-  connectedWebsites = 'connectedWebsites'
+    connectedWebsites = 'connectedWebsites',
 }

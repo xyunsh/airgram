@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RemoveAllFilesFromDownloadsParams {
-  onlyActive?: boolean // Pass true to remove only active downloads, including paused
-  onlyCompleted?: boolean // Pass true to remove only completed downloads
-  deleteFromCache?: boolean // Pass true to delete the file from the TDLib file cache
+    onlyActive?: boolean; // Pass true to remove only active downloads, including paused
+    onlyCompleted?: boolean; // Pass true to remove only completed downloads
+    deleteFromCache?: boolean; // Pass true to delete the file from the TDLib file cache
 }
 
 /**
@@ -19,6 +19,6 @@ export interface RemoveAllFilesFromDownloadsParams {
  * @returns {Promise<ApiResponse<RemoveAllFilesFromDownloadsParams, OkUnion>>}
  */
 export type removeAllFilesFromDownloads = (
-  params?: RemoveAllFilesFromDownloadsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveAllFilesFromDownloadsParams, OkUnion>>
+    params?: RemoveAllFilesFromDownloadsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveAllFilesFromDownloadsParams, OkUnion>>;

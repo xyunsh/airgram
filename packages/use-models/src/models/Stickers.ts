@@ -1,9 +1,9 @@
-import { Sticker } from '@airgram/core'
+import { Sticker } from '@airgram/core';
 
 /** Represents a list of stickers */
 export class StickersBaseModel {
-  public _: 'stickers'
+    public _: 'stickers';
 
-  /** List of stickers */
-  public stickers: Sticker[]
+    /** List of stickers */
+    public stickers: Sticker[];
 }

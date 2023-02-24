@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ResetPasswordResultUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ResetPasswordResultUnion } from '../outputs';
 
 /**
  * Removes 2-step verification password without previous password and access to recovery
@@ -11,6 +9,6 @@ import { ResetPasswordResultUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, ResetPasswordResultUnion>>}
  */
 export type resetPassword = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, ResetPasswordResultUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, ResetPasswordResultUnion>>;

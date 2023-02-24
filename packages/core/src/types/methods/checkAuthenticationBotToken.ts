@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface CheckAuthenticationBotTokenParams {
-  token?: string // The bot token
+    token?: string; // The bot token
 }
 
 /**
@@ -15,6 +15,6 @@ export interface CheckAuthenticationBotTokenParams {
  * @returns {Promise<ApiResponse<CheckAuthenticationBotTokenParams, OkUnion>>}
  */
 export type checkAuthenticationBotToken = (
-  params?: CheckAuthenticationBotTokenParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckAuthenticationBotTokenParams, OkUnion>>
+    params?: CheckAuthenticationBotTokenParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckAuthenticationBotTokenParams, OkUnion>>;

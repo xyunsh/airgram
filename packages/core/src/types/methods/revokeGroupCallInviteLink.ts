@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RevokeGroupCallInviteLinkParams {
-  groupCallId?: number // Group call identifier
+    groupCallId?: number; // Group call identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface RevokeGroupCallInviteLinkParams {
  * @returns {Promise<ApiResponse<RevokeGroupCallInviteLinkParams, OkUnion>>}
  */
 export type revokeGroupCallInviteLink = (
-  params?: RevokeGroupCallInviteLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RevokeGroupCallInviteLinkParams, OkUnion>>
+    params?: RevokeGroupCallInviteLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RevokeGroupCallInviteLinkParams, OkUnion>>;

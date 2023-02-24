@@ -4,23 +4,23 @@
  * for more information
  */
 export class LanguagePackStringValuePluralizedBaseModel {
-  public _: 'languagePackStringValuePluralized'
+    public _: 'languagePackStringValuePluralized';
 
-  /** Value for zero objects */
-  public zeroValue: string
+    /** Value for zero objects */
+    public zeroValue: string;
 
-  /** Value for one object */
-  public oneValue: string
+    /** Value for one object */
+    public oneValue: string;
 
-  /** Value for two objects */
-  public twoValue: string
+    /** Value for two objects */
+    public twoValue: string;
 
-  /** Value for few objects */
-  public fewValue: string
+    /** Value for few objects */
+    public fewValue: string;
 
-  /** Value for many objects */
-  public manyValue: string
+    /** Value for many objects */
+    public manyValue: string;
 
-  /** Default value */
-  public otherValue: string
+    /** Default value */
+    public otherValue: string;
 }

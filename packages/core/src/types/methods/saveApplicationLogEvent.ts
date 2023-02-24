@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { JsonValueInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { JsonValueInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SaveApplicationLogEventParams {
-  type?: string // Event type
-  chatId?: number // Optional chat identifier, associated with the event
-  data?: JsonValueInputUnion // The log event data
+    type?: string; // Event type
+    chatId?: number; // Optional chat identifier, associated with the event
+    data?: JsonValueInputUnion; // The log event data
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SaveApplicationLogEventParams {
  * @returns {Promise<ApiResponse<SaveApplicationLogEventParams, OkUnion>>}
  */
 export type saveApplicationLogEvent = (
-  params?: SaveApplicationLogEventParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SaveApplicationLogEventParams, OkUnion>>
+    params?: SaveApplicationLogEventParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SaveApplicationLogEventParams, OkUnion>>;

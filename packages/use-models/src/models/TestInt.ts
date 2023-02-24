@@ -1,7 +1,7 @@
 /** A simple object containing a number; for testing only */
 export class TestIntBaseModel {
-  public _: 'testInt'
+    public _: 'testInt';
 
-  /** Number */
-  public value: number
+    /** Number */
+    public value: number;
 }

@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { StickersUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { StickersUnion } from '../outputs';
 
 /**
  * Returns favorite stickers
@@ -9,6 +7,6 @@ import { StickersUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, StickersUnion>>}
  */
 export type getFavoriteStickers = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, StickersUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, StickersUnion>>;

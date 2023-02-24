@@ -3,5 +3,5 @@
  * keyboard and can be attached only to a message with content of the type messageInvoice
  */
 export class InlineKeyboardButtonTypeBuyBaseModel {
-  public _: 'inlineKeyboardButtonTypeBuy'
+    public _: 'inlineKeyboardButtonTypeBuy';
 }

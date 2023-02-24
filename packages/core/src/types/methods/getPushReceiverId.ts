@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PushReceiverIdUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PushReceiverIdUnion } from '../outputs';
 
 export interface GetPushReceiverIdParams {
-  payload?: string // JSON-encoded push notification payload
+    payload?: string; // JSON-encoded push notification payload
 }
 
 /**
@@ -14,8 +14,8 @@ export interface GetPushReceiverIdParams {
  * @returns {Promise<ApiResponse<GetPushReceiverIdParams, PushReceiverIdUnion>>}
  */
 export type getPushReceiverId = (
-  params?: GetPushReceiverIdParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPushReceiverIdParams, PushReceiverIdUnion>>
+    params?: GetPushReceiverIdParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPushReceiverIdParams, PushReceiverIdUnion>>;
 
-export type getPushReceiverIdSync = (params?: GetPushReceiverIdParams) => PushReceiverIdUnion
+export type getPushReceiverIdSync = (params?: GetPushReceiverIdParams) => PushReceiverIdUnion;

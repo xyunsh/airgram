@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatListInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatListInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface LoadChatsParams {
-  chatList?: ChatListInputUnion // The chat list in which to load chats; pass null to load chats from the main chat list
-  limit?: number // The maximum number of chats to be loaded. For optimal performance, the number of loaded chats is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached
+    chatList?: ChatListInputUnion; // The chat list in which to load chats; pass null to load chats from the main chat list
+    limit?: number; // The maximum number of chats to be loaded. For optimal performance, the number of loaded chats is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached
 }
 
 /**
@@ -21,6 +21,6 @@ export interface LoadChatsParams {
  * @returns {Promise<ApiResponse<LoadChatsParams, OkUnion>>}
  */
 export type loadChats = (
-  params?: LoadChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<LoadChatsParams, OkUnion>>
+    params?: LoadChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<LoadChatsParams, OkUnion>>;

@@ -1,10 +1,10 @@
 /** The chat username was changed */
 export class ChatEventUsernameChangedBaseModel {
-  public _: 'chatEventUsernameChanged'
+    public _: 'chatEventUsernameChanged';
 
-  /** Previous chat username */
-  public oldUsername: string
+    /** Previous chat username */
+    public oldUsername: string;
 
-  /** New chat username */
-  public newUsername: string
+    /** New chat username */
+    public newUsername: string;
 }

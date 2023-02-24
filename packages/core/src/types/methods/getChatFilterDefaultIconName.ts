@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatFilterInput } from '../inputs'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatFilterInput } from '../inputs';
+import { TextUnion } from '../outputs';
 
 export interface GetChatFilterDefaultIconNameParams {
-  filter?: ChatFilterInput // Chat filter
+    filter?: ChatFilterInput; // Chat filter
 }
 
 /**
@@ -14,8 +14,8 @@ export interface GetChatFilterDefaultIconNameParams {
  * @returns {Promise<ApiResponse<GetChatFilterDefaultIconNameParams, TextUnion>>}
  */
 export type getChatFilterDefaultIconName = (
-  params?: GetChatFilterDefaultIconNameParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatFilterDefaultIconNameParams, TextUnion>>
+    params?: GetChatFilterDefaultIconNameParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatFilterDefaultIconNameParams, TextUnion>>;
 
-export type getChatFilterDefaultIconNameSync = (params?: GetChatFilterDefaultIconNameParams) => TextUnion
+export type getChatFilterDefaultIconNameSync = (params?: GetChatFilterDefaultIconNameParams) => TextUnion;

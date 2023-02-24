@@ -5,5 +5,5 @@
  * go to Settings > Devices > Scan QR and scan the code" needs to be shown
  */
 export class InternalLinkTypeQrCodeAuthenticationBaseModel {
-  public _: 'internalLinkTypeQrCodeAuthentication'
+    public _: 'internalLinkTypeQrCodeAuthentication';
 }

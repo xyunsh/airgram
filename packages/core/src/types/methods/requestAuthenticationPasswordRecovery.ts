@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 /**
  * Requests to send a password recovery code to an email address that was previously
@@ -10,6 +8,6 @@ import { OkUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, OkUnion>>}
  */
 export type requestAuthenticationPasswordRecovery = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, OkUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, OkUnion>>;

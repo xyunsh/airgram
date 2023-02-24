@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { StickerSetUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { StickerSetUnion } from '../outputs';
 
 export interface SetStickerSetThumbnailParams {
-  userId?: number // Sticker set owner
-  name?: string // Sticker set name
-  thumbnail?: InputFileInputUnion // Thumbnail to set in PNG, TGS, or WEBM format; pass null to remove the sticker set thumbnail. Thumbnail format must match the format of stickers in the set
+    userId?: number; // Sticker set owner
+    name?: string; // Sticker set name
+    thumbnail?: InputFileInputUnion; // Thumbnail to set in PNG, TGS, or WEBM format; pass null to remove the sticker set thumbnail. Thumbnail format must match the format of stickers in the set
 }
 
 /**
@@ -20,6 +20,6 @@ export interface SetStickerSetThumbnailParams {
  * @returns {Promise<ApiResponse<SetStickerSetThumbnailParams, StickerSetUnion>>}
  */
 export type setStickerSetThumbnail = (
-  params?: SetStickerSetThumbnailParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetStickerSetThumbnailParams, StickerSetUnion>>
+    params?: SetStickerSetThumbnailParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetStickerSetThumbnailParams, StickerSetUnion>>;

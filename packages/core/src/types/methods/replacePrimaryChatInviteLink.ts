@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatInviteLinkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatInviteLinkUnion } from '../outputs';
 
 export interface ReplacePrimaryChatInviteLinkParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -15,6 +15,6 @@ export interface ReplacePrimaryChatInviteLinkParams {
  * @returns {Promise<ApiResponse<ReplacePrimaryChatInviteLinkParams, ChatInviteLinkUnion>>}
  */
 export type replacePrimaryChatInviteLink = (
-  params?: ReplacePrimaryChatInviteLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ReplacePrimaryChatInviteLinkParams, ChatInviteLinkUnion>>
+    params?: ReplacePrimaryChatInviteLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ReplacePrimaryChatInviteLinkParams, ChatInviteLinkUnion>>;

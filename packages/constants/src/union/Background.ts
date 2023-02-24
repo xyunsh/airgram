@@ -1,3 +1,3 @@
 export enum BACKGROUND {
-  background = 'background'
+    background = 'background',
 }

@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ProxyTypeInputUnion } from '../inputs'
-import { ProxyUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ProxyTypeInputUnion } from '../inputs';
+import { ProxyUnion } from '../outputs';
 
 export interface EditProxyParams {
-  proxyId?: number // Proxy identifier
-  server?: string // Proxy server IP address
-  port?: number // Proxy server port
-  enable?: boolean // Pass true to immediately enable the proxy
-  type?: ProxyTypeInputUnion // Proxy type
+    proxyId?: number; // Proxy identifier
+    server?: string; // Proxy server IP address
+    port?: number; // Proxy server port
+    enable?: boolean; // Pass true to immediately enable the proxy
+    type?: ProxyTypeInputUnion; // Proxy type
 }
 
 /**
@@ -22,6 +22,6 @@ export interface EditProxyParams {
  * @returns {Promise<ApiResponse<EditProxyParams, ProxyUnion>>}
  */
 export type editProxy = (
-  params?: EditProxyParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditProxyParams, ProxyUnion>>
+    params?: EditProxyParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditProxyParams, ProxyUnion>>;

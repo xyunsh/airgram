@@ -3,8 +3,8 @@
  * if the current authorization state is authorizationStateWaitCode
  */
 export class InternalLinkTypeAuthenticationCodeBaseModel {
-  public _: 'internalLinkTypeAuthenticationCode'
+    public _: 'internalLinkTypeAuthenticationCode';
 
-  /** The authentication code */
-  public code: string
+    /** The authentication code */
+    public code: string;
 }

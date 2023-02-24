@@ -1,3 +1,3 @@
 export enum ERROR {
-  error = 'error'
+    error = 'error',
 }

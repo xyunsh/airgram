@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SessionUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SessionUnion } from '../outputs';
 
 export interface ConfirmQrCodeAuthenticationParams {
-  link?: string // A link from a QR code. The link must be scanned by the in-app camera
+    link?: string; // A link from a QR code. The link must be scanned by the in-app camera
 }
 
 /**
@@ -14,6 +14,6 @@ export interface ConfirmQrCodeAuthenticationParams {
  * @returns {Promise<ApiResponse<ConfirmQrCodeAuthenticationParams, SessionUnion>>}
  */
 export type confirmQrCodeAuthentication = (
-  params?: ConfirmQrCodeAuthenticationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ConfirmQrCodeAuthenticationParams, SessionUnion>>
+    params?: ConfirmQrCodeAuthenticationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ConfirmQrCodeAuthenticationParams, SessionUnion>>;

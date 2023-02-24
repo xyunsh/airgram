@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteRevokedChatInviteLinkParams {
-  chatId?: number // Chat identifier
-  inviteLink?: string // Invite link to revoke
+    chatId?: number; // Chat identifier
+    inviteLink?: string; // Invite link to revoke
 }
 
 /**
@@ -16,6 +16,6 @@ export interface DeleteRevokedChatInviteLinkParams {
  * @returns {Promise<ApiResponse<DeleteRevokedChatInviteLinkParams, OkUnion>>}
  */
 export type deleteRevokedChatInviteLink = (
-  params?: DeleteRevokedChatInviteLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteRevokedChatInviteLinkParams, OkUnion>>
+    params?: DeleteRevokedChatInviteLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteRevokedChatInviteLinkParams, OkUnion>>;

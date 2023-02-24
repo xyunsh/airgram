@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSchedulingStateInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSchedulingStateInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface EditMessageSchedulingStateParams {
-  chatId?: number // The chat the message belongs to
-  messageId?: number // Identifier of the message
-  schedulingState?: MessageSchedulingStateInputUnion // The new message scheduling state; pass null to send the message immediately
+    chatId?: number; // The chat the message belongs to
+    messageId?: number; // Identifier of the message
+    schedulingState?: MessageSchedulingStateInputUnion; // The new message scheduling state; pass null to send the message immediately
 }
 
 /**
@@ -20,6 +20,6 @@ export interface EditMessageSchedulingStateParams {
  * @returns {Promise<ApiResponse<EditMessageSchedulingStateParams, OkUnion>>}
  */
 export type editMessageSchedulingState = (
-  params?: EditMessageSchedulingStateParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditMessageSchedulingStateParams, OkUnion>>
+    params?: EditMessageSchedulingStateParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditMessageSchedulingStateParams, OkUnion>>;

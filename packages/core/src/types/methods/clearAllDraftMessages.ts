@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ClearAllDraftMessagesParams {
-  excludeSecretChats?: boolean // Pass true to keep local message drafts in secret chats
+    excludeSecretChats?: boolean; // Pass true to keep local message drafts in secret chats
 }
 
 /**
@@ -14,6 +14,6 @@ export interface ClearAllDraftMessagesParams {
  * @returns {Promise<ApiResponse<ClearAllDraftMessagesParams, OkUnion>>}
  */
 export type clearAllDraftMessages = (
-  params?: ClearAllDraftMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ClearAllDraftMessagesParams, OkUnion>>
+    params?: ClearAllDraftMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ClearAllDraftMessagesParams, OkUnion>>;

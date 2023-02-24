@@ -1,61 +1,62 @@
 /** Describes the reason why a chat is reported */
-export type ChatReportReasonInputUnion = ChatReportReasonSpamInput
-  | ChatReportReasonViolenceInput
-  | ChatReportReasonPornographyInput
-  | ChatReportReasonChildAbuseInput
-  | ChatReportReasonCopyrightInput
-  | ChatReportReasonUnrelatedLocationInput
-  | ChatReportReasonFakeInput
-  | ChatReportReasonIllegalDrugsInput
-  | ChatReportReasonPersonalDetailsInput
-  | ChatReportReasonCustomInput
+export type ChatReportReasonInputUnion =
+    | ChatReportReasonSpamInput
+    | ChatReportReasonViolenceInput
+    | ChatReportReasonPornographyInput
+    | ChatReportReasonChildAbuseInput
+    | ChatReportReasonCopyrightInput
+    | ChatReportReasonUnrelatedLocationInput
+    | ChatReportReasonFakeInput
+    | ChatReportReasonIllegalDrugsInput
+    | ChatReportReasonPersonalDetailsInput
+    | ChatReportReasonCustomInput;
 
 /** The chat contains spam messages */
 export interface ChatReportReasonSpamInput {
-  _: 'chatReportReasonSpam'
+    _: 'chatReportReasonSpam';
 }
 
 /** The chat promotes violence */
 export interface ChatReportReasonViolenceInput {
-  _: 'chatReportReasonViolence'
+    _: 'chatReportReasonViolence';
 }
 
 /** The chat contains pornographic messages */
 export interface ChatReportReasonPornographyInput {
-  _: 'chatReportReasonPornography'
+    _: 'chatReportReasonPornography';
 }
 
 /** The chat has child abuse related content */
 export interface ChatReportReasonChildAbuseInput {
-  _: 'chatReportReasonChildAbuse'
+    _: 'chatReportReasonChildAbuse';
 }
 
 /** The chat contains copyrighted content */
 export interface ChatReportReasonCopyrightInput {
-  _: 'chatReportReasonCopyright'
+    _: 'chatReportReasonCopyright';
 }
 
 /** The location-based chat is unrelated to its stated location */
 export interface ChatReportReasonUnrelatedLocationInput {
-  _: 'chatReportReasonUnrelatedLocation'
+    _: 'chatReportReasonUnrelatedLocation';
 }
 
 /** The chat represents a fake account */
 export interface ChatReportReasonFakeInput {
-  _: 'chatReportReasonFake'
+    _: 'chatReportReasonFake';
 }
 
 /** The chat has illegal drugs related content */
 export interface ChatReportReasonIllegalDrugsInput {
-  _: 'chatReportReasonIllegalDrugs'
+    _: 'chatReportReasonIllegalDrugs';
 }
 
 /** The chat contains messages with personal details */
 export interface ChatReportReasonPersonalDetailsInput {
-  _: 'chatReportReasonPersonalDetails'
+    _: 'chatReportReasonPersonalDetails';
 }
 
 /** A custom reason provided by the user */
 export interface ChatReportReasonCustomInput {
-  _: 'chatReportReasonCustom'
+    _: 'chatReportReasonCustom';
 }

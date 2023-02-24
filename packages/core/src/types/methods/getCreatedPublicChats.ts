@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PublicChatTypeInputUnion } from '../inputs'
-import { ChatsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PublicChatTypeInputUnion } from '../inputs';
+import { ChatsUnion } from '../outputs';
 
 export interface GetCreatedPublicChatsParams {
-  type?: PublicChatTypeInputUnion // Type of the public chats to return
+    type?: PublicChatTypeInputUnion; // Type of the public chats to return
 }
 
 /**
@@ -15,6 +15,6 @@ export interface GetCreatedPublicChatsParams {
  * @returns {Promise<ApiResponse<GetCreatedPublicChatsParams, ChatsUnion>>}
  */
 export type getCreatedPublicChats = (
-  params?: GetCreatedPublicChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetCreatedPublicChatsParams, ChatsUnion>>
+    params?: GetCreatedPublicChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetCreatedPublicChatsParams, ChatsUnion>>;

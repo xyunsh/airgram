@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AuthenticationCodeInfoUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AuthenticationCodeInfoUnion } from '../outputs';
 
 /**
  * Resends phone number confirmation code
@@ -9,6 +7,6 @@ import { AuthenticationCodeInfoUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, AuthenticationCodeInfoUnion>>}
  */
 export type resendPhoneNumberConfirmationCode = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, AuthenticationCodeInfoUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, AuthenticationCodeInfoUnion>>;

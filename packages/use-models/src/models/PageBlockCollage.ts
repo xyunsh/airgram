@@ -1,12 +1,12 @@
-import { PageBlockCaption, PageBlockUnion } from '@airgram/core'
+import { PageBlockCaption, PageBlockUnion } from '@airgram/core';
 
 /** A collage */
 export class PageBlockCollageBaseModel {
-  public _: 'pageBlockCollage'
+    public _: 'pageBlockCollage';
 
-  /** Collage item contents */
-  public pageBlocks: PageBlockUnion[]
+    /** Collage item contents */
+    public pageBlocks: PageBlockUnion[];
 
-  /** Block caption */
-  public caption: PageBlockCaption
+    /** Block caption */
+    public caption: PageBlockCaption;
 }

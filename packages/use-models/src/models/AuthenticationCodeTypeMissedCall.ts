@@ -4,11 +4,11 @@
  * be entered manually by the user
  */
 export class AuthenticationCodeTypeMissedCallBaseModel {
-  public _: 'authenticationCodeTypeMissedCall'
+    public _: 'authenticationCodeTypeMissedCall';
 
-  /** Prefix of the phone number from which the call will be made */
-  public phoneNumberPrefix: string
+    /** Prefix of the phone number from which the call will be made */
+    public phoneNumberPrefix: string;
 
-  /** Number of digits in the code, excluding the prefix */
-  public length: number
+    /** Number of digits in the code, excluding the prefix */
+    public length: number;
 }

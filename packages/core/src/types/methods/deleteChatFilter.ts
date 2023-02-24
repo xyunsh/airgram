@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteChatFilterParams {
-  chatFilterId?: number // Chat filter identifier
+    chatFilterId?: number; // Chat filter identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface DeleteChatFilterParams {
  * @returns {Promise<ApiResponse<DeleteChatFilterParams, OkUnion>>}
  */
 export type deleteChatFilter = (
-  params?: DeleteChatFilterParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteChatFilterParams, OkUnion>>
+    params?: DeleteChatFilterParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteChatFilterParams, OkUnion>>;

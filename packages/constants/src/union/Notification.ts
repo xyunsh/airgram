@@ -1,3 +1,3 @@
 export enum NOTIFICATION {
-  notification = 'notification'
+    notification = 'notification',
 }

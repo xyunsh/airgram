@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RemoveProxyParams {
-  proxyId?: number // Proxy identifier
+    proxyId?: number; // Proxy identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface RemoveProxyParams {
  * @returns {Promise<ApiResponse<RemoveProxyParams, OkUnion>>}
  */
 export type removeProxy = (
-  params?: RemoveProxyParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveProxyParams, OkUnion>>
+    params?: RemoveProxyParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveProxyParams, OkUnion>>;

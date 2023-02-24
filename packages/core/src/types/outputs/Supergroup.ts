@@ -1,6 +1,6 @@
-import { ChatMemberStatusUnion } from './index'
+import { ChatMemberStatusUnion } from './index';
 
-export type SupergroupUnion = Supergroup
+export type SupergroupUnion = Supergroup;
 
 /**
  * Represents a supergroup or channel with zero or more members (subscribers in the
@@ -11,61 +11,61 @@ export type SupergroupUnion = Supergroup
  * of subscribers
  */
 export interface Supergroup {
-  _: 'supergroup'
-  /** Supergroup or channel identifier */
-  id: number
-  /** Username of the supergroup or channel; empty for private supergroups or channels */
-  username: string
-  /**
-   * Point in time (Unix timestamp) when the current user joined, or the point in time
-   * when the supergroup or channel was created, in case the user is not a member
-   */
-  date: number
-  /**
-   * Status of the current user in the supergroup or channel; custom title will be always
-   * empty
-   */
-  status: ChatMemberStatusUnion
-  /**
-   * Number of members in the supergroup or channel; 0 if unknown. Currently, it is guaranteed
-   * to be known only if the supergroup or channel was received through searchPublicChats,
-   * searchChatsNearby, getInactiveSupergroupChats, getSuitableDiscussionChats, getGroupsInCommon,
-   * or getUserPrivacySettingRules
-   */
-  memberCount: number
-  /**
-   * True, if the channel has a discussion group, or the supergroup is the designated
-   * discussion group for a channel
-   */
-  hasLinkedChat: boolean
-  /**
-   * True, if the supergroup is connected to a location, i.e. the supergroup is a location-based
-   * supergroup
-   */
-  hasLocation: boolean
-  /**
-   * True, if messages sent to the channel need to contain information about the sender.
-   * This field is only applicable to channels
-   */
-  signMessages: boolean
-  /** True, if the slow mode is enabled in the supergroup */
-  isSlowModeEnabled: boolean
-  /** True, if the supergroup is a channel */
-  isChannel: boolean
-  /**
-   * True, if the supergroup is a broadcast group, i.e. only administrators can send messages
-   * and there is no limit on the number of members
-   */
-  isBroadcastGroup: boolean
-  /** True, if the supergroup or channel is verified */
-  isVerified: boolean
-  /**
-   * If non-empty, contains a human-readable description of the reason why access to this
-   * supergroup or channel must be restricted
-   */
-  restrictionReason: string
-  /** True, if many users reported this supergroup or channel as a scam */
-  isScam: boolean
-  /** True, if many users reported this supergroup or channel as a fake account */
-  isFake: boolean
+    _: 'supergroup';
+    /** Supergroup or channel identifier */
+    id: number;
+    /** Username of the supergroup or channel; empty for private supergroups or channels */
+    username: string;
+    /**
+     * Point in time (Unix timestamp) when the current user joined, or the point in time
+     * when the supergroup or channel was created, in case the user is not a member
+     */
+    date: number;
+    /**
+     * Status of the current user in the supergroup or channel; custom title will be always
+     * empty
+     */
+    status: ChatMemberStatusUnion;
+    /**
+     * Number of members in the supergroup or channel; 0 if unknown. Currently, it is guaranteed
+     * to be known only if the supergroup or channel was received through searchPublicChats,
+     * searchChatsNearby, getInactiveSupergroupChats, getSuitableDiscussionChats, getGroupsInCommon,
+     * or getUserPrivacySettingRules
+     */
+    memberCount: number;
+    /**
+     * True, if the channel has a discussion group, or the supergroup is the designated
+     * discussion group for a channel
+     */
+    hasLinkedChat: boolean;
+    /**
+     * True, if the supergroup is connected to a location, i.e. the supergroup is a location-based
+     * supergroup
+     */
+    hasLocation: boolean;
+    /**
+     * True, if messages sent to the channel need to contain information about the sender.
+     * This field is only applicable to channels
+     */
+    signMessages: boolean;
+    /** True, if the slow mode is enabled in the supergroup */
+    isSlowModeEnabled: boolean;
+    /** True, if the supergroup is a channel */
+    isChannel: boolean;
+    /**
+     * True, if the supergroup is a broadcast group, i.e. only administrators can send messages
+     * and there is no limit on the number of members
+     */
+    isBroadcastGroup: boolean;
+    /** True, if the supergroup or channel is verified */
+    isVerified: boolean;
+    /**
+     * If non-empty, contains a human-readable description of the reason why access to this
+     * supergroup or channel must be restricted
+     */
+    restrictionReason: string;
+    /** True, if many users reported this supergroup or channel as a scam */
+    isScam: boolean;
+    /** True, if many users reported this supergroup or channel as a fake account */
+    isFake: boolean;
 }

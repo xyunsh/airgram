@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FormattedTextInput } from '../inputs'
-import { FormattedTextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FormattedTextInput } from '../inputs';
+import { FormattedTextUnion } from '../outputs';
 
 export interface GetMarkdownTextParams {
-  text?: FormattedTextInput // The text
+    text?: FormattedTextInput; // The text
 }
 
 /**
@@ -16,8 +16,8 @@ export interface GetMarkdownTextParams {
  * @returns {Promise<ApiResponse<GetMarkdownTextParams, FormattedTextUnion>>}
  */
 export type getMarkdownText = (
-  params?: GetMarkdownTextParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMarkdownTextParams, FormattedTextUnion>>
+    params?: GetMarkdownTextParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMarkdownTextParams, FormattedTextUnion>>;
 
-export type getMarkdownTextSync = (params?: GetMarkdownTextParams) => FormattedTextUnion
+export type getMarkdownTextSync = (params?: GetMarkdownTextParams) => FormattedTextUnion;

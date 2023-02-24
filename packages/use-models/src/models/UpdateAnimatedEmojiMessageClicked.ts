@@ -1,4 +1,4 @@
-import { Sticker } from '@airgram/core'
+import { Sticker } from '@airgram/core';
 
 /**
  * Some animated emoji message was clicked and a big animated sticker must be played
@@ -6,14 +6,14 @@ import { Sticker } from '@airgram/core'
  * of the message needs to be sent if the sticker is played
  */
 export class UpdateAnimatedEmojiMessageClickedBaseModel {
-  public _: 'updateAnimatedEmojiMessageClicked'
+    public _: 'updateAnimatedEmojiMessageClicked';
 
-  /** Chat identifier */
-  public chatId: number
+    /** Chat identifier */
+    public chatId: number;
 
-  /** Message identifier */
-  public messageId: number
+    /** Message identifier */
+    public messageId: number;
 
-  /** The animated sticker to be played */
-  public sticker: Sticker
+    /** The animated sticker to be played */
+    public sticker: Sticker;
 }

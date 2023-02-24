@@ -1,6 +1,6 @@
-import { UserPrivacySettingRuleInputUnion } from './index'
+import { UserPrivacySettingRuleInputUnion } from './index';
 
-export type UserPrivacySettingRulesInputUnion = UserPrivacySettingRulesInput
+export type UserPrivacySettingRulesInputUnion = UserPrivacySettingRulesInput;
 
 /**
  * A list of privacy rules. Rules are matched in the specified order. The first matched
@@ -8,7 +8,7 @@ export type UserPrivacySettingRulesInputUnion = UserPrivacySettingRulesInput
  * is not allowed
  */
 export interface UserPrivacySettingRulesInput {
-  _: 'userPrivacySettingRules'
-  /** A list of rules */
-  rules?: UserPrivacySettingRuleInputUnion[]
+    _: 'userPrivacySettingRules';
+    /** A list of rules */
+    rules?: UserPrivacySettingRuleInputUnion[];
 }

@@ -1,3 +1,3 @@
 export enum NETWORK_STATISTICS {
-  networkStatistics = 'networkStatistics'
+    networkStatistics = 'networkStatistics',
 }

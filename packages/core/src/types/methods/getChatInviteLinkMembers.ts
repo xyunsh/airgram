@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatInviteLinkMemberInput } from '../inputs'
-import { ChatInviteLinkMembersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatInviteLinkMemberInput } from '../inputs';
+import { ChatInviteLinkMembersUnion } from '../outputs';
 
 export interface GetChatInviteLinkMembersParams {
-  chatId?: number // Chat identifier
-  inviteLink?: string // Invite link for which to return chat members
-  offsetMember?: ChatInviteLinkMemberInput // A chat member from which to return next chat members; pass null to get results from the beginning
-  limit?: number // The maximum number of chat members to return; up to 100
+    chatId?: number; // Chat identifier
+    inviteLink?: string; // Invite link for which to return chat members
+    offsetMember?: ChatInviteLinkMemberInput; // A chat member from which to return next chat members; pass null to get results from the beginning
+    limit?: number; // The maximum number of chat members to return; up to 100
 }
 
 /**
@@ -24,6 +24,6 @@ export interface GetChatInviteLinkMembersParams {
  * @returns {Promise<ApiResponse<GetChatInviteLinkMembersParams, ChatInviteLinkMembersUnion>>}
  */
 export type getChatInviteLinkMembers = (
-  params?: GetChatInviteLinkMembersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatInviteLinkMembersParams, ChatInviteLinkMembersUnion>>
+    params?: GetChatInviteLinkMembersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatInviteLinkMembersParams, ChatInviteLinkMembersUnion>>;

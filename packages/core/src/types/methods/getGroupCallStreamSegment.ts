@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { GroupCallVideoQualityInputUnion } from '../inputs'
-import { FilePartUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { GroupCallVideoQualityInputUnion } from '../inputs';
+import { FilePartUnion } from '../outputs';
 
 export interface GetGroupCallStreamSegmentParams {
-  groupCallId?: number // Group call identifier
-  timeOffset?: number // Point in time when the stream segment begins; Unix timestamp in milliseconds
-  scale?: number // Segment duration scale; 0-1. Segment's duration is 1000/(2**scale) milliseconds
-  channelId?: number // Identifier of an audio/video channel to get as received from tgcalls
-  videoQuality?: GroupCallVideoQualityInputUnion // Video quality as received from tgcalls; pass null to get the worst available quality
+    groupCallId?: number; // Group call identifier
+    timeOffset?: number; // Point in time when the stream segment begins; Unix timestamp in milliseconds
+    scale?: number; // Segment duration scale; 0-1. Segment's duration is 1000/(2**scale) milliseconds
+    channelId?: number; // Identifier of an audio/video channel to get as received from tgcalls
+    videoQuality?: GroupCallVideoQualityInputUnion; // Video quality as received from tgcalls; pass null to get the worst available quality
 }
 
 /**
@@ -27,6 +27,6 @@ export interface GetGroupCallStreamSegmentParams {
  * @returns {Promise<ApiResponse<GetGroupCallStreamSegmentParams, FilePartUnion>>}
  */
 export type getGroupCallStreamSegment = (
-  params?: GetGroupCallStreamSegmentParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetGroupCallStreamSegmentParams, FilePartUnion>>
+    params?: GetGroupCallStreamSegmentParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetGroupCallStreamSegmentParams, FilePartUnion>>;

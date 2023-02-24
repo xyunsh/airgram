@@ -1,9 +1,9 @@
-import { AuthorizationStateUnion } from '@airgram/core'
+import { AuthorizationStateUnion } from '@airgram/core';
 
 /** The user authorization state has changed */
 export class UpdateAuthorizationStateBaseModel {
-  public _: 'updateAuthorizationState'
+    public _: 'updateAuthorizationState';
 
-  /** New authorization state */
-  public authorizationState: AuthorizationStateUnion
+    /** New authorization state */
+    public authorizationState: AuthorizationStateUnion;
 }

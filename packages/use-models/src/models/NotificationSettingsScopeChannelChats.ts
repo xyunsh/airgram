@@ -3,5 +3,5 @@
  * has a default value
  */
 export class NotificationSettingsScopeChannelChatsBaseModel {
-  public _: 'notificationSettingsScopeChannelChats'
+    public _: 'notificationSettingsScopeChannelChats';
 }

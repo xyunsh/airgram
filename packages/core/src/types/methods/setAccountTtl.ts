@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AccountTtlInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AccountTtlInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetAccountTtlParams {
-  ttl?: AccountTtlInput // New account TTL
+    ttl?: AccountTtlInput; // New account TTL
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SetAccountTtlParams {
  * @returns {Promise<ApiResponse<SetAccountTtlParams, OkUnion>>}
  */
 export type setAccountTtl = (
-  params?: SetAccountTtlParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetAccountTtlParams, OkUnion>>
+    params?: SetAccountTtlParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetAccountTtlParams, OkUnion>>;

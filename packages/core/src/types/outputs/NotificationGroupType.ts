@@ -1,15 +1,16 @@
 /** Describes the type of notifications in a notification group */
-export type NotificationGroupTypeUnion = NotificationGroupTypeMessages
-  | NotificationGroupTypeMentions
-  | NotificationGroupTypeSecretChat
-  | NotificationGroupTypeCalls
+export type NotificationGroupTypeUnion =
+    | NotificationGroupTypeMessages
+    | NotificationGroupTypeMentions
+    | NotificationGroupTypeSecretChat
+    | NotificationGroupTypeCalls;
 
 /**
  * A group containing notifications of type notificationTypeNewMessage and notificationTypeNewPushMessage
  * with ordinary unread messages
  */
 export interface NotificationGroupTypeMessages {
-  _: 'notificationGroupTypeMessages'
+    _: 'notificationGroupTypeMessages';
 }
 
 /**
@@ -18,15 +19,15 @@ export interface NotificationGroupTypeMessages {
  * message
  */
 export interface NotificationGroupTypeMentions {
-  _: 'notificationGroupTypeMentions'
+    _: 'notificationGroupTypeMentions';
 }
 
 /** A group containing a notification of type notificationTypeNewSecretChat */
 export interface NotificationGroupTypeSecretChat {
-  _: 'notificationGroupTypeSecretChat'
+    _: 'notificationGroupTypeSecretChat';
 }
 
 /** A group containing notifications of type notificationTypeNewCall */
 export interface NotificationGroupTypeCalls {
-  _: 'notificationGroupTypeCalls'
+    _: 'notificationGroupTypeCalls';
 }

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AnswerPreCheckoutQueryParams {
-  preCheckoutQueryId?: string // Identifier of the pre-checkout query
-  errorMessage?: string // An error message, empty on success
+    preCheckoutQueryId?: string; // Identifier of the pre-checkout query
+    errorMessage?: string; // An error message, empty on success
 }
 
 /**
@@ -15,6 +15,6 @@ export interface AnswerPreCheckoutQueryParams {
  * @returns {Promise<ApiResponse<AnswerPreCheckoutQueryParams, OkUnion>>}
  */
 export type answerPreCheckoutQuery = (
-  params?: AnswerPreCheckoutQueryParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AnswerPreCheckoutQueryParams, OkUnion>>
+    params?: AnswerPreCheckoutQueryParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AnswerPreCheckoutQueryParams, OkUnion>>;

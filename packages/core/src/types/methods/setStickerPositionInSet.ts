@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetStickerPositionInSetParams {
-  sticker?: InputFileInputUnion // Sticker
-  position?: number // New position of the sticker in the set, zero-based
+    sticker?: InputFileInputUnion; // Sticker
+    position?: number; // New position of the sticker in the set, zero-based
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SetStickerPositionInSetParams {
  * @returns {Promise<ApiResponse<SetStickerPositionInSetParams, OkUnion>>}
  */
 export type setStickerPositionInSet = (
-  params?: SetStickerPositionInSetParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetStickerPositionInSetParams, OkUnion>>
+    params?: SetStickerPositionInSetParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetStickerPositionInSetParams, OkUnion>>;

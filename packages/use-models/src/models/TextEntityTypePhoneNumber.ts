@@ -1,4 +1,4 @@
 /** A phone number */
 export class TextEntityTypePhoneNumberBaseModel {
-  public _: 'textEntityTypePhoneNumber'
+    public _: 'textEntityTypePhoneNumber';
 }

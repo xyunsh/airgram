@@ -1,3 +1,3 @@
 export enum USER {
-  user = 'user'
+    user = 'user',
 }

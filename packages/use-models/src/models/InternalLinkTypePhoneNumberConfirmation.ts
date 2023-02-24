@@ -4,11 +4,11 @@
  * the link
  */
 export class InternalLinkTypePhoneNumberConfirmationBaseModel {
-  public _: 'internalLinkTypePhoneNumberConfirmation'
+    public _: 'internalLinkTypePhoneNumberConfirmation';
 
-  /** Hash value from the link */
-  public hash: string
+    /** Hash value from the link */
+    public hash: string;
 
-  /** Phone number value from the link */
-  public phoneNumber: string
+    /** Phone number value from the link */
+    public phoneNumber: string;
 }

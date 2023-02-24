@@ -1,25 +1,25 @@
-import { MaskPointUnion } from '@airgram/core'
+import { MaskPointUnion } from '@airgram/core';
 
 /** Position on a photo where a mask is placed */
 export class MaskPositionBaseModel {
-  public _: 'maskPosition'
+    public _: 'maskPosition';
 
-  /** Part of the face, relative to which the mask is placed */
-  public point: MaskPointUnion
+    /** Part of the face, relative to which the mask is placed */
+    public point: MaskPointUnion;
 
-  /**
-   * Shift by X-axis measured in widths of the mask scaled to the face size, from left
-   * to right. (For example, -1.0 will place the mask just to the left of the default
-   * mask position)
-   */
-  public xShift: number
+    /**
+     * Shift by X-axis measured in widths of the mask scaled to the face size, from left
+     * to right. (For example, -1.0 will place the mask just to the left of the default
+     * mask position)
+     */
+    public xShift: number;
 
-  /**
-   * Shift by Y-axis measured in heights of the mask scaled to the face size, from top
-   * to bottom. (For example, 1.0 will place the mask just below the default mask position)
-   */
-  public yShift: number
+    /**
+     * Shift by Y-axis measured in heights of the mask scaled to the face size, from top
+     * to bottom. (For example, 1.0 will place the mask just below the default mask position)
+     */
+    public yShift: number;
 
-  /** Mask scaling coefficient. (For example, 2.0 means a doubled size) */
-  public scale: number
+    /** Mask scaling coefficient. (For example, 2.0 means a doubled size) */
+    public scale: number;
 }

@@ -3,8 +3,8 @@
  * to process the link
  */
 export class InternalLinkTypeChatInviteBaseModel {
-  public _: 'internalLinkTypeChatInvite'
+    public _: 'internalLinkTypeChatInvite';
 
-  /** Internal representation of the invite link */
-  public inviteLink: string
+    /** Internal representation of the invite link */
+    public inviteLink: string;
 }

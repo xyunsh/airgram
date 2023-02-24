@@ -1,32 +1,33 @@
 /** Specifies the kind of chat members to return in searchChatMembers */
-export type ChatMembersFilterInputUnion = ChatMembersFilterContactsInput
-  | ChatMembersFilterAdministratorsInput
-  | ChatMembersFilterMembersInput
-  | ChatMembersFilterMentionInput
-  | ChatMembersFilterRestrictedInput
-  | ChatMembersFilterBannedInput
-  | ChatMembersFilterBotsInput
+export type ChatMembersFilterInputUnion =
+    | ChatMembersFilterContactsInput
+    | ChatMembersFilterAdministratorsInput
+    | ChatMembersFilterMembersInput
+    | ChatMembersFilterMentionInput
+    | ChatMembersFilterRestrictedInput
+    | ChatMembersFilterBannedInput
+    | ChatMembersFilterBotsInput;
 
 /** Returns contacts of the user */
 export interface ChatMembersFilterContactsInput {
-  _: 'chatMembersFilterContacts'
+    _: 'chatMembersFilterContacts';
 }
 
 /** Returns the owner and administrators */
 export interface ChatMembersFilterAdministratorsInput {
-  _: 'chatMembersFilterAdministrators'
+    _: 'chatMembersFilterAdministrators';
 }
 
 /** Returns all chat members, including restricted chat members */
 export interface ChatMembersFilterMembersInput {
-  _: 'chatMembersFilterMembers'
+    _: 'chatMembersFilterMembers';
 }
 
 /** Returns users which can be mentioned in the chat */
 export interface ChatMembersFilterMentionInput {
-  _: 'chatMembersFilterMention'
-  /** If non-zero, the identifier of the current message thread */
-  messageThreadId?: number
+    _: 'chatMembersFilterMention';
+    /** If non-zero, the identifier of the current message thread */
+    messageThreadId?: number;
 }
 
 /**
@@ -34,7 +35,7 @@ export interface ChatMembersFilterMentionInput {
  * in a supergroup
  */
 export interface ChatMembersFilterRestrictedInput {
-  _: 'chatMembersFilterRestricted'
+    _: 'chatMembersFilterRestricted';
 }
 
 /**
@@ -42,10 +43,10 @@ export interface ChatMembersFilterRestrictedInput {
  * or in a channel
  */
 export interface ChatMembersFilterBannedInput {
-  _: 'chatMembersFilterBanned'
+    _: 'chatMembersFilterBanned';
 }
 
 /** Returns bot members of the chat */
 export interface ChatMembersFilterBotsInput {
-  _: 'chatMembersFilterBots'
+    _: 'chatMembersFilterBots';
 }

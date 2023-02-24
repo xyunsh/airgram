@@ -1,12 +1,12 @@
-import { StickerSetInfo } from '@airgram/core'
+import { StickerSetInfo } from '@airgram/core';
 
 /** Represents a list of sticker sets */
 export class StickerSetsBaseModel {
-  public _: 'stickerSets'
+    public _: 'stickerSets';
 
-  /** Approximate total number of sticker sets found */
-  public totalCount: number
+    /** Approximate total number of sticker sets found */
+    public totalCount: number;
 
-  /** List of sticker sets */
-  public sets: StickerSetInfo[]
+    /** List of sticker sets */
+    public sets: StickerSetInfo[];
 }

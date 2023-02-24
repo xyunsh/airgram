@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetChatSlowModeDelayParams {
-  chatId?: number // Chat identifier
-  slowModeDelay?: number // New slow mode delay for the chat, in seconds; must be one of 0, 10, 30, 60, 300, 900, 3600
+    chatId?: number; // Chat identifier
+    slowModeDelay?: number; // New slow mode delay for the chat, in seconds; must be one of 0, 10, 30, 60, 300, 900, 3600
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SetChatSlowModeDelayParams {
  * @returns {Promise<ApiResponse<SetChatSlowModeDelayParams, OkUnion>>}
  */
 export type setChatSlowModeDelay = (
-  params?: SetChatSlowModeDelayParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatSlowModeDelayParams, OkUnion>>
+    params?: SetChatSlowModeDelayParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatSlowModeDelayParams, OkUnion>>;

@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatsUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatsUnion } from '../outputs';
 
 /**
  * Returns a list of recently inactive supergroups and channels. Can be used when user
@@ -11,6 +9,6 @@ import { ChatsUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, ChatsUnion>>}
  */
 export type getInactiveSupergroupChats = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, ChatsUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, ChatsUnion>>;

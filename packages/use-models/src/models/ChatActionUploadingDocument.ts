@@ -1,7 +1,7 @@
 /** The user is uploading a document */
 export class ChatActionUploadingDocumentBaseModel {
-  public _: 'chatActionUploadingDocument'
+    public _: 'chatActionUploadingDocument';
 
-  /** Upload progress, as a percentage */
-  public progress: number
+    /** Upload progress, as a percentage */
+    public progress: number;
 }

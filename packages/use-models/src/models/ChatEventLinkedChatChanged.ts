@@ -1,10 +1,10 @@
 /** The linked chat of a supergroup was changed */
 export class ChatEventLinkedChatChangedBaseModel {
-  public _: 'chatEventLinkedChatChanged'
+    public _: 'chatEventLinkedChatChanged';
 
-  /** Previous supergroup linked chat identifier */
-  public oldLinkedChatId: number
+    /** Previous supergroup linked chat identifier */
+    public oldLinkedChatId: number;
 
-  /** New supergroup linked chat identifier */
-  public newLinkedChatId: number
+    /** New supergroup linked chat identifier */
+    public newLinkedChatId: number;
 }

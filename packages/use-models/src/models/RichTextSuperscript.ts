@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A superscript rich text */
 export class RichTextSuperscriptBaseModel {
-  public _: 'richTextSuperscript'
+    public _: 'richTextSuperscript';
 
-  /** Text */
-  public text: RichTextUnion
+    /** Text */
+    public text: RichTextUnion;
 }

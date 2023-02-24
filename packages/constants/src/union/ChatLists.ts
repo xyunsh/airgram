@@ -1,3 +1,3 @@
 export enum CHAT_LISTS {
-  chatLists = 'chatLists'
+    chatLists = 'chatLists',
 }

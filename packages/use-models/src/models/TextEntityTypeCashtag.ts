@@ -3,5 +3,5 @@
  * "$USD")
  */
 export class TextEntityTypeCashtagBaseModel {
-  public _: 'textEntityTypeCashtag'
+    public _: 'textEntityTypeCashtag';
 }

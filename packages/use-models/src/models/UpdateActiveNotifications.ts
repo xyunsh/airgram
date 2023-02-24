@@ -1,4 +1,4 @@
-import { NotificationGroup } from '@airgram/core'
+import { NotificationGroup } from '@airgram/core';
 
 /**
  * Contains active notifications that was shown on previous application launches. This
@@ -6,8 +6,8 @@ import { NotificationGroup } from '@airgram/core'
  * any updateNotification and updateNotificationGroup update
  */
 export class UpdateActiveNotificationsBaseModel {
-  public _: 'updateActiveNotifications'
+    public _: 'updateActiveNotifications';
 
-  /** Lists of active notification groups */
-  public groups: NotificationGroup[]
+    /** Lists of active notification groups */
+    public groups: NotificationGroup[];
 }

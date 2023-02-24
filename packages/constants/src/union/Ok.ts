@@ -1,3 +1,3 @@
 export enum OK {
-  ok = 'ok'
+    ok = 'ok',
 }

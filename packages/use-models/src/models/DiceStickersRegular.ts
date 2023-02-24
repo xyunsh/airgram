@@ -1,9 +1,9 @@
-import { Sticker } from '@airgram/core'
+import { Sticker } from '@airgram/core';
 
 /** A regular animated sticker */
 export class DiceStickersRegularBaseModel {
-  public _: 'diceStickersRegular'
+    public _: 'diceStickersRegular';
 
-  /** The animated sticker with the dice animation */
-  public sticker: Sticker
+    /** The animated sticker with the dice animation */
+    public sticker: Sticker;
 }

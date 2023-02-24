@@ -3,8 +3,8 @@
  * phone number. The phone number that calls is the code that must be entered automatically
  */
 export class AuthenticationCodeTypeFlashCallBaseModel {
-  public _: 'authenticationCodeTypeFlashCall'
+    public _: 'authenticationCodeTypeFlashCall';
 
-  /** Pattern of the phone number from which the call will be made */
-  public pattern: string
+    /** Pattern of the phone number from which the call will be made */
+    public pattern: string;
 }

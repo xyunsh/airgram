@@ -1,32 +1,32 @@
 {
-  "name": "@airgram/web",
-  "version": "5.1.1",
-  "private": false,
-  "main": "src/index.ts",
-  "types": "src/index.ts",
-  "keywords": [
-    "telegram",
-    "tdweb",
-    "airgram"
-  ],
-  "scripts": {
-    "build": "gulp build",
-    "check": "tsc --noEmit",
-    "lint": "eslint --fix ./src/**/*.ts",
-    "prebuild": "npm run test",
-    "prepublishOnly": "gulp build",
-    "test": "jest"
-  },
-  "pre-commit": "yarn run lint",
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@airgram/core": "^5.1.1",
-    "tdweb": "~1.8.0"
-  },
-  "devDependencies": {
-    "@types/tdweb": "1.4.0"
-  },
-  "gitHead": "35eec9d2e4fb34a7d0183ecf8a4558c047e8a5bf"
+    "name": "@airgram/web",
+    "version": "5.1.1",
+    "private": false,
+    "main": "src/index.ts",
+    "types": "src/index.ts",
+    "keywords": [
+        "telegram",
+        "tdweb",
+        "airgram"
+    ],
+    "scripts": {
+        "build": "gulp build",
+        "check": "tsc --noEmit",
+        "lint": "eslint --fix ./src/**/*.ts",
+        "prebuild": "npm run test",
+        "prepublishOnly": "gulp build",
+        "test": "jest"
+    },
+    "pre-commit": "yarn run lint",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@airgram/core": "^5.1.1",
+        "tdweb": "~1.8.0"
+    },
+    "devDependencies": {
+        "@types/tdweb": "1.4.0"
+    },
+    "gitHead": "35eec9d2e4fb34a7d0183ecf8a4558c047e8a5bf"
 }

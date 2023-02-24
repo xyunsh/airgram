@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SecondsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SecondsUnion } from '../outputs';
 
 export interface PingProxyParams {
-  proxyId?: number // Proxy identifier. Use 0 to ping a Telegram server without a proxy
+    proxyId?: number; // Proxy identifier. Use 0 to ping a Telegram server without a proxy
 }
 
 /**
@@ -15,6 +15,6 @@ export interface PingProxyParams {
  * @returns {Promise<ApiResponse<PingProxyParams, SecondsUnion>>}
  */
 export type pingProxy = (
-  params?: PingProxyParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<PingProxyParams, SecondsUnion>>
+    params?: PingProxyParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<PingProxyParams, SecondsUnion>>;

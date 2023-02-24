@@ -1,12 +1,12 @@
-import { Document, FormattedText } from '@airgram/core'
+import { Document, FormattedText } from '@airgram/core';
 
 /** A document message (general file) */
 export class MessageDocumentBaseModel {
-  public _: 'messageDocument'
+    public _: 'messageDocument';
 
-  /** The document description */
-  public document: Document
+    /** The document description */
+    public document: Document;
 
-  /** Document caption */
-  public caption: FormattedText
+    /** Document caption */
+    public caption: FormattedText;
 }

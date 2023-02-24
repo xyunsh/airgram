@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { StickersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { StickersUnion } from '../outputs';
 
 export interface AddRecentStickerParams {
-  isAttached?: boolean // Pass true to add the sticker to the list of stickers recently attached to photo or video files; pass false to add the sticker to the list of recently sent stickers
-  sticker?: InputFileInputUnion // Sticker file to add
+    isAttached?: boolean; // Pass true to add the sticker to the list of stickers recently attached to photo or video files; pass false to add the sticker to the list of recently sent stickers
+    sticker?: InputFileInputUnion; // Sticker file to add
 }
 
 /**
@@ -21,6 +21,6 @@ export interface AddRecentStickerParams {
  * @returns {Promise<ApiResponse<AddRecentStickerParams, StickersUnion>>}
  */
 export type addRecentSticker = (
-  params?: AddRecentStickerParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddRecentStickerParams, StickersUnion>>
+    params?: AddRecentStickerParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddRecentStickerParams, StickersUnion>>;

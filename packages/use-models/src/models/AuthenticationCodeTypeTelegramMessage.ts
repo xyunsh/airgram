@@ -3,8 +3,8 @@
  * viewed from another active session
  */
 export class AuthenticationCodeTypeTelegramMessageBaseModel {
-  public _: 'authenticationCodeTypeTelegramMessage'
+    public _: 'authenticationCodeTypeTelegramMessage';
 
-  /** Length of the code */
-  public length: number
+    /** Length of the code */
+    public length: number;
 }

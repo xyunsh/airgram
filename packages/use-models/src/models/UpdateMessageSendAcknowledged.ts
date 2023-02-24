@@ -5,11 +5,11 @@
  * to true. This update may be sent multiple times for the same message
  */
 export class UpdateMessageSendAcknowledgedBaseModel {
-  public _: 'updateMessageSendAcknowledged'
+    public _: 'updateMessageSendAcknowledged';
 
-  /** The chat identifier of the sent message */
-  public chatId: number
+    /** The chat identifier of the sent message */
+    public chatId: number;
 
-  /** A temporary message identifier */
-  public messageId: number
+    /** A temporary message identifier */
+    public messageId: number;
 }

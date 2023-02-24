@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OptionValueUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OptionValueUnion } from '../outputs';
 
 export interface GetOptionParams {
-  name?: string // The name of the option
+    name?: string; // The name of the option
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetOptionParams {
  * @returns {Promise<ApiResponse<GetOptionParams, OptionValueUnion>>}
  */
 export type getOption = (
-  params?: GetOptionParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetOptionParams, OptionValueUnion>>
+    params?: GetOptionParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetOptionParams, OptionValueUnion>>;

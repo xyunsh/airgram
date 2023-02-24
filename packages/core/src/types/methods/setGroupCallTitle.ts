@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetGroupCallTitleParams {
-  groupCallId?: number // Group call identifier
-  title?: string // New group call title; 1-64 characters
+    groupCallId?: number; // Group call identifier
+    title?: string; // New group call title; 1-64 characters
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SetGroupCallTitleParams {
  * @returns {Promise<ApiResponse<SetGroupCallTitleParams, OkUnion>>}
  */
 export type setGroupCallTitle = (
-  params?: SetGroupCallTitleParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetGroupCallTitleParams, OkUnion>>
+    params?: SetGroupCallTitleParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetGroupCallTitleParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { CheckChatUsernameResultUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { CheckChatUsernameResultUnion } from '../outputs';
 
 export interface CheckChatUsernameParams {
-  chatId?: number // Chat identifier; must be identifier of a supergroup chat, or a channel chat, or a private chat with self, or zero if the chat is being created
-  username?: string // Username to be checked
+    chatId?: number; // Chat identifier; must be identifier of a supergroup chat, or a channel chat, or a private chat with self, or zero if the chat is being created
+    username?: string; // Username to be checked
 }
 
 /**
@@ -17,6 +17,6 @@ export interface CheckChatUsernameParams {
  * @returns {Promise<ApiResponse<CheckChatUsernameParams, CheckChatUsernameResultUnion>>}
  */
 export type checkChatUsername = (
-  params?: CheckChatUsernameParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckChatUsernameParams, CheckChatUsernameResultUnion>>
+    params?: CheckChatUsernameParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckChatUsernameParams, CheckChatUsernameResultUnion>>;

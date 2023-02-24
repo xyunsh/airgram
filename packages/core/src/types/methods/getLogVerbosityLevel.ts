@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LogVerbosityLevelUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LogVerbosityLevelUnion } from '../outputs';
 
 /**
  * Returns current verbosity level of the internal logging of TDLib. Can be called synchronously
@@ -9,8 +7,8 @@ import { LogVerbosityLevelUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, LogVerbosityLevelUnion>>}
  */
 export type getLogVerbosityLevel = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, LogVerbosityLevelUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, LogVerbosityLevelUnion>>;
 
-export type getLogVerbosityLevelSync = (params?: never) => LogVerbosityLevelUnion
+export type getLogVerbosityLevelSync = (params?: never) => LogVerbosityLevelUnion;

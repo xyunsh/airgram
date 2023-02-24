@@ -1,3 +1,3 @@
 export enum TEST_INT {
-  testInt = 'testInt'
+    testInt = 'testInt',
 }

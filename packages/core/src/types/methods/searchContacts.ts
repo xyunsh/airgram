@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UsersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UsersUnion } from '../outputs';
 
 export interface SearchContactsParams {
-  query?: string // Query to search for; may be empty to return all contacts
-  limit?: number // The maximum number of users to be returned
+    query?: string; // Query to search for; may be empty to return all contacts
+    limit?: number; // The maximum number of users to be returned
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SearchContactsParams {
  * @returns {Promise<ApiResponse<SearchContactsParams, UsersUnion>>}
  */
 export type searchContacts = (
-  params?: SearchContactsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchContactsParams, UsersUnion>>
+    params?: SearchContactsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchContactsParams, UsersUnion>>;

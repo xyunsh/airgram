@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { HttpUrlUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { HttpUrlUnion } from '../outputs';
 
 export interface GetLoginUrlParams {
-  chatId?: number // Chat identifier of the message with the button
-  messageId?: number // Message identifier of the message with the button
-  buttonId?: number // Button identifier
-  allowWriteAccess?: boolean // Pass true to allow the bot to send messages to the current user
+    chatId?: number; // Chat identifier of the message with the button
+    messageId?: number; // Message identifier of the message with the button
+    buttonId?: number; // Button identifier
+    allowWriteAccess?: boolean; // Pass true to allow the bot to send messages to the current user
 }
 
 /**
@@ -24,6 +24,6 @@ export interface GetLoginUrlParams {
  * @returns {Promise<ApiResponse<GetLoginUrlParams, HttpUrlUnion>>}
  */
 export type getLoginUrl = (
-  params?: GetLoginUrlParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetLoginUrlParams, HttpUrlUnion>>
+    params?: GetLoginUrlParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetLoginUrlParams, HttpUrlUnion>>;

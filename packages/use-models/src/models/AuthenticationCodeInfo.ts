@@ -1,18 +1,18 @@
-import { AuthenticationCodeTypeUnion } from '@airgram/core'
+import { AuthenticationCodeTypeUnion } from '@airgram/core';
 
 /** Information about the authentication code that was sent */
 export class AuthenticationCodeInfoBaseModel {
-  public _: 'authenticationCodeInfo'
+    public _: 'authenticationCodeInfo';
 
-  /** A phone number that is being authenticated */
-  public phoneNumber: string
+    /** A phone number that is being authenticated */
+    public phoneNumber: string;
 
-  /** The way the code was sent to the user */
-  public type: AuthenticationCodeTypeUnion
+    /** The way the code was sent to the user */
+    public type: AuthenticationCodeTypeUnion;
 
-  /** The way the next code will be sent to the user; may be null */
-  public nextType?: AuthenticationCodeTypeUnion
+    /** The way the next code will be sent to the user; may be null */
+    public nextType?: AuthenticationCodeTypeUnion;
 
-  /** Timeout before the code can be re-sent, in seconds */
-  public timeout: number
+    /** Timeout before the code can be re-sent, in seconds */
+    public timeout: number;
 }

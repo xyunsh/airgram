@@ -1,12 +1,12 @@
-import { Background } from '@airgram/core'
+import { Background } from '@airgram/core';
 
 /** The selected background has changed */
 export class UpdateSelectedBackgroundBaseModel {
-  public _: 'updateSelectedBackground'
+    public _: 'updateSelectedBackground';
 
-  /** True, if background for dark theme has changed */
-  public forDarkTheme: boolean
+    /** True, if background for dark theme has changed */
+    public forDarkTheme: boolean;
 
-  /** The new selected background; may be null */
-  public background?: Background
+    /** The new selected background; may be null */
+    public background?: Background;
 }

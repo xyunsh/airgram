@@ -3,5 +3,5 @@
  * resolved when new data is added
  */
 export class PassportElementErrorSourceUnspecifiedBaseModel {
-  public _: 'passportElementErrorSourceUnspecified'
+    public _: 'passportElementErrorSourceUnspecified';
 }

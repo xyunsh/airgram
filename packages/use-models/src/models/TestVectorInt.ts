@@ -1,7 +1,7 @@
 /** A simple object containing a vector of numbers; for testing only */
 export class TestVectorIntBaseModel {
-  public _: 'testVectorInt'
+    public _: 'testVectorInt';
 
-  /** Vector of numbers */
-  public value: number[]
+    /** Vector of numbers */
+    public value: number[];
 }

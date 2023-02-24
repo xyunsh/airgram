@@ -1,14 +1,14 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LocationInput, ReplyMarkupInputUnion } from '../inputs'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LocationInput, ReplyMarkupInputUnion } from '../inputs';
+import { MessageUnion } from '../outputs';
 
 export interface EditMessageLiveLocationParams {
-  chatId?: number // The chat the message belongs to
-  messageId?: number // Identifier of the message
-  replyMarkup?: ReplyMarkupInputUnion // The new message reply markup; pass null if none; for bots only
-  location?: LocationInput // New location content of the message; pass null to stop sharing the live location
-  heading?: number // The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
-  proximityAlertRadius?: number // The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled
+    chatId?: number; // The chat the message belongs to
+    messageId?: number; // Identifier of the message
+    replyMarkup?: ReplyMarkupInputUnion; // The new message reply markup; pass null if none; for bots only
+    location?: LocationInput; // New location content of the message; pass null to stop sharing the live location
+    heading?: number; // The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
+    proximityAlertRadius?: number; // The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled
 }
 
 /**
@@ -30,6 +30,6 @@ export interface EditMessageLiveLocationParams {
  * @returns {Promise<ApiResponse<EditMessageLiveLocationParams, MessageUnion>>}
  */
 export type editMessageLiveLocation = (
-  params?: EditMessageLiveLocationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditMessageLiveLocationParams, MessageUnion>>
+    params?: EditMessageLiveLocationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditMessageLiveLocationParams, MessageUnion>>;

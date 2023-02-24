@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { BasicGroupUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { BasicGroupUnion } from '../outputs';
 
 export interface GetBasicGroupParams {
-  basicGroupId?: number // Basic group identifier
+    basicGroupId?: number; // Basic group identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetBasicGroupParams {
  * @returns {Promise<ApiResponse<GetBasicGroupParams, BasicGroupUnion>>}
  */
 export type getBasicGroup = (
-  params?: GetBasicGroupParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetBasicGroupParams, BasicGroupUnion>>
+    params?: GetBasicGroupParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetBasicGroupParams, BasicGroupUnion>>;

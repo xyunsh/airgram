@@ -1,9 +1,9 @@
-import { Venue } from '@airgram/core'
+import { Venue } from '@airgram/core';
 
 /** A message with information about a venue */
 export class InputMessageVenueBaseModel {
-  public _: 'inputMessageVenue'
+    public _: 'inputMessageVenue';
 
-  /** Venue to send */
-  public venue: Venue
+    /** Venue to send */
+    public venue: Venue;
 }

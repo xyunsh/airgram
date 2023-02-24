@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AcceptTermsOfServiceParams {
-  termsOfServiceId?: string // Terms of service identifier
+    termsOfServiceId?: string; // Terms of service identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface AcceptTermsOfServiceParams {
  * @returns {Promise<ApiResponse<AcceptTermsOfServiceParams, OkUnion>>}
  */
 export type acceptTermsOfService = (
-  params?: AcceptTermsOfServiceParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AcceptTermsOfServiceParams, OkUnion>>
+    params?: AcceptTermsOfServiceParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AcceptTermsOfServiceParams, OkUnion>>;

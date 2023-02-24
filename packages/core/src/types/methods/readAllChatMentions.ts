@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ReadAllChatMentionsParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface ReadAllChatMentionsParams {
  * @returns {Promise<ApiResponse<ReadAllChatMentionsParams, OkUnion>>}
  */
 export type readAllChatMentions = (
-  params?: ReadAllChatMentionsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ReadAllChatMentionsParams, OkUnion>>
+    params?: ReadAllChatMentionsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ReadAllChatMentionsParams, OkUnion>>;

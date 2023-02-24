@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SendCallSignalingDataParams {
-  callId?: number // Call identifier
-  data?: string // The data
+    callId?: number; // Call identifier
+    data?: string; // The data
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SendCallSignalingDataParams {
  * @returns {Promise<ApiResponse<SendCallSignalingDataParams, OkUnion>>}
  */
 export type sendCallSignalingData = (
-  params?: SendCallSignalingDataParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendCallSignalingDataParams, OkUnion>>
+    params?: SendCallSignalingDataParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendCallSignalingDataParams, OkUnion>>;

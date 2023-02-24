@@ -1,7 +1,7 @@
 /** A plain text */
 export class RichTextPlainBaseModel {
-  public _: 'richTextPlain'
+    public _: 'richTextPlain';
 
-  /** Text */
-  public text: string
+    /** Text */
+    public text: string;
 }

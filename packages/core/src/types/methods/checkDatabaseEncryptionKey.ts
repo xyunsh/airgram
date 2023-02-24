@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface CheckDatabaseEncryptionKeyParams {
-  encryptionKey?: string // Encryption key to check or set up
+    encryptionKey?: string; // Encryption key to check or set up
 }
 
 /**
@@ -14,6 +14,6 @@ export interface CheckDatabaseEncryptionKeyParams {
  * @returns {Promise<ApiResponse<CheckDatabaseEncryptionKeyParams, OkUnion>>}
  */
 export type checkDatabaseEncryptionKey = (
-  params?: CheckDatabaseEncryptionKeyParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckDatabaseEncryptionKeyParams, OkUnion>>
+    params?: CheckDatabaseEncryptionKeyParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckDatabaseEncryptionKeyParams, OkUnion>>;

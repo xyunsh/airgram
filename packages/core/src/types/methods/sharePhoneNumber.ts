@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SharePhoneNumberParams {
-  userId?: number // Identifier of the user with whom to share the phone number. The user must be a mutual contact
+    userId?: number; // Identifier of the user with whom to share the phone number. The user must be a mutual contact
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SharePhoneNumberParams {
  * @returns {Promise<ApiResponse<SharePhoneNumberParams, OkUnion>>}
  */
 export type sharePhoneNumber = (
-  params?: SharePhoneNumberParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SharePhoneNumberParams, OkUnion>>
+    params?: SharePhoneNumberParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SharePhoneNumberParams, OkUnion>>;

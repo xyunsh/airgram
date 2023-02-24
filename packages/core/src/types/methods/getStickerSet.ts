@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { StickerSetUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { StickerSetUnion } from '../outputs';
 
 export interface GetStickerSetParams {
-  setId?: string // Identifier of the sticker set
+    setId?: string; // Identifier of the sticker set
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetStickerSetParams {
  * @returns {Promise<ApiResponse<GetStickerSetParams, StickerSetUnion>>}
  */
 export type getStickerSet = (
-  params?: GetStickerSetParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetStickerSetParams, StickerSetUnion>>
+    params?: GetStickerSetParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetStickerSetParams, StickerSetUnion>>;

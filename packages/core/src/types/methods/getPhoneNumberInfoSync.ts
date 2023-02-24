@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PhoneNumberInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PhoneNumberInfoUnion } from '../outputs';
 
 export interface GetPhoneNumberInfoSyncParams {
-  languageCode?: string // A two-letter ISO 639-1 language code for country information localization
-  phoneNumberPrefix?: string // The phone number prefix
+    languageCode?: string; // A two-letter ISO 639-1 language code for country information localization
+    phoneNumberPrefix?: string; // The phone number prefix
 }
 
 /**
@@ -18,8 +18,8 @@ export interface GetPhoneNumberInfoSyncParams {
  * @returns {Promise<ApiResponse<GetPhoneNumberInfoSyncParams, PhoneNumberInfoUnion>>}
  */
 export type getPhoneNumberInfoSync = (
-  params?: GetPhoneNumberInfoSyncParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPhoneNumberInfoSyncParams, PhoneNumberInfoUnion>>
+    params?: GetPhoneNumberInfoSyncParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPhoneNumberInfoSyncParams, PhoneNumberInfoUnion>>;
 
-export type getPhoneNumberInfoSyncSync = (params?: GetPhoneNumberInfoSyncParams) => PhoneNumberInfoUnion
+export type getPhoneNumberInfoSyncSync = (params?: GetPhoneNumberInfoSyncParams) => PhoneNumberInfoUnion;

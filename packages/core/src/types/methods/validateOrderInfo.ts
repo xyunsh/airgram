@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OrderInfoInput } from '../inputs'
-import { ValidatedOrderInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OrderInfoInput } from '../inputs';
+import { ValidatedOrderInfoUnion } from '../outputs';
 
 export interface ValidateOrderInfoParams {
-  chatId?: number // Chat identifier of the Invoice message
-  messageId?: number // Message identifier
-  orderInfo?: OrderInfoInput // The order information, provided by the user; pass null if empty
-  allowSave?: boolean // Pass true to save the order information
+    chatId?: number; // Chat identifier of the Invoice message
+    messageId?: number; // Message identifier
+    orderInfo?: OrderInfoInput; // The order information, provided by the user; pass null if empty
+    allowSave?: boolean; // Pass true to save the order information
 }
 
 /**
@@ -22,6 +22,6 @@ export interface ValidateOrderInfoParams {
  * @returns {Promise<ApiResponse<ValidateOrderInfoParams, ValidatedOrderInfoUnion>>}
  */
 export type validateOrderInfo = (
-  params?: ValidateOrderInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ValidateOrderInfoParams, ValidatedOrderInfoUnion>>
+    params?: ValidateOrderInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ValidateOrderInfoParams, ValidatedOrderInfoUnion>>;

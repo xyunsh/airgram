@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { NetworkStatisticsEntryInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { NetworkStatisticsEntryInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface AddNetworkStatisticsParams {
-  entry?: NetworkStatisticsEntryInputUnion // The network statistics entry with the data to be added to statistics
+    entry?: NetworkStatisticsEntryInputUnion; // The network statistics entry with the data to be added to statistics
 }
 
 /**
@@ -15,6 +15,6 @@ export interface AddNetworkStatisticsParams {
  * @returns {Promise<ApiResponse<AddNetworkStatisticsParams, OkUnion>>}
  */
 export type addNetworkStatistics = (
-  params?: AddNetworkStatisticsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddNetworkStatisticsParams, OkUnion>>
+    params?: AddNetworkStatisticsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddNetworkStatisticsParams, OkUnion>>;

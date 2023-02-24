@@ -1,7 +1,7 @@
 /** Contains some text */
 export class TextBaseModel {
-  public _: 'text'
+    public _: 'text';
 
-  /** Text */
-  public text: string
+    /** Text */
+    public text: string;
 }

@@ -3,5 +3,5 @@
  * when the file with the front side changes
  */
 export class PassportElementErrorSourceFrontSideBaseModel {
-  public _: 'passportElementErrorSourceFrontSide'
+    public _: 'passportElementErrorSourceFrontSide';
 }

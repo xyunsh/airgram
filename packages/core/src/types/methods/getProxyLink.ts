@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { HttpUrlUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { HttpUrlUnion } from '../outputs';
 
 export interface GetProxyLinkParams {
-  proxyId?: number // Proxy identifier
+    proxyId?: number; // Proxy identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetProxyLinkParams {
  * @returns {Promise<ApiResponse<GetProxyLinkParams, HttpUrlUnion>>}
  */
 export type getProxyLink = (
-  params?: GetProxyLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetProxyLinkParams, HttpUrlUnion>>
+    params?: GetProxyLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetProxyLinkParams, HttpUrlUnion>>;

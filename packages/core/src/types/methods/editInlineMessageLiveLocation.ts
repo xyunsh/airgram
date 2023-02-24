@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LocationInput, ReplyMarkupInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LocationInput, ReplyMarkupInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface EditInlineMessageLiveLocationParams {
-  inlineMessageId?: string // Inline message identifier
-  replyMarkup?: ReplyMarkupInputUnion // The new message reply markup; pass null if none
-  location?: LocationInput // New location content of the message; pass null to stop sharing the live location
-  heading?: number // The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
-  proximityAlertRadius?: number // The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled
+    inlineMessageId?: string; // Inline message identifier
+    replyMarkup?: ReplyMarkupInputUnion; // The new message reply markup; pass null if none
+    location?: LocationInput; // New location content of the message; pass null to stop sharing the live location
+    heading?: number; // The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
+    proximityAlertRadius?: number; // The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled
 }
 
 /**
@@ -27,6 +27,6 @@ export interface EditInlineMessageLiveLocationParams {
  * @returns {Promise<ApiResponse<EditInlineMessageLiveLocationParams, OkUnion>>}
  */
 export type editInlineMessageLiveLocation = (
-  params?: EditInlineMessageLiveLocationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<EditInlineMessageLiveLocationParams, OkUnion>>
+    params?: EditInlineMessageLiveLocationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<EditInlineMessageLiveLocationParams, OkUnion>>;

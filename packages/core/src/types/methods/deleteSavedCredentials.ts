@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 /**
  * Deletes saved credentials for all payment provider bots
@@ -9,6 +7,6 @@ import { OkUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, OkUnion>>}
  */
 export type deleteSavedCredentials = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, OkUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, OkUnion>>;

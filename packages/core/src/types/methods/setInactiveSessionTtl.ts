@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetInactiveSessionTtlParams {
-  inactiveSessionTtlDays?: number // New number of days of inactivity before sessions will be automatically terminated; 1-366 days
+    inactiveSessionTtlDays?: number; // New number of days of inactivity before sessions will be automatically terminated; 1-366 days
 }
 
 /**
@@ -14,6 +14,6 @@ export interface SetInactiveSessionTtlParams {
  * @returns {Promise<ApiResponse<SetInactiveSessionTtlParams, OkUnion>>}
  */
 export type setInactiveSessionTtl = (
-  params?: SetInactiveSessionTtlParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetInactiveSessionTtlParams, OkUnion>>
+    params?: SetInactiveSessionTtlParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetInactiveSessionTtlParams, OkUnion>>;

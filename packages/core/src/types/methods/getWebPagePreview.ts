@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FormattedTextInput } from '../inputs'
-import { WebPageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FormattedTextInput } from '../inputs';
+import { WebPageUnion } from '../outputs';
 
 export interface GetWebPagePreviewParams {
-  text?: FormattedTextInput // Message text with formatting
+    text?: FormattedTextInput; // Message text with formatting
 }
 
 /**
@@ -15,6 +15,6 @@ export interface GetWebPagePreviewParams {
  * @returns {Promise<ApiResponse<GetWebPagePreviewParams, WebPageUnion>>}
  */
 export type getWebPagePreview = (
-  params?: GetWebPagePreviewParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetWebPagePreviewParams, WebPageUnion>>
+    params?: GetWebPagePreviewParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetWebPagePreviewParams, WebPageUnion>>;

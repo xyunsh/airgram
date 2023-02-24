@@ -1,3 +1,3 @@
 export enum STICKER {
-  sticker = 'sticker'
+    sticker = 'sticker',
 }

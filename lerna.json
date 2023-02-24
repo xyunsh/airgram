@@ -1,29 +1,20 @@
 {
-  "ignoreChanges": [
-    "**/__tests__/**",
-    "**/__snapshots__/**",
-    "**/*.test.*",
-    "**/*.md"
-  ],
-  "command": {
-    "version": {
-      "changelog": true,
-      "conventionalCommits": true,
-      "conventionalPrerelease": false,
-      "preid": "next",
-      "message": "chore(release): publish 🚀"
+    "ignoreChanges": ["**/__tests__/**", "**/__snapshots__/**", "**/*.test.*", "**/*.md"],
+    "command": {
+        "version": {
+            "changelog": true,
+            "conventionalCommits": true,
+            "conventionalPrerelease": false,
+            "preid": "next",
+            "message": "chore(release): publish 🚀"
+        },
+        "publish": {
+            "contents": "dist/package"
+        },
+        "bootstrap": {
+            "npmClientArgs": ["--no-package-lock"]
+        }
     },
-    "publish": {
-      "contents": "dist/package"
-    },
-    "bootstrap": {
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
-    }
-  },
-  "packages": [
-    "packages/*"
-  ],
-  "version": "independent"
+    "packages": ["packages/*"],
+    "version": "independent"
 }

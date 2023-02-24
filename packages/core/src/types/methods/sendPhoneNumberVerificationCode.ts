@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PhoneNumberAuthenticationSettingsInput } from '../inputs'
-import { AuthenticationCodeInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PhoneNumberAuthenticationSettingsInput } from '../inputs';
+import { AuthenticationCodeInfoUnion } from '../outputs';
 
 export interface SendPhoneNumberVerificationCodeParams {
-  phoneNumber?: string // The phone number of the user, in international format
-  settings?: PhoneNumberAuthenticationSettingsInput // Settings for the authentication of the user's phone number; pass null to use default settings
+    phoneNumber?: string; // The phone number of the user, in international format
+    settings?: PhoneNumberAuthenticationSettingsInput; // Settings for the authentication of the user's phone number; pass null to use default settings
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SendPhoneNumberVerificationCodeParams {
  * @returns {Promise<ApiResponse<SendPhoneNumberVerificationCodeParams, AuthenticationCodeInfoUnion>>}
  */
 export type sendPhoneNumberVerificationCode = (
-  params?: SendPhoneNumberVerificationCodeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendPhoneNumberVerificationCodeParams, AuthenticationCodeInfoUnion>>
+    params?: SendPhoneNumberVerificationCodeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendPhoneNumberVerificationCodeParams, AuthenticationCodeInfoUnion>>;

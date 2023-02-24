@@ -1,12 +1,12 @@
-import { ChatPhoto } from '@airgram/core'
+import { ChatPhoto } from '@airgram/core';
 
 /** Contains a list of chat or user profile photos */
 export class ChatPhotosBaseModel {
-  public _: 'chatPhotos'
+    public _: 'chatPhotos';
 
-  /** Total number of photos */
-  public totalCount: number
+    /** Total number of photos */
+    public totalCount: number;
 
-  /** List of photos */
-  public photos: ChatPhoto[]
+    /** List of photos */
+    public photos: ChatPhoto[];
 }

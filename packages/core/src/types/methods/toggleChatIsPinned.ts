@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatListInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatListInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface ToggleChatIsPinnedParams {
-  chatList?: ChatListInputUnion // Chat list in which to change the pinned state of the chat
-  chatId?: number // Chat identifier
-  isPinned?: boolean // Pass true to pin the chat; pass false to unpin it
+    chatList?: ChatListInputUnion; // Chat list in which to change the pinned state of the chat
+    chatId?: number; // Chat identifier
+    isPinned?: boolean; // Pass true to pin the chat; pass false to unpin it
 }
 
 /**
@@ -22,6 +22,6 @@ export interface ToggleChatIsPinnedParams {
  * @returns {Promise<ApiResponse<ToggleChatIsPinnedParams, OkUnion>>}
  */
 export type toggleChatIsPinned = (
-  params?: ToggleChatIsPinnedParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleChatIsPinnedParams, OkUnion>>
+    params?: ToggleChatIsPinnedParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleChatIsPinnedParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface GetSuggestedFileNameParams {
-  fileId?: number // Identifier of the file
-  directory?: string // Directory in which the file is supposed to be saved
+    fileId?: number; // Identifier of the file
+    directory?: string; // Directory in which the file is supposed to be saved
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetSuggestedFileNameParams {
  * @returns {Promise<ApiResponse<GetSuggestedFileNameParams, TextUnion>>}
  */
 export type getSuggestedFileName = (
-  params?: GetSuggestedFileNameParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetSuggestedFileNameParams, TextUnion>>
+    params?: GetSuggestedFileNameParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetSuggestedFileNameParams, TextUnion>>;

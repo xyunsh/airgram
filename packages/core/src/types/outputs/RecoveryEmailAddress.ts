@@ -1,8 +1,8 @@
-export type RecoveryEmailAddressUnion = RecoveryEmailAddress
+export type RecoveryEmailAddressUnion = RecoveryEmailAddress;
 
 /** Contains information about the current recovery email address */
 export interface RecoveryEmailAddress {
-  _: 'recoveryEmailAddress'
-  /** Recovery email address */
-  recoveryEmailAddress: string
+    _: 'recoveryEmailAddress';
+    /** Recovery email address */
+    recoveryEmailAddress: string;
 }

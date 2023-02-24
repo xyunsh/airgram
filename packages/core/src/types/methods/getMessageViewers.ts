@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UsersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UsersUnion } from '../outputs';
 
 export interface GetMessageViewersParams {
-  chatId?: number // Chat identifier
-  messageId?: number // Identifier of the message
+    chatId?: number; // Chat identifier
+    messageId?: number; // Identifier of the message
 }
 
 /**
@@ -17,6 +17,6 @@ export interface GetMessageViewersParams {
  * @returns {Promise<ApiResponse<GetMessageViewersParams, UsersUnion>>}
  */
 export type getMessageViewers = (
-  params?: GetMessageViewersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMessageViewersParams, UsersUnion>>
+    params?: GetMessageViewersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMessageViewersParams, UsersUnion>>;

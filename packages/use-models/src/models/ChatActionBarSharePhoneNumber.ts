@@ -3,5 +3,5 @@
  * can be shared with the other user using the method sharePhoneNumber
  */
 export class ChatActionBarSharePhoneNumberBaseModel {
-  public _: 'chatActionBarSharePhoneNumber'
+    public _: 'chatActionBarSharePhoneNumber';
 }

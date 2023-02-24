@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetChatAvailableReactionsParams {
-  chatId?: number // Identifier of the chat
-  availableReactions?: string[] // New list of reactions, available in the chat. All reactions must be active
+    chatId?: number; // Identifier of the chat
+    availableReactions?: string[]; // New list of reactions, available in the chat. All reactions must be active
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SetChatAvailableReactionsParams {
  * @returns {Promise<ApiResponse<SetChatAvailableReactionsParams, OkUnion>>}
  */
 export type setChatAvailableReactions = (
-  params?: SetChatAvailableReactionsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatAvailableReactionsParams, OkUnion>>
+    params?: SetChatAvailableReactionsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatAvailableReactionsParams, OkUnion>>;

@@ -1,3 +1,3 @@
 export enum CHAT_NEARBY {
-  chatNearby = 'chatNearby'
+    chatNearby = 'chatNearby',
 }

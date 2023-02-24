@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { EmojisUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { EmojisUnion } from '../outputs';
 
 export interface SearchEmojisParams {
-  text?: string // Text to search for
-  exactMatch?: boolean // Pass true if only emojis, which exactly match the text, needs to be returned
-  inputLanguageCodes?: string[] // List of possible IETF language tags of the user's input language; may be empty if unknown
+    text?: string; // Text to search for
+    exactMatch?: boolean; // Pass true if only emojis, which exactly match the text, needs to be returned
+    inputLanguageCodes?: string[]; // List of possible IETF language tags of the user's input language; may be empty if unknown
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SearchEmojisParams {
  * @returns {Promise<ApiResponse<SearchEmojisParams, EmojisUnion>>}
  */
 export type searchEmojis = (
-  params?: SearchEmojisParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchEmojisParams, EmojisUnion>>
+    params?: SearchEmojisParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchEmojisParams, EmojisUnion>>;

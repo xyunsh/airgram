@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AnswerCustomQueryParams {
-  customQueryId?: string // Identifier of a custom query
-  data?: string // JSON-serialized answer to the query
+    customQueryId?: string; // Identifier of a custom query
+    data?: string; // JSON-serialized answer to the query
 }
 
 /**
@@ -15,6 +15,6 @@ export interface AnswerCustomQueryParams {
  * @returns {Promise<ApiResponse<AnswerCustomQueryParams, OkUnion>>}
  */
 export type answerCustomQuery = (
-  params?: AnswerCustomQueryParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AnswerCustomQueryParams, OkUnion>>
+    params?: AnswerCustomQueryParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AnswerCustomQueryParams, OkUnion>>;

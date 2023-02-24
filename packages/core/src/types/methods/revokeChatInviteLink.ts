@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatInviteLinksUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatInviteLinksUnion } from '../outputs';
 
 export interface RevokeChatInviteLinkParams {
-  chatId?: number // Chat identifier
-  inviteLink?: string // Invite link to be revoked
+    chatId?: number; // Chat identifier
+    inviteLink?: string; // Invite link to be revoked
 }
 
 /**
@@ -18,6 +18,6 @@ export interface RevokeChatInviteLinkParams {
  * @returns {Promise<ApiResponse<RevokeChatInviteLinkParams, ChatInviteLinksUnion>>}
  */
 export type revokeChatInviteLink = (
-  params?: RevokeChatInviteLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RevokeChatInviteLinkParams, ChatInviteLinksUnion>>
+    params?: RevokeChatInviteLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RevokeChatInviteLinkParams, ChatInviteLinksUnion>>;

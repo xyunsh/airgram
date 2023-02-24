@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { GroupCallUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { GroupCallUnion } from '../outputs';
 
 export interface GetGroupCallParams {
-  groupCallId?: number // Group call identifier
+    groupCallId?: number; // Group call identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetGroupCallParams {
  * @returns {Promise<ApiResponse<GetGroupCallParams, GroupCallUnion>>}
  */
 export type getGroupCall = (
-  params?: GetGroupCallParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetGroupCallParams, GroupCallUnion>>
+    params?: GetGroupCallParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetGroupCallParams, GroupCallUnion>>;

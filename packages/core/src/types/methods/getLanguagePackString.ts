@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LanguagePackStringValueUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LanguagePackStringValueUnion } from '../outputs';
 
 export interface GetLanguagePackStringParams {
-  languagePackDatabasePath?: string // Path to the language pack database in which strings are stored
-  localizationTarget?: string // Localization target to which the language pack belongs
-  languagePackId?: string // Language pack identifier
-  key?: string // Language pack key of the string to be returned
+    languagePackDatabasePath?: string; // Path to the language pack database in which strings are stored
+    localizationTarget?: string; // Localization target to which the language pack belongs
+    languagePackId?: string; // Language pack identifier
+    key?: string; // Language pack key of the string to be returned
 }
 
 /**
@@ -23,8 +23,8 @@ export interface GetLanguagePackStringParams {
  * @returns {Promise<ApiResponse<GetLanguagePackStringParams, LanguagePackStringValueUnion>>}
  */
 export type getLanguagePackString = (
-  params?: GetLanguagePackStringParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetLanguagePackStringParams, LanguagePackStringValueUnion>>
+    params?: GetLanguagePackStringParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetLanguagePackStringParams, LanguagePackStringValueUnion>>;
 
-export type getLanguagePackStringSync = (params?: GetLanguagePackStringParams) => LanguagePackStringValueUnion
+export type getLanguagePackStringSync = (params?: GetLanguagePackStringParams) => LanguagePackStringValueUnion;

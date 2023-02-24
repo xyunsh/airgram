@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSendersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSendersUnion } from '../outputs';
 
 export interface GetChatAvailableMessageSendersParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetChatAvailableMessageSendersParams {
  * @returns {Promise<ApiResponse<GetChatAvailableMessageSendersParams, MessageSendersUnion>>}
  */
 export type getChatAvailableMessageSenders = (
-  params?: GetChatAvailableMessageSendersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatAvailableMessageSendersParams, MessageSendersUnion>>
+    params?: GetChatAvailableMessageSendersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatAvailableMessageSendersParams, MessageSendersUnion>>;

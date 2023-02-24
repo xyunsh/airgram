@@ -1,3 +1,3 @@
 export enum COUNTRY_INFO {
-  countryInfo = 'countryInfo'
+    countryInfo = 'countryInfo',
 }

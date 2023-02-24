@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetFileGenerationProgressParams {
-  generationId?: string // The identifier of the generation process
-  expectedSize?: number // Expected size of the generated file, in bytes; 0 if unknown
-  localPrefixSize?: number // The number of bytes already generated
+    generationId?: string; // The identifier of the generation process
+    expectedSize?: number; // Expected size of the generated file, in bytes; 0 if unknown
+    localPrefixSize?: number; // The number of bytes already generated
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetFileGenerationProgressParams {
  * @returns {Promise<ApiResponse<SetFileGenerationProgressParams, OkUnion>>}
  */
 export type setFileGenerationProgress = (
-  params?: SetFileGenerationProgressParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetFileGenerationProgressParams, OkUnion>>
+    params?: SetFileGenerationProgressParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetFileGenerationProgressParams, OkUnion>>;

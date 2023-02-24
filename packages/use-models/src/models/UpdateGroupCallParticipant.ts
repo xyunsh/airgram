@@ -1,4 +1,4 @@
-import { GroupCallParticipant } from '@airgram/core'
+import { GroupCallParticipant } from '@airgram/core';
 
 /**
  * Information about a group call participant was changed. The updates are sent only
@@ -6,11 +6,11 @@ import { GroupCallParticipant } from '@airgram/core'
  * or being joined
  */
 export class UpdateGroupCallParticipantBaseModel {
-  public _: 'updateGroupCallParticipant'
+    public _: 'updateGroupCallParticipant';
 
-  /** Identifier of group call */
-  public groupCallId: number
+    /** Identifier of group call */
+    public groupCallId: number;
 
-  /** New data about a participant */
-  public participant: GroupCallParticipant
+    /** New data about a participant */
+    public participant: GroupCallParticipant;
 }

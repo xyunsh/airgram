@@ -1,7 +1,7 @@
 /** Suggests the user to convert specified supergroup to a broadcast group */
 export class SuggestedActionConvertToBroadcastGroupBaseModel {
-  public _: 'suggestedActionConvertToBroadcastGroup'
+    public _: 'suggestedActionConvertToBroadcastGroup';
 
-  /** Supergroup identifier */
-  public supergroupId: number
+    /** Supergroup identifier */
+    public supergroupId: number;
 }

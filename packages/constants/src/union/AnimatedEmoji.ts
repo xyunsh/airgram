@@ -1,3 +1,3 @@
 export enum ANIMATED_EMOJI {
-  animatedEmoji = 'animatedEmoji'
+    animatedEmoji = 'animatedEmoji',
 }

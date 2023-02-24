@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { JsonValueUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { JsonValueUnion } from '../outputs';
 
 /**
  * Returns application config, provided by the server. Can be called before authorization
@@ -9,6 +7,6 @@ import { JsonValueUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, JsonValueUnion>>}
  */
 export type getApplicationConfig = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, JsonValueUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, JsonValueUnion>>;

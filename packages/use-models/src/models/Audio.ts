@@ -1,33 +1,33 @@
-import { File, Minithumbnail, Thumbnail } from '@airgram/core'
+import { File, Minithumbnail, Thumbnail } from '@airgram/core';
 
 /** Describes an audio file. Audio is usually in MP3 or M4A format */
 export class AudioBaseModel {
-  public _: 'audio'
+    public _: 'audio';
 
-  /** Duration of the audio, in seconds; as defined by the sender */
-  public duration: number
+    /** Duration of the audio, in seconds; as defined by the sender */
+    public duration: number;
 
-  /** Title of the audio; as defined by the sender */
-  public title: string
+    /** Title of the audio; as defined by the sender */
+    public title: string;
 
-  /** Performer of the audio; as defined by the sender */
-  public performer: string
+    /** Performer of the audio; as defined by the sender */
+    public performer: string;
 
-  /** Original name of the file; as defined by the sender */
-  public fileName: string
+    /** Original name of the file; as defined by the sender */
+    public fileName: string;
 
-  /** The MIME type of the file; as defined by the sender */
-  public mimeType: string
+    /** The MIME type of the file; as defined by the sender */
+    public mimeType: string;
 
-  /** The minithumbnail of the album cover; may be null */
-  public albumCoverMinithumbnail?: Minithumbnail
+    /** The minithumbnail of the album cover; may be null */
+    public albumCoverMinithumbnail?: Minithumbnail;
 
-  /**
-   * The thumbnail of the album cover in JPEG format; as defined by the sender. The full
-   * size thumbnail is supposed to be extracted from the downloaded file; may be null
-   */
-  public albumCoverThumbnail?: Thumbnail
+    /**
+     * The thumbnail of the album cover in JPEG format; as defined by the sender. The full
+     * size thumbnail is supposed to be extracted from the downloaded file; may be null
+     */
+    public albumCoverThumbnail?: Thumbnail;
 
-  /** File containing the audio */
-  public audio: File
+    /** File containing the audio */
+    public audio: File;
 }

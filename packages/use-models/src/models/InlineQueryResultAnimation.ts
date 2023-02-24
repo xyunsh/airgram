@@ -1,15 +1,15 @@
-import { Animation } from '@airgram/core'
+import { Animation } from '@airgram/core';
 
 /** Represents an animation file */
 export class InlineQueryResultAnimationBaseModel {
-  public _: 'inlineQueryResultAnimation'
+    public _: 'inlineQueryResultAnimation';
 
-  /** Unique identifier of the query result */
-  public id: string
+    /** Unique identifier of the query result */
+    public id: string;
 
-  /** Animation file */
-  public animation: Animation
+    /** Animation file */
+    public animation: Animation;
 
-  /** Animation title */
-  public title: string
+    /** Animation title */
+    public title: string;
 }

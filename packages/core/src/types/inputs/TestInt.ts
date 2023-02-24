@@ -1,8 +1,8 @@
-export type TestIntInputUnion = TestIntInput
+export type TestIntInputUnion = TestIntInput;
 
 /** A simple object containing a number; for testing only */
 export interface TestIntInput {
-  _: 'testInt'
-  /** Number */
-  value?: number
+    _: 'testInt';
+    /** Number */
+    value?: number;
 }

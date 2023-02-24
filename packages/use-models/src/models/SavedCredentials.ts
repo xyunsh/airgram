@@ -1,10 +1,10 @@
 /** Contains information about saved card credentials */
 export class SavedCredentialsBaseModel {
-  public _: 'savedCredentials'
+    public _: 'savedCredentials';
 
-  /** Unique identifier of the saved credentials */
-  public id: string
+    /** Unique identifier of the saved credentials */
+    public id: string;
 
-  /** Title of the saved credentials */
-  public title: string
+    /** Title of the saved credentials */
+    public title: string;
 }

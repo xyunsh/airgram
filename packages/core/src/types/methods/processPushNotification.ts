@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ProcessPushNotificationParams {
-  payload?: string // JSON-encoded push notification payload with all fields sent by the server, and "google.sent_time" and "google.notification.sound" fields added
+    payload?: string; // JSON-encoded push notification payload with all fields sent by the server, and "google.sent_time" and "google.notification.sound" fields added
 }
 
 /**
@@ -17,6 +17,6 @@ export interface ProcessPushNotificationParams {
  * @returns {Promise<ApiResponse<ProcessPushNotificationParams, OkUnion>>}
  */
 export type processPushNotification = (
-  params?: ProcessPushNotificationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ProcessPushNotificationParams, OkUnion>>
+    params?: ProcessPushNotificationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ProcessPushNotificationParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ErrorInput } from '../inputs'
-import { ErrorUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ErrorInput } from '../inputs';
+import { ErrorUnion } from '../outputs';
 
 export interface TestReturnErrorParams {
-  error?: ErrorInput // The error to be returned
+    error?: ErrorInput; // The error to be returned
 }
 
 /**
@@ -15,8 +15,8 @@ export interface TestReturnErrorParams {
  * @returns {Promise<ApiResponse<TestReturnErrorParams, ErrorUnion>>}
  */
 export type testReturnError = (
-  params?: TestReturnErrorParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TestReturnErrorParams, ErrorUnion>>
+    params?: TestReturnErrorParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TestReturnErrorParams, ErrorUnion>>;
 
-export type testReturnErrorSync = (params?: TestReturnErrorParams) => ErrorUnion
+export type testReturnErrorSync = (params?: TestReturnErrorParams) => ErrorUnion;

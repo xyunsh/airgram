@@ -3,8 +3,8 @@
  * entities
  */
 export class InlineKeyboardButtonTypeUserBaseModel {
-  public _: 'inlineKeyboardButtonTypeUser'
+    public _: 'inlineKeyboardButtonTypeUser';
 
-  /** User identifier */
-  public userId: number
+    /** User identifier */
+    public userId: number;
 }

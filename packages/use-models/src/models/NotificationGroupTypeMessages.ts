@@ -3,5 +3,5 @@
  * with ordinary unread messages
  */
 export class NotificationGroupTypeMessagesBaseModel {
-  public _: 'notificationGroupTypeMessages'
+    public _: 'notificationGroupTypeMessages';
 }

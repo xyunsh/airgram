@@ -1,3 +1,3 @@
-export * from './Auth'
-export * from './Provider'
-export * from './TdJsonClient'
+export * from './Auth';
+export * from './Provider';
+export * from './TdJsonClient';

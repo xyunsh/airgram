@@ -3,8 +3,8 @@
  * on it
  */
 export class MessageWebsiteConnectedBaseModel {
-  public _: 'messageWebsiteConnected'
+    public _: 'messageWebsiteConnected';
 
-  /** Domain name of the connected website */
-  public domainName: string
+    /** Domain name of the connected website */
+    public domainName: string;
 }

@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatLocationInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatLocationInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetChatLocationParams {
-  chatId?: number // Chat identifier
-  location?: ChatLocationInput // New location for the chat; must be valid and not null
+    chatId?: number; // Chat identifier
+    location?: ChatLocationInput; // New location for the chat; must be valid and not null
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SetChatLocationParams {
  * @returns {Promise<ApiResponse<SetChatLocationParams, OkUnion>>}
  */
 export type setChatLocation = (
-  params?: SetChatLocationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatLocationParams, OkUnion>>
+    params?: SetChatLocationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatLocationParams, OkUnion>>;

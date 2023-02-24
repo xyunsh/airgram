@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageUnion } from '../outputs';
 
 export interface GetChatPinnedMessageParams {
-  chatId?: number // Identifier of the chat the message belongs to
+    chatId?: number; // Identifier of the chat the message belongs to
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetChatPinnedMessageParams {
  * @returns {Promise<ApiResponse<GetChatPinnedMessageParams, MessageUnion>>}
  */
 export type getChatPinnedMessage = (
-  params?: GetChatPinnedMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatPinnedMessageParams, MessageUnion>>
+    params?: GetChatPinnedMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatPinnedMessageParams, MessageUnion>>;

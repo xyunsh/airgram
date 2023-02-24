@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface RemoveFavoriteStickerParams {
-  sticker?: InputFileInputUnion // Sticker file to delete from the list
+    sticker?: InputFileInputUnion; // Sticker file to delete from the list
 }
 
 /**
@@ -15,6 +15,6 @@ export interface RemoveFavoriteStickerParams {
  * @returns {Promise<ApiResponse<RemoveFavoriteStickerParams, OkUnion>>}
  */
 export type removeFavoriteSticker = (
-  params?: RemoveFavoriteStickerParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveFavoriteStickerParams, OkUnion>>
+    params?: RemoveFavoriteStickerParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveFavoriteStickerParams, OkUnion>>;

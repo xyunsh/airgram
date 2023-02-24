@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface GetMessageEmbeddingCodeParams {
-  chatId?: number // Identifier of the chat to which the message belongs
-  messageId?: number // Identifier of the message
-  forAlbum?: boolean // Pass true to return an HTML code for embedding of the whole media album
+    chatId?: number; // Identifier of the chat to which the message belongs
+    messageId?: number; // Identifier of the message
+    forAlbum?: boolean; // Pass true to return an HTML code for embedding of the whole media album
 }
 
 /**
@@ -20,6 +20,6 @@ export interface GetMessageEmbeddingCodeParams {
  * @returns {Promise<ApiResponse<GetMessageEmbeddingCodeParams, TextUnion>>}
  */
 export type getMessageEmbeddingCode = (
-  params?: GetMessageEmbeddingCodeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMessageEmbeddingCodeParams, TextUnion>>
+    params?: GetMessageEmbeddingCodeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMessageEmbeddingCodeParams, TextUnion>>;

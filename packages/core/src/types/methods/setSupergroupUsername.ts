@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetSupergroupUsernameParams {
-  supergroupId?: number // Identifier of the supergroup or channel
-  username?: string // New value of the username. Use an empty string to remove the username
+    supergroupId?: number; // Identifier of the supergroup or channel
+    username?: string; // New value of the username. Use an empty string to remove the username
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SetSupergroupUsernameParams {
  * @returns {Promise<ApiResponse<SetSupergroupUsernameParams, OkUnion>>}
  */
 export type setSupergroupUsername = (
-  params?: SetSupergroupUsernameParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetSupergroupUsernameParams, OkUnion>>
+    params?: SetSupergroupUsernameParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetSupergroupUsernameParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A subheader */
 export class PageBlockSubheaderBaseModel {
-  public _: 'pageBlockSubheader'
+    public _: 'pageBlockSubheader';
 
-  /** Subheader */
-  public subheader: RichTextUnion
+    /** Subheader */
+    public subheader: RichTextUnion;
 }

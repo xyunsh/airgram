@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteAccountParams {
-  reason?: string // The reason why the account was deleted; optional
+    reason?: string; // The reason why the account was deleted; optional
 }
 
 /**
@@ -16,6 +16,6 @@ export interface DeleteAccountParams {
  * @returns {Promise<ApiResponse<DeleteAccountParams, OkUnion>>}
  */
 export type deleteAccount = (
-  params?: DeleteAccountParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteAccountParams, OkUnion>>
+    params?: DeleteAccountParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteAccountParams, OkUnion>>;

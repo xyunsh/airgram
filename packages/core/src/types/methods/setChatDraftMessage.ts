@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { DraftMessageInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { DraftMessageInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetChatDraftMessageParams {
-  chatId?: number // Chat identifier
-  messageThreadId?: number // If not 0, a message thread identifier in which the draft was changed
-  draftMessage?: DraftMessageInput // New draft message; pass null to remove the draft
+    chatId?: number; // Chat identifier
+    messageThreadId?: number; // If not 0, a message thread identifier in which the draft was changed
+    draftMessage?: DraftMessageInput; // New draft message; pass null to remove the draft
 }
 
 /**
@@ -20,6 +20,6 @@ export interface SetChatDraftMessageParams {
  * @returns {Promise<ApiResponse<SetChatDraftMessageParams, OkUnion>>}
  */
 export type setChatDraftMessage = (
-  params?: SetChatDraftMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatDraftMessageParams, OkUnion>>
+    params?: SetChatDraftMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatDraftMessageParams, OkUnion>>;

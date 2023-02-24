@@ -1,3 +1,3 @@
 export enum TEST_BYTES {
-  testBytes = 'testBytes'
+    testBytes = 'testBytes',
 }

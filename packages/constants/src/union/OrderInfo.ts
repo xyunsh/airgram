@@ -1,3 +1,3 @@
 export enum ORDER_INFO {
-  orderInfo = 'orderInfo'
+    orderInfo = 'orderInfo',
 }

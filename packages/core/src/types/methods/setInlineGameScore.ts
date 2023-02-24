@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetInlineGameScoreParams {
-  inlineMessageId?: string // Inline message identifier
-  editMessage?: boolean // Pass true to edit the game message to include the current scoreboard
-  userId?: number // User identifier
-  score?: number // The new score
-  force?: boolean // Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
+    inlineMessageId?: string; // Inline message identifier
+    editMessage?: boolean; // Pass true to edit the game message to include the current scoreboard
+    userId?: number; // User identifier
+    score?: number; // The new score
+    force?: boolean; // Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
 }
 
 /**
@@ -23,6 +23,6 @@ export interface SetInlineGameScoreParams {
  * @returns {Promise<ApiResponse<SetInlineGameScoreParams, OkUnion>>}
  */
 export type setInlineGameScore = (
-  params?: SetInlineGameScoreParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetInlineGameScoreParams, OkUnion>>
+    params?: SetInlineGameScoreParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetInlineGameScoreParams, OkUnion>>;

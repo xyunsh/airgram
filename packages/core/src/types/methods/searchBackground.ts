@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { BackgroundUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { BackgroundUnion } from '../outputs';
 
 export interface SearchBackgroundParams {
-  name?: string // The name of the background
+    name?: string; // The name of the background
 }
 
 /**
@@ -13,6 +13,6 @@ export interface SearchBackgroundParams {
  * @returns {Promise<ApiResponse<SearchBackgroundParams, BackgroundUnion>>}
  */
 export type searchBackground = (
-  params?: SearchBackgroundParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchBackgroundParams, BackgroundUnion>>
+    params?: SearchBackgroundParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchBackgroundParams, BackgroundUnion>>;

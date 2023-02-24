@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SearchMessagesFilterInputUnion } from '../inputs'
-import { FoundMessagesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SearchMessagesFilterInputUnion } from '../inputs';
+import { FoundMessagesUnion } from '../outputs';
 
 export interface SearchSecretMessagesParams {
-  chatId?: number // Identifier of the chat in which to search. Specify 0 to search in all secret chats
-  query?: string // Query to search for. If empty, searchChatMessages must be used instead
-  offset?: string // Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
-  limit?: number // The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
-  filter?: SearchMessagesFilterInputUnion // Additional filter for messages to search; pass null to search for all messages
+    chatId?: number; // Identifier of the chat in which to search. Specify 0 to search in all secret chats
+    query?: string; // Query to search for. If empty, searchChatMessages must be used instead
+    offset?: string; // Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+    limit?: number; // The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+    filter?: SearchMessagesFilterInputUnion; // Additional filter for messages to search; pass null to search for all messages
 }
 
 /**
@@ -29,6 +29,6 @@ export interface SearchSecretMessagesParams {
  * @returns {Promise<ApiResponse<SearchSecretMessagesParams, FoundMessagesUnion>>}
  */
 export type searchSecretMessages = (
-  params?: SearchSecretMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchSecretMessagesParams, FoundMessagesUnion>>
+    params?: SearchSecretMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchSecretMessagesParams, FoundMessagesUnion>>;

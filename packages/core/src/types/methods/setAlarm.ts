@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetAlarmParams {
-  seconds?: number // Number of seconds before the function returns
+    seconds?: number; // Number of seconds before the function returns
 }
 
 /**
@@ -13,6 +13,6 @@ export interface SetAlarmParams {
  * @returns {Promise<ApiResponse<SetAlarmParams, OkUnion>>}
  */
 export type setAlarm = (
-  params?: SetAlarmParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetAlarmParams, OkUnion>>
+    params?: SetAlarmParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetAlarmParams, OkUnion>>;

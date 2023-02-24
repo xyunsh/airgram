@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputStickerInput } from '../inputs'
-import { FileUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputStickerInput } from '../inputs';
+import { FileUnion } from '../outputs';
 
 export interface UploadStickerFileParams {
-  userId?: number // Sticker file owner; ignored for regular users
-  sticker?: InputStickerInput // Sticker file to upload
+    userId?: number; // Sticker file owner; ignored for regular users
+    sticker?: InputStickerInput; // Sticker file to upload
 }
 
 /**
@@ -16,6 +16,6 @@ export interface UploadStickerFileParams {
  * @returns {Promise<ApiResponse<UploadStickerFileParams, FileUnion>>}
  */
 export type uploadStickerFile = (
-  params?: UploadStickerFileParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<UploadStickerFileParams, FileUnion>>
+    params?: UploadStickerFileParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<UploadStickerFileParams, FileUnion>>;

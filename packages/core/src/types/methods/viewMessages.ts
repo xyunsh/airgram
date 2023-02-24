@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ViewMessagesParams {
-  chatId?: number // Chat identifier
-  messageThreadId?: number // If not 0, a message thread identifier in which the messages are being viewed
-  messageIds?: number[] // The identifiers of the messages being viewed
-  forceRead?: boolean // Pass true to mark as read the specified messages even the chat is closed
+    chatId?: number; // Chat identifier
+    messageThreadId?: number; // If not 0, a message thread identifier in which the messages are being viewed
+    messageIds?: number[]; // The identifiers of the messages being viewed
+    forceRead?: boolean; // Pass true to mark as read the specified messages even the chat is closed
 }
 
 /**
@@ -26,6 +26,6 @@ export interface ViewMessagesParams {
  * @returns {Promise<ApiResponse<ViewMessagesParams, OkUnion>>}
  */
 export type viewMessages = (
-  params?: ViewMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ViewMessagesParams, OkUnion>>
+    params?: ViewMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ViewMessagesParams, OkUnion>>;

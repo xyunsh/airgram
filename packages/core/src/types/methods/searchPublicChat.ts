@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatUnion } from '../outputs';
 
 export interface SearchPublicChatParams {
-  username?: string // Username to be resolved
+    username?: string; // Username to be resolved
 }
 
 /**
@@ -14,6 +14,6 @@ export interface SearchPublicChatParams {
  * @returns {Promise<ApiResponse<SearchPublicChatParams, ChatUnion>>}
  */
 export type searchPublicChat = (
-  params?: SearchPublicChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchPublicChatParams, ChatUnion>>
+    params?: SearchPublicChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchPublicChatParams, ChatUnion>>;

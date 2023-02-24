@@ -1,15 +1,15 @@
-import { Animation, PageBlockCaption } from '@airgram/core'
+import { Animation, PageBlockCaption } from '@airgram/core';
 
 /** An animation */
 export class PageBlockAnimationBaseModel {
-  public _: 'pageBlockAnimation'
+    public _: 'pageBlockAnimation';
 
-  /** Animation file; may be null */
-  public animation?: Animation
+    /** Animation file; may be null */
+    public animation?: Animation;
 
-  /** Animation caption */
-  public caption: PageBlockCaption
+    /** Animation caption */
+    public caption: PageBlockCaption;
 
-  /** True, if the animation must be played automatically */
-  public needAutoplay: boolean
+    /** True, if the animation must be played automatically */
+    public needAutoplay: boolean;
 }

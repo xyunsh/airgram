@@ -1,10 +1,10 @@
 /** Represents a command supported by a bot */
 export class BotCommandBaseModel {
-  public _: 'botCommand'
+    public _: 'botCommand';
 
-  /** Text of the bot command */
-  public command: string
+    /** Text of the bot command */
+    public command: string;
 
-  /** Description of the bot command */
-  public description: string
+    /** Description of the bot command */
+    public description: string;
 }

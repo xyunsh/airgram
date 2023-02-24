@@ -1,3 +1,3 @@
 export enum DOCUMENT {
-  document = 'document'
+    document = 'document',
 }

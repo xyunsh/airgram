@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteChatMessagesByDateParams {
-  chatId?: number // Chat identifier
-  minDate?: number // The minimum date of the messages to delete
-  maxDate?: number // The maximum date of the messages to delete
-  revoke?: boolean // Pass true to delete chat messages for all users; private chats only
+    chatId?: number; // Chat identifier
+    minDate?: number; // The minimum date of the messages to delete
+    maxDate?: number; // The maximum date of the messages to delete
+    revoke?: boolean; // Pass true to delete chat messages for all users; private chats only
 }
 
 /**
@@ -21,6 +21,6 @@ export interface DeleteChatMessagesByDateParams {
  * @returns {Promise<ApiResponse<DeleteChatMessagesByDateParams, OkUnion>>}
  */
 export type deleteChatMessagesByDate = (
-  params?: DeleteChatMessagesByDateParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteChatMessagesByDateParams, OkUnion>>
+    params?: DeleteChatMessagesByDateParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteChatMessagesByDateParams, OkUnion>>;

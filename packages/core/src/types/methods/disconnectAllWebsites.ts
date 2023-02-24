@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 /**
  * Disconnects all websites from the current user's Telegram account
@@ -9,6 +7,6 @@ import { OkUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, OkUnion>>}
  */
 export type disconnectAllWebsites = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, OkUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, OkUnion>>;

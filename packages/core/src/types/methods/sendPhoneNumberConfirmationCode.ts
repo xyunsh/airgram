@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PhoneNumberAuthenticationSettingsInput } from '../inputs'
-import { AuthenticationCodeInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PhoneNumberAuthenticationSettingsInput } from '../inputs';
+import { AuthenticationCodeInfoUnion } from '../outputs';
 
 export interface SendPhoneNumberConfirmationCodeParams {
-  hash?: string // Hash value from the link
-  phoneNumber?: string // Phone number value from the link
-  settings?: PhoneNumberAuthenticationSettingsInput // Settings for the authentication of the user's phone number; pass null to use default settings
+    hash?: string; // Hash value from the link
+    phoneNumber?: string; // Phone number value from the link
+    settings?: PhoneNumberAuthenticationSettingsInput; // Settings for the authentication of the user's phone number; pass null to use default settings
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SendPhoneNumberConfirmationCodeParams {
  * @returns {Promise<ApiResponse<SendPhoneNumberConfirmationCodeParams, AuthenticationCodeInfoUnion>>}
  */
 export type sendPhoneNumberConfirmationCode = (
-  params?: SendPhoneNumberConfirmationCodeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendPhoneNumberConfirmationCodeParams, AuthenticationCodeInfoUnion>>
+    params?: SendPhoneNumberConfirmationCodeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendPhoneNumberConfirmationCodeParams, AuthenticationCodeInfoUnion>>;

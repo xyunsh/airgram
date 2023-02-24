@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleSupergroupSignMessagesParams {
-  supergroupId?: number // Identifier of the channel
-  signMessages?: boolean // New value of sign_messages
+    supergroupId?: number; // Identifier of the channel
+    signMessages?: boolean; // New value of sign_messages
 }
 
 /**
@@ -16,6 +16,6 @@ export interface ToggleSupergroupSignMessagesParams {
  * @returns {Promise<ApiResponse<ToggleSupergroupSignMessagesParams, OkUnion>>}
  */
 export type toggleSupergroupSignMessages = (
-  params?: ToggleSupergroupSignMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleSupergroupSignMessagesParams, OkUnion>>
+    params?: ToggleSupergroupSignMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleSupergroupSignMessagesParams, OkUnion>>;

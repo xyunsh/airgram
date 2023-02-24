@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface GetMessageImportConfirmationTextParams {
-  chatId?: number // Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info administrator right
+    chatId?: number; // Identifier of a chat to which the messages will be imported. It must be an identifier of a private chat with a mutual contact or an identifier of a supergroup chat with can_change_info administrator right
 }
 
 /**
@@ -15,6 +15,6 @@ export interface GetMessageImportConfirmationTextParams {
  * @returns {Promise<ApiResponse<GetMessageImportConfirmationTextParams, TextUnion>>}
  */
 export type getMessageImportConfirmationText = (
-  params?: GetMessageImportConfirmationTextParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMessageImportConfirmationTextParams, TextUnion>>
+    params?: GetMessageImportConfirmationTextParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMessageImportConfirmationTextParams, TextUnion>>;

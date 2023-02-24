@@ -1,3 +1,3 @@
 export enum COUNT {
-  count = 'count'
+    count = 'count',
 }

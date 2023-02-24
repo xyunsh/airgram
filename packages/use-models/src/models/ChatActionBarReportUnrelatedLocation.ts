@@ -3,5 +3,5 @@
  * location using the method reportChat with the reason chatReportReasonUnrelatedLocation
  */
 export class ChatActionBarReportUnrelatedLocationBaseModel {
-  public _: 'chatActionBarReportUnrelatedLocation'
+    public _: 'chatActionBarReportUnrelatedLocation';
 }

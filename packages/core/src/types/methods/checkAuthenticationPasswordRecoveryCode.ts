@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface CheckAuthenticationPasswordRecoveryCodeParams {
-  recoveryCode?: string // Recovery code to check
+    recoveryCode?: string; // Recovery code to check
 }
 
 /**
@@ -14,6 +14,6 @@ export interface CheckAuthenticationPasswordRecoveryCodeParams {
  * @returns {Promise<ApiResponse<CheckAuthenticationPasswordRecoveryCodeParams, OkUnion>>}
  */
 export type checkAuthenticationPasswordRecoveryCode = (
-  params?: CheckAuthenticationPasswordRecoveryCodeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckAuthenticationPasswordRecoveryCodeParams, OkUnion>>
+    params?: CheckAuthenticationPasswordRecoveryCodeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckAuthenticationPasswordRecoveryCodeParams, OkUnion>>;

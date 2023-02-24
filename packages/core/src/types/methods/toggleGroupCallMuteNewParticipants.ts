@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleGroupCallMuteNewParticipantsParams {
-  groupCallId?: number // Group call identifier
-  muteNewParticipants?: boolean // New value of the mute_new_participants setting
+    groupCallId?: number; // Group call identifier
+    muteNewParticipants?: boolean; // New value of the mute_new_participants setting
 }
 
 /**
@@ -18,6 +18,6 @@ export interface ToggleGroupCallMuteNewParticipantsParams {
  * @returns {Promise<ApiResponse<ToggleGroupCallMuteNewParticipantsParams, OkUnion>>}
  */
 export type toggleGroupCallMuteNewParticipants = (
-  params?: ToggleGroupCallMuteNewParticipantsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleGroupCallMuteNewParticipantsParams, OkUnion>>
+    params?: ToggleGroupCallMuteNewParticipantsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleGroupCallMuteNewParticipantsParams, OkUnion>>;

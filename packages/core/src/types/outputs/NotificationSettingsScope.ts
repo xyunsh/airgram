@@ -1,14 +1,15 @@
 /** Describes the types of chats to which notification settings are relevant */
-export type NotificationSettingsScopeUnion = NotificationSettingsScopePrivateChats
-  | NotificationSettingsScopeGroupChats
-  | NotificationSettingsScopeChannelChats
+export type NotificationSettingsScopeUnion =
+    | NotificationSettingsScopePrivateChats
+    | NotificationSettingsScopeGroupChats
+    | NotificationSettingsScopeChannelChats;
 
 /**
  * Notification settings applied to all private and secret chats when the corresponding
  * chat setting has a default value
  */
 export interface NotificationSettingsScopePrivateChats {
-  _: 'notificationSettingsScopePrivateChats'
+    _: 'notificationSettingsScopePrivateChats';
 }
 
 /**
@@ -16,7 +17,7 @@ export interface NotificationSettingsScopePrivateChats {
  * chat setting has a default value
  */
 export interface NotificationSettingsScopeGroupChats {
-  _: 'notificationSettingsScopeGroupChats'
+    _: 'notificationSettingsScopeGroupChats';
 }
 
 /**
@@ -24,5 +25,5 @@ export interface NotificationSettingsScopeGroupChats {
  * has a default value
  */
 export interface NotificationSettingsScopeChannelChats {
-  _: 'notificationSettingsScopeChannelChats'
+    _: 'notificationSettingsScopeChannelChats';
 }

@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { BankCardInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { BankCardInfoUnion } from '../outputs';
 
 export interface GetBankCardInfoParams {
-  bankCardNumber?: string // The bank card number
+    bankCardNumber?: string; // The bank card number
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetBankCardInfoParams {
  * @returns {Promise<ApiResponse<GetBankCardInfoParams, BankCardInfoUnion>>}
  */
 export type getBankCardInfo = (
-  params?: GetBankCardInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetBankCardInfoParams, BankCardInfoUnion>>
+    params?: GetBankCardInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetBankCardInfoParams, BankCardInfoUnion>>;

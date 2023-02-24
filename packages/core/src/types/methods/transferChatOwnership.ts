@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface TransferChatOwnershipParams {
-  chatId?: number // Chat identifier
-  userId?: number // Identifier of the user to which transfer the ownership. The ownership can't be transferred to a bot or to a deleted user
-  password?: string // The password of the current user
+    chatId?: number; // Chat identifier
+    userId?: number; // Identifier of the user to which transfer the ownership. The ownership can't be transferred to a bot or to a deleted user
+    password?: string; // The password of the current user
 }
 
 /**
@@ -20,6 +20,6 @@ export interface TransferChatOwnershipParams {
  * @returns {Promise<ApiResponse<TransferChatOwnershipParams, OkUnion>>}
  */
 export type transferChatOwnership = (
-  params?: TransferChatOwnershipParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TransferChatOwnershipParams, OkUnion>>
+    params?: TransferChatOwnershipParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TransferChatOwnershipParams, OkUnion>>;

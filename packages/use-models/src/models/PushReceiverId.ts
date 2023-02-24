@@ -3,8 +3,8 @@
  * which account has received a push notification
  */
 export class PushReceiverIdBaseModel {
-  public _: 'pushReceiverId'
+    public _: 'pushReceiverId';
 
-  /** The globally unique identifier of push notification subscription */
-  public id: string
+    /** The globally unique identifier of push notification subscription */
+    public id: string;
 }

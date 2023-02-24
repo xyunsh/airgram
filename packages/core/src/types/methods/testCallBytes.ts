@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TestBytesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TestBytesUnion } from '../outputs';
 
 export interface TestCallBytesParams {
-  x?: string // Bytes to return
+    x?: string; // Bytes to return
 }
 
 /**
@@ -14,6 +14,6 @@ export interface TestCallBytesParams {
  * @returns {Promise<ApiResponse<TestCallBytesParams, TestBytesUnion>>}
  */
 export type testCallBytes = (
-  params?: TestCallBytesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TestCallBytesParams, TestBytesUnion>>
+    params?: TestCallBytesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TestCallBytesParams, TestBytesUnion>>;

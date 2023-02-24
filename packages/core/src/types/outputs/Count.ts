@@ -1,8 +1,8 @@
-export type CountUnion = Count
+export type CountUnion = Count;
 
 /** Contains a counter */
 export interface Count {
-  _: 'count'
-  /** Count */
-  count: number
+    _: 'count';
+    /** Count */
+    count: number;
 }

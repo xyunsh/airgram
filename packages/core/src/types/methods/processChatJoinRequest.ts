@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ProcessChatJoinRequestParams {
-  chatId?: number // Chat identifier
-  userId?: number // Identifier of the user that sent the request
-  approve?: boolean // Pass true to approve the request; pass false to decline it
+    chatId?: number; // Chat identifier
+    userId?: number; // Identifier of the user that sent the request
+    approve?: boolean; // Pass true to approve the request; pass false to decline it
 }
 
 /**
@@ -18,6 +18,6 @@ export interface ProcessChatJoinRequestParams {
  * @returns {Promise<ApiResponse<ProcessChatJoinRequestParams, OkUnion>>}
  */
 export type processChatJoinRequest = (
-  params?: ProcessChatJoinRequestParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ProcessChatJoinRequestParams, OkUnion>>
+    params?: ProcessChatJoinRequestParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ProcessChatJoinRequestParams, OkUnion>>;

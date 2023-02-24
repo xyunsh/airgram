@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { HttpUrlUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { HttpUrlUnion } from '../outputs';
 
 /**
  * Returns the link for downloading official Telegram application to be used when the
@@ -10,6 +8,6 @@ import { HttpUrlUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, HttpUrlUnion>>}
  */
 export type getApplicationDownloadLink = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, HttpUrlUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, HttpUrlUnion>>;

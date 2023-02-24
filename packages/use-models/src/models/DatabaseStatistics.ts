@@ -1,7 +1,7 @@
 /** Contains database statistics */
 export class DatabaseStatisticsBaseModel {
-  public _: 'databaseStatistics'
+    public _: 'databaseStatistics';
 
-  /** Database statistics in an unspecified human-readable format */
-  public statistics: string
+    /** Database statistics in an unspecified human-readable format */
+    public statistics: string;
 }

@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AuthorizationStateUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AuthorizationStateUnion } from '../outputs';
 
 /**
  * Returns the current authorization state; this is an offline request. For informational
@@ -11,6 +9,6 @@ import { AuthorizationStateUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, AuthorizationStateUnion>>}
  */
 export type getAuthorizationState = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, AuthorizationStateUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, AuthorizationStateUnion>>;

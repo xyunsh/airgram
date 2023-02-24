@@ -3,8 +3,8 @@
  * the value of the field changes
  */
 export class PassportElementErrorSourceDataFieldBaseModel {
-  public _: 'passportElementErrorSourceDataField'
+    public _: 'passportElementErrorSourceDataField';
 
-  /** Field name */
-  public fieldName: string
+    /** Field name */
+    public fieldName: string;
 }

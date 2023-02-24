@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { CallProtocolInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { CallProtocolInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface AcceptCallParams {
-  callId?: number // Call identifier
-  protocol?: CallProtocolInput // The call protocols supported by the application
+    callId?: number; // Call identifier
+    protocol?: CallProtocolInput; // The call protocols supported by the application
 }
 
 /**
@@ -17,6 +17,6 @@ export interface AcceptCallParams {
  * @returns {Promise<ApiResponse<AcceptCallParams, OkUnion>>}
  */
 export type acceptCall = (
-  params?: AcceptCallParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AcceptCallParams, OkUnion>>
+    params?: AcceptCallParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AcceptCallParams, OkUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatsUnion } from '../outputs';
 
 export interface SearchChatsParams {
-  query?: string // Query to search for. If the query is empty, returns up to 50 recently found chats
-  limit?: number // The maximum number of chats to be returned
+    query?: string; // Query to search for. If the query is empty, returns up to 50 recently found chats
+    limit?: number; // The maximum number of chats to be returned
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SearchChatsParams {
  * @returns {Promise<ApiResponse<SearchChatsParams, ChatsUnion>>}
  */
 export type searchChats = (
-  params?: SearchChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchChatsParams, ChatsUnion>>
+    params?: SearchChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchChatsParams, ChatsUnion>>;

@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface StartGroupCallRecordingParams {
-  groupCallId?: number // Group call identifier
-  title?: string // Group call recording title; 0-64 characters
-  recordVideo?: boolean // Pass true to record a video file instead of an audio file
-  usePortraitOrientation?: boolean // Pass true to use portrait orientation for video instead of landscape one
+    groupCallId?: number; // Group call identifier
+    title?: string; // Group call recording title; 0-64 characters
+    recordVideo?: boolean; // Pass true to record a video file instead of an audio file
+    usePortraitOrientation?: boolean; // Pass true to use portrait orientation for video instead of landscape one
 }
 
 /**
@@ -22,6 +22,6 @@ export interface StartGroupCallRecordingParams {
  * @returns {Promise<ApiResponse<StartGroupCallRecordingParams, OkUnion>>}
  */
 export type startGroupCallRecording = (
-  params?: StartGroupCallRecordingParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<StartGroupCallRecordingParams, OkUnion>>
+    params?: StartGroupCallRecordingParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<StartGroupCallRecordingParams, OkUnion>>;

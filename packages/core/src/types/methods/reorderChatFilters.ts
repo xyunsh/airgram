@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ReorderChatFiltersParams {
-  chatFilterIds?: number[] // Identifiers of chat filters in the new correct order
+    chatFilterIds?: number[]; // Identifiers of chat filters in the new correct order
 }
 
 /**
@@ -14,6 +14,6 @@ export interface ReorderChatFiltersParams {
  * @returns {Promise<ApiResponse<ReorderChatFiltersParams, OkUnion>>}
  */
 export type reorderChatFilters = (
-  params?: ReorderChatFiltersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ReorderChatFiltersParams, OkUnion>>
+    params?: ReorderChatFiltersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ReorderChatFiltersParams, OkUnion>>;

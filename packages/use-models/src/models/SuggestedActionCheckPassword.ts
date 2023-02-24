@@ -3,5 +3,5 @@
  * password
  */
 export class SuggestedActionCheckPasswordBaseModel {
-  public _: 'suggestedActionCheckPassword'
+    public _: 'suggestedActionCheckPassword';
 }

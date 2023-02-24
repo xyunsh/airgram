@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputChatPhotoInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputChatPhotoInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetChatPhotoParams {
-  chatId?: number // Chat identifier
-  photo?: InputChatPhotoInputUnion // New chat photo; pass null to delete the chat photo
+    chatId?: number; // Chat identifier
+    photo?: InputChatPhotoInputUnion; // New chat photo; pass null to delete the chat photo
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetChatPhotoParams {
  * @returns {Promise<ApiResponse<SetChatPhotoParams, OkUnion>>}
  */
 export type setChatPhoto = (
-  params?: SetChatPhotoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatPhotoParams, OkUnion>>
+    params?: SetChatPhotoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatPhotoParams, OkUnion>>;

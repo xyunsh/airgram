@@ -1,3 +1,3 @@
 export enum CHAT_FILTER {
-  chatFilter = 'chatFilter'
+    chatFilter = 'chatFilter',
 }

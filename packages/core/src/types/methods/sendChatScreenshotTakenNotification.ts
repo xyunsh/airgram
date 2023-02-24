@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SendChatScreenshotTakenNotificationParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface SendChatScreenshotTakenNotificationParams {
  * @returns {Promise<ApiResponse<SendChatScreenshotTakenNotificationParams, OkUnion>>}
  */
 export type sendChatScreenshotTakenNotification = (
-  params?: SendChatScreenshotTakenNotificationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SendChatScreenshotTakenNotificationParams, OkUnion>>
+    params?: SendChatScreenshotTakenNotificationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SendChatScreenshotTakenNotificationParams, OkUnion>>;

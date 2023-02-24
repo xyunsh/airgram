@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatsUnion } from '../outputs';
 
 export interface SearchPublicChatsParams {
-  query?: string // Query to search for
+    query?: string; // Query to search for
 }
 
 /**
@@ -16,6 +16,6 @@ export interface SearchPublicChatsParams {
  * @returns {Promise<ApiResponse<SearchPublicChatsParams, ChatsUnion>>}
  */
 export type searchPublicChats = (
-  params?: SearchPublicChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchPublicChatsParams, ChatsUnion>>
+    params?: SearchPublicChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchPublicChatsParams, ChatsUnion>>;

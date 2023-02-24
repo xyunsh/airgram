@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageUnion } from '../outputs';
 
 export interface SetGameScoreParams {
-  chatId?: number // The chat to which the message with the game belongs
-  messageId?: number // Identifier of the message
-  editMessage?: boolean // Pass true to edit the game message to include the current scoreboard
-  userId?: number // User identifier
-  score?: number // The new score
-  force?: boolean // Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
+    chatId?: number; // The chat to which the message with the game belongs
+    messageId?: number; // Identifier of the message
+    editMessage?: boolean; // Pass true to edit the game message to include the current scoreboard
+    userId?: number; // User identifier
+    score?: number; // The new score
+    force?: boolean; // Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
 }
 
 /**
@@ -26,6 +26,6 @@ export interface SetGameScoreParams {
  * @returns {Promise<ApiResponse<SetGameScoreParams, MessageUnion>>}
  */
 export type setGameScore = (
-  params?: SetGameScoreParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetGameScoreParams, MessageUnion>>
+    params?: SetGameScoreParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetGameScoreParams, MessageUnion>>;

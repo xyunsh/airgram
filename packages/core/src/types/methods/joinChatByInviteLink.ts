@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatUnion } from '../outputs';
 
 export interface JoinChatByInviteLinkParams {
-  inviteLink?: string // Invite link to use
+    inviteLink?: string; // Invite link to use
 }
 
 /**
@@ -13,6 +13,6 @@ export interface JoinChatByInviteLinkParams {
  * @returns {Promise<ApiResponse<JoinChatByInviteLinkParams, ChatUnion>>}
  */
 export type joinChatByInviteLink = (
-  params?: JoinChatByInviteLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<JoinChatByInviteLinkParams, ChatUnion>>
+    params?: JoinChatByInviteLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<JoinChatByInviteLinkParams, ChatUnion>>;

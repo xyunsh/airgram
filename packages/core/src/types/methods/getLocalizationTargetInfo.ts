@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LocalizationTargetInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LocalizationTargetInfoUnion } from '../outputs';
 
 export interface GetLocalizationTargetInfoParams {
-  onlyLocal?: boolean // Pass true to get only locally available information without sending network requests
+    onlyLocal?: boolean; // Pass true to get only locally available information without sending network requests
 }
 
 /**
@@ -15,6 +15,6 @@ export interface GetLocalizationTargetInfoParams {
  * @returns {Promise<ApiResponse<GetLocalizationTargetInfoParams, LocalizationTargetInfoUnion>>}
  */
 export type getLocalizationTargetInfo = (
-  params?: GetLocalizationTargetInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetLocalizationTargetInfoParams, LocalizationTargetInfoUnion>>
+    params?: GetLocalizationTargetInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetLocalizationTargetInfoParams, LocalizationTargetInfoUnion>>;

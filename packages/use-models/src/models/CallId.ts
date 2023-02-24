@@ -1,7 +1,7 @@
 /** Contains the call identifier */
 export class CallIdBaseModel {
-  public _: 'callId'
+    public _: 'callId';
 
-  /** Call identifier */
-  public id: number
+    /** Call identifier */
+    public id: number;
 }

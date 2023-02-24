@@ -4,5 +4,5 @@
  * message
  */
 export class NotificationGroupTypeMentionsBaseModel {
-  public _: 'notificationGroupTypeMentions'
+    public _: 'notificationGroupTypeMentions';
 }

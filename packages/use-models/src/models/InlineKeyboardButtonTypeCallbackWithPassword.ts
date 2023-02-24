@@ -3,8 +3,8 @@
  * to a bot
  */
 export class InlineKeyboardButtonTypeCallbackWithPasswordBaseModel {
-  public _: 'inlineKeyboardButtonTypeCallbackWithPassword'
+    public _: 'inlineKeyboardButtonTypeCallbackWithPassword';
 
-  /** Data to be sent to the bot via a callback query */
-  public data: string
+    /** Data to be sent to the bot via a callback query */
+    public data: string;
 }

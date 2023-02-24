@@ -3,5 +3,5 @@
  * or missed by the other party
  */
 export class CallDiscardReasonMissedBaseModel {
-  public _: 'callDiscardReasonMissed'
+    public _: 'callDiscardReasonMissed';
 }

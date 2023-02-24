@@ -1,9 +1,9 @@
-import { ChatInviteLinkCount } from '@airgram/core'
+import { ChatInviteLinkCount } from '@airgram/core';
 
 /** Contains a list of chat invite link counts */
 export class ChatInviteLinkCountsBaseModel {
-  public _: 'chatInviteLinkCounts'
+    public _: 'chatInviteLinkCounts';
 
-  /** List of invite link counts */
-  public inviteLinkCounts: ChatInviteLinkCount[]
+    /** List of invite link counts */
+    public inviteLinkCounts: ChatInviteLinkCount[];
 }

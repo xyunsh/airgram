@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatInviteLinksUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatInviteLinksUnion } from '../outputs';
 
 export interface GetChatInviteLinksParams {
-  chatId?: number // Chat identifier
-  creatorUserId?: number // User identifier of a chat administrator. Must be an identifier of the current user for non-owner
-  isRevoked?: boolean // Pass true if revoked links needs to be returned instead of active or expired
-  offsetDate?: number // Creation date of an invite link starting after which to return invite links; use 0 to get results from the beginning
-  offsetInviteLink?: string // Invite link starting after which to return invite links; use empty string to get results from the beginning
-  limit?: number // The maximum number of invite links to return; up to 100
+    chatId?: number; // Chat identifier
+    creatorUserId?: number; // User identifier of a chat administrator. Must be an identifier of the current user for non-owner
+    isRevoked?: boolean; // Pass true if revoked links needs to be returned instead of active or expired
+    offsetDate?: number; // Creation date of an invite link starting after which to return invite links; use 0 to get results from the beginning
+    offsetInviteLink?: string; // Invite link starting after which to return invite links; use empty string to get results from the beginning
+    limit?: number; // The maximum number of invite links to return; up to 100
 }
 
 /**
@@ -30,6 +30,6 @@ export interface GetChatInviteLinksParams {
  * @returns {Promise<ApiResponse<GetChatInviteLinksParams, ChatInviteLinksUnion>>}
  */
 export type getChatInviteLinks = (
-  params?: GetChatInviteLinksParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatInviteLinksParams, ChatInviteLinksUnion>>
+    params?: GetChatInviteLinksParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatInviteLinksParams, ChatInviteLinksUnion>>;

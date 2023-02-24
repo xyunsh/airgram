@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleChatIsMarkedAsUnreadParams {
-  chatId?: number // Chat identifier
-  isMarkedAsUnread?: boolean // New value of is_marked_as_unread
+    chatId?: number; // Chat identifier
+    isMarkedAsUnread?: boolean; // New value of is_marked_as_unread
 }
 
 /**
@@ -15,6 +15,6 @@ export interface ToggleChatIsMarkedAsUnreadParams {
  * @returns {Promise<ApiResponse<ToggleChatIsMarkedAsUnreadParams, OkUnion>>}
  */
 export type toggleChatIsMarkedAsUnread = (
-  params?: ToggleChatIsMarkedAsUnreadParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleChatIsMarkedAsUnreadParams, OkUnion>>
+    params?: ToggleChatIsMarkedAsUnreadParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleChatIsMarkedAsUnreadParams, OkUnion>>;

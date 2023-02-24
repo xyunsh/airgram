@@ -1,13 +1,14 @@
 /** Describes the reason why a call was discarded */
-export type CallDiscardReasonUnion = CallDiscardReasonEmpty
-  | CallDiscardReasonMissed
-  | CallDiscardReasonDeclined
-  | CallDiscardReasonDisconnected
-  | CallDiscardReasonHungUp
+export type CallDiscardReasonUnion =
+    | CallDiscardReasonEmpty
+    | CallDiscardReasonMissed
+    | CallDiscardReasonDeclined
+    | CallDiscardReasonDisconnected
+    | CallDiscardReasonHungUp;
 
 /** The call wasn't discarded, or the reason is unknown */
 export interface CallDiscardReasonEmpty {
-  _: 'callDiscardReasonEmpty'
+    _: 'callDiscardReasonEmpty';
 }
 
 /**
@@ -15,7 +16,7 @@ export interface CallDiscardReasonEmpty {
  * or missed by the other party
  */
 export interface CallDiscardReasonMissed {
-  _: 'callDiscardReasonMissed'
+    _: 'callDiscardReasonMissed';
 }
 
 /**
@@ -23,15 +24,15 @@ export interface CallDiscardReasonMissed {
  * party
  */
 export interface CallDiscardReasonDeclined {
-  _: 'callDiscardReasonDeclined'
+    _: 'callDiscardReasonDeclined';
 }
 
 /** The call was ended during the conversation because the users were disconnected */
 export interface CallDiscardReasonDisconnected {
-  _: 'callDiscardReasonDisconnected'
+    _: 'callDiscardReasonDisconnected';
 }
 
 /** The call was ended because one of the parties hung up */
 export interface CallDiscardReasonHungUp {
-  _: 'callDiscardReasonHungUp'
+    _: 'callDiscardReasonHungUp';
 }

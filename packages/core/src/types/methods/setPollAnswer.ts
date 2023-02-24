@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetPollAnswerParams {
-  chatId?: number // Identifier of the chat to which the poll belongs
-  messageId?: number // Identifier of the message containing the poll
-  optionIds?: number[] // 0-based identifiers of answer options, chosen by the user. User can choose more than 1 answer option only is the poll allows multiple answers
+    chatId?: number; // Identifier of the chat to which the poll belongs
+    messageId?: number; // Identifier of the message containing the poll
+    optionIds?: number[]; // 0-based identifiers of answer options, chosen by the user. User can choose more than 1 answer option only is the poll allows multiple answers
 }
 
 /**
@@ -20,6 +20,6 @@ export interface SetPollAnswerParams {
  * @returns {Promise<ApiResponse<SetPollAnswerParams, OkUnion>>}
  */
 export type setPollAnswer = (
-  params?: SetPollAnswerParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetPollAnswerParams, OkUnion>>
+    params?: SetPollAnswerParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetPollAnswerParams, OkUnion>>;

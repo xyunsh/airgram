@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSenderInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSenderInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface ToggleGroupCallParticipantIsHandRaisedParams {
-  groupCallId?: number // Group call identifier
-  participantId?: MessageSenderInputUnion // Participant identifier
-  isHandRaised?: boolean // Pass true if the user's hand needs to be raised. Only self hand can be raised. Requires groupCall.can_be_managed group call flag to lower other's hand
+    groupCallId?: number; // Group call identifier
+    participantId?: MessageSenderInputUnion; // Participant identifier
+    isHandRaised?: boolean; // Pass true if the user's hand needs to be raised. Only self hand can be raised. Requires groupCall.can_be_managed group call flag to lower other's hand
 }
 
 /**
@@ -20,6 +20,6 @@ export interface ToggleGroupCallParticipantIsHandRaisedParams {
  * @returns {Promise<ApiResponse<ToggleGroupCallParticipantIsHandRaisedParams, OkUnion>>}
  */
 export type toggleGroupCallParticipantIsHandRaised = (
-  params?: ToggleGroupCallParticipantIsHandRaisedParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleGroupCallParticipantIsHandRaisedParams, OkUnion>>
+    params?: ToggleGroupCallParticipantIsHandRaisedParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleGroupCallParticipantIsHandRaisedParams, OkUnion>>;

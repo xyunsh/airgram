@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface PinChatMessageParams {
-  chatId?: number // Identifier of the chat
-  messageId?: number // Identifier of the new pinned message
-  disableNotification?: boolean // Pass true to disable notification about the pinned message. Notifications are always disabled in channels and private chats
-  onlyForSelf?: boolean // Pass true to pin the message only for self; private chats only
+    chatId?: number; // Identifier of the chat
+    messageId?: number; // Identifier of the new pinned message
+    disableNotification?: boolean; // Pass true to disable notification about the pinned message. Notifications are always disabled in channels and private chats
+    onlyForSelf?: boolean; // Pass true to pin the message only for self; private chats only
 }
 
 /**
@@ -23,6 +23,6 @@ export interface PinChatMessageParams {
  * @returns {Promise<ApiResponse<PinChatMessageParams, OkUnion>>}
  */
 export type pinChatMessage = (
-  params?: PinChatMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<PinChatMessageParams, OkUnion>>
+    params?: PinChatMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<PinChatMessageParams, OkUnion>>;

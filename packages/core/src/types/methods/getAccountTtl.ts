@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AccountTtlUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AccountTtlUnion } from '../outputs';
 
 /**
  * Returns the period of inactivity after which the account of the current user will
@@ -10,6 +8,6 @@ import { AccountTtlUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, AccountTtlUnion>>}
  */
 export type getAccountTtl = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, AccountTtlUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, AccountTtlUnion>>;

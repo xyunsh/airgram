@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetGroupCallParticipantIsSpeakingParams {
-  groupCallId?: number // Group call identifier
-  audioSource?: number // Group call participant's synchronization audio source identifier, or 0 for the current user
-  isSpeaking?: boolean // Pass true if the user is speaking
+    groupCallId?: number; // Group call identifier
+    audioSource?: number; // Group call participant's synchronization audio source identifier, or 0 for the current user
+    isSpeaking?: boolean; // Pass true if the user is speaking
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetGroupCallParticipantIsSpeakingParams {
  * @returns {Promise<ApiResponse<SetGroupCallParticipantIsSpeakingParams, OkUnion>>}
  */
 export type setGroupCallParticipantIsSpeaking = (
-  params?: SetGroupCallParticipantIsSpeakingParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetGroupCallParticipantIsSpeakingParams, OkUnion>>
+    params?: SetGroupCallParticipantIsSpeakingParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetGroupCallParticipantIsSpeakingParams, OkUnion>>;

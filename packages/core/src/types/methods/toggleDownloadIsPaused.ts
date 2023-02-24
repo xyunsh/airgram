@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleDownloadIsPausedParams {
-  fileId?: number // Identifier of the downloaded file
-  isPaused?: boolean // Pass true if the download is paused
+    fileId?: number; // Identifier of the downloaded file
+    isPaused?: boolean; // Pass true if the download is paused
 }
 
 /**
@@ -15,6 +15,6 @@ export interface ToggleDownloadIsPausedParams {
  * @returns {Promise<ApiResponse<ToggleDownloadIsPausedParams, OkUnion>>}
  */
 export type toggleDownloadIsPaused = (
-  params?: ToggleDownloadIsPausedParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleDownloadIsPausedParams, OkUnion>>
+    params?: ToggleDownloadIsPausedParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleDownloadIsPausedParams, OkUnion>>;

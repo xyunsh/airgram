@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { HttpUrlUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { HttpUrlUnion } from '../outputs';
 
 export interface GetEmojiSuggestionsUrlParams {
-  languageCode?: string // Language code for which the emoji replacements will be suggested
+    languageCode?: string; // Language code for which the emoji replacements will be suggested
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetEmojiSuggestionsUrlParams {
  * @returns {Promise<ApiResponse<GetEmojiSuggestionsUrlParams, HttpUrlUnion>>}
  */
 export type getEmojiSuggestionsUrl = (
-  params?: GetEmojiSuggestionsUrlParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetEmojiSuggestionsUrlParams, HttpUrlUnion>>
+    params?: GetEmojiSuggestionsUrlParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetEmojiSuggestionsUrlParams, HttpUrlUnion>>;

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSendersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSendersUnion } from '../outputs';
 
 export interface GetBlockedMessageSendersParams {
-  offset?: number // Number of users and chats to skip in the result; must be non-negative
-  limit?: number // The maximum number of users and chats to return; up to 100
+    offset?: number; // Number of users and chats to skip in the result; must be non-negative
+    limit?: number; // The maximum number of users and chats to return; up to 100
 }
 
 /**
@@ -17,6 +17,6 @@ export interface GetBlockedMessageSendersParams {
  * @returns {Promise<ApiResponse<GetBlockedMessageSendersParams, MessageSendersUnion>>}
  */
 export type getBlockedMessageSenders = (
-  params?: GetBlockedMessageSendersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetBlockedMessageSendersParams, MessageSendersUnion>>
+    params?: GetBlockedMessageSendersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetBlockedMessageSendersParams, MessageSendersUnion>>;

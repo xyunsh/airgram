@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatsUnion } from '../outputs';
 
 export interface GetRecentlyOpenedChatsParams {
-  limit?: number // The maximum number of chats to be returned
+    limit?: number; // The maximum number of chats to be returned
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetRecentlyOpenedChatsParams {
  * @returns {Promise<ApiResponse<GetRecentlyOpenedChatsParams, ChatsUnion>>}
  */
 export type getRecentlyOpenedChats = (
-  params?: GetRecentlyOpenedChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetRecentlyOpenedChatsParams, ChatsUnion>>
+    params?: GetRecentlyOpenedChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetRecentlyOpenedChatsParams, ChatsUnion>>;

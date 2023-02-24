@@ -5,11 +5,11 @@
  * button is pressed
  */
 export class InternalLinkTypeBotStartBaseModel {
-  public _: 'internalLinkTypeBotStart'
+    public _: 'internalLinkTypeBotStart';
 
-  /** Username of the bot */
-  public botUsername: string
+    /** Username of the bot */
+    public botUsername: string;
 
-  /** The parameter to be passed to sendBotStartMessage */
-  public startParameter: string
+    /** The parameter to be passed to sendBotStartMessage */
+    public startParameter: string;
 }

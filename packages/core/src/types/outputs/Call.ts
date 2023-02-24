@@ -1,18 +1,18 @@
-import { CallStateUnion } from './index'
+import { CallStateUnion } from './index';
 
-export type CallUnion = Call
+export type CallUnion = Call;
 
 /** Describes a call */
 export interface Call {
-  _: 'call'
-  /** Call identifier, not persistent */
-  id: number
-  /** Peer user identifier */
-  userId: number
-  /** True, if the call is outgoing */
-  isOutgoing: boolean
-  /** True, if the call is a video call */
-  isVideo: boolean
-  /** Call state */
-  state: CallStateUnion
+    _: 'call';
+    /** Call identifier, not persistent */
+    id: number;
+    /** Peer user identifier */
+    userId: number;
+    /** True, if the call is outgoing */
+    isOutgoing: boolean;
+    /** True, if the call is a video call */
+    isVideo: boolean;
+    /** Call state */
+    state: CallStateUnion;
 }

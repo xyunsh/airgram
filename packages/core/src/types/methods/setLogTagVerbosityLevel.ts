@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SetLogTagVerbosityLevelParams {
-  tag?: string // Logging tag to change verbosity level
-  newVerbosityLevel?: number // New verbosity level; 1-1024
+    tag?: string; // Logging tag to change verbosity level
+    newVerbosityLevel?: number; // New verbosity level; 1-1024
 }
 
 /**
@@ -15,8 +15,8 @@ export interface SetLogTagVerbosityLevelParams {
  * @returns {Promise<ApiResponse<SetLogTagVerbosityLevelParams, OkUnion>>}
  */
 export type setLogTagVerbosityLevel = (
-  params?: SetLogTagVerbosityLevelParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetLogTagVerbosityLevelParams, OkUnion>>
+    params?: SetLogTagVerbosityLevelParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetLogTagVerbosityLevelParams, OkUnion>>;
 
-export type setLogTagVerbosityLevelSync = (params?: SetLogTagVerbosityLevelParams) => OkUnion
+export type setLogTagVerbosityLevelSync = (params?: SetLogTagVerbosityLevelParams) => OkUnion;

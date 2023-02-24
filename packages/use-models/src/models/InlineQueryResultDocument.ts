@@ -1,18 +1,18 @@
-import { Document } from '@airgram/core'
+import { Document } from '@airgram/core';
 
 /** Represents a document */
 export class InlineQueryResultDocumentBaseModel {
-  public _: 'inlineQueryResultDocument'
+    public _: 'inlineQueryResultDocument';
 
-  /** Unique identifier of the query result */
-  public id: string
+    /** Unique identifier of the query result */
+    public id: string;
 
-  /** Document */
-  public document: Document
+    /** Document */
+    public document: Document;
 
-  /** Document title */
-  public title: string
+    /** Document title */
+    public title: string;
 
-  /** Document description */
-  public description: string
+    /** Document description */
+    public description: string;
 }

@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { StickersUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { StickersUnion } from '../outputs';
 
 export interface GetStickersParams {
-  emoji?: string // String representation of emoji. If empty, returns all known installed stickers
-  limit?: number // The maximum number of stickers to be returned
+    emoji?: string; // String representation of emoji. If empty, returns all known installed stickers
+    limit?: number; // The maximum number of stickers to be returned
 }
 
 /**
@@ -17,6 +17,6 @@ export interface GetStickersParams {
  * @returns {Promise<ApiResponse<GetStickersParams, StickersUnion>>}
  */
 export type getStickers = (
-  params?: GetStickersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetStickersParams, StickersUnion>>
+    params?: GetStickersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetStickersParams, StickersUnion>>;

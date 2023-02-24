@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AddLogMessageParams {
-  verbosityLevel?: number // The minimum verbosity level needed for the message to be logged; 0-1023
-  text?: string // Text of a message to log
+    verbosityLevel?: number; // The minimum verbosity level needed for the message to be logged; 0-1023
+    text?: string; // Text of a message to log
 }
 
 /**
@@ -16,8 +16,8 @@ export interface AddLogMessageParams {
  * @returns {Promise<ApiResponse<AddLogMessageParams, OkUnion>>}
  */
 export type addLogMessage = (
-  params?: AddLogMessageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddLogMessageParams, OkUnion>>
+    params?: AddLogMessageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddLogMessageParams, OkUnion>>;
 
-export type addLogMessageSync = (params?: AddLogMessageParams) => OkUnion
+export type addLogMessageSync = (params?: AddLogMessageParams) => OkUnion;

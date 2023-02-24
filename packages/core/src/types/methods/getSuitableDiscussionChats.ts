@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatsUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatsUnion } from '../outputs';
 
 /**
  * Returns a list of basic group and supergroup chats, which can be used as a discussion
@@ -13,6 +11,6 @@ import { ChatsUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, ChatsUnion>>}
  */
 export type getSuitableDiscussionChats = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, ChatsUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, ChatsUnion>>;

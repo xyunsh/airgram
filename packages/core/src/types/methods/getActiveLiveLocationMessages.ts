@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessagesUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessagesUnion } from '../outputs';
 
 /**
  * Returns all active live locations that need to be updated by the application. The
@@ -10,6 +8,6 @@ import { MessagesUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, MessagesUnion>>}
  */
 export type getActiveLiveLocationMessages = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, MessagesUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, MessagesUnion>>;

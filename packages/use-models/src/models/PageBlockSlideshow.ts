@@ -1,12 +1,12 @@
-import { PageBlockCaption, PageBlockUnion } from '@airgram/core'
+import { PageBlockCaption, PageBlockUnion } from '@airgram/core';
 
 /** A slideshow */
 export class PageBlockSlideshowBaseModel {
-  public _: 'pageBlockSlideshow'
+    public _: 'pageBlockSlideshow';
 
-  /** Slideshow item contents */
-  public pageBlocks: PageBlockUnion[]
+    /** Slideshow item contents */
+    public pageBlocks: PageBlockUnion[];
 
-  /** Block caption */
-  public caption: PageBlockCaption
+    /** Block caption */
+    public caption: PageBlockCaption;
 }

@@ -3,5 +3,5 @@
  * chat setting has a default value
  */
 export class NotificationSettingsScopeGroupChatsBaseModel {
-  public _: 'notificationSettingsScopeGroupChats'
+    public _: 'notificationSettingsScopeGroupChats';
 }

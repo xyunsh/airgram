@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { WebPageInstantViewUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { WebPageInstantViewUnion } from '../outputs';
 
 export interface GetWebPageInstantViewParams {
-  url?: string // The web page URL
-  forceFull?: boolean // Pass true to get full instant view for the web page
+    url?: string; // The web page URL
+    forceFull?: boolean; // Pass true to get full instant view for the web page
 }
 
 /**
@@ -17,6 +17,6 @@ export interface GetWebPageInstantViewParams {
  * @returns {Promise<ApiResponse<GetWebPageInstantViewParams, WebPageInstantViewUnion>>}
  */
 export type getWebPageInstantView = (
-  params?: GetWebPageInstantViewParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetWebPageInstantViewParams, WebPageInstantViewUnion>>
+    params?: GetWebPageInstantViewParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetWebPageInstantViewParams, WebPageInstantViewUnion>>;

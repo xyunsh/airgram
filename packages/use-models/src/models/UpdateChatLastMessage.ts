@@ -1,4 +1,4 @@
-import { ChatPosition, Message } from '@airgram/core'
+import { ChatPosition, Message } from '@airgram/core';
 
 /**
  * The last message of a chat was changed. If last_message is null, then the last message
@@ -6,14 +6,14 @@ import { ChatPosition, Message } from '@airgram/core'
  * in this case
  */
 export class UpdateChatLastMessageBaseModel {
-  public _: 'updateChatLastMessage'
+    public _: 'updateChatLastMessage';
 
-  /** Chat identifier */
-  public chatId: number
+    /** Chat identifier */
+    public chatId: number;
 
-  /** The new last message in the chat; may be null */
-  public lastMessage?: Message
+    /** The new last message in the chat; may be null */
+    public lastMessage?: Message;
 
-  /** The new chat positions in the chat lists */
-  public positions: ChatPosition[]
+    /** The new chat positions in the chat lists */
+    public positions: ChatPosition[];
 }

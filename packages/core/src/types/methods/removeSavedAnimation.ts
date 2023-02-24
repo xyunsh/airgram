@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface RemoveSavedAnimationParams {
-  animation?: InputFileInputUnion // Animation file to be removed
+    animation?: InputFileInputUnion; // Animation file to be removed
 }
 
 /**
@@ -14,6 +14,6 @@ export interface RemoveSavedAnimationParams {
  * @returns {Promise<ApiResponse<RemoveSavedAnimationParams, OkUnion>>}
  */
 export type removeSavedAnimation = (
-  params?: RemoveSavedAnimationParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveSavedAnimationParams, OkUnion>>
+    params?: RemoveSavedAnimationParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveSavedAnimationParams, OkUnion>>;

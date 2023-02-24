@@ -1,3 +1,3 @@
 export enum FILE {
-  file = 'file'
+    file = 'file',
 }

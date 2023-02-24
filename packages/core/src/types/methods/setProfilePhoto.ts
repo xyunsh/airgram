@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputChatPhotoInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputChatPhotoInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetProfilePhotoParams {
-  photo?: InputChatPhotoInputUnion // Profile photo to set
+    photo?: InputChatPhotoInputUnion; // Profile photo to set
 }
 
 /**
@@ -14,6 +14,6 @@ export interface SetProfilePhotoParams {
  * @returns {Promise<ApiResponse<SetProfilePhotoParams, OkUnion>>}
  */
 export type setProfilePhoto = (
-  params?: SetProfilePhotoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetProfilePhotoParams, OkUnion>>
+    params?: SetProfilePhotoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetProfilePhotoParams, OkUnion>>;

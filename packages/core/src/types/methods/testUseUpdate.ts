@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { UpdateUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { UpdateUnion } from '../outputs';
 
 /**
  * Does nothing and ensures that the Update object is used; for testing only. This is
@@ -9,7 +7,4 @@ import { UpdateUnion } from '../outputs'
  * @param {ApiRequestOptions} options
  * @returns {Promise<ApiResponse<never, UpdateUnion>>}
  */
-export type testUseUpdate = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, UpdateUnion>>
+export type testUseUpdate = (params?: never, options?: ApiRequestOptions) => Promise<ApiResponse<never, UpdateUnion>>;

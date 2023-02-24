@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface CleanFileNameParams {
-  fileName?: string // File name or path to the file
+    fileName?: string; // File name or path to the file
 }
 
 /**
@@ -15,8 +15,8 @@ export interface CleanFileNameParams {
  * @returns {Promise<ApiResponse<CleanFileNameParams, TextUnion>>}
  */
 export type cleanFileName = (
-  params?: CleanFileNameParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CleanFileNameParams, TextUnion>>
+    params?: CleanFileNameParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CleanFileNameParams, TextUnion>>;
 
-export type cleanFileNameSync = (params?: CleanFileNameParams) => TextUnion
+export type cleanFileNameSync = (params?: CleanFileNameParams) => TextUnion;

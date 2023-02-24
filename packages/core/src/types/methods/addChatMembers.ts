@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AddChatMembersParams {
-  chatId?: number // Chat identifier
-  userIds?: number[] // Identifiers of the users to be added to the chat. The maximum number of added users is 20 for supergroups and 100 for channels
+    chatId?: number; // Chat identifier
+    userIds?: number[]; // Identifiers of the users to be added to the chat. The maximum number of added users is 20 for supergroups and 100 for channels
 }
 
 /**
@@ -18,6 +18,6 @@ export interface AddChatMembersParams {
  * @returns {Promise<ApiResponse<AddChatMembersParams, OkUnion>>}
  */
 export type addChatMembers = (
-  params?: AddChatMembersParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddChatMembersParams, OkUnion>>
+    params?: AddChatMembersParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddChatMembersParams, OkUnion>>;

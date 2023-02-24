@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { PassportElementsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { PassportElementsUnion } from '../outputs';
 
 export interface GetAllPassportElementsParams {
-  password?: string // Password of the current user
+    password?: string; // Password of the current user
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetAllPassportElementsParams {
  * @returns {Promise<ApiResponse<GetAllPassportElementsParams, PassportElementsUnion>>}
  */
 export type getAllPassportElements = (
-  params?: GetAllPassportElementsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetAllPassportElementsParams, PassportElementsUnion>>
+    params?: GetAllPassportElementsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetAllPassportElementsParams, PassportElementsUnion>>;

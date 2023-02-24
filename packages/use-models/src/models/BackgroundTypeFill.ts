@@ -1,9 +1,9 @@
-import { BackgroundFillUnion } from '@airgram/core'
+import { BackgroundFillUnion } from '@airgram/core';
 
 /** A filled background */
 export class BackgroundTypeFillBaseModel {
-  public _: 'backgroundTypeFill'
+    public _: 'backgroundTypeFill';
 
-  /** The background fill */
-  public fill: BackgroundFillUnion
+    /** The background fill */
+    public fill: BackgroundFillUnion;
 }

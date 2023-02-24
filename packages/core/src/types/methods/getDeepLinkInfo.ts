@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { DeepLinkInfoUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { DeepLinkInfoUnion } from '../outputs';
 
 export interface GetDeepLinkInfoParams {
-  link?: string // The link
+    link?: string; // The link
 }
 
 /**
@@ -15,6 +15,6 @@ export interface GetDeepLinkInfoParams {
  * @returns {Promise<ApiResponse<GetDeepLinkInfoParams, DeepLinkInfoUnion>>}
  */
 export type getDeepLinkInfo = (
-  params?: GetDeepLinkInfoParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetDeepLinkInfoParams, DeepLinkInfoUnion>>
+    params?: GetDeepLinkInfoParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetDeepLinkInfoParams, DeepLinkInfoUnion>>;

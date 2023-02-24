@@ -1,6 +1,6 @@
 export enum MASK_POINT {
-  maskPointForehead = 'maskPointForehead',
-  maskPointEyes = 'maskPointEyes',
-  maskPointMouth = 'maskPointMouth',
-  maskPointChin = 'maskPointChin'
+    maskPointForehead = 'maskPointForehead',
+    maskPointEyes = 'maskPointEyes',
+    maskPointMouth = 'maskPointMouth',
+    maskPointChin = 'maskPointChin',
 }

@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AutoDownloadSettingsInput, NetworkTypeInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AutoDownloadSettingsInput, NetworkTypeInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetAutoDownloadSettingsParams {
-  settings?: AutoDownloadSettingsInput // New user auto-download settings
-  type?: NetworkTypeInputUnion // Type of the network for which the new settings are relevant
+    settings?: AutoDownloadSettingsInput; // New user auto-download settings
+    type?: NetworkTypeInputUnion; // Type of the network for which the new settings are relevant
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetAutoDownloadSettingsParams {
  * @returns {Promise<ApiResponse<SetAutoDownloadSettingsParams, OkUnion>>}
  */
 export type setAutoDownloadSettings = (
-  params?: SetAutoDownloadSettingsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetAutoDownloadSettingsParams, OkUnion>>
+    params?: SetAutoDownloadSettingsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetAutoDownloadSettingsParams, OkUnion>>;

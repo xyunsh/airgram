@@ -1,13 +1,13 @@
 /** Contains statistics about messages sent by a user */
 export class ChatStatisticsMessageSenderInfoBaseModel {
-  public _: 'chatStatisticsMessageSenderInfo'
+    public _: 'chatStatisticsMessageSenderInfo';
 
-  /** User identifier */
-  public userId: number
+    /** User identifier */
+    public userId: number;
 
-  /** Number of sent messages */
-  public sentMessageCount: number
+    /** Number of sent messages */
+    public sentMessageCount: number;
 
-  /** Average number of characters in sent messages; 0 if unknown */
-  public averageCharacterCount: number
+    /** Average number of characters in sent messages; 0 if unknown */
+    public averageCharacterCount: number;
 }

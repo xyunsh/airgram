@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface GetSuggestedStickerSetNameParams {
-  title?: string // Sticker set title; 1-64 characters
+    title?: string; // Sticker set title; 1-64 characters
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetSuggestedStickerSetNameParams {
  * @returns {Promise<ApiResponse<GetSuggestedStickerSetNameParams, TextUnion>>}
  */
 export type getSuggestedStickerSetName = (
-  params?: GetSuggestedStickerSetNameParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetSuggestedStickerSetNameParams, TextUnion>>
+    params?: GetSuggestedStickerSetNameParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetSuggestedStickerSetNameParams, TextUnion>>;

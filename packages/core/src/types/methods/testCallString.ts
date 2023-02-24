@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TestStringUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TestStringUnion } from '../outputs';
 
 export interface TestCallStringParams {
-  x?: string // String to return
+    x?: string; // String to return
 }
 
 /**
@@ -14,6 +14,6 @@ export interface TestCallStringParams {
  * @returns {Promise<ApiResponse<TestCallStringParams, TestStringUnion>>}
  */
 export type testCallString = (
-  params?: TestCallStringParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<TestCallStringParams, TestStringUnion>>
+    params?: TestCallStringParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<TestCallStringParams, TestStringUnion>>;

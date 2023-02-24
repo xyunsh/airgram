@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageLinkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageLinkUnion } from '../outputs';
 
 export interface GetMessageLinkParams {
-  chatId?: number // Identifier of the chat to which the message belongs
-  messageId?: number // Identifier of the message
-  mediaTimestamp?: number // If not 0, timestamp from which the video/audio/video note/voice note playing must start, in seconds. The media can be in the message content or in its web page preview
-  forAlbum?: boolean // Pass true to create a link for the whole media album
-  forComment?: boolean // Pass true to create a link to the message as a channel post comment, or from a message thread
+    chatId?: number; // Identifier of the chat to which the message belongs
+    messageId?: number; // Identifier of the message
+    mediaTimestamp?: number; // If not 0, timestamp from which the video/audio/video note/voice note playing must start, in seconds. The media can be in the message content or in its web page preview
+    forAlbum?: boolean; // Pass true to create a link for the whole media album
+    forComment?: boolean; // Pass true to create a link to the message as a channel post comment, or from a message thread
 }
 
 /**
@@ -28,6 +28,6 @@ export interface GetMessageLinkParams {
  * @returns {Promise<ApiResponse<GetMessageLinkParams, MessageLinkUnion>>}
  */
 export type getMessageLink = (
-  params?: GetMessageLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMessageLinkParams, MessageLinkUnion>>
+    params?: GetMessageLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMessageLinkParams, MessageLinkUnion>>;

@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { FileTypeInputUnion, InputFileInputUnion } from '../inputs'
-import { FileUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { FileTypeInputUnion, InputFileInputUnion } from '../inputs';
+import { FileUnion } from '../outputs';
 
 export interface UploadFileParams {
-  file?: InputFileInputUnion // File to upload
-  fileType?: FileTypeInputUnion // File type; pass null if unknown
-  priority?: number // Priority of the upload (1-32). The higher the priority, the earlier the file will be uploaded. If the priorities of two files are equal, then the first one for which uploadFile was called will be uploaded first
+    file?: InputFileInputUnion; // File to upload
+    fileType?: FileTypeInputUnion; // File type; pass null if unknown
+    priority?: number; // Priority of the upload (1-32). The higher the priority, the earlier the file will be uploaded. If the priorities of two files are equal, then the first one for which uploadFile was called will be uploaded first
 }
 
 /**
@@ -23,6 +23,6 @@ export interface UploadFileParams {
  * @returns {Promise<ApiResponse<UploadFileParams, FileUnion>>}
  */
 export type uploadFile = (
-  params?: UploadFileParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<UploadFileParams, FileUnion>>
+    params?: UploadFileParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<UploadFileParams, FileUnion>>;

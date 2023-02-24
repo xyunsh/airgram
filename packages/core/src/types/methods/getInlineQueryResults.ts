@@ -1,13 +1,13 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LocationInput } from '../inputs'
-import { InlineQueryResultsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LocationInput } from '../inputs';
+import { InlineQueryResultsUnion } from '../outputs';
 
 export interface GetInlineQueryResultsParams {
-  botUserId?: number // The identifier of the target bot
-  chatId?: number // Identifier of the chat where the query was sent
-  userLocation?: LocationInput // Location of the user; pass null if unknown or the bot doesn't need user's location
-  query?: string // Text of the query
-  offset?: string // Offset of the first entry to return
+    botUserId?: number; // The identifier of the target bot
+    chatId?: number; // Identifier of the chat where the query was sent
+    userLocation?: LocationInput; // Location of the user; pass null if unknown or the bot doesn't need user's location
+    query?: string; // Text of the query
+    offset?: string; // Offset of the first entry to return
 }
 
 /**
@@ -24,6 +24,6 @@ export interface GetInlineQueryResultsParams {
  * @returns {Promise<ApiResponse<GetInlineQueryResultsParams, InlineQueryResultsUnion>>}
  */
 export type getInlineQueryResults = (
-  params?: GetInlineQueryResultsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetInlineQueryResultsParams, InlineQueryResultsUnion>>
+    params?: GetInlineQueryResultsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetInlineQueryResultsParams, InlineQueryResultsUnion>>;

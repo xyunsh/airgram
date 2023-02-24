@@ -4,11 +4,11 @@
  * that it will be sent just after the number of online users has changed
  */
 export class UpdateChatOnlineMemberCountBaseModel {
-  public _: 'updateChatOnlineMemberCount'
+    public _: 'updateChatOnlineMemberCount';
 
-  /** Identifier of the chat */
-  public chatId: number
+    /** Identifier of the chat */
+    public chatId: number;
 
-  /** New number of online members in the chat, or 0 if unknown */
-  public onlineMemberCount: number
+    /** New number of online members in the chat, or 0 if unknown */
+    public onlineMemberCount: number;
 }

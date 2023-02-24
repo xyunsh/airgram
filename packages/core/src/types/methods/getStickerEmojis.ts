@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { EmojisUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { EmojisUnion } from '../outputs';
 
 export interface GetStickerEmojisParams {
-  sticker?: InputFileInputUnion // Sticker file identifier
+    sticker?: InputFileInputUnion; // Sticker file identifier
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetStickerEmojisParams {
  * @returns {Promise<ApiResponse<GetStickerEmojisParams, EmojisUnion>>}
  */
 export type getStickerEmojis = (
-  params?: GetStickerEmojisParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetStickerEmojisParams, EmojisUnion>>
+    params?: GetStickerEmojisParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetStickerEmojisParams, EmojisUnion>>;

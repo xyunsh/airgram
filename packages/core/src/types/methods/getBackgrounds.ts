@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { BackgroundsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { BackgroundsUnion } from '../outputs';
 
 export interface GetBackgroundsParams {
-  forDarkTheme?: boolean // Pass true to order returned backgrounds for a dark theme
+    forDarkTheme?: boolean; // Pass true to order returned backgrounds for a dark theme
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetBackgroundsParams {
  * @returns {Promise<ApiResponse<GetBackgroundsParams, BackgroundsUnion>>}
  */
 export type getBackgrounds = (
-  params?: GetBackgroundsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetBackgroundsParams, BackgroundsUnion>>
+    params?: GetBackgroundsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetBackgroundsParams, BackgroundsUnion>>;

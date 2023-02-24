@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { InputFileInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { InputFileInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface AddFavoriteStickerParams {
-  sticker?: InputFileInputUnion // Sticker file to add
+    sticker?: InputFileInputUnion; // Sticker file to add
 }
 
 /**
@@ -16,6 +16,6 @@ export interface AddFavoriteStickerParams {
  * @returns {Promise<ApiResponse<AddFavoriteStickerParams, OkUnion>>}
  */
 export type addFavoriteSticker = (
-  params?: AddFavoriteStickerParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AddFavoriteStickerParams, OkUnion>>
+    params?: AddFavoriteStickerParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AddFavoriteStickerParams, OkUnion>>;

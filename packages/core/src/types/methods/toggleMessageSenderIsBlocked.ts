@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { MessageSenderInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { MessageSenderInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface ToggleMessageSenderIsBlockedParams {
-  senderId?: MessageSenderInputUnion // Identifier of a message sender to block/unblock
-  isBlocked?: boolean // New value of is_blocked
+    senderId?: MessageSenderInputUnion; // Identifier of a message sender to block/unblock
+    isBlocked?: boolean; // New value of is_blocked
 }
 
 /**
@@ -18,6 +18,6 @@ export interface ToggleMessageSenderIsBlockedParams {
  * @returns {Promise<ApiResponse<ToggleMessageSenderIsBlockedParams, OkUnion>>}
  */
 export type toggleMessageSenderIsBlocked = (
-  params?: ToggleMessageSenderIsBlockedParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleMessageSenderIsBlockedParams, OkUnion>>
+    params?: ToggleMessageSenderIsBlockedParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleMessageSenderIsBlockedParams, OkUnion>>;

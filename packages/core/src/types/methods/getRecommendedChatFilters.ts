@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { RecommendedChatFiltersUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { RecommendedChatFiltersUnion } from '../outputs';
 
 /**
  * Returns recommended chat filters for the current user
@@ -9,6 +7,6 @@ import { RecommendedChatFiltersUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, RecommendedChatFiltersUnion>>}
  */
 export type getRecommendedChatFilters = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, RecommendedChatFiltersUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, RecommendedChatFiltersUnion>>;

@@ -1,3 +1,3 @@
 export enum SECRET_CHAT {
-  secretChat = 'secretChat'
+    secretChat = 'secretChat',
 }

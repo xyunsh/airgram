@@ -1,3 +1,3 @@
 export enum EMOJIS {
-  emojis = 'emojis'
+    emojis = 'emojis',
 }

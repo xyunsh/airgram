@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { SupergroupUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { SupergroupUnion } from '../outputs';
 
 export interface GetSupergroupParams {
-  supergroupId?: number // Supergroup or channel identifier
+    supergroupId?: number; // Supergroup or channel identifier
 }
 
 /**
@@ -14,6 +14,6 @@ export interface GetSupergroupParams {
  * @returns {Promise<ApiResponse<GetSupergroupParams, SupergroupUnion>>}
  */
 export type getSupergroup = (
-  params?: GetSupergroupParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetSupergroupParams, SupergroupUnion>>
+    params?: GetSupergroupParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetSupergroupParams, SupergroupUnion>>;

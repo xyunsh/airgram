@@ -1,12 +1,12 @@
-import { MessagePosition } from '@airgram/core'
+import { MessagePosition } from '@airgram/core';
 
 /** Contains a list of message positions */
 export class MessagePositionsBaseModel {
-  public _: 'messagePositions'
+    public _: 'messagePositions';
 
-  /** Total number of messages found */
-  public totalCount: number
+    /** Total number of messages found */
+    public totalCount: number;
 
-  /** List of message positions */
-  public positions: MessagePosition[]
+    /** List of message positions */
+    public positions: MessagePosition[];
 }

@@ -1,10 +1,10 @@
 /** The chat available reactions were changed */
 export class ChatEventAvailableReactionsChangedBaseModel {
-  public _: 'chatEventAvailableReactionsChanged'
+    public _: 'chatEventAvailableReactionsChanged';
 
-  /** Previous chat available reactions */
-  public oldAvailableReactions: string[]
+    /** Previous chat available reactions */
+    public oldAvailableReactions: string[];
 
-  /** New chat available reactions */
-  public newAvailableReactions: string[]
+    /** New chat available reactions */
+    public newAvailableReactions: string[];
 }

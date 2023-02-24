@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteMessagesParams {
-  chatId?: number // Chat identifier
-  messageIds?: number[] // Identifiers of the messages to be deleted
-  revoke?: boolean // Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats
+    chatId?: number; // Chat identifier
+    messageIds?: number[]; // Identifiers of the messages to be deleted
+    revoke?: boolean; // Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats
 }
 
 /**
@@ -18,6 +18,6 @@ export interface DeleteMessagesParams {
  * @returns {Promise<ApiResponse<DeleteMessagesParams, OkUnion>>}
  */
 export type deleteMessages = (
-  params?: DeleteMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteMessagesParams, OkUnion>>
+    params?: DeleteMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteMessagesParams, OkUnion>>;

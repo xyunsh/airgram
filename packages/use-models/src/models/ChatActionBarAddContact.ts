@@ -3,5 +3,5 @@
  * list using the method addContact
  */
 export class ChatActionBarAddContactBaseModel {
-  public _: 'chatActionBarAddContact'
+    public _: 'chatActionBarAddContact';
 }

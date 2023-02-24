@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { StickerSetsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { StickerSetsUnion } from '../outputs';
 
 export interface GetArchivedStickerSetsParams {
-  isMasks?: boolean // Pass true to return mask stickers sets; pass false to return ordinary sticker sets
-  offsetStickerSetId?: string // Identifier of the sticker set from which to return the result
-  limit?: number // The maximum number of sticker sets to return; up to 100
+    isMasks?: boolean; // Pass true to return mask stickers sets; pass false to return ordinary sticker sets
+    offsetStickerSetId?: string; // Identifier of the sticker set from which to return the result
+    limit?: number; // The maximum number of sticker sets to return; up to 100
 }
 
 /**
@@ -20,6 +20,6 @@ export interface GetArchivedStickerSetsParams {
  * @returns {Promise<ApiResponse<GetArchivedStickerSetsParams, StickerSetsUnion>>}
  */
 export type getArchivedStickerSets = (
-  params?: GetArchivedStickerSetsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetArchivedStickerSetsParams, StickerSetsUnion>>
+    params?: GetArchivedStickerSetsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetArchivedStickerSetsParams, StickerSetsUnion>>;

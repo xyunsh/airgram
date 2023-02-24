@@ -1,9 +1,9 @@
-import { RichTextUnion } from '@airgram/core'
+import { RichTextUnion } from '@airgram/core';
 
 /** A header */
 export class PageBlockHeaderBaseModel {
-  public _: 'pageBlockHeader'
+    public _: 'pageBlockHeader';
 
-  /** Header */
-  public header: RichTextUnion
+    /** Header */
+    public header: RichTextUnion;
 }

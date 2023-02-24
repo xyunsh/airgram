@@ -1,12 +1,12 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface AnswerCallbackQueryParams {
-  callbackQueryId?: string // Identifier of the callback query
-  text?: string // Text of the answer
-  showAlert?: boolean // Pass true to show an alert to the user instead of a toast notification
-  url?: string // URL to be opened
-  cacheTime?: number // Time during which the result of the query can be cached, in seconds
+    callbackQueryId?: string; // Identifier of the callback query
+    text?: string; // Text of the answer
+    showAlert?: boolean; // Pass true to show an alert to the user instead of a toast notification
+    url?: string; // URL to be opened
+    cacheTime?: number; // Time during which the result of the query can be cached, in seconds
 }
 
 /**
@@ -23,6 +23,6 @@ export interface AnswerCallbackQueryParams {
  * @returns {Promise<ApiResponse<AnswerCallbackQueryParams, OkUnion>>}
  */
 export type answerCallbackQuery = (
-  params?: AnswerCallbackQueryParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<AnswerCallbackQueryParams, OkUnion>>
+    params?: AnswerCallbackQueryParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<AnswerCallbackQueryParams, OkUnion>>;

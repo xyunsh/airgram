@@ -1,7 +1,5 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { AutoDownloadSettingsPresetsUnion } from '../outputs'
-
-
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { AutoDownloadSettingsPresetsUnion } from '../outputs';
 
 /**
  * Returns auto-download settings presets for the current user
@@ -9,6 +7,6 @@ import { AutoDownloadSettingsPresetsUnion } from '../outputs'
  * @returns {Promise<ApiResponse<never, AutoDownloadSettingsPresetsUnion>>}
  */
 export type getAutoDownloadSettingsPresets = (
-  params?: never,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<never, AutoDownloadSettingsPresetsUnion>>
+    params?: never,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<never, AutoDownloadSettingsPresetsUnion>>;

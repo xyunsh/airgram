@@ -1,7 +1,7 @@
 /** Contains the result of a custom request */
 export class CustomRequestResultBaseModel {
-  public _: 'customRequestResult'
+    public _: 'customRequestResult';
 
-  /** A JSON-serialized result */
-  public result: string
+    /** A JSON-serialized result */
+    public result: string;
 }

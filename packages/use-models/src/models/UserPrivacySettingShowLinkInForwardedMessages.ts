@@ -3,5 +3,5 @@
  * forwarded messages
  */
 export class UserPrivacySettingShowLinkInForwardedMessagesBaseModel {
-  public _: 'userPrivacySettingShowLinkInForwardedMessages'
+    public _: 'userPrivacySettingShowLinkInForwardedMessages';
 }

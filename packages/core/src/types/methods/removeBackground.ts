@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface RemoveBackgroundParams {
-  backgroundId?: string // The background identifier
+    backgroundId?: string; // The background identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface RemoveBackgroundParams {
  * @returns {Promise<ApiResponse<RemoveBackgroundParams, OkUnion>>}
  */
 export type removeBackground = (
-  params?: RemoveBackgroundParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveBackgroundParams, OkUnion>>
+    params?: RemoveBackgroundParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveBackgroundParams, OkUnion>>;

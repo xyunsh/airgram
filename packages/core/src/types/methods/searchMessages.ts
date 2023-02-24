@@ -1,17 +1,17 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatListInputUnion, SearchMessagesFilterInputUnion } from '../inputs'
-import { MessagesUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatListInputUnion, SearchMessagesFilterInputUnion } from '../inputs';
+import { MessagesUnion } from '../outputs';
 
 export interface SearchMessagesParams {
-  chatList?: ChatListInputUnion // Chat list in which to search messages; pass null to search in all chats regardless of their chat list. Only Main and Archive chat lists are supported
-  query?: string // Query to search for
-  offsetDate?: number // The date of the message starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last message
-  offsetChatId?: number // The chat identifier of the last found message, or 0 for the first request
-  offsetMessageId?: number // The message identifier of the last found message, or 0 for the first request
-  limit?: number // The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
-  filter?: SearchMessagesFilterInputUnion // Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function
-  minDate?: number // If not 0, the minimum date of the messages to return
-  maxDate?: number // If not 0, the maximum date of the messages to return
+    chatList?: ChatListInputUnion; // Chat list in which to search messages; pass null to search in all chats regardless of their chat list. Only Main and Archive chat lists are supported
+    query?: string; // Query to search for
+    offsetDate?: number; // The date of the message starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last message
+    offsetChatId?: number; // The chat identifier of the last found message, or 0 for the first request
+    offsetMessageId?: number; // The message identifier of the last found message, or 0 for the first request
+    limit?: number; // The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
+    filter?: SearchMessagesFilterInputUnion; // Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function
+    minDate?: number; // If not 0, the minimum date of the messages to return
+    maxDate?: number; // If not 0, the maximum date of the messages to return
 }
 
 /**
@@ -46,6 +46,6 @@ export interface SearchMessagesParams {
  * @returns {Promise<ApiResponse<SearchMessagesParams, MessagesUnion>>}
  */
 export type searchMessages = (
-  params?: SearchMessagesParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchMessagesParams, MessagesUnion>>
+    params?: SearchMessagesParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchMessagesParams, MessagesUnion>>;

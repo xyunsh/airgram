@@ -1,7 +1,7 @@
 /** The message was originally sent by a user, which is hidden by their privacy settings */
 export class MessageForwardOriginHiddenUserBaseModel {
-  public _: 'messageForwardOriginHiddenUser'
+    public _: 'messageForwardOriginHiddenUser';
 
-  /** Name of the sender */
-  public senderName: string
+    /** Name of the sender */
+    public senderName: string;
 }

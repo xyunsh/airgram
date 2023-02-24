@@ -1,4 +1,4 @@
-import { UserPrivacySettingRuleUnion } from '@airgram/core'
+import { UserPrivacySettingRuleUnion } from '@airgram/core';
 
 /**
  * A list of privacy rules. Rules are matched in the specified order. The first matched
@@ -6,8 +6,8 @@ import { UserPrivacySettingRuleUnion } from '@airgram/core'
  * is not allowed
  */
 export class UserPrivacySettingRulesBaseModel {
-  public _: 'userPrivacySettingRules'
+    public _: 'userPrivacySettingRules';
 
-  /** A list of rules */
-  public rules: UserPrivacySettingRuleUnion[]
+    /** A list of rules */
+    public rules: UserPrivacySettingRuleUnion[];
 }

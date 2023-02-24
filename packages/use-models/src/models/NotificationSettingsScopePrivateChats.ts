@@ -3,5 +3,5 @@
  * chat setting has a default value
  */
 export class NotificationSettingsScopePrivateChatsBaseModel {
-  public _: 'notificationSettingsScopePrivateChats'
+    public _: 'notificationSettingsScopePrivateChats';
 }

@@ -1,12 +1,12 @@
-import { ChatPermissions } from '@airgram/core'
+import { ChatPermissions } from '@airgram/core';
 
 /** Chat permissions was changed */
 export class UpdateChatPermissionsBaseModel {
-  public _: 'updateChatPermissions'
+    public _: 'updateChatPermissions';
 
-  /** Chat identifier */
-  public chatId: number
+    /** Chat identifier */
+    public chatId: number;
 
-  /** The new chat permissions */
-  public permissions: ChatPermissions
+    /** The new chat permissions */
+    public permissions: ChatPermissions;
 }

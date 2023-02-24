@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatPermissionsInput } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatPermissionsInput } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetChatPermissionsParams {
-  chatId?: number // Chat identifier
-  permissions?: ChatPermissionsInput // New non-administrator members permissions in the chat
+    chatId?: number; // Chat identifier
+    permissions?: ChatPermissionsInput; // New non-administrator members permissions in the chat
 }
 
 /**
@@ -18,6 +18,6 @@ export interface SetChatPermissionsParams {
  * @returns {Promise<ApiResponse<SetChatPermissionsParams, OkUnion>>}
  */
 export type setChatPermissions = (
-  params?: SetChatPermissionsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetChatPermissionsParams, OkUnion>>
+    params?: SetChatPermissionsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetChatPermissionsParams, OkUnion>>;

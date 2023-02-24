@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface ToggleSessionCanAcceptSecretChatsParams {
-  sessionId?: string // Session identifier
-  canAcceptSecretChats?: boolean // Pass true to allow accepring secret chats by the session; pass false otherwise
+    sessionId?: string; // Session identifier
+    canAcceptSecretChats?: boolean; // Pass true to allow accepring secret chats by the session; pass false otherwise
 }
 
 /**
@@ -16,6 +16,6 @@ export interface ToggleSessionCanAcceptSecretChatsParams {
  * @returns {Promise<ApiResponse<ToggleSessionCanAcceptSecretChatsParams, OkUnion>>}
  */
 export type toggleSessionCanAcceptSecretChats = (
-  params?: ToggleSessionCanAcceptSecretChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<ToggleSessionCanAcceptSecretChatsParams, OkUnion>>
+    params?: ToggleSessionCanAcceptSecretChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<ToggleSessionCanAcceptSecretChatsParams, OkUnion>>;

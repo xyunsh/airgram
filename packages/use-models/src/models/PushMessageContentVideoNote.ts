@@ -1,12 +1,12 @@
-import { VideoNote } from '@airgram/core'
+import { VideoNote } from '@airgram/core';
 
 /** A video note message */
 export class PushMessageContentVideoNoteBaseModel {
-  public _: 'pushMessageContentVideoNote'
+    public _: 'pushMessageContentVideoNote';
 
-  /** Message content; may be null */
-  public videoNote?: VideoNote
+    /** Message content; may be null */
+    public videoNote?: VideoNote;
 
-  /** True, if the message is a pinned message with the specified content */
-  public isPinned: boolean
+    /** True, if the message is a pinned message with the specified content */
+    public isPinned: boolean;
 }

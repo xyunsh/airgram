@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface SynchronizeLanguagePackParams {
-  languagePackId?: string // Language pack identifier
+    languagePackId?: string; // Language pack identifier
 }
 
 /**
@@ -15,6 +15,6 @@ export interface SynchronizeLanguagePackParams {
  * @returns {Promise<ApiResponse<SynchronizeLanguagePackParams, OkUnion>>}
  */
 export type synchronizeLanguagePack = (
-  params?: SynchronizeLanguagePackParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SynchronizeLanguagePackParams, OkUnion>>
+    params?: SynchronizeLanguagePackParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SynchronizeLanguagePackParams, OkUnion>>;

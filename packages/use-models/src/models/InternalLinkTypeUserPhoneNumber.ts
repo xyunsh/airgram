@@ -3,8 +3,8 @@
  * the given phone number to process the link
  */
 export class InternalLinkTypeUserPhoneNumberBaseModel {
-  public _: 'internalLinkTypeUserPhoneNumber'
+    public _: 'internalLinkTypeUserPhoneNumber';
 
-  /** Phone number of the user */
-  public phoneNumber: string
+    /** Phone number of the user */
+    public phoneNumber: string;
 }

@@ -1,7 +1,7 @@
 /** Represents a numeric JSON value */
 export class JsonValueNumberBaseModel {
-  public _: 'jsonValueNumber'
+    public _: 'jsonValueNumber';
 
-  /** The value */
-  public value: number
+    /** The value */
+    public value: number;
 }

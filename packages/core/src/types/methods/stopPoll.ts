@@ -1,11 +1,11 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ReplyMarkupInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ReplyMarkupInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface StopPollParams {
-  chatId?: number // Identifier of the chat to which the poll belongs
-  messageId?: number // Identifier of the message containing the poll
-  replyMarkup?: ReplyMarkupInputUnion // The new message reply markup; pass null if none; for bots only
+    chatId?: number; // Identifier of the chat to which the poll belongs
+    messageId?: number; // Identifier of the message containing the poll
+    replyMarkup?: ReplyMarkupInputUnion; // The new message reply markup; pass null if none; for bots only
 }
 
 /**
@@ -21,6 +21,6 @@ export interface StopPollParams {
  * @returns {Promise<ApiResponse<StopPollParams, OkUnion>>}
  */
 export type stopPoll = (
-  params?: StopPollParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<StopPollParams, OkUnion>>
+    params?: StopPollParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<StopPollParams, OkUnion>>;

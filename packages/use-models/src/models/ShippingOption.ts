@@ -1,15 +1,15 @@
-import { LabeledPricePart } from '@airgram/core'
+import { LabeledPricePart } from '@airgram/core';
 
 /** One shipping option */
 export class ShippingOptionBaseModel {
-  public _: 'shippingOption'
+    public _: 'shippingOption';
 
-  /** Shipping option identifier */
-  public id: string
+    /** Shipping option identifier */
+    public id: string;
 
-  /** Option title */
-  public title: string
+    /** Option title */
+    public title: string;
 
-  /** A list of objects used to calculate the total shipping costs */
-  public priceParts: LabeledPricePart[]
+    /** A list of objects used to calculate the total shipping costs */
+    public priceParts: LabeledPricePart[];
 }

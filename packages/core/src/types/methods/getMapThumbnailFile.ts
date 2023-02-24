@@ -1,14 +1,14 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { LocationInput } from '../inputs'
-import { FileUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { LocationInput } from '../inputs';
+import { FileUnion } from '../outputs';
 
 export interface GetMapThumbnailFileParams {
-  location?: LocationInput // Location of the map center
-  zoom?: number // Map zoom level; 13-20
-  width?: number // Map width in pixels before applying scale; 16-1024
-  height?: number // Map height in pixels before applying scale; 16-1024
-  scale?: number // Map scale; 1-3
-  chatId?: number // Identifier of a chat, in which the thumbnail will be shown. Use 0 if unknown
+    location?: LocationInput; // Location of the map center
+    zoom?: number; // Map zoom level; 13-20
+    width?: number; // Map width in pixels before applying scale; 16-1024
+    height?: number; // Map height in pixels before applying scale; 16-1024
+    scale?: number; // Map scale; 1-3
+    chatId?: number; // Identifier of a chat, in which the thumbnail will be shown. Use 0 if unknown
 }
 
 /**
@@ -27,6 +27,6 @@ export interface GetMapThumbnailFileParams {
  * @returns {Promise<ApiResponse<GetMapThumbnailFileParams, FileUnion>>}
  */
 export type getMapThumbnailFile = (
-  params?: GetMapThumbnailFileParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetMapThumbnailFileParams, FileUnion>>
+    params?: GetMapThumbnailFileParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetMapThumbnailFileParams, FileUnion>>;

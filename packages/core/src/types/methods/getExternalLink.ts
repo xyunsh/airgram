@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { HttpUrlUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { HttpUrlUnion } from '../outputs';
 
 export interface GetExternalLinkParams {
-  link?: string // The HTTP link
-  allowWriteAccess?: boolean // Pass true if the current user allowed the bot, returned in getExternalLinkInfo, to send them messages
+    link?: string; // The HTTP link
+    allowWriteAccess?: boolean; // Pass true if the current user allowed the bot, returned in getExternalLinkInfo, to send them messages
 }
 
 /**
@@ -18,6 +18,6 @@ export interface GetExternalLinkParams {
  * @returns {Promise<ApiResponse<GetExternalLinkParams, HttpUrlUnion>>}
  */
 export type getExternalLink = (
-  params?: GetExternalLinkParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetExternalLinkParams, HttpUrlUnion>>
+    params?: GetExternalLinkParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetExternalLinkParams, HttpUrlUnion>>;

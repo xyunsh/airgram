@@ -1,9 +1,9 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface DeleteChatReplyMarkupParams {
-  chatId?: number // Chat identifier
-  messageId?: number // The message identifier of the used keyboard
+    chatId?: number; // Chat identifier
+    messageId?: number; // The message identifier of the used keyboard
 }
 
 /**
@@ -17,6 +17,6 @@ export interface DeleteChatReplyMarkupParams {
  * @returns {Promise<ApiResponse<DeleteChatReplyMarkupParams, OkUnion>>}
  */
 export type deleteChatReplyMarkup = (
-  params?: DeleteChatReplyMarkupParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<DeleteChatReplyMarkupParams, OkUnion>>
+    params?: DeleteChatReplyMarkupParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<DeleteChatReplyMarkupParams, OkUnion>>;

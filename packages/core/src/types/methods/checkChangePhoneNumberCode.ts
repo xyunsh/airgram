@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface CheckChangePhoneNumberCodeParams {
-  code?: string // Authentication code to check
+    code?: string; // Authentication code to check
 }
 
 /**
@@ -13,6 +13,6 @@ export interface CheckChangePhoneNumberCodeParams {
  * @returns {Promise<ApiResponse<CheckChangePhoneNumberCodeParams, OkUnion>>}
  */
 export type checkChangePhoneNumberCode = (
-  params?: CheckChangePhoneNumberCodeParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CheckChangePhoneNumberCodeParams, OkUnion>>
+    params?: CheckChangePhoneNumberCodeParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CheckChangePhoneNumberCodeParams, OkUnion>>;

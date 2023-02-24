@@ -3,5 +3,5 @@
  * the available network type
  */
 export class ConnectionStateWaitingForNetworkBaseModel {
-  public _: 'connectionStateWaitingForNetwork'
+    public _: 'connectionStateWaitingForNetwork';
 }

@@ -1,3 +1,3 @@
 export enum DATE {
-  date = 'date'
+    date = 'date',
 }

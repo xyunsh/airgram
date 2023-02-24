@@ -1,3 +1,3 @@
 export enum PASSPORT_ELEMENTS {
-  passportElements = 'passportElements'
+    passportElements = 'passportElements',
 }

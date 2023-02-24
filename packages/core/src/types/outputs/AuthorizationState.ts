@@ -1,28 +1,29 @@
-import { AuthenticationCodeInfo, TermsOfService } from './index'
+import { AuthenticationCodeInfo, TermsOfService } from './index';
 
 /** Represents the current authorization state of the TDLib client */
-export type AuthorizationStateUnion = AuthorizationStateWaitTdlibParameters
-  | AuthorizationStateWaitEncryptionKey
-  | AuthorizationStateWaitPhoneNumber
-  | AuthorizationStateWaitCode
-  | AuthorizationStateWaitOtherDeviceConfirmation
-  | AuthorizationStateWaitRegistration
-  | AuthorizationStateWaitPassword
-  | AuthorizationStateReady
-  | AuthorizationStateLoggingOut
-  | AuthorizationStateClosing
-  | AuthorizationStateClosed
+export type AuthorizationStateUnion =
+    | AuthorizationStateWaitTdlibParameters
+    | AuthorizationStateWaitEncryptionKey
+    | AuthorizationStateWaitPhoneNumber
+    | AuthorizationStateWaitCode
+    | AuthorizationStateWaitOtherDeviceConfirmation
+    | AuthorizationStateWaitRegistration
+    | AuthorizationStateWaitPassword
+    | AuthorizationStateReady
+    | AuthorizationStateLoggingOut
+    | AuthorizationStateClosing
+    | AuthorizationStateClosed;
 
 /** TDLib needs TdlibParameters for initialization */
 export interface AuthorizationStateWaitTdlibParameters {
-  _: 'authorizationStateWaitTdlibParameters'
+    _: 'authorizationStateWaitTdlibParameters';
 }
 
 /** TDLib needs an encryption key to decrypt the local database */
 export interface AuthorizationStateWaitEncryptionKey {
-  _: 'authorizationStateWaitEncryptionKey'
-  /** True, if the database is currently encrypted */
-  isEncrypted: boolean
+    _: 'authorizationStateWaitEncryptionKey';
+    /** True, if the database is currently encrypted */
+    isEncrypted: boolean;
 }
 
 /**
@@ -31,14 +32,14 @@ export interface AuthorizationStateWaitEncryptionKey {
  * for other authentication options
  */
 export interface AuthorizationStateWaitPhoneNumber {
-  _: 'authorizationStateWaitPhoneNumber'
+    _: 'authorizationStateWaitPhoneNumber';
 }
 
 /** TDLib needs the user's authentication code to authorize */
 export interface AuthorizationStateWaitCode {
-  _: 'authorizationStateWaitCode'
-  /** Information about the authorization code that was sent */
-  codeInfo: AuthenticationCodeInfo
+    _: 'authorizationStateWaitCode';
+    /** Information about the authorization code that was sent */
+    codeInfo: AuthenticationCodeInfo;
 }
 
 /**
@@ -46,9 +47,9 @@ export interface AuthorizationStateWaitCode {
  * QR code with the provided link
  */
 export interface AuthorizationStateWaitOtherDeviceConfirmation {
-  _: 'authorizationStateWaitOtherDeviceConfirmation'
-  /** A tg:// URL for the QR code. The link will be updated frequently */
-  link: string
+    _: 'authorizationStateWaitOtherDeviceConfirmation';
+    /** A tg:// URL for the QR code. The link will be updated frequently */
+    link: string;
 }
 
 /**
@@ -56,33 +57,33 @@ export interface AuthorizationStateWaitOtherDeviceConfirmation {
  * name and last name to finish registration
  */
 export interface AuthorizationStateWaitRegistration {
-  _: 'authorizationStateWaitRegistration'
-  /** Telegram terms of service */
-  termsOfService: TermsOfService
+    _: 'authorizationStateWaitRegistration';
+    /** Telegram terms of service */
+    termsOfService: TermsOfService;
 }
 
 /** The user has been authorized, but needs to enter a password to start using the application */
 export interface AuthorizationStateWaitPassword {
-  _: 'authorizationStateWaitPassword'
-  /** Hint for the password; may be empty */
-  passwordHint: string
-  /** True, if a recovery email address has been set up */
-  hasRecoveryEmailAddress: boolean
-  /**
-   * Pattern of the email address to which the recovery email was sent; empty until a
-   * recovery email has been sent
-   */
-  recoveryEmailAddressPattern: string
+    _: 'authorizationStateWaitPassword';
+    /** Hint for the password; may be empty */
+    passwordHint: string;
+    /** True, if a recovery email address has been set up */
+    hasRecoveryEmailAddress: boolean;
+    /**
+     * Pattern of the email address to which the recovery email was sent; empty until a
+     * recovery email has been sent
+     */
+    recoveryEmailAddressPattern: string;
 }
 
 /** The user has been successfully authorized. TDLib is now ready to answer queries */
 export interface AuthorizationStateReady {
-  _: 'authorizationStateReady'
+    _: 'authorizationStateReady';
 }
 
 /** The user is currently logging out */
 export interface AuthorizationStateLoggingOut {
-  _: 'authorizationStateLoggingOut'
+    _: 'authorizationStateLoggingOut';
 }
 
 /**
@@ -91,7 +92,7 @@ export interface AuthorizationStateLoggingOut {
  * has been received
  */
 export interface AuthorizationStateClosing {
-  _: 'authorizationStateClosing'
+    _: 'authorizationStateClosing';
 }
 
 /**
@@ -101,5 +102,5 @@ export interface AuthorizationStateClosing {
  * TDLib client
  */
 export interface AuthorizationStateClosed {
-  _: 'authorizationStateClosed'
+    _: 'authorizationStateClosed';
 }

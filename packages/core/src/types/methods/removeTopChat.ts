@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TopChatCategoryInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TopChatCategoryInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface RemoveTopChatParams {
-  category?: TopChatCategoryInputUnion // Category of frequently used chats
-  chatId?: number // Chat identifier
+    category?: TopChatCategoryInputUnion; // Category of frequently used chats
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -18,6 +18,6 @@ export interface RemoveTopChatParams {
  * @returns {Promise<ApiResponse<RemoveTopChatParams, OkUnion>>}
  */
 export type removeTopChat = (
-  params?: RemoveTopChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<RemoveTopChatParams, OkUnion>>
+    params?: RemoveTopChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<RemoveTopChatParams, OkUnion>>;

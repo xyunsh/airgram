@@ -1,12 +1,12 @@
-import { ChatFilter } from '@airgram/core'
+import { ChatFilter } from '@airgram/core';
 
 /** Describes a recommended chat filter */
 export class RecommendedChatFilterBaseModel {
-  public _: 'recommendedChatFilter'
+    public _: 'recommendedChatFilter';
 
-  /** The chat filter */
-  public filter: ChatFilter
+    /** The chat filter */
+    public filter: ChatFilter;
 
-  /** Chat filter description */
-  public description: string
+    /** Chat filter description */
+    public description: string;
 }

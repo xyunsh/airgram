@@ -3,5 +3,5 @@
  * when the list of files changes
  */
 export class PassportElementErrorSourceFilesBaseModel {
-  public _: 'passportElementErrorSourceFiles'
+    public _: 'passportElementErrorSourceFiles';
 }

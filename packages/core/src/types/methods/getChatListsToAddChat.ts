@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatListsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatListsUnion } from '../outputs';
 
 export interface GetChatListsToAddChatParams {
-  chatId?: number // Chat identifier
+    chatId?: number; // Chat identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface GetChatListsToAddChatParams {
  * @returns {Promise<ApiResponse<GetChatListsToAddChatParams, ChatListsUnion>>}
  */
 export type getChatListsToAddChat = (
-  params?: GetChatListsToAddChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetChatListsToAddChatParams, ChatListsUnion>>
+    params?: GetChatListsToAddChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetChatListsToAddChatParams, ChatListsUnion>>;

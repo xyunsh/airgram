@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { ChatListInputUnion } from '../inputs'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { ChatListInputUnion } from '../inputs';
+import { OkUnion } from '../outputs';
 
 export interface SetPinnedChatsParams {
-  chatList?: ChatListInputUnion // Chat list in which to change the order of pinned chats
-  chatIds?: number[] // The new list of pinned chats
+    chatList?: ChatListInputUnion; // Chat list in which to change the order of pinned chats
+    chatIds?: number[]; // The new list of pinned chats
 }
 
 /**
@@ -17,6 +17,6 @@ export interface SetPinnedChatsParams {
  * @returns {Promise<ApiResponse<SetPinnedChatsParams, OkUnion>>}
  */
 export type setPinnedChats = (
-  params?: SetPinnedChatsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SetPinnedChatsParams, OkUnion>>
+    params?: SetPinnedChatsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SetPinnedChatsParams, OkUnion>>;

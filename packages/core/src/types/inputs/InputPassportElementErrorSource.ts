@@ -1,22 +1,23 @@
 /** Contains the description of an error in a Telegram Passport element; for bots only */
-export type InputPassportElementErrorSourceInputUnion = InputPassportElementErrorSourceUnspecifiedInput
-  | InputPassportElementErrorSourceDataFieldInput
-  | InputPassportElementErrorSourceFrontSideInput
-  | InputPassportElementErrorSourceReverseSideInput
-  | InputPassportElementErrorSourceSelfieInput
-  | InputPassportElementErrorSourceTranslationFileInput
-  | InputPassportElementErrorSourceTranslationFilesInput
-  | InputPassportElementErrorSourceFileInput
-  | InputPassportElementErrorSourceFilesInput
+export type InputPassportElementErrorSourceInputUnion =
+    | InputPassportElementErrorSourceUnspecifiedInput
+    | InputPassportElementErrorSourceDataFieldInput
+    | InputPassportElementErrorSourceFrontSideInput
+    | InputPassportElementErrorSourceReverseSideInput
+    | InputPassportElementErrorSourceSelfieInput
+    | InputPassportElementErrorSourceTranslationFileInput
+    | InputPassportElementErrorSourceTranslationFilesInput
+    | InputPassportElementErrorSourceFileInput
+    | InputPassportElementErrorSourceFilesInput;
 
 /**
  * The element contains an error in an unspecified place. The error will be considered
  * resolved when new data is added
  */
 export interface InputPassportElementErrorSourceUnspecifiedInput {
-  _: 'inputPassportElementErrorSourceUnspecified'
-  /** Current hash of the entire element */
-  elementHash?: string
+    _: 'inputPassportElementErrorSourceUnspecified';
+    /** Current hash of the entire element */
+    elementHash?: string;
 }
 
 /**
@@ -24,11 +25,11 @@ export interface InputPassportElementErrorSourceUnspecifiedInput {
  * value changes
  */
 export interface InputPassportElementErrorSourceDataFieldInput {
-  _: 'inputPassportElementErrorSourceDataField'
-  /** Field name */
-  fieldName?: string
-  /** Current data hash */
-  dataHash?: string
+    _: 'inputPassportElementErrorSourceDataField';
+    /** Field name */
+    fieldName?: string;
+    /** Current data hash */
+    dataHash?: string;
 }
 
 /**
@@ -36,9 +37,9 @@ export interface InputPassportElementErrorSourceDataFieldInput {
  * when the file with the front side of the document changes
  */
 export interface InputPassportElementErrorSourceFrontSideInput {
-  _: 'inputPassportElementErrorSourceFrontSide'
-  /** Current hash of the file containing the front side */
-  fileHash?: string
+    _: 'inputPassportElementErrorSourceFrontSide';
+    /** Current hash of the file containing the front side */
+    fileHash?: string;
 }
 
 /**
@@ -46,9 +47,9 @@ export interface InputPassportElementErrorSourceFrontSideInput {
  * when the file with the reverse side of the document changes
  */
 export interface InputPassportElementErrorSourceReverseSideInput {
-  _: 'inputPassportElementErrorSourceReverseSide'
-  /** Current hash of the file containing the reverse side */
-  fileHash?: string
+    _: 'inputPassportElementErrorSourceReverseSide';
+    /** Current hash of the file containing the reverse side */
+    fileHash?: string;
 }
 
 /**
@@ -56,9 +57,9 @@ export interface InputPassportElementErrorSourceReverseSideInput {
  * the selfie changes
  */
 export interface InputPassportElementErrorSourceSelfieInput {
-  _: 'inputPassportElementErrorSourceSelfie'
-  /** Current hash of the file containing the selfie */
-  fileHash?: string
+    _: 'inputPassportElementErrorSourceSelfie';
+    /** Current hash of the file containing the selfie */
+    fileHash?: string;
 }
 
 /**
@@ -66,9 +67,9 @@ export interface InputPassportElementErrorSourceSelfieInput {
  * error is considered resolved when the file with the translation changes
  */
 export interface InputPassportElementErrorSourceTranslationFileInput {
-  _: 'inputPassportElementErrorSourceTranslationFile'
-  /** Current hash of the file containing the translation */
-  fileHash?: string
+    _: 'inputPassportElementErrorSourceTranslationFile';
+    /** Current hash of the file containing the translation */
+    fileHash?: string;
 }
 
 /**
@@ -76,16 +77,16 @@ export interface InputPassportElementErrorSourceTranslationFileInput {
  * when the list of files changes
  */
 export interface InputPassportElementErrorSourceTranslationFilesInput {
-  _: 'inputPassportElementErrorSourceTranslationFiles'
-  /** Current hashes of all files with the translation */
-  fileHashes?: string[]
+    _: 'inputPassportElementErrorSourceTranslationFiles';
+    /** Current hashes of all files with the translation */
+    fileHashes?: string[];
 }
 
 /** The file contains an error. The error is considered resolved when the file changes */
 export interface InputPassportElementErrorSourceFileInput {
-  _: 'inputPassportElementErrorSourceFile'
-  /** Current hash of the file which has the error */
-  fileHash?: string
+    _: 'inputPassportElementErrorSourceFile';
+    /** Current hash of the file which has the error */
+    fileHash?: string;
 }
 
 /**
@@ -93,7 +94,7 @@ export interface InputPassportElementErrorSourceFileInput {
  * the file list changes
  */
 export interface InputPassportElementErrorSourceFilesInput {
-  _: 'inputPassportElementErrorSourceFiles'
-  /** Current hashes of all attached files */
-  fileHashes?: string[]
+    _: 'inputPassportElementErrorSourceFiles';
+    /** Current hashes of all attached files */
+    fileHashes?: string[];
 }

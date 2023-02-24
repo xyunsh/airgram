@@ -3,8 +3,8 @@
  * URL to process the link
  */
 export class InternalLinkTypeMessageBaseModel {
-  public _: 'internalLinkTypeMessage'
+    public _: 'internalLinkTypeMessage';
 
-  /** URL to be passed to getMessageLinkInfo */
-  public url: string
+    /** URL to be passed to getMessageLinkInfo */
+    public url: string;
 }

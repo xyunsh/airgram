@@ -1,7 +1,7 @@
 /** Contains the group call identifier */
 export class GroupCallIdBaseModel {
-  public _: 'groupCallId'
+    public _: 'groupCallId';
 
-  /** Group call identifier */
-  public id: number
+    /** Group call identifier */
+    public id: number;
 }

@@ -1,10 +1,10 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { StickerSetsUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { StickerSetsUnion } from '../outputs';
 
 export interface SearchInstalledStickerSetsParams {
-  isMasks?: boolean // Pass true to return mask sticker sets; pass false to return ordinary sticker sets
-  query?: string // Query to search for
-  limit?: number // The maximum number of sticker sets to return
+    isMasks?: boolean; // Pass true to return mask sticker sets; pass false to return ordinary sticker sets
+    query?: string; // Query to search for
+    limit?: number; // The maximum number of sticker sets to return
 }
 
 /**
@@ -19,6 +19,6 @@ export interface SearchInstalledStickerSetsParams {
  * @returns {Promise<ApiResponse<SearchInstalledStickerSetsParams, StickerSetsUnion>>}
  */
 export type searchInstalledStickerSets = (
-  params?: SearchInstalledStickerSetsParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<SearchInstalledStickerSetsParams, StickerSetsUnion>>
+    params?: SearchInstalledStickerSetsParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<SearchInstalledStickerSetsParams, StickerSetsUnion>>;

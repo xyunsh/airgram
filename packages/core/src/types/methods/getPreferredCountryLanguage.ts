@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { TextUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { TextUnion } from '../outputs';
 
 export interface GetPreferredCountryLanguageParams {
-  countryCode?: string // A two-letter ISO 3166-1 alpha-2 country code
+    countryCode?: string; // A two-letter ISO 3166-1 alpha-2 country code
 }
 
 /**
@@ -16,6 +16,6 @@ export interface GetPreferredCountryLanguageParams {
  * @returns {Promise<ApiResponse<GetPreferredCountryLanguageParams, TextUnion>>}
  */
 export type getPreferredCountryLanguage = (
-  params?: GetPreferredCountryLanguageParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<GetPreferredCountryLanguageParams, TextUnion>>
+    params?: GetPreferredCountryLanguageParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<GetPreferredCountryLanguageParams, TextUnion>>;

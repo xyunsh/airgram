@@ -4,5 +4,5 @@
  * has been received
  */
 export class AuthorizationStateClosingBaseModel {
-  public _: 'authorizationStateClosing'
+    public _: 'authorizationStateClosing';
 }

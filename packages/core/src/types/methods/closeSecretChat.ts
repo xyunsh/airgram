@@ -1,8 +1,8 @@
-import { ApiRequestOptions, ApiResponse } from '../airgram'
-import { OkUnion } from '../outputs'
+import { ApiRequestOptions, ApiResponse } from '../airgram';
+import { OkUnion } from '../outputs';
 
 export interface CloseSecretChatParams {
-  secretChatId?: number // Secret chat identifier
+    secretChatId?: number; // Secret chat identifier
 }
 
 /**
@@ -13,6 +13,6 @@ export interface CloseSecretChatParams {
  * @returns {Promise<ApiResponse<CloseSecretChatParams, OkUnion>>}
  */
 export type closeSecretChat = (
-  params?: CloseSecretChatParams,
-  options?: ApiRequestOptions
-) => Promise<ApiResponse<CloseSecretChatParams, OkUnion>>
+    params?: CloseSecretChatParams,
+    options?: ApiRequestOptions,
+) => Promise<ApiResponse<CloseSecretChatParams, OkUnion>>;

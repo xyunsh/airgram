@@ -3,5 +3,5 @@
  * the bank card
  */
 export class TextEntityTypeBankCardNumberBaseModel {
-  public _: 'textEntityTypeBankCardNumber'
+    public _: 'textEntityTypeBankCardNumber';
 }
